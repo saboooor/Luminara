@@ -7,8 +7,8 @@ export default component$(() => {
         <div class="relative flex h-20 items-center justify-between">
           <div class="flex flex-1 items-center sm:items-stretch justify-start">
             <a href="/" class="transition duration-200 hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl p-2 flex items-center">
-            <img class="h-12 hidden lg:flex" src={`/logo.png`} alt="Burgers On Fleek" />
-            <img class="h-12 flex lg:hidden" src={`/icon.png`} alt="Burgers On Fleek" />
+            <img class="h-12 hidden sm:flex md:hidden lg:flex" src={`/logo.png`} alt="Nether Depths" />
+            <img class="h-12 flex sm:hidden md:flex lg:hidden" src={`/icon.png`} alt="Nether Depths" />
           </a>
           </div>
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:items-stretch">

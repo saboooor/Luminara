@@ -1,6 +1,6 @@
 {
-  "name": "burgersonfleek",
-  "description": "Website for Burgers on Fleek",
+  "name": "nether-depths-website",
+  "description": "Website for Nether Depths",
   "engines": {
     "node": ">=15.0.0"
   },
@@ -17,7 +17,7 @@
     "lint": "eslint src/**/*.ts*",
     "preview": "qwik build preview && vite preview --open",
     "serve": "echo 'Run \"npm run qwik add\" to install a server adaptor'",
-    "start": "vite --open --mode ssr",
+    "start": "vite --open --mode ssr --host",
     "qwik": "qwik"
   },
   "devDependencies": {

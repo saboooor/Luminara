@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "burgersonfleek",
-  "short_name": "Burgers on Fleek",
+  "name": "netherdepths",
+  "short_name": "Nether Depths",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#000",
-  "description": "Burgers on Fleek"
+  "background_color": "#330c0c",
+  "description": "Surpass the limits of the Nether."
 }
