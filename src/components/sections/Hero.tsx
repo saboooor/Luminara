@@ -12,7 +12,7 @@ export default component$(() => {
             of the <span class="text-red-500">Nether.</span>
           </h1>
         </div>
-        <div class="cursor-pointer text-gray-200/40" onClick$={async () => {
+        <div class="cursor-pointer text-gray-200" onClick$={async () => {
           const copyResponse = document.getElementById('copy')!;
           const text = 'play.netherdepths.com';
           try {
