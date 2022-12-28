@@ -79,6 +79,7 @@ export const Nav = {
             <img
               src={logoPlaceholder}
               class="h-12 hidden sm:flex md:hidden lg:flex"
+              width={225} height={48}
               alt="Nether Depths Logo"
               loading="eager"
             />
@@ -89,6 +90,7 @@ export const Nav = {
             <img
               src={iconPlaceholder}
               class="h-12 flex sm:hidden md:flex lg:hidden"
+              width={48} height={48}
               alt="Nether Depths Icon"
               loading="eager"
             />
