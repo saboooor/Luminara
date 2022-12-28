@@ -1,5 +1,13 @@
 import { component$ } from '@builder.io/qwik';
 
+import iconAVIF from "~/images/icon.png?avif";
+import iconWEBP from "~/images/icon.png?webp";
+import { src as iconPlaceholder } from "~/images/icon.png?metadata";
+
+import logoAVIF from "~/images/logo.png?avif";
+import logoWEBP from "~/images/logo.png?webp";
+import { src as logoPlaceholder } from "~/images/logo.png?metadata";
+
 export default component$(() => {
   return (
     <nav class="z-20 fixed top-1 sm:top-4 w-screen">
@@ -7,9 +15,27 @@ export default component$(() => {
         <div class="relative flex h-20 items-center justify-between">
           <div class="flex flex-1 items-center sm:items-stretch justify-start">
             <a href="/" class="transition duration-200 hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl p-2 flex items-center">
-            <img class="h-12 hidden sm:flex md:hidden lg:flex" src={`/logo.png`} alt="Nether Depths" />
-            <img class="h-12 flex sm:hidden md:flex lg:hidden" src={`/icon.png`} alt="Nether Depths" />
-          </a>
+              <picture>
+                <source srcSet={logoAVIF} type="image/avif" />
+                <source srcSet={logoWEBP} type="image/webp" />
+                <img
+                  src={logoPlaceholder}
+                  class="h-12 hidden sm:flex md:hidden lg:flex"
+                  alt="Nether Depths Logo"
+                  loading="eager"
+                />
+              </picture>
+              <picture>
+                <source srcSet={iconAVIF} type="image/avif" />
+                <source srcSet={iconWEBP} type="image/webp" />
+                <img
+                  src={iconPlaceholder}
+                  class="h-12 flex sm:hidden md:flex lg:hidden"
+                  alt="Nether Depths Icon"
+                  loading="eager"
+                />
+              </picture>
+            </a>
           </div>
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:items-stretch">
             <a href="/" class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3 text-lg font-medium">Announcements</a>

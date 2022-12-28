@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
+import iconWEBP from "~/images/icon.png?webp";
+
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
  */
@@ -14,12 +16,12 @@ export const RouterHead = component$(() => {
       <meta content="Surpass the limits of The Nether" name="description" />
 
       <link rel="canonical" href={loc.href} />
-      <link rel="icon" href="/icon.png" />
-      <link rel="mask-icon" href="/icon.png" color="#330c0c" />
+      <link rel="icon" href={iconWEBP} />
+      <link rel="mask-icon" href={iconWEBP} color="#330c0c" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta content={`Nether Depths - ${head.title}`} property="og:title" />
       <meta content="Surpass the limits of the Nether" property="og:description" />
-      <meta content="/icon.png" property="og:image" />
+      <meta content={iconWEBP} property="og:image" />
       <meta content="#330c0c" name="theme-color" />
 
       {head.meta.map((m) => (
