@@ -12,7 +12,7 @@ export default component$(() => {
             of the <span class="text-red-500">Nether.</span>
           </h1>
         </div>
-        <a class="cursor-pointer text-gray-200/40" onClick$={async () => {
+        <div class="cursor-pointer text-gray-200/40" onClick$={async () => {
           const copyResponse = document.getElementById('copy')!;
           const text = 'play.netherdepths.com';
           try {
@@ -25,7 +25,7 @@ export default component$(() => {
         }}>
           <img class="z-10 mb-2" width={612} height={74} src="https://api.loohpjames.com/serverbanner.png?ip=play.netherdepths.com;backgroundurl=transparent;width=612" alt="Nether Depths" />
           <span class="uppercase text-sm" id="copy">Click to copy IP</span>
-        </a>
+        </div>
         <div class="mt-6 grid sm:flex gap-3 justify-center">
           <a href="#start" class="flex transition duration-200 rounded-2xl bg-red-600/80 hover:bg-red-600 px-6 py-3 font-bold text-red-100 md:py-4 md:px-10 md:text-lg whitespace-nowrap">
             Get Started!

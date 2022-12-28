@@ -17,6 +17,7 @@ export default component$(() => {
             class="w-full h-full object-cover"
             alt="Hero Background"
             loading="eager"
+            decoding="async"
           />
         </picture>
         <Header />

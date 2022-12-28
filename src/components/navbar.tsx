@@ -30,7 +30,7 @@ export default component$(() => {
             <Nav.Item href="https://netherdepths.tebex.io">
               Store
             </Nav.Item>
-            <Nav.Item href="/thisissupposedtobeadropdown">
+            <Nav.Item href="/more">
               More
             </Nav.Item>
           </div>
@@ -52,7 +52,7 @@ export default component$(() => {
           <Mobile.Item href="https://netherdepths.tebex.io">
             Store
           </Mobile.Item>
-          <Mobile.Item href="/thisissupposedtobeadropdown">
+          <Mobile.Item href="/more">
             More
           </Mobile.Item>
         </Mobile.Menu>
@@ -82,6 +82,7 @@ export const Nav = {
               width={225} height={48}
               alt="Nether Depths Logo"
               loading="eager"
+              decoding="async"
             />
           </picture>
           <picture>
@@ -93,6 +94,7 @@ export const Nav = {
               width={48} height={48}
               alt="Nether Depths Icon"
               loading="eager"
+              decoding="async"
             />
           </picture>
         </a>
