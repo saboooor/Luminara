@@ -1,12 +1,12 @@
 import { component$, Slot } from '@builder.io/qwik';
 
-import iconAVIF from "~/images/icon.png?avif";
-import iconWEBP from "~/images/icon.png?webp";
-import { src as iconPlaceholder } from "~/images/icon.png?metadata";
+import iconAVIF from "~/images/icon.png?height=48&avif";
+import iconWEBP from "~/images/icon.png?height=48&webp";
+import { src as iconPlaceholder } from "~/images/icon.png?height=48&metadata";
 
-import logoAVIF from "~/images/logo.png?avif";
-import logoWEBP from "~/images/logo.png?webp";
-import { src as logoPlaceholder } from "~/images/logo.png?metadata";
+import logoAVIF from "~/images/logo.png?height=48&avif";
+import logoWEBP from "~/images/logo.png?height=48&webp";
+import { src as logoPlaceholder } from "~/images/logo.png?height=48&metadata";
 
 export default component$(() => {
   return (
