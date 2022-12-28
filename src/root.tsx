@@ -20,7 +20,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class="bg-red-900 text-gray-200 bg-cover min-h-screen" style={{ backgroundImage: `url("/hero/${Math.floor(Math.random() * 9)}.webp")` }}>
+      <body lang="en" class="bg-red-900 text-gray-200 min-h-screen">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

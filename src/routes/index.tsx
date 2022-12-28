@@ -28,7 +28,7 @@ export default component$(() => {
             <img class="z-10 mb-2" width={612} height={74} src="https://api.loohpjames.com/serverbanner.png?ip=play.netherdepths.com;backgroundurl=transparent;width=612" alt="Nether Depths" />
             <span class="uppercase text-sm" id="copy">Click to copy IP</span>
           </a>
-          <div class="mt-6 flex gap-3 justify-center">
+          <div class="mt-6 grid sm:flex gap-3 justify-center">
             <div class="shadow">
               <a href="#start" class="flex transition duration-200 rounded-2xl backdrop-blur-lg bg-red-600/80 hover:bg-red-600 px-6 py-3 font-bold text-red-100 md:py-4 md:px-10 md:text-lg whitespace-nowrap">
                 Get Started!
