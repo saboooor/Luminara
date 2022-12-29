@@ -69,6 +69,24 @@ export default component$(() => {
           <Mobile.Item href="https://netherdepths.tebex.io">
             Store
           </Mobile.Item>
+          <Mobile.Item href="/plan">
+            Analytics
+          </Mobile.Item>
+          <Mobile.Item href="/map">
+            Map
+          </Mobile.Item>
+          <Mobile.Item href="/rgb">
+            Gradients
+          </Mobile.Item>
+          <Mobile.Item href="/appeal">
+            Appeal a Ban
+          </Mobile.Item>
+          <Mobile.Item href="/downloads">
+            Downloads
+          </Mobile.Item>
+          <Mobile.Item href="https://cactie.smhsmh.club/">
+            Cactie Bot
+          </Mobile.Item>
         </Mobile.Menu>
       </div>
     </nav>
@@ -94,7 +112,7 @@ export const Nav = {
             </svg>
           </div>
           <div class="absolute z-10 hidden group-hover:block pt-5">
-            <div class="bg-black/50 backdrop-blur-lg rounded-xl flex flex-col p-3 text-sm font-medium whitespace-nowrap">
+            <div class="bg-black/50 backdrop-blur-lg rounded-xl flex flex-col p-3 text-sm font-medium whitespace-nowrap overflow-y-scroll" style={{ maxHeight: 'calc(100svh - 128px)' }}>
               <Slot />
             </div>
           </div>
@@ -146,15 +164,15 @@ export const Nav = {
 export const Mobile = {
   Item: component$(({ href }: any) => {
     return (
-      <a href={href} class="text-gray-300 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl px-4 py-3 rounded-xl text-lg font-medium flex items-center whitespace-nowrap">
+      <a href={href} class="hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl px-4 py-3 rounded-xl text-md font-medium flex items-center whitespace-nowrap">
         <Slot />
       </a>
     );
   }),
   Menu: component$(() => {
     return (
-      <div class="hidden px-2 pb-6" id="mobile-menu">
-        <div class="space-y-1">
+      <div class="text-gray-300 hidden pb-6" id="mobile-menu">
+        <div class="space-y-1 overflow-y-scroll" style={{ maxHeight: 'calc(100svh - 128px)' }}>
           <Slot />
         </div>
       </div>
