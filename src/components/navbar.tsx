@@ -1,4 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
+import { Link } from '@builder.io/qwik-city';
 
 import iconAVIF from "~/images/icon.png?height=96&avif";
 import iconWEBP from "~/images/icon.png?height=96&webp";
@@ -18,7 +19,7 @@ export default component$(() => {
             <Nav.Item href="/announcements">
               Announcements
             </Nav.Item>
-            <Nav.Item href="/rules">
+            <Nav.Item spa href="/rules">
               Rules
             </Nav.Item>
             <Nav.Item href="/vote">
@@ -57,7 +58,7 @@ export default component$(() => {
           <Mobile.Item href="/announcements">
             Announcements
           </Mobile.Item>
-          <Mobile.Item href="/rules">
+          <Mobile.Item spa href="/rules">
             Rules
           </Mobile.Item>
           <Mobile.Item href="/vote">
@@ -94,11 +95,19 @@ export default component$(() => {
 });
 
 export const Nav = {
-  Item: component$(({ href }: any) => {
+  Item: component$(({ href, spa }: any) => {
     return (
-      <a href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3 text-lg font-medium">
-        <Slot />
-      </a>
+      <>
+        {spa ?
+          <Link href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3 text-lg font-medium">
+            <Slot />
+          </Link>
+          :
+          <a href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3 text-lg font-medium">
+            <Slot />
+          </a>
+        }
+      </>
     );
   }),
   Dropdown: {
@@ -119,18 +128,26 @@ export const Nav = {
         </div>
       );
     }),
-    Item: component$(({ href }: any) => {
+    Item: component$(({ href, spa }: any) => {
       return (
-        <a href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3">
-          <Slot />
-        </a>
+        <>
+          {spa ?
+            <Link href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3">
+              <Slot />
+            </Link>
+            :
+            <a href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3">
+              <Slot />
+            </a>
+          }
+        </>
       );
     })
   },
   Brand: component$(() => {
     return (
       <div class="flex flex-1 items-center sm:items-stretch justify-start">
-        <a href="/" class="transition duration-200 hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl p-2 flex items-center">
+        <Link href="/" class="transition duration-200 hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl p-2 flex items-center">
           <picture>
             <source srcSet={logoAVIF} type="image/avif" />
             <source srcSet={logoWEBP} type="image/webp" />
@@ -155,18 +172,26 @@ export const Nav = {
               decoding="async"
             />
           </picture>
-        </a>
+        </Link>
       </div>
     )
   })
 }
 
 export const Mobile = {
-  Item: component$(({ href }: any) => {
+  Item: component$(({ href, spa }: any) => {
     return (
-      <a href={href} class="hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl px-4 py-3 rounded-xl text-md font-medium flex items-center whitespace-nowrap">
-        <Slot />
-      </a>
+      <>
+        {spa ?
+          <Link href={href} class="hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl px-4 py-3 rounded-xl text-md font-medium flex items-center whitespace-nowrap">
+            <Slot />
+          </Link>
+          :
+          <a href={href} class="hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl px-4 py-3 rounded-xl text-md font-medium flex items-center whitespace-nowrap">
+            <Slot />
+          </a>
+        }
+      </>
     );
   }),
   Menu: component$(() => {

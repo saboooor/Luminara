@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
@@ -27,9 +28,11 @@ export default component$(() => {
           <span class="uppercase text-sm" id="copy">Click to copy IP</span>
         </div>
         <div class="mt-6 grid sm:flex gap-3 justify-center">
-          <a href="#start" class="flex transition duration-200 rounded-2xl bg-red-600/80 hover:bg-red-600 px-6 py-3 font-bold text-red-100 md:py-4 md:px-10 md:text-lg whitespace-nowrap">
+          <p class="cursor-pointer flex transition duration-200 rounded-2xl bg-red-600/80 hover:bg-red-600 px-6 py-3 font-bold text-red-100 md:py-4 md:px-10 md:text-lg whitespace-nowrap" onClick$={() => {
+            document.getElementById('start')?.scrollIntoView();
+          }}>
             Get Started!
-          </a>
+          </p>
           <a href="/discord" class="flex transition duration-200 rounded-2xl bg-indigo-900/80 hover:bg-indigo-900 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-10 md:text-lg whitespace-nowrap">
             Join the Discord Server!
           </a>
