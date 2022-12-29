@@ -1,19 +1,18 @@
 import { component$, Slot } from '@builder.io/qwik';
 import Header from '~/components/navbar';
 
-import heroAVIF from "~/images/hero.png?avif";
-import heroWEBP from "~/images/hero.png?webp";
-import { src as heroPlaceholder } from "~/images/hero.png?metadata";
+import { heroes } from '~/components/heroes';
 
 export default component$(() => {
+  const hero = heroes[Math.floor(Math.random() * heroes.length)];
   return (
     <>
       <main>
         <picture class="fixed top-0 overflow-hidden" style={{ height: '100lvh', width: '100lvw' }}>
-          <source srcSet={heroAVIF} type="image/avif" />
-          <source srcSet={heroWEBP} type="image/webp" />
+          <source srcSet={hero.avif} type="image/avif" />
+          <source srcSet={hero.webp} type="image/webp" />
           <img
-            src={heroPlaceholder}
+            src={hero.placeholder}
             class="w-full h-full object-cover"
             alt="Hero Background"
             loading="eager"
