@@ -30,9 +30,26 @@ export default component$(() => {
             <Nav.Item href="https://netherdepths.tebex.io">
               Store
             </Nav.Item>
-            <Nav.Item href="/more">
-              More
-            </Nav.Item>
+            <Nav.Dropdown.Menu name="Other">
+              <Nav.Dropdown.Item href="/plan">
+                Analytics
+              </Nav.Dropdown.Item>
+              <Nav.Dropdown.Item href="/map">
+                Map
+              </Nav.Dropdown.Item>
+              <Nav.Dropdown.Item href="/rgb">
+                Gradients
+              </Nav.Dropdown.Item>
+              <Nav.Dropdown.Item href="/appeal">
+                Appeal a Ban
+              </Nav.Dropdown.Item>
+              <Nav.Dropdown.Item href="/downloads">
+                Downloads
+              </Nav.Dropdown.Item>
+              <Nav.Dropdown.Item href="https://cactie.smhsmh.club/">
+                Cactie Bot
+              </Nav.Dropdown.Item>
+            </Nav.Dropdown.Menu>
           </div>
           <Mobile.Button />
         </div>
@@ -52,9 +69,6 @@ export default component$(() => {
           <Mobile.Item href="https://netherdepths.tebex.io">
             Store
           </Mobile.Item>
-          <Mobile.Item href="/more">
-            More
-          </Mobile.Item>
         </Mobile.Menu>
       </div>
     </nav>
@@ -69,6 +83,32 @@ export const Nav = {
       </a>
     );
   }),
+  Dropdown: {
+    Menu: component$(({ name }: any) => {
+      return (
+        <div class="transition duration-200 text-gray-300 hover:text-white group rounded-xl text-lg font-medium">
+          <div class="px-4 py-3 flex items-center">
+            {name}
+            <svg class="ml-2 h-5 w-5 transform group-hover:-rotate-180 transition duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="absolute z-10 hidden group-hover:block pt-5">
+            <div class="bg-black/50 backdrop-blur-lg rounded-xl flex flex-col p-3 text-sm font-medium whitespace-nowrap">
+              <Slot />
+            </div>
+          </div>
+        </div>
+      );
+    }),
+    Item: component$(({ href }: any) => {
+      return (
+        <a href={href} class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl rounded-xl px-4 py-3">
+          <Slot />
+        </a>
+      );
+    })
+  },
   Brand: component$(() => {
     return (
       <div class="flex flex-1 items-center sm:items-stretch justify-start">
