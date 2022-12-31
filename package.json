@@ -28,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
     "autoprefixer": "10.4.13",
-    "eslint": "8.30.0",
+    "eslint": "8.31.0",
     "eslint-plugin-qwik": "0.16.1",
     "imagetools-core": "^3.2.3",
     "node-fetch": "3.3.0",
