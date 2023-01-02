@@ -12,7 +12,7 @@ import { src as logoPlaceholder } from "~/images/logo.png?height=96&metadata";
 export default component$(() => {
   return (
     <nav class="z-20 fixed top-1 sm:top-4 w-screen">
-      <div class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 backdrop-blur-lg bg-black/50 rounded-2xl">
+      <div class="mx-4 2xl:mx-auto max-w-6xl 2xl:max-w-7xl px-3 backdrop-blur-lg bg-black/50 rounded-2xl">
         <div class="relative flex h-20 items-center justify-between">
           <Nav.Brand />
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:items-stretch">
@@ -22,10 +22,10 @@ export default component$(() => {
             <Nav.Item spa href="/rules">
               Rules
             </Nav.Item>
-            <Nav.Item href="/vote">
+            <Nav.Item spa href="/vote">
               Vote
             </Nav.Item>
-            <Nav.Item href="/ranks">
+            <Nav.Item spa href="/ranks">
               Ranks
             </Nav.Item>
             <Nav.Item href="https://netherdepths.tebex.io">
@@ -61,10 +61,10 @@ export default component$(() => {
           <Mobile.Item spa href="/rules">
             Rules
           </Mobile.Item>
-          <Mobile.Item href="/vote">
+          <Mobile.Item spa href="/vote">
             Vote
           </Mobile.Item>
-          <Mobile.Item href="/ranks">
+          <Mobile.Item spa href="/ranks">
             Ranks
           </Mobile.Item>
           <Mobile.Item href="https://netherdepths.tebex.io">
