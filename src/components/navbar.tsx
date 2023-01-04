@@ -12,7 +12,7 @@ import { src as logoPlaceholder } from "~/images/logo.png?height=96&metadata";
 export default component$(() => {
   return (
     <nav class="z-20 fixed top-1 sm:top-4 w-screen">
-      <div class="mx-4 2xl:mx-auto max-w-6xl 2xl:max-w-7xl px-3 backdrop-blur-lg bg-black/50 rounded-2xl">
+      <div class="mx-4 xl:mx-auto max-w-7xl px-3 backdrop-blur-lg bg-black/50 rounded-2xl">
         <div class="relative flex h-20 items-center justify-between">
           <Nav.Brand />
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:items-stretch">
