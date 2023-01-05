@@ -5,7 +5,7 @@ export default component$(() => {
   return (
     <>
       <section class="flex mx-auto px-6 items-center justify-center text-center" style="min-height: calc(100vh - 64px);">
-        <div class="p-10 sm:p-16 backdrop-blur-2xl rounded-xl bg-black/50 outline outline-2 outline-black/60 text-orange-100 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+        <div class="p-10 sm:p-16 backdrop-blur-2xl rounded-xl bg-black/30 outline outline-2 outline-black/30 text-orange-100 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <h1 class="font-bold text-3xl sm:text-5xl mb-3" style="filter: drop-shadow(0 2rem 2rem rgba(239, 68, 68, 0.5));">
             Vote for <span class="text-red-500">Nether Depths!</span>
           </h1>

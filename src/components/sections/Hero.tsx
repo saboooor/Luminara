@@ -6,7 +6,7 @@ import { ChevronDownIcon } from 'qwik-feather-icons';
 export default component$(() => {
   return (
     <section class="flex mx-auto px-6 items-center justify-center text-center" style="min-height: calc(100vh - 64px);">
-      <div class="p-10 sm:p-16 backdrop-blur-2xl rounded-xl bg-black/40 outline outline-2 outline-black/60 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+      <div class="p-10 sm:p-16 backdrop-blur-2xl rounded-xl bg-black/30 outline outline-2 outline-black/30 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
         <div class="font-bold text-orange-100 text-3xl sm:text-5xl mb-6" style="filter: drop-shadow(0 2rem 2rem rgba(239, 68, 68, 0.5));">
           <h1 class="mb-3">
             Surpass the <span class="text-red-400">limits</span>
