@@ -22,8 +22,8 @@ export default component$(() => {
         <Header />
         <section style="padding-top: 64px">
           <Slot />
-      </section>
-    </main>
+        </section>
+      </main>
     </>
   );
 });

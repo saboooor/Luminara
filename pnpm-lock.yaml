@@ -13,6 +13,7 @@ specifiers:
   imagetools-core: ^3.2.3
   node-fetch: ^3.3.0
   postcss: 8.4.20
+  qwik-feather-icons: ^1.2.0
   tailwindcss: 3.2.4
   typescript: 4.9.4
   undici: ^5.14.0
@@ -34,6 +35,7 @@ devDependencies:
   imagetools-core: 3.2.3
   node-fetch: 3.3.0
   postcss: 8.4.20
+  qwik-feather-icons: 1.2.0
   tailwindcss: 3.2.4_postcss@8.4.20
   typescript: 4.9.4
   undici: 5.14.0
@@ -2808,6 +2810,11 @@ packages:
   /quick-lru/5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /qwik-feather-icons/1.2.0:
+    resolution: {integrity: sha512-JmJVzoGj1ctYst+Jy4uOvb+W74O4GshfdJStQSCL4muVIXrUKQVi15rh9vMIx+XRsJ9dE55oQs5Sp2Go4q9kMQ==}
+    engines: {node: '>=15.0.0'}
     dev: true
 
   /rc/1.2.8:

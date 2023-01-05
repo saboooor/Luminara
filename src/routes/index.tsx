@@ -10,7 +10,7 @@ export default component$(() => {
   return (
     <>
       <Hero />
-      <div id="start" class="mb-32"/>
+      <div id="start" class="mb-32" />
       <Why />
       <Servers />
       <Features />

@@ -2,9 +2,9 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <section class="mx-auto backdrop-blur-2xl bg-black/50 rounded-2xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mb-16">
+    <section class="mx-auto backdrop-blur-2xl bg-black/50 outline outline-2 outline-black/60 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mb-16">
       <div class="font-bold text-orange-100 text-2xl sm:text-3xl mb-6 p-10 xl:p-16 items-center justify-center">
-        <h1 class="mb-8 sm:mb-16">
+        <h1 class="mb-8 sm:mb-16 text-center">
           Features
         </h1>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -27,7 +27,7 @@ export default component$(() => {
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">ChestShop</h2>
             <p class="text-lg font-normal mb-4">Sell anything for any price with Chest Shops! You can sell at your own custom warp with /iwarp create or at /warp shops!</p>
-            <a href="https://dev.bukkit.org/projects/chestshop#title-1-1" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://dev.bukkit.org/projects/chestshop#title-1-1" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn How...
             </a>
           </div>
@@ -42,14 +42,14 @@ export default component$(() => {
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Community Server</h2>
             <p class="text-lg font-normal mb-4">Please join the Discord or Guilded Server for important updates! All announcements are there.</p>
-            <a href="/discord" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="/discord" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Discord
             </a>
           </div>
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Vote Crates</h2>
             <p class="text-lg font-normal mb-4">Get crate keys for crates that give you many different rewards like armor, money, and more!</p>
-            <a href="/vote" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="/vote" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Vote here to get them!
             </a>
           </div>
@@ -76,7 +76,7 @@ export default component$(() => {
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Donation Perks</h2>
             <p class="text-lg font-normal mb-4">You can donate to get some perks like /stack, /condense, custom armor stands, and more!</p>
-            <a href="https://netherdepths.tebex.io" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
                 Learn More...
             </a>
           </div>

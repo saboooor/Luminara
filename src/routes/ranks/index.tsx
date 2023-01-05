@@ -6,7 +6,7 @@ import { ranks } from '~/components/ranks';
 export default component$(() => {
   return (
     <>
-      <section class="mx-auto backdrop-blur-2xl bg-black/50 rounded-2xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mb-16 mt-24">
+      <section class="mx-auto backdrop-blur-2xl bg-black/50 outline outline-2 outline-black/60 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mb-16 mt-24">
         <div class="font-bold text-orange-100 text-2xl sm:text-3xl mb-6 p-10 xl:p-16 items-center justify-center">
           <div class="mb-8 sm:mb-16">
             <h1 class="mb-2">
@@ -278,7 +278,7 @@ export default component$(() => {
               </picture>
               <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
               <p class="mb-6">Too much to describe in this tiny little box!</p>
-              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
                 Learn More...
               </a>
             </div>
@@ -298,7 +298,7 @@ export default component$(() => {
               </picture>
               <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
               <p class="mb-6">Too much to describe in this tiny little box!</p>
-              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
                 Learn More...
               </a>
             </div>
@@ -318,7 +318,7 @@ export default component$(() => {
               </picture>
               <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
               <p class="mb-6">Too much to describe in this tiny little box!</p>
-              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-2xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+              <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
                 Learn More...
               </a>
             </div>
