@@ -14,7 +14,7 @@ import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, 
 export default component$(() => {
   return (
     <nav class="z-20 fixed top-4 w-screen">
-      <div class="mx-4 xl:mx-auto max-w-7xl bg-black/50 outline outline-2 outline-black/60 rounded-xl">
+      <div class="mx-4 xl:mx-auto max-w-7xl bg-black/50 rounded-xl">
         <div class="relative flex h-20 navblur px-2 items-center justify-between">
           <Nav.Brand />
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:pr-1">
@@ -115,7 +115,7 @@ export const Nav = {
             {name}
           </div>
           <div class="absolute right-0 z-10 hidden group-hover:flex pt-8">
-            <div class="bg-black/50 outline outline-2 outline-black/60 backdrop-blur-lg rounded-xl px-3 py-4 flex flex-col space-y-2 font-medium whitespace-nowrap overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
+            <div class="bg-black/50 backdrop-blur-lg rounded-xl px-3 py-4 flex flex-col space-y-2 font-medium whitespace-nowrap overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
               <Slot />
             </div>
           </div>

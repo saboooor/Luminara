@@ -4,7 +4,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 export default component$(() => {
   return (
     <>
-      <section class="mx-auto backdrop-blur-2xl bg-black/30 outline outline-2 outline-black/30 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
+      <section class="mx-auto backdrop-blur-2xl bg-black/30 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
         <div class="font-bold text-orange-100 text-2xl sm:text-3xl mb-6 p-10 xl:p-16 items-center justify-center">
           <div class="mb-8 sm:mb-16">
             <h1 class="mb-2">
