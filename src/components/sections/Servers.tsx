@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <section class="mx-auto backdrop-blur-2xl bg-black/50 outline outline-2 outline-black/60 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mb-16">
+    <section class="mx-auto backdrop-blur-2xl bg-black/50 outline outline-2 outline-black/60 rounded-xl max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16">
       <div class="font-bold text-orange-100 text-2xl sm:text-3xl mb-6 p-10 xl:p-16 items-center justify-center">
         <h1 class="mb-8 sm:mb-16 text-center">
           Experiences
@@ -17,8 +17,8 @@ export default component$(() => {
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Zen</h2>
             <p class="text-sm font-normal mb-4">Do /server Zen to join!</p>
-            <p class="text-lg font-normal mb-2">A less chaotic version of Survival</p>
-            <p class="text-lg font-normal mb-2">No game-changing plugins, beautiful biome / structure generation, and more!</p>
+            <p class="text-lg font-normal mb-2">Less chaotic Survival</p>
+            <p class="text-lg font-normal mb-2">No game-changing plugins, beautiful world gen, and more!</p>
           </div>
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Minigames</h2>
@@ -29,7 +29,7 @@ export default component$(() => {
           <div>
             <h2 class="text-xl sm:text-2xl mb-2">Creative</h2>
             <p class="text-sm font-normal mb-4">Do /server Creative to join!</p>
-            <p class="text-lg font-normal mb-2">Build things with nothing interrupting you, useful if you want something peaceful to get things off your mind, or test things</p>
+            <p class="text-lg font-normal mb-2">Build with no interruption, useful if you want something peaceful or if you want to test something</p>
           </div>
         </div>
       </div>
