@@ -12,7 +12,6 @@ export default component$(() => {
       <Hero />
       <div id="start" class="mb-32" />
       <Why />
-      <Servers />
       <Features />
     </>
   );

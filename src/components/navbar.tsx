@@ -162,11 +162,11 @@ export const Mobile = {
     return (
       <>
         {spa ?
-          <Link href={href} class="flex gap-4 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
+          <Link href={href} class="flex gap-4 transition duration-200 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
             <Slot />
           </Link>
           :
-          <a href={href} class="flex gap-4 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
+          <a href={href} class="flex gap-4 transition duration-200 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
             <Slot />
           </a>
         }
@@ -175,7 +175,7 @@ export const Mobile = {
   }),
   Menu: component$(() => {
     return (
-      <div class="text-gray-300 hidden pb-6" id="mobile-menu">
+      <div class="text-gray-300 hidden p-4 backdrop-blur-lg rounded-lg" id="mobile-menu">
         <div class="space-y-1 overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
           <Slot />
         </div>

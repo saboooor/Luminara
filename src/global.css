@@ -45,3 +45,14 @@ html {
   z-index: -1;
   backdrop-filter: blur(16px);
 }
+
+.radial-blur {
+  width: 100%;
+  height: 100%;
+  -webkit-mask: radial-gradient( closest-side at center, black 10%, transparent 80%);
+  mask: radial-gradient( closest-side at center, black 10%, transparent 80%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background-color: #00000099;
+  position: absolute;
+}

@@ -17,6 +17,7 @@ export default component$(() => {
             alt="Hero Background"
             loading="eager"
             decoding="async"
+            id="backdrop"
           />
         </picture>
         <Header />
