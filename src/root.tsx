@@ -31,7 +31,7 @@ export const blur = () => {
   let blurVal = 50;
 
   // Set the blur value to (scrollTop / 6) if scroll distance is under 300
-  if (scrollTop < 300) blurVal = Math.round(scrollTop / 6);
+  if (scrollTop < 300 && !window.location.pathname.includes('rules') && !window.location.pathname.includes('vote') && !window.location.pathname.includes('ranks')) blurVal = Math.round(scrollTop / 6);
 
   // Set blur value with padding for the zoom as well
   blurVal = String(blurVal).padStart(2, '0');

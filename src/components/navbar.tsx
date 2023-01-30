@@ -95,11 +95,11 @@ export const Nav = {
     return (
       <>
         {spa ?
-          <Link href={href} class="flex gap-4 items-center transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
+          <Link href={href} class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
             <Slot />
           </Link>
           :
-          <a href={href} class="flex gap-4 items-center transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
+          <a href={href} class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
             <Slot />
           </a>
         }
@@ -109,7 +109,7 @@ export const Nav = {
   Dropdown: {
     Menu: component$(({ name }: any) => {
       return (
-        <div class="transition duration-200 text-gray-300 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
+        <div class="transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
           <div class="px-4 py-3 flex gap-4 items-center">
             <MoreHorizontalIcon class="transform group-hover:-rotate-90 transition duration-200 ease-in-out" />
             {name}
