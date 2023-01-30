@@ -109,9 +109,9 @@ export const Nav = {
   Dropdown: {
     Menu: component$(({ name }: any) => {
       return (
-        <div class="transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
+        <div class="cursor-pointer transition duration-100 text-red-100 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
           <div class="px-4 py-3 flex gap-4 items-center">
-            <MoreHorizontalIcon class="transform group-hover:-rotate-90 transition duration-200 ease-in-out" />
+            <MoreHorizontalIcon class="transform group-hover:-rotate-90 transition duration-300 ease-in-out" />
             {name}
           </div>
           <div class="absolute right-0 z-10 hidden group-hover:flex pt-8">
