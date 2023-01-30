@@ -34,16 +34,16 @@ export default component$(() => {
               <ShoppingCartIcon /> Store
             </Nav.Item>
             <Nav.Dropdown.Menu name="Other">
-              <Nav.Item href="/plan">
+              <Nav.Item href="https://plan.netherdepths.com">
                 <BarChartIcon /> Analytics
               </Nav.Item>
-              <Nav.Item href="/rgb">
+              <Nav.Item href="https://simplymc.art">
                 <Edit3Icon /> Gradients
               </Nav.Item>
-              <Nav.Item href="/appeal">
+              <Nav.Item href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform">
                 <MailIcon /> Appeal a Ban
               </Nav.Item>
-              <Nav.Item href="/downloads">
+              <Nav.Item spa href="/downloads">
                 <DownloadCloudIcon/> Downloads
               </Nav.Item>
               <Nav.Item href="https://cactie.smhsmh.club/">
@@ -99,7 +99,7 @@ export const Nav = {
             <Slot />
           </Link>
           :
-          <a href={href} class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
+          <a href={href} target="_blank" class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
             <Slot />
           </a>
         }
