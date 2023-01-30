@@ -46,9 +46,9 @@ import striderAVIF from "~/images/ranks/strider.webp?avif";
 //import striderWEBP from "~/images/ranks/strider.webp?webp";
 import { src as striderPlaceholder } from "~/images/ranks/strider.webp?metadata";
 
-import wardenAVIF from "~/images/ranks/warden.webp?avif";
-//import wardenWEBP from "~/images/ranks/warden.webp?webp";
-import { src as wardenPlaceholder } from "~/images/ranks/warden.webp?metadata";
+import wardenAVIF from "~/images/ranks/warden.png?avif";
+import wardenWEBP from "~/images/ranks/warden.png?webp";
+import { src as wardenPlaceholder } from "~/images/ranks/warden.png?metadata";
 
 import witherAVIF from "~/images/ranks/wither.webp?avif";
 //import witherWEBP from "~/images/ranks/wither.webp?webp";
@@ -67,7 +67,7 @@ const ranks = {
   skeleton: { avif: skeletonAVIF, /* webp: skeletonWEBP, */ placeholder: skeletonPlaceholder },
   steve: { avif: steveAVIF, /* webp: steveWEBP, */ placeholder: stevePlaceholder },
   strider: { avif: striderAVIF, /* webp: striderWEBP, */ placeholder: striderPlaceholder },
-  warden: { avif: wardenAVIF, /* webp: wardenWEBP, */ placeholder: wardenPlaceholder },
+  warden: { avif: wardenAVIF, webp: wardenWEBP, placeholder: wardenPlaceholder },
   wither: { avif: witherAVIF, /* webp: witherWEBP, */ placeholder: witherPlaceholder },
 };
 

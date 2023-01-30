@@ -22,8 +22,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.steve.webp} type="image/webp" /> */}
               <img
                 src={ranks.steve.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -44,8 +44,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.skeleton.webp} type="image/webp" /> */}
               <img
                 src={ranks.skeleton.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -65,8 +65,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.enderman.webp} type="image/webp" /> */}
               <img
                 src={ranks.enderman.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -85,8 +85,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.blaze.webp} type="image/webp" /> */}
               <img
                 src={ranks.blaze.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -107,8 +107,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.strider.webp} type="image/webp" /> */}
               <img
                 src={ranks.strider.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -129,8 +129,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.hoglin.webp} type="image/webp" /> */}
               <img
                 src={ranks.hoglin.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -151,8 +151,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.axolotl.webp} type="image/webp" /> */}
               <img
                 src={ranks.axolotl.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -172,11 +172,11 @@ export default component$(() => {
             <p class="text-center">260 Votes</p>
             <picture>
               <source srcSet={ranks.warden.avif} type="image/avif" />
-              {/* <source srcSet={ranks.warden.webp} type="image/webp" /> */}
+              <source srcSet={ranks.warden.webp} type="image/webp" />
               <img
                 src={ranks.warden.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Warden Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -200,8 +200,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.glowSquid.webp} type="image/webp" /> */}
               <img
                 src={ranks.glowSquid.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -223,8 +223,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.ocelot.webp} type="image/webp" /> */}
               <img
                 src={ranks.ocelot.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -244,8 +244,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.allay.webp} type="image/webp" /> */}
               <img
                 src={ranks.allay.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -265,8 +265,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.enderDragon.webp} type="image/webp" /> */}
               <img
                 src={ranks.enderDragon.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -285,8 +285,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.wither.webp} type="image/webp" /> */}
               <img
                 src={ranks.wither.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
@@ -305,8 +305,8 @@ export default component$(() => {
               {/* <source srcSet={ranks.copperGolem.webp} type="image/webp" /> */}
               <img
                 src={ranks.copperGolem.placeholder}
-                class="w-full"
-                alt="Hero Background"
+                class="w-full p-6"
+                alt="Rank Icon"
                 loading="eager"
                 decoding="async"
               />
