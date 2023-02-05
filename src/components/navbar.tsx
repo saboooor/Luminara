@@ -18,7 +18,7 @@ export default component$(() => {
         <div class="relative flex h-20 navblur px-2 items-center justify-between">
           <Nav.Brand />
           <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:pr-1">
-            <Nav.Item href="/announcements">
+            <Nav.Item spa href="/announcements">
               <BellIcon /> Announcements
             </Nav.Item>
             <Nav.Item spa href="/rules">
