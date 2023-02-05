@@ -27,7 +27,7 @@ export default component$(() => {
           <a href="https://mega.nz/file/34klnLCY#3-KFSVDcwBrBdH998AEb1rFyjxfOGAen5jlihgBQp3k" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             May 26 2022 Reset | 1.18 - 1.1 GB
           </a>
-          <a href="https://mega.nz/file/34klnLCY#3-KFSVDcwBrBdH998AEb1rFyjxfOGAen5jlihgBQp3k" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://mega.nz/file/PhUQDCLS#YD2e7cNq2YaUhMdKfJGsJ4OPkpqYbNou36LgT3S6VfE" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             Jan 20 2023 Slimefun Shutdown | 1.19 - 3.3 GB
           </a>
         </div>
