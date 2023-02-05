@@ -301,10 +301,10 @@ export default component$(() => {
             <h2 class="text-xl sm:text-2xl text-center font-bold">GOAT</h2>
             <p class="text-center">$7.69/mo OR $20.49/quarter</p>
             <picture>
-              <source srcSet={ranks.copperGolem.avif} type="image/avif" />
-              {/* <source srcSet={ranks.copperGolem.webp} type="image/webp" /> */}
+              <source srcSet={ranks.flowerCow.avif} type="image/avif" />
+              {/* <source srcSet={ranks.flowerCow.webp} type="image/webp" /> */}
               <img
-                src={ranks.copperGolem.placeholder}
+                src={ranks.flowerCow.placeholder}
                 class="w-full p-6"
                 alt="Rank Icon"
                 loading="eager"
