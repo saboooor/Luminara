@@ -78,7 +78,7 @@ export default component$(() => {
           <Mobile.Item href="/appeal">
             <MailIcon /> Appeal a Ban
           </Mobile.Item>
-          <Mobile.Item href="/downloads">
+          <Mobile.Item spa href="/downloads">
             <DownloadCloudIcon/> Downloads
           </Mobile.Item>
           <Mobile.Item href="https://cactie.smhsmh.club/">

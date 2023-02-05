@@ -1,4 +1,4 @@
-import { component$, useStyles$, useClientEffect$, $, QRL } from '@builder.io/qwik';
+import { component$, useStyles$, useClientEffect$, QRL } from '@builder.io/qwik';
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
 import { RouterHead } from './components/head';
 
