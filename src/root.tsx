@@ -1,4 +1,4 @@
-import { component$, useStyles$, useClientEffect$, QRL } from '@builder.io/qwik';
+import { component$, useStyles$, useBrowserVisibleTask$, QRL } from '@builder.io/qwik';
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
 import { RouterHead } from './components/head';
 
@@ -50,7 +50,7 @@ export default component$(() => {
    */
   useStyles$(globalStyles);
 
-  useClientEffect$(()=>{
+  useBrowserVisibleTask$(()=>{
     blur()
     onScroll$(() => blur());
   })
