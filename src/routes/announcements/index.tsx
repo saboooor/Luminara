@@ -1,8 +1,8 @@
-import { component$, useBrowserVisibleTask$ } from '@builder.io/qwik';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
-  useBrowserVisibleTask$(() => {
+  useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(50px)';
     backDrop.style.transform = `scale(1.5)`;

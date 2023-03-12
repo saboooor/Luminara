@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import allayAVIF from "~/images/ranks/allay.png?avif";
 import allayWEBP from "~/images/ranks/allay.png?webp";
 import { src as allayPlaceholder } from "~/images/ranks/allay.png?metadata";

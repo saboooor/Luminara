@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import hero0AVIF from "~/images/hero/0.png?avif";
 import hero0WEBP from "~/images/hero/0.png?webp";
 import { src as hero0Placeholder } from "~/images/hero/0.png?metadata";

@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
+// @ts-ignore
 import iconWEBP from "~/images/icon.png?height=96&webp";
 
 /**
@@ -15,7 +16,7 @@ export const RouterHead = component$(() => {
       <title>{`Nether Depths - ${head.title}`}</title>
       <meta content="Surpass the limits of The Nether" name="description" />
 
-      <link rel="canonical" href={loc.href} />
+      <link rel="canonical" href={loc.url.href} />
       <link rel="icon" href={iconWEBP} />
       <link rel="mask-icon" href={iconWEBP} color="#330c0c" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

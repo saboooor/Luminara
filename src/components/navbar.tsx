@@ -1,12 +1,18 @@
 import { component$, Slot } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 
+// @ts-ignore
 import iconAVIF from "~/images/icon.png?height=96&avif";
+// @ts-ignore
 import iconWEBP from "~/images/icon.png?height=96&webp";
+// @ts-ignore
 import { src as iconPlaceholder } from "~/images/icon.png?height=96&metadata";
 
+// @ts-ignore
 import logoAVIF from "~/images/logo.png?height=96&avif";
+// @ts-ignore
 import logoWEBP from "~/images/logo.png?height=96&webp";
+// @ts-ignore
 import { src as logoPlaceholder } from "~/images/logo.png?height=96&metadata";
 
 import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, BarChartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons'
