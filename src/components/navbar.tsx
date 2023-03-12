@@ -15,7 +15,7 @@ import logoWEBP from "~/images/logo.png?height=96&webp";
 // @ts-ignore
 import { src as logoPlaceholder } from "~/images/logo.png?height=96&metadata";
 
-import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, BarChartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons'
+import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons'
 
 export default component$(() => {
   return (
@@ -40,9 +40,6 @@ export default component$(() => {
               <ShoppingCartIcon /> Store
             </Nav.Item>
             <Nav.Dropdown.Menu name="Other">
-              <Nav.Item href="https://plan.netherdepths.com">
-                <BarChartIcon /> Analytics
-              </Nav.Item>
               <Nav.Item href="https://simplymc.art">
                 <Edit3Icon /> Gradients
               </Nav.Item>
@@ -75,13 +72,10 @@ export default component$(() => {
           <Mobile.Item href="https://netherdepths.tebex.io">
             <ShoppingCartIcon /> Store
           </Mobile.Item>
-          <Mobile.Item href="/plan">
-            <BarChartIcon /> Analytics
-          </Mobile.Item>
-          <Mobile.Item href="/rgb">
+          <Mobile.Item href="https://simplymc.art">
             <Edit3Icon /> Gradients
           </Mobile.Item>
-          <Mobile.Item href="/appeal">
+          <Mobile.Item href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform">
             <MailIcon /> Appeal a Ban
           </Mobile.Item>
           <Mobile.Item spa href="/downloads">
@@ -101,11 +95,11 @@ export const Nav = {
     return (
       <>
         {spa ?
-          <Link href={href} class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
+          <Link href={href} class="flex gap-4 items-center transition duration-200 text-gray-200 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
             <Slot />
           </Link>
           :
-          <a href={href} target="_blank" class="flex gap-4 items-center transition duration-200 text-red-100 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
+          <a href={href} target="_blank" class="flex gap-4 items-center transition duration-200 text-gray-200 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
             <Slot />
           </a>
         }
@@ -115,12 +109,12 @@ export const Nav = {
   Dropdown: {
     Menu: component$(({ name }: any) => {
       return (
-        <div class="cursor-pointer transition duration-100 text-red-100 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
+        <div class="cursor-pointer transition text-gray-200 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
           <div class="px-4 py-3 flex gap-4 items-center">
             <MoreHorizontalIcon class="transform group-hover:-rotate-90 transition duration-300 ease-in-out" />
             {name}
           </div>
-          <div class="absolute right-0 z-10 hidden group-hover:flex pt-8">
+          <div class="absolute right-0 z-10 hidden group-hover:flex pt-6">
             <div class="bg-black/50 backdrop-blur-lg rounded-xl px-3 py-4 flex flex-col space-y-2 font-medium whitespace-nowrap overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
               <Slot />
             </div>
