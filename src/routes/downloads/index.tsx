@@ -5,8 +5,8 @@ export default component$(() => {
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(50px)';
-    backDrop.style.transform = `scale(1.5)`;
-  })
+    backDrop.style.transform = 'scale(1.5)';
+  });
 
   return (
     <section class="flex mx-auto px-6 items-center justify-center text-center" style="min-height: calc(100vh - 64px);">

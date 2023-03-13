@@ -23,7 +23,7 @@ export default component$(() => {
             await navigator.clipboard.writeText(text);
             copyResponse.innerText=`Copied ${text} successfully!`;
           }
-          catch(err) {
+          catch (err) {
             copyResponse.innerText=`Failed to copy ${text}\n${err}`;
           }
         }}>

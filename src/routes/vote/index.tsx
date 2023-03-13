@@ -5,8 +5,8 @@ export default component$(() => {
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(50px)';
-    backDrop.style.transform = `scale(1.5)`;
-  })
+    backDrop.style.transform = 'scale(1.5)';
+  });
 
   return (
     <section class="flex mx-auto px-6 items-center justify-center text-center" style="min-height: calc(100vh - 64px);">
@@ -43,7 +43,7 @@ export default component$(() => {
         <p class="mb-6">
           Please support Nether Depths through the sites below! These sites don't give any reward though.
         </p>
-    
+
         <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 justify-center">
           <a href="https://bit.ly/NetherTOPG" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TOPG.ORG

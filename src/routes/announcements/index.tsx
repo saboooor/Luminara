@@ -10,7 +10,7 @@ import rehypeStringify from 'rehype-stringify';
 export function disable(this: any, disable: string[] = []) {
   const data = this.data();
   const list = data.micromarkExtensions || (data.micromarkExtensions = []);
-  list.push({disable: {null: disable}});
+  list.push({ disable: { null: disable } });
 }
 
 export const Markdown = component$<any>(({ mdContent, className }) => (
@@ -30,9 +30,9 @@ export const Markdown = component$<any>(({ mdContent, className }) => (
           const id = emoji[2];
           str = str.replace(match, `<img src="https://cdn.discordapp.com/emojis/${id}.${animated ? 'gif' : 'png'}" class="inline h-5" />`);
         });
-        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${className}`} />
-      }
-    )}
+        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${className}`} />;
+      },
+      )}
   </>
 ));
 
@@ -49,8 +49,8 @@ export default component$(() => {
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(50px)';
-    backDrop.style.transform = `scale(1.5)`;
-  })
+    backDrop.style.transform = 'scale(1.5)';
+  });
 
   return (
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
@@ -79,7 +79,7 @@ export default component$(() => {
                   ))
                 }
               </div>
-            )
+            );
           }}
         />
       </div>
