@@ -9,8 +9,8 @@ export default component$(() => {
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(0px)';
-    backDrop.style.transform = `scale(1)`;
-  })
+    backDrop.style.transform = 'scale(1)';
+  });
 
   return (
     <>

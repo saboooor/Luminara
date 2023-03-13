@@ -2,20 +2,20 @@ import { component$, Slot } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 
 // @ts-ignore
-import iconAVIF from "~/images/icon.png?height=96&avif";
+import iconAVIF from '~/images/icon.png?height=96&avif';
 // @ts-ignore
-import iconWEBP from "~/images/icon.png?height=96&webp";
+import iconWEBP from '~/images/icon.png?height=96&webp';
 // @ts-ignore
-import { src as iconPlaceholder } from "~/images/icon.png?height=96&metadata";
+import { src as iconPlaceholder } from '~/images/icon.png?height=96&metadata';
 
 // @ts-ignore
-import logoAVIF from "~/images/logo.png?height=96&avif";
+import logoAVIF from '~/images/logo.png?height=96&avif';
 // @ts-ignore
-import logoWEBP from "~/images/logo.png?height=96&webp";
+import logoWEBP from '~/images/logo.png?height=96&webp';
 // @ts-ignore
-import { src as logoPlaceholder } from "~/images/logo.png?height=96&metadata";
+import { src as logoPlaceholder } from '~/images/logo.png?height=96&metadata';
 
-import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons'
+import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons';
 
 export default component$(() => {
   return (
@@ -121,7 +121,7 @@ export const Nav = {
           </div>
         </div>
       );
-    })
+    }),
   },
   Brand: component$(() => {
     return (
@@ -153,9 +153,9 @@ export const Nav = {
           </picture>
         </Link>
       </div>
-    )
-  })
-}
+    );
+  }),
+};
 
 export const Mobile = {
   Item: component$(({ href, spa }: any) => {
@@ -185,11 +185,11 @@ export const Mobile = {
   Button: component$(() => {
     return (
       <div class="md:hidden items-center justify-end pr-2">
-        <button type="button" id="mobile-menu-button" onClick$={() => document.getElementById('mobile-menu')?.classList.toggle("hidden")} class="pointer-events-auto inline-flex items-center justify-center rounded-lg p-2 text-gray-400 hover:text-white focus:outline-none focus:bg-red-600/20" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" id="mobile-menu-button" onClick$={() => document.getElementById('mobile-menu')?.classList.toggle('hidden')} class="pointer-events-auto inline-flex items-center justify-center rounded-lg p-2 text-gray-400 hover:text-white focus:outline-none focus:bg-red-600/20" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <MenuIcon class="block h-6 w-6" />
         </button>
       </div>
     );
-  })
-} 
+  }),
+};
