@@ -1,7 +1,51 @@
-import { component$, useVisibleTask$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { Resource, component$, useVisibleTask$ } from '@builder.io/qwik';
+import { DocumentHead, routeLoader$ } from '@builder.io/qwik-city';
+
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkGfm from 'remark-gfm';
+import remarkRehype from 'remark-rehype';
+import rehypeStringify from 'rehype-stringify';
+
+export function disable(this: any, disable: string[] = []) {
+  const data = this.data();
+  const list = data.micromarkExtensions || (data.micromarkExtensions = []);
+  list.push({disable: {null: disable}});
+}
+
+export const Markdown = component$<any>(({ mdContent, className }) => (
+  <>
+    {unified()
+      .use(remarkParse)
+      .use(disable, ['list', 'blockQuote'])
+      .use(remarkGfm)
+      .use(remarkRehype)
+      .use(rehypeStringify)
+      .process(mdContent)
+      .then((file: any) => {
+        let str = String(file);
+        str.match(/&#x3C;(a?):(\w+):(\d+)>/g)?.forEach((match: string) => {
+          const emoji = match.match(/&#x3C;(a?):\w+:(\d+)>/)!;
+          const animated = emoji[1] == 'a';
+          const id = emoji[2];
+          str = str.replace(match, `<img src="https://cdn.discordapp.com/emojis/${id}.${animated ? 'gif' : 'png'}" class="inline h-5" />`);
+        });
+        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${className}`} />
+      }
+    )}
+  </>
+));
+
+export const useAnnouncements = routeLoader$(async () => {
+  const announcements = await fetch('https://smhsmh.club/loona/announcements');
+  const json = await announcements.json();
+  console.log(json);
+  return json;
+});
 
 export default component$(() => {
+  const announcements = useAnnouncements();
+
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(50px)';
@@ -18,24 +62,26 @@ export default component$(() => {
           Here you will find the latest announcements from Nether Depths in order from newest to oldest.<br/>
           The announcements here are based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
-        <div class="grid gap-5">
-          <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal">
-            <h2 class="text-xl font-bold sm:text-2xl mb-4">sab</h2>
-            <p>
-              @Alerts world download for old survival available:<br/>
-              https://mega.nz/file/PhUQDCLS#YD2e7cNq2YaUhMdKfJGsJ4OPkpqYbNou36LgT3S6VfE
-            </p>
-          </div>
-          <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal">
-            <h2 class="text-xl font-bold sm:text-2xl mb-4">sab</h2>
-            <p>
-              @Alerts **Creative server has been shut down**<br/>
-              You can access creative through `/warp creative`.<br/>
-              If you find any bugs/exploits, please create a ticket at #home.<br/>
-              ^ You may hunt for them as long as you do report once you find some bugs/exploits.
-            </p>
-          </div>
-        </div>
+
+        <Resource
+          value={announcements}
+          onPending={() => <span class="flex-1 ml-3">Loading...</span>}
+          onRejected={() => <span class="flex-1 ml-3">Error</span>}
+          onResolved={(announcementList) => {
+            return (
+              <div class="grid gap-5">
+                {
+                  announcementList.map((announcement: any) => (
+                    <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+                      <h2 class="text-xl font-bold sm:text-2xl mb-4">{announcement.name} <span class="text-sm">{new Date(announcement.createdAt).toLocaleString()}</span></h2>
+                      <Markdown mdContent={announcement.content} className="text-lg" />
+                    </div>
+                  ))
+                }
+              </div>
+            )
+          }}
+        />
       </div>
     </section>
   );
