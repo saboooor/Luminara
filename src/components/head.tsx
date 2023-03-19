@@ -26,15 +26,21 @@ export const RouterHead = component$(() => {
       <meta content="#330c0c" name="theme-color" />
 
       {head.meta.map((m) => (
-        <meta {...m} />
+        <>
+          <meta {...m} />
+        </>
       ))}
 
       {head.links.map((l) => (
-        <link {...l} />
+        <>
+          <link {...l} />
+        </>
       ))}
 
       {head.styles.map((s) => (
-        <style {...s.props} dangerouslySetInnerHTML={s.style} />
+        <>
+          <style {...s.props} dangerouslySetInnerHTML={s.style} />
+        </>
       ))}
     </>
   );
