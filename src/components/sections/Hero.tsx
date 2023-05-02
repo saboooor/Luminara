@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 
-import { ChevronDownIcon } from 'qwik-feather-icons';
+import { ChevronDown, LogoDiscord } from 'qwik-ionicons';
 
 export default component$(() => {
   return (
@@ -34,10 +34,10 @@ export default component$(() => {
           <div class="cursor-pointer flex gap-4 items-center transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap" onClick$={() => {
             document.getElementById('start')?.scrollIntoView();
           }}>
-            <ChevronDownIcon /> Get Started!
+            <ChevronDown width="24" class="fill-current" /> Get Started!
           </div>
-          <Link href="/discord" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap">
-            Join the Discord Server!
+          <Link href="/discord" class="flex gap-4 transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap">
+            <LogoDiscord width="24" class="fill-current" /> Join the Discord Server!
           </Link>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default component$(() => {
           <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl">
             <h2 class="text-xl sm:text-2xl mb-2">ChestShop</h2>
             <p class="text-lg font-normal mb-4">Sell anything for any price with Chest Shops! You can sell at your own custom warp with /iwarp create or at /warp shops!</p>
-            <a href="https://dev.bukkit.org/projects/chestshop#title-1-1" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border-2 border-red-700 border-2 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://dev.bukkit.org/projects/chestshop#title-1-1" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border-2 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn How...
             </a>
           </div>
@@ -50,7 +50,7 @@ export default component$(() => {
             <h2 class="text-xl sm:text-2xl mb-2">Vote Crates</h2>
             <p class="text-lg font-normal mb-4">Get crate keys for crates that give you many different rewards like armor, money, and more!</p>
             <a href="/vote" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border-2 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
-              Vote here to get them!
+              Vote to get them!
             </a>
           </div>
           <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl">

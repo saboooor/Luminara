@@ -7,17 +7,10 @@ import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 
-export function disable(this: any, disable: string[] = []) {
-  const data = this.data();
-  const list = data.micromarkExtensions || (data.micromarkExtensions = []);
-  list.push({ disable: { null: disable } });
-}
-
-export const Markdown = component$<any>(({ mdContent, className }) => (
+export const Markdown = component$<any>(({ mdContent, extraClass }) => (
   <>
     {unified()
       .use(remarkParse)
-      .use(disable, ['list', 'blockQuote'])
       .use(remarkGfm)
       .use(remarkRehype)
       .use(rehypeStringify)
@@ -30,14 +23,14 @@ export const Markdown = component$<any>(({ mdContent, className }) => (
           const id = emoji[2];
           str = str.replace(match, `<img src="https://cdn.discordapp.com/emojis/${id}.${animated ? 'gif' : 'png'}" class="inline h-5" />`);
         });
-        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${className}`} />;
+        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${extraClass}`} />;
       },
       )}
   </>
 ));
 
 export const useAnnouncements = routeLoader$(async () => {
-  const announcements = await fetch('https://smhsmh.club/loona/announcements');
+  const announcements = await fetch('https://loona.luminescent.dev/announcements/');
   const json = await announcements.json();
   console.log(json);
   return json;
@@ -72,9 +65,9 @@ export default component$(() => {
               <div class="grid gap-5">
                 {
                   announcementList.map((announcement: any) => (
-                    <div class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+                    <div key={`${announcement.createdAt}`} class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
                       <h2 class="text-xl font-bold sm:text-2xl mb-4">{announcement.name} <span class="text-sm">{new Date(announcement.createdAt).toLocaleString()}</span></h2>
-                      <Markdown mdContent={announcement.content} className="text-lg" />
+                      <Markdown mdContent={announcement.content} extraClass="text-lg" />
                     </div>
                   ))
                 }

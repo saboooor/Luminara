@@ -1,5 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
+import { Link, useNavigate } from '@builder.io/qwik-city';
 
 // @ts-ignore
 import iconAVIF from '~/images/icon.png?height=96&avif';
@@ -15,124 +15,128 @@ import logoWEBP from '~/images/logo.png?height=96&webp';
 // @ts-ignore
 import { src as logoPlaceholder } from '~/images/logo.png?height=96&metadata';
 
-import { BellIcon, ShieldIcon, TrendingUpIcon, BarChart2Icon, ShoppingCartIcon, Edit3Icon, MailIcon, DownloadCloudIcon, MenuIcon, MoreHorizontalIcon } from 'qwik-feather-icons';
+import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline, MailOutline } from 'qwik-ionicons';
+
+import LuminescentLogo from '~/components/icons/LuminescentLogo';
 
 export default component$(() => {
   return (
-    <nav class="z-20 fixed top-4 w-screen">
-      <div class="mx-4 xl:mx-auto max-w-7xl bg-black/50 rounded-xl">
-        <div class="relative flex h-20 navblur px-2 items-center justify-between">
-          <Brand />
-          <div class="hidden md:flex flex-1 space-x-2 items-center justify-end md:pr-1">
-            <NavItem spa href="/announcements">
-              <BellIcon /> Announcements
-            </NavItem>
-            <NavItem spa href="/rules">
-              <ShieldIcon /> Rules
-            </NavItem>
-            <NavItem spa href="/vote">
-              <TrendingUpIcon /> Vote
-            </NavItem>
-            <NavItem spa href="/ranks">
-              <BarChart2Icon /> Ranks
-            </NavItem>
-            <NavItem href="https://netherdepths.tebex.io">
-              <ShoppingCartIcon /> Store
-            </NavItem>
-            <NavDropdown name="Other">
-              <NavItem href="https://simplymc.art">
-                <Edit3Icon /> Gradients
-              </NavItem>
-              <NavItem href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform">
-                <MailIcon /> Appeal a Ban
-              </NavItem>
-              <NavItem spa href="/downloads">
-                <DownloadCloudIcon/> Downloads
-              </NavItem>
-              <NavItem href="https://cactie.smhsmh.club/">
-                <img src="https://cactie.smhsmh.club/assets/images/Cactie.webp" class="w-6 grayscale" /> Cactie Bot
-              </NavItem>
-            </NavDropdown>
+    <Nav>
+      <MainNav>
+        <NavButton href="/announcements" extraClass="hidden lg:flex gap-3">
+          <NotificationsOutline width="24" class="fill-current" /> Announcements
+        </NavButton>
+        <NavButton href="/rules" extraClass="hidden sm:flex gap-3">
+          <ShieldOutline width="24" class="fill-current" /> Rules
+        </NavButton>
+        <NavButton href="/vote" extraClass="hidden sm:flex gap-3">
+          <TrendingUpOutline width="24" class="fill-current" /> Vote
+        </NavButton>
+        <NavButton href="/ranks" extraClass="hidden md:flex gap-3">
+          <BarChartOutline width="24" class="fill-current" /> Ranks
+        </NavButton>
+        <NavButton icon external href="https://netherdepths.tebex.io" extraClass="hidden md:flex gap-3">
+          <CartOutline width="24" class="fill-current" />
+        </NavButton>
+        <NavButton icon href="/discord" title="Discord" extraClass="hidden sm:flex">
+          <LogoDiscord width="24" class="fill-current" />
+        </NavButton>
+        <Dropdown name="More" extraClass="hidden sm:flex">
+          <NavButton href="/announcements" extraClass="flex lg:hidden gap-3">
+            <NotificationsOutline width="24" class="fill-current" /> Announcements
+          </NavButton>
+          <NavButton href="/ranks" extraClass="flex md:hidden gap-3">
+            <BarChartOutline width="24" class="fill-current" /> Ranks
+          </NavButton>
+          <NavButton external href="https://netherdepths.tebex.io" extraClass="flex md:hidden gap-3">
+            <CartOutline width="24" class="fill-current" /> Store
+          </NavButton>
+          <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
+            <ColorFillOutline width="24" class="fill-current" /> Gradients
+          </NavButton>
+          <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
+            <MailOutline width="24" class="fill-current" /> Appeal a ban
+          </NavButton>
+          <NavButton href="/downloads" extraClass="flex gap-3">
+            <DownloadOutline width="24" class="fill-current" /> Downloads
+          </NavButton>
+          <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
+            <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
+              <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
+                <LuminescentLogo/>
+              </div>
+            </div>
+          </NavButton>
+        </Dropdown>
+        <button id="mobile-menu-button" type="button" title="Menu" onClick$={() => {
+          const classList = document.getElementById('mobile-menu')?.classList;
+          if (classList?.contains('hidden')) classList.replace('hidden', 'flex');
+          else classList?.replace('flex', 'hidden');
+        }} class="transition ease-in-out hover:bg-gray-800 hover:text-white px-4 py-2 rounded-lg text-3xl sm:hidden">
+          <Menu width="24" class="fill-current"/>
+        </button>
+      </MainNav>
+      <MobileNav>
+        <NavButton href="/announcements" extraClass="flex gap-3">
+          <NotificationsOutline width="24" class="fill-white" /> Announcements
+        </NavButton>
+        <NavButton href="/rules" extraClass="flex gap-3">
+          <ShieldOutline width="24" class="fill-current" /> Rules
+        </NavButton>
+        <NavButton href="/vote" extraClass="flex gap-3">
+          <TrendingUpOutline width="24" class="fill-current" /> Vote
+        </NavButton>
+        <NavButton href="/ranks" extraClass="flex gap-3">
+          <BarChartOutline width="24" class="fill-current" /> Ranks
+        </NavButton>
+        <NavButton external href="https://netherdepths.tebex.io" extraClass="flex gap-3">
+          <CartOutline width="24" class="fill-current" /> Store
+        </NavButton>
+        <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
+          <LogoDiscord width="24" class="fill-current" /> Discord
+        </NavButton>
+        <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
+          <ColorFillOutline width="24" class="fill-current" /> Gradients
+        </NavButton>
+        <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
+          <MailOutline width="24" class="fill-current" /> Appeal a ban
+        </NavButton>
+        <NavButton href="/downloads" extraClass="flex gap-3">
+          <DownloadOutline width="24" class="fill-current" /> Downloads
+        </NavButton>
+        <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
+          <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
+            <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
+              <LuminescentLogo/>
+            </div>
           </div>
-          <MobileButton />
-        </div>
-        <MobileMenu>
-          <MobileItem href="/announcements">
-            <BellIcon /> Announcements
-          </MobileItem>
-          <MobileItem spa href="/rules">
-            <ShieldIcon /> Rules
-          </MobileItem>
-          <MobileItem spa href="/vote">
-            <TrendingUpIcon /> Vote
-          </MobileItem>
-          <MobileItem spa href="/ranks">
-            <BarChart2Icon /> Ranks
-          </MobileItem>
-          <MobileItem href="https://netherdepths.tebex.io">
-            <ShoppingCartIcon /> Store
-          </MobileItem>
-          <MobileItem href="https://simplymc.art">
-            <Edit3Icon /> Gradients
-          </MobileItem>
-          <MobileItem href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform">
-            <MailIcon /> Appeal a Ban
-          </MobileItem>
-          <MobileItem spa href="/downloads">
-            <DownloadCloudIcon/> Downloads
-          </MobileItem>
-          <MobileItem href="https://cactie.smhsmh.club/">
-            <img src="https://cactie.smhsmh.club/assets/images/Cactie.webp" class="w-6 grayscale" /> Cactie Bot
-          </MobileItem>
-        </MobileMenu>
+        </NavButton>
+      </MobileNav>
+    </Nav>
+  );
+});
+
+export const Nav = component$(() => {
+  return (
+    <nav class="z-20 fixed top-0 w-screen py-2 bg-gray-900/50 backdrop-blur-xl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <Slot />
       </div>
     </nav>
   );
 });
 
-export const NavItem = component$(({ href, spa }: any) => {
-  return (
-    <>
-      {spa ?
-        <Link href={href} class="flex gap-4 items-center transition duration-200 text-gray-200 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
-          <Slot />
-        </Link>
-        :
-        <a href={href} target="_blank" class="flex gap-4 items-center transition duration-200 text-gray-200 hover:text-white hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg px-4 py-3 text-md font-medium">
-          <Slot />
-        </a>
-      }
-    </>
-  );
-});
-
-export const NavDropdown = component$(({ name }: any) => {
-  return (
-    <div class="cursor-pointer transition text-gray-200 hover:text-white hover:bg-red-600/20 border-2 border-black/0 hover:border-red-700/20 group rounded-lg text-md font-medium">
-      <div class="px-4 py-3 flex gap-4 items-center">
-        <MoreHorizontalIcon class="transform group-hover:-rotate-90 transition duration-300 ease-in-out" />
-        {name}
-      </div>
-      <div class="absolute right-0 z-10 hidden group-hover:flex pt-6">
-        <div class="bg-black/50 backdrop-blur-lg rounded-xl px-3 py-4 flex flex-col space-y-2 font-medium whitespace-nowrap overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
-          <Slot />
-        </div>
-      </div>
-    </div>
-  );
-});
-
 export const Brand = component$(() => {
   return (
-    <div class="flex flex-1 items-center sm:justify-start">
-      <Link href="/" class="transition duration-200 hover:bg-red-600/20 hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 rounded-lg p-2 flex items-center">
+    <div class="flex flex-1 items-center justify-start">
+      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800 hover:text-white drop-shadow-2xl px-3 pt-3 pb-2 rounded-lg text-lg flex items-center whitespace-nowrap">
         <picture>
           <source srcSet={logoAVIF} type="image/avif" />
           <source srcSet={logoWEBP} type="image/webp" />
           <img
             src={logoPlaceholder}
-            class="h-12 hidden sm:flex md:hidden lg:flex"
-            width={225} height={48}
+            class="hidden sm:flex"
+            width={192}
             alt="Nether Depths Logo"
             loading="eager"
             decoding="async"
@@ -143,7 +147,7 @@ export const Brand = component$(() => {
           <source srcSet={iconWEBP} type="image/webp" />
           <img
             src={iconPlaceholder}
-            class="h-12 flex sm:hidden md:flex lg:hidden"
+            class="h-12 flex sm:hidden"
             width={48} height={48}
             alt="Nether Depths Icon"
             loading="eager"
@@ -155,39 +159,55 @@ export const Brand = component$(() => {
   );
 });
 
-export const MobileItem = component$(({ href, spa }: any) => {
+export const MainNav = component$(() => {
   return (
-    <>
-      {spa ?
-        <Link href={href} class="flex gap-4 transition duration-200 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
-          <Slot />
-        </Link>
-        :
-        <a href={href} class="flex gap-4 transition duration-200 hover:bg-red-600/20 hover:text-white hover:drop-shadow-2xl border-2 border-black/0 hover:border-red-700/20 px-4 py-3 rounded-lg text-md font-medium items-center whitespace-nowrap">
-          <Slot />
-        </a>
-      }
-    </>
-  );
-});
-
-export const MobileMenu = component$(() => {
-  return (
-    <div class="text-gray-300 hidden p-4 backdrop-blur-lg rounded-lg" id="mobile-menu">
-      <div class="space-y-1 overflow-y-auto" style={{ maxHeight: 'calc(100svh - 128px)' }}>
-        <Slot />
+    <div class="relative flex h-16 items-center justify-between">
+      <Brand/>
+      <div class="flex flex-1 items-center justify-end">
+        <div class="flex gap-2 text-gray-300 whitespace-nowrap">
+          <Slot/>
+        </div>
       </div>
     </div>
   );
 });
 
-export const MobileButton = component$(() => {
+export const MobileNav = component$(() => {
   return (
-    <div class="md:hidden items-center justify-end pr-2">
-      <button type="button" id="mobile-menu-button" onClick$={() => document.getElementById('mobile-menu')?.classList.toggle('hidden')} class="pointer-events-auto inline-flex items-center justify-center rounded-lg p-2 text-gray-400 hover:text-white focus:outline-none focus:bg-red-600/20" aria-controls="mobile-menu" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <MenuIcon class="block h-6 w-6" />
+    <div id="mobile-menu" class="gap-4 py-4 px-3 bg-gray-900/70 rounded-lg mt-2 hidden flex-col sm:hidden">
+      <Slot />
+    </div>
+  );
+});
+
+export const NavButton = component$(({ href, title, icon, external, extraClass }: any) => {
+  const nav = useNavigate();
+  return <>
+    {external &&
+      <a href={href} title={title} class={`group transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white px-4 py-2 rounded-lg ${icon ? 'text-3xl' : ''} items-center`}>
+        <Slot />
+      </a>
+    }
+    {!external &&
+      <button onClick$={() => { document.getElementById('mobile-menu')?.classList.replace('flex', 'hidden'); nav(href); }} title={title} class={`group transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white px-4 py-2 rounded-lg ${icon ? 'text-3xl' : ''} items-center`}>
+        <Slot />
       </button>
+    }
+  </>;
+});
+
+export const Dropdown = component$(({ name, extraClass }: any) => {
+  return (
+    <div class={`cursor-pointer transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white drop-shadow-2xl group rounded-lg items-center gap-4`}>
+      <div class="px-4 py-3 flex gap-2 items-center">
+        {name}
+        <ChevronDown width="24" class="transform group-hover:-rotate-180 transition duration-300 ease-in-out text-2xl fill-current" />
+      </div>
+      <div class="absolute top-12 right-0 z-10 hidden group-hover:flex pt-5 text-base">
+        <div class="bg-gray-900/70 rounded-xl px-3 py-4 flex flex-col gap-2 font-medium whitespace-nowrap overflow-y-auto max-h-[calc(100svh-128px)]">
+          <Slot/>
+        </div>
+      </div>
     </div>
   );
 });
