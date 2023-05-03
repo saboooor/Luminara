@@ -37,5 +37,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Vote',
+  title: 'Downloads',
+  meta: [
+    {
+      name: 'description',
+      content: 'Download old Nether Depths worlds here',
+    },
+    {
+      name: 'og:description',
+      content: 'Download old Nether Depths worlds here',
+    },
+  ],
 };

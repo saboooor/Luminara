@@ -112,4 +112,14 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'Rules',
+  meta: [
+    {
+      name: 'description',
+      content: 'View the rules of Nether Depths',
+    },
+    {
+      name: 'og:description',
+      content: 'View the rules of Nether Depths',
+    },
+  ],
 };

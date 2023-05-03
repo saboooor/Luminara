@@ -65,4 +65,14 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'Vote',
+  meta: [
+    {
+      name: 'description',
+      content: 'Vote for Nether Depths and get rewarded!',
+    },
+    {
+      name: 'og:description',
+      content: 'Vote for Nether Depths and get rewarded!',
+    },
+  ],
 };

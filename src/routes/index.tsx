@@ -24,4 +24,14 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'Home',
+  meta: [
+    {
+      name: 'description',
+      content: 'Surpass the limits of the Nether',
+    },
+    {
+      name: 'og:description',
+      content: 'Surpass the limits of the Nether',
+    },
+  ],
 };

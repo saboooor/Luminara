@@ -116,6 +116,20 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: 'Rules',
+export const head: DocumentHead = ({ resolveValue }) => {
+  const articleList = resolveValue(useAnnouncements);
+  const announcement = articleList[0].content;
+  return {
+    title: 'Announcements',
+    meta: [
+      {
+        name: 'description',
+        content: announcement,
+      },
+      {
+        property: 'og:description',
+        content: announcement,
+      },
+    ],
+  };
 };

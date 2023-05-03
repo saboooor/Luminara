@@ -331,4 +331,14 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'Ranks',
+  meta: [
+    {
+      name: 'description',
+      content: 'View the list of ranks Nether Depths has to offer',
+    },
+    {
+      name: 'og:description',
+      content: 'View the list of ranks Nether Depths has to offer',
+    },
+  ],
 };

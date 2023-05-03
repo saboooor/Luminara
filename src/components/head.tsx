@@ -14,14 +14,12 @@ export const RouterHead = component$(() => {
   return (
     <>
       <title>{`Nether Depths - ${head.title}`}</title>
-      <meta content="Surpass the limits of The Nether" name="description" />
 
       <link rel="canonical" href={loc.url.href} />
       <link rel="icon" href={iconWEBP} />
       <link rel="mask-icon" href={iconWEBP} color="#330c0c" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta content={`Nether Depths - ${head.title}`} property="og:title" />
-      <meta content="Surpass the limits of the Nether" property="og:description" />
       <meta content={iconWEBP} property="og:image" />
       <meta content="#330c0c" name="theme-color" />
 
