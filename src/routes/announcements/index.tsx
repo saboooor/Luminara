@@ -88,7 +88,7 @@ export default component$(() => {
                     const announcement = announcementArticle[0];
                     let lastUser = announcement.author.name;
                     return <>
-                      <span id={announcement.id} class="block h-24 -mt-24" />
+                      <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                       <article class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
                         <div class="flex items-center mb-4">
                           <p class="text-xl flex flex-1 items-center gap-2 font-bold sm:text-2xl justify-start">
@@ -114,8 +114,8 @@ export default component$(() => {
                             const diffUser = lastUser == comment.author.name;
                             if (!diffUser) lastUser = comment.author.name;
                             return <>
-                              <span id={comment.id} class="block h-24 -mt-24" />
-                              <div class={diffUser ? 'mt-2' : 'mt-4'}>
+                              <span id={comment.id} class="pointer-events-none block h-24 -mt-24" />
+                              <div class={`group ${diffUser ? 'mt-2' : 'mt-4'}`}>
                                 { !diffUser &&
                                   <p class="text-md flex items-center gap-2 font-semibold sm:text-lg mb-2">
                                     <img src={comment.author.av} class="w-6 h-6 mr-1" style="border-radius: 50%" /> {comment.author.name}
@@ -123,10 +123,10 @@ export default component$(() => {
                                     <span class="text-xs font-light">{new Date(comment.createdAt).toLocaleString()}</span>
                                   </p>
                                 }
-                                <div class="flex items-center gap-2 group">
+                                <div class="flex items-center gap-2">
                                   <Markdown mdContent={comment.content} extraClass="text-sm" />
                                   <Link width="16" class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
-                                    navigator.clipboard.writeText(`https://netherdepths.com/announcements#${announcement.id}`);
+                                    navigator.clipboard.writeText(`https://netherdepths.com/announcements#${comment.id}`);
                                     store.notifications.push({
                                       title: 'Copied Successfully!',
                                       content: 'The link to this comment has been copied to your clipboard.',
