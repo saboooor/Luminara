@@ -124,7 +124,18 @@ export default component$(() => {
                             }, 5000);
                           }} />
                         </div>
-                        <Markdown mdContent={announcement.content} extraClass="text-base md:text-lg break-all" />
+                        <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-base md:text-lg break-all" />
+
+                        { announcement.reactions &&
+                          <div class="flex flex-wrap gap-4 mt-4">
+                            { announcement.reactions.map((reaction: { name: string, count: number }, i: number) => (
+                              <div key={i} class="flex items-center gap-2">
+                                <Markdown mdContent={reaction.name} />
+                                <p>{reaction.count}</p>
+                              </div>
+                            )) }
+                          </div>
+                        }
 
                         { announcementArticle.length > 1 &&
                           <>
@@ -154,7 +165,7 @@ export default component$(() => {
                                   </div>
                                 }
                                 <div class="flex items-center gap-2">
-                                  <Markdown mdContent={comment.content} extraClass="text-xs md:text-sm" />
+                                  <Markdown mdContent={`${comment.content}${comment.attachments ? `\n\n${comment.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
                                   <Link width="16" class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
                                     navigator.clipboard.writeText(`https://netherdepths.com/announcements#${comment.id}`);
                                     store.notifications.push({
@@ -166,6 +177,16 @@ export default component$(() => {
                                     }, 5000);
                                   }} />
                                 </div>
+                                { comment.reactions &&
+                                  <div class="flex flex-wrap gap-4 mt-2">
+                                    { comment.reactions.map((reaction: { name: string, count: number }, i: number) => (
+                                      <div key={i} class="flex items-center gap-2">
+                                        <Markdown mdContent={reaction.name} />
+                                        <p>{reaction.count}</p>
+                                      </div>
+                                    )) }
+                                  </div>
+                                }
                               </div>
                             </>;
                           })

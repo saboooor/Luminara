@@ -56,3 +56,8 @@ html {
   background-color: #00000099;
   position: absolute;
 }
+
+img[alt=Attachment] {
+  max-width: 200px;
+  border-radius: 5px;
+}
