@@ -1,14 +1,20 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    const backDrop = document.getElementById('backdrop')!;
+    backDrop.style.filter = 'blur(32px)';
+    backDrop.style.transform = 'scale(1.32)';
+  });
+
   return (
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center drop-shadow-xl">
-        <h1 class="mb-4">
+        <h1 class="mb-4 shadow-outline">
           <span class="text-red-400">Nether Depths</span> Rules
         </h1>
-        <p class="mb-6 sm:mb-14 font-normal text-xl">
+        <p class="mb-6 sm:mb-14 font-normal text-xl shadow-outline">
           Please note that the staff have full control over what may be allowed and what is not, things may differ as there may be gray areas.<br />
           Attempting to exploit gray areas is not permitted and will end up in a punishment regardless of what the rules indicate.<br />
           Last updated Mar 13, 2023

@@ -1,16 +1,22 @@
-import { component$ } from '@builder.io/qwik';
-import { DocumentHead } from '@builder.io/qwik-city';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { ranks } from '~/components/ranks';
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    const backDrop = document.getElementById('backdrop')!;
+    backDrop.style.filter = 'blur(32px)';
+    backDrop.style.transform = 'scale(1.32)';
+  });
+
   return (
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center drop-shadow-xl">
-        <h1 class="mb-4">
+        <h1 class="mb-4 shadow-outline">
           <span class="text-red-400">Nether Depths</span> Ranks
         </h1>
-        <p class="mb-6 sm:mb-14 font-normal text-xl">
+        <p class="mb-6 sm:mb-14 font-normal text-xl shadow-outline">
           Different ranks give different perks!
         </p>
         <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-5">

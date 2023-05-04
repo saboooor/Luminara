@@ -3,8 +3,8 @@ import { component$ } from '@builder.io/qwik';
 export default component$(() => {
   return (
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16">
-      <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center drop-shadow-xl">
-        <h1 class="mb-6 sm:mb-14 text-center">
+      <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
+        <h1 class="mb-6 sm:mb-14 text-center shadow-outline">
           Why <span class="text-red-400">Nether Depths?</span>
         </h1>
         <div class="grid lg:grid-cols-3 gap-5">

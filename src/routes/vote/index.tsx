@@ -1,14 +1,20 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    const backDrop = document.getElementById('backdrop')!;
+    backDrop.style.filter = 'blur(32px)';
+    backDrop.style.transform = 'scale(1.32)';
+  });
+
   return (
     <section class="flex mx-auto px-6 items-center justify-center text-center" style="min-height: calc(100lvh - 64px);">
       <div class="p-10 sm:p-16 drop-shadow-xl rounded-xl text-orange-100 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
-        <h1 class="font-bold text-3xl sm:text-5xl mb-3" style="filter: drop-shadow(0 2rem 2rem rgba(239, 68, 68, 0.5));">
+        <h1 class="font-bold text-3xl sm:text-5xl mb-3 shadow-outline">
           Vote for <span class="text-red-500">Nether Depths!</span>
         </h1>
-        <p class="mb-6">
+        <p class="mb-6 shadow-outline">
           Hold CTRL while clicking to open each site in multiple tabs
         </p>
         <div class="mt-6 mb-12 grid grid-cols-3 md:grid-cols-6 gap-3 justify-center">
@@ -31,10 +37,10 @@ export default component$(() => {
             PMC
           </a>
         </div>
-        <h1 class="font-bold text-3xl sm:text-5xl mb-3" style="filter: drop-shadow(0 2rem 2rem rgba(239, 68, 68, 0.5));">
+        <h1 class="font-bold text-3xl sm:text-5xl mb-3 shadow-outline">
           Optional Vote Sites
         </h1>
-        <p class="mb-6">
+        <p class="mb-6 shadow-outline">
           Please support Nether Depths through the sites below! These sites don't give any reward though.
         </p>
 
