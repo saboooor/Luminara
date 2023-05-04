@@ -12,22 +12,22 @@ export default component$(() => {
           Hold CTRL while clicking to open each site in multiple tabs
         </p>
         <div class="mt-6 mb-12 grid grid-cols-3 md:grid-cols-6 gap-3 justify-center">
-          <a href="https://bit.ly/NetherMCSL" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMCSL" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCSL
           </a>
-          <a href="https://bit.ly/NetherMCSO" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMCSO" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCSO
           </a>
-          <a href="https://bit.ly/NetherMSCN" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMSCN" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCSN
           </a>
-          <a href="https://bit.ly/NetherMCMP" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMCMP" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCMP
           </a>
-          <a href="https://bit.ly/NetherMCPS" class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMCPS" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCPS
           </a>
-          <a href="https://bit.ly/NetherPMC"  class="flex transition duration-200 rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherPMC"  class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             PMC
           </a>
         </div>
@@ -39,16 +39,16 @@ export default component$(() => {
         </p>
 
         <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 justify-center">
-          <a href="https://bit.ly/NetherTOPG" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherTOPG" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TOPG.ORG
           </a>
-          <a href="https://disboard.org/server/865519986806095902" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://disboard.org/server/865519986806095902" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             DISBOARD
           </a>
-          <a href="https://top.gg/servers/865519986806095902/vote" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://top.gg/servers/865519986806095902/vote" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TOP.GG
           </a>
-          <a href="https://top.gg/bot/848775888673439745/vote" class="flex transition duration-200 rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://top.gg/bot/848775888673439745/vote" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TOP.GG (Cactie)
           </a>
         </div>

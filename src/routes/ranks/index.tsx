@@ -273,7 +273,7 @@ export default component$(() => {
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
             <p class="mb-6">Too much to describe in this tiny little box!</p>
-            <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -293,7 +293,7 @@ export default component$(() => {
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
             <p class="mb-6">Too much to describe in this tiny little box!</p>
-            <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -313,7 +313,7 @@ export default component$(() => {
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
             <p class="mb-6">Too much to describe in this tiny little box!</p>
-            <a href="https://netherdepths.tebex.io/" class="transition duration-200 rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>

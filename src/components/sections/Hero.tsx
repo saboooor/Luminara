@@ -31,7 +31,7 @@ export default component$(() => {
           <span class="uppercase text-sm" id="copy">Click to copy IP</span>
         </div>
         <div class="mt-6 grid sm:flex gap-3 justify-center">
-          <Link href="/discord" class="flex gap-4 transition duration-200 font-bold text-indigo-400 md:text-lg whitespace-nowrap">
+          <Link href="/discord" class="flex gap-4 transition font-bold text-indigo-400 md:text-lg whitespace-nowrap">
             <LogoDiscord width="24" class="fill-current" /> Join the Discord Server!
           </Link>
         </div>

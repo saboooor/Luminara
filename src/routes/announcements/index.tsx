@@ -76,11 +76,9 @@ export default component$(() => {
           Here you will find the latest announcements from Nether Depths.<br/>
           This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
-        <div class="flex">
-          <button class="mt-4 px-4 py-2 rounded-lg mb-6 sm:mb-14 text-lg bg-red-400/60 hover:bg-red-500/60 transition cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
-            Sort by: {store.sort}
-          </button>
-        </div>
+        <button class="transition rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border-2 px-6 py-3 mt-4 font-bold text-red-100 text-lg cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
+          Sort by: {store.sort}
+        </button>
 
         <Resource
           value={announcements}
