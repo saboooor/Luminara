@@ -8,7 +8,7 @@ export default component$(() => {
   return (
     <>
       <main>
-        <picture class="fixed top-0 overflow-hidden" style={{ height: '100lvh', width: '100lvw' }}>
+        <picture class="fixed top-0 overflow-hidden -z-10" style={{ height: '100lvh', width: '100lvw' }}>
           <source srcSet={hero.avif} type="image/avif" />
           <source srcSet={hero.webp} type="image/webp" />
           <img
@@ -18,6 +18,7 @@ export default component$(() => {
             loading="eager"
             decoding="async"
             id="backdrop"
+            style={{ filter: 'blur(32px)', transform: 'scale(1.32)' }}
           />
         </picture>
         <Header />

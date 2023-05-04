@@ -26,11 +26,11 @@ export const blur = () => {
   // Check the scroll distance and round it up
   const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
 
-  // Set the max blur value (300 / 6 = 50)
-  let blurVal: any = 50;
+  // Set the max blur value (800 / 20 = 30)
+  let blurVal: any = 32;
 
   // Set the blur value to (scrollTop / 6) if scroll distance is under 300
-  if (scrollTop < 300 && window.location.pathname == '/') blurVal = Math.round(scrollTop / 6);
+  if (scrollTop < 800 && window.location.pathname == '/') blurVal = Math.round(scrollTop / 25);
 
   // Set blur value with padding for the zoom as well
   blurVal = String(blurVal).padStart(2, '0');

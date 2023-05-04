@@ -57,10 +57,6 @@ export default component$(() => {
   });
 
   useVisibleTask$(() => {
-    const backDrop = document.getElementById('backdrop')!;
-    backDrop.style.filter = 'blur(50px)';
-    backDrop.style.transform = 'scale(1.5)';
-
     const spoilers = document.getElementsByClassName('spoiler');
     for (let i = 0; i < spoilers.length; i++) {
       const spoiler = spoilers[i];
