@@ -6,6 +6,7 @@ import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
+import { Link } from 'qwik-ionicons';
 
 export const Markdown = component$<any>(({ mdContent, extraClass }) => (
   <>
@@ -38,7 +39,15 @@ export const useAnnouncements = routeLoader$(async () => {
 export default component$(() => {
   const announcements = useAnnouncements();
 
-  const store = useStore({
+  const store: {
+    notifications: {
+      title: string;
+      content: string;
+    }[];
+    sort: 'newest' | 'oldest';
+    changed: boolean;
+  } = useStore({
+    notifications: [],
     sort: 'newest',
     changed: false,
   });
@@ -77,34 +86,62 @@ export default component$(() => {
                 {
                   articleList.map((announcementArticle: any) => {
                     const announcement = announcementArticle[0];
-                    let lastUser = announcement.name;
-                    return (
-                      <article key={`${announcement.createdAt}`} class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
-                        <p class="text-xl flex items-center gap-4 font-bold sm:text-2xl mb-4">
-                          <img src={announcement.av} class="w-10 h-10" style="border-radius: 50%" /> {announcement.name}
-                          <span class="text-sm font-normal">{new Date(announcement.createdAt).toLocaleString()}</span>
-                        </p>
+                    let lastUser = announcement.author.name;
+                    return <>
+                      <span id={announcement.id} class="block h-24 -mt-24" />
+                      <article class="bg-black/30 border-black/30 border-2 p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+                        <div class="flex items-center mb-4">
+                          <p class="text-xl flex flex-1 items-center gap-2 font-bold sm:text-2xl justify-start">
+                            <img src={announcement.author.av} class="w-10 h-10 mr-2" style="border-radius: 50%" /> {announcement.author.name}
+                            <span style={{ backgroundColor: announcement.author.topRole.color }} class="text-sm px-2 py-1 rounded-md">{announcement.author.topRole.name}</span>
+                            <span class="text-sm font-normal">{new Date(announcement.createdAt).toLocaleString()}</span>
+                          </p>
+                          <Link width="24" class="fill-current justify-end cursor-pointer" onClick$={() => {
+                            navigator.clipboard.writeText(`https://netherdepths.com/announcements#${announcement.id}`);
+                            store.notifications.push({
+                              title: 'Copied Successfully!',
+                              content: 'The link to this announcement has been copied to your clipboard.',
+                            });
+                            setTimeout(() => {
+                              store.notifications.shift();
+                            }, 5000);
+                          }} />
+                        </div>
                         <Markdown mdContent={announcement.content} extraClass="text-lg" />
                         {
                           announcementArticle.map((comment: any) => {
                             if (comment == announcement) return;
-                            const diffUser = lastUser == comment.name;
-                            if (!diffUser) lastUser = comment.name;
-                            return (
-                              <div key={`${comment.createdAt}`} class={diffUser ? 'mt-2' : 'mt-4'}>
+                            const diffUser = lastUser == comment.author.name;
+                            if (!diffUser) lastUser = comment.author.name;
+                            return <>
+                              <span id={comment.id} class="block h-24 -mt-24" />
+                              <div class={diffUser ? 'mt-2' : 'mt-4'}>
                                 { !diffUser &&
                                   <p class="text-md flex items-center gap-2 font-semibold sm:text-lg mb-2">
-                                    <img src={comment.av} class="w-6 h-6" style="border-radius: 50%" /> {comment.name}
+                                    <img src={comment.author.av} class="w-6 h-6 mr-1" style="border-radius: 50%" /> {comment.author.name}
+                                    <span style={{ backgroundColor: announcement.author.topRole.color }} class="text-xs px-2 py-1 rounded-md">{announcement.author.topRole.name}</span>
                                     <span class="text-xs font-light">{new Date(comment.createdAt).toLocaleString()}</span>
                                   </p>
                                 }
-                                <Markdown mdContent={comment.content} extraClass="text-sm" />
+                                <div class="flex items-center gap-2 group">
+                                  <Markdown mdContent={comment.content} extraClass="text-sm" />
+                                  <Link width="16" class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
+                                    navigator.clipboard.writeText(`https://netherdepths.com/announcements#${announcement.id}`);
+                                    store.notifications.push({
+                                      title: 'Copied Successfully!',
+                                      content: 'The link to this comment has been copied to your clipboard.',
+                                    });
+                                    setTimeout(() => {
+                                      store.notifications.shift();
+                                    }, 5000);
+                                  }} />
+                                </div>
                               </div>
-                            );
+                            </>;
                           })
                         }
                       </article>
-                    );
+                    </>;
                   })
                 }
               </div>
@@ -112,13 +149,25 @@ export default component$(() => {
           }}
         />
       </div>
+      { store.notifications.length &&
+        <div class="fixed block bottom-4 right-4 px-4 py-3 rounded-lg bg-green-500/50 backdrop-blur-xl">
+          {
+            store.notifications.map((notification, i) => (
+              <div key={i}>
+                <p class="font-bold text-white text-2xl">{notification.title}</p>
+                <p class="font-normal text-gray-100 text-lg">{notification.content}</p>
+              </div>
+            ))
+          }
+        </div>
+      }
     </section>
   );
 });
 
 export const head: DocumentHead = ({ resolveValue }) => {
   const articleList = resolveValue(useAnnouncements);
-  const announcement = articleList[0].content;
+  const announcement = articleList[0][0].content;
   return {
     title: 'Announcements',
     meta: [

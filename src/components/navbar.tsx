@@ -129,7 +129,7 @@ export const Nav = component$(() => {
 export const Brand = component$(() => {
   return (
     <div class="flex flex-1 items-center justify-start">
-      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800 hover:text-white drop-shadow-2xl px-3 pt-3 pb-2 rounded-lg text-lg flex items-center whitespace-nowrap">
+      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800/50 drop-shadow-2xl px-3 pt-3 pb-2 rounded-lg text-lg flex items-center whitespace-nowrap">
         <picture>
           <source srcSet={logoAVIF} type="image/avif" />
           <source srcSet={logoWEBP} type="image/webp" />
