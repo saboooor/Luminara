@@ -36,7 +36,7 @@ export default component$(() => {
           </Link>
         </div>
       </div>
-      <div class="absolute bottom-8 cursor-pointer flex gap-4 items-center font-bold text-white md:text-lg z-10 animate-bounce" onClick$={() => {
+      <div class="absolute bottom-8 cursor-pointer flex gap-4 items-center font-bold text-white md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
         document.getElementById('start')?.scrollIntoView();
       }}>
         <ChevronDown width="24" class="fill-current" /> Learn More
