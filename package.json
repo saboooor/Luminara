@@ -15,7 +15,7 @@
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "lint": "eslint src/**/*.ts*",
-    "preview": "qwik build preview && vite preview --open",
+    "preview": "qwik build preview && vite preview --open --host",
     "serve": "echo 'Run \"npm run qwik add\" to install a server adaptor'",
     "start": "vite --open --mode ssr --host",
     "qwik": "qwik"
