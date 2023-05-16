@@ -30,7 +30,7 @@ export default component$(() => {
           <a href="https://bit.ly/NetherMCMP" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCMP
           </a>
-          <a href="https://bit.ly/NetherMCPS" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+          <a href="https://bit.ly/NetherMCSP" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCPS
           </a>
           <a href="https://bit.ly/NetherPMC"  class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border-2 px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
@@ -44,7 +44,7 @@ export default component$(() => {
           Please support Nether Depths through the sites below! These sites don't give any reward though.
         </p>
 
-        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 justify-center">
+        <div class="mt-6 flex flex-wrap gap-3 justify-center">
           <a href="https://bit.ly/NetherTOPG" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TOPG.ORG
           </a>
