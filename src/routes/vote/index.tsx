@@ -51,6 +51,9 @@ export default component$(() => {
           <a href="https://bit.ly/NetherTMCS" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             TMCS
           </a>
+          <a href="https://bit.ly/NetherMCSH" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+            MCSH
+          </a>
           <a href="https://disboard.org/server/865519986806095902" class="flex transition rounded-xl bg-indigo-900/80 hover:bg-indigo-900 border-indigo-900 border-2 px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             DISBOARD
           </a>
