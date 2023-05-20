@@ -8,7 +8,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import { Link } from 'qwik-ionicons';
 
-export const Markdown = component$<any>(({ mdContent, extraClass }) => (
+export const Markdown = component$<any>(({ mdContent, extraClass }: any) => (
   <>
     {unified()
       .use(remarkParse)
@@ -107,7 +107,7 @@ export default component$(() => {
                               <p class="text-xs md:text-sm font-light whitespace-nowrap">{new Date(announcement.createdAt).toLocaleString()}</p>
                             </div>
                             <div class="flex items-center gap-2">
-                              <img src={announcement.author.av} class="w-6 h-6 md:w-10 md:h-10 md:mr-2 rounded-lg" />
+                              <img src={announcement.author.av} class="w-6 h-6 md:w-10 md:h-10 md:mr-2 rounded-lg" width={24} height={24} />
                               <p>{announcement.author.name}</p>
                             </div>
                           </div>
@@ -153,7 +153,7 @@ export default component$(() => {
                                 { !diffUser &&
                                   <div class="text-sm font-semibold md:text-lg mb-2">
                                     <div class="flex items-center gap-2 mb-2">
-                                      <img src={comment.author.av} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" />
+                                      <img src={comment.author.av} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" width={16} height={16} />
                                       <p>{comment.author.name}</p>
                                       <p style={{ backgroundColor: comment.author.topRole.color }} class="text-xs px-2 py-1 rounded-md">{comment.author.topRole.name}</p>
                                     </div>
