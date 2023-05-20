@@ -80,7 +80,7 @@ export default component$(() => {
           Here you will find the latest announcements from Nether Depths.<br/>
           This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
-        <button class="transition rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border-2 px-6 py-3 my-4 font-bold text-red-100 text-lg cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
+        <button class="transition rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border px-6 py-3 my-4 font-bold text-red-100 text-lg cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
           Sort by: {store.sort}
         </button>
 
@@ -99,7 +99,7 @@ export default component$(() => {
                     let lastUser = announcement.author.name;
                     return <>
                       <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
-                      <article class="bg-black/30 border-black/30 border-2 p-4 sm:p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+                      <article class="bg-black/30 border-black/30 border p-4 sm:p-8 rounded-xl text-lg font-normal max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
                         <div class="flex items-start mb-4">
                           <div class="flex-1 text-xl font-bold md:text-2xl justify-start">
                             <div class="flex items-center gap-2 mb-4">

@@ -1,5 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
-import Header from '~/components/navbar';
+import Header from '~/components/Nav';
 
 import { heroes } from '~/components/heroes';
 
@@ -12,13 +12,15 @@ export default component$(() => {
           <source srcSet={hero.avif} type="image/avif" />
           <source srcSet={hero.webp} type="image/webp" />
           <img
-            src={hero.placeholder}
+            src={hero.png}
             class="w-full h-full object-cover"
             alt="Hero Background"
             loading="eager"
             decoding="async"
             id="backdrop"
             style={{ filter: 'blur(32px)', transform: 'scale(1.32)' }}
+            width={0}
+            height={0}
           />
         </picture>
         <Header />

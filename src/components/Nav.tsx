@@ -1,23 +1,24 @@
 import { component$, Slot } from '@builder.io/qwik';
-import { Link, useNavigate } from '@builder.io/qwik-city';
+import { Link, useLocation } from '@builder.io/qwik-city';
 
 // @ts-ignore
-import iconAVIF from '~/images/icon.png?height=96&avif';
+import iconAVIF from '~/images/icon.png?h=96&format=avif';
 // @ts-ignore
-import iconWEBP from '~/images/icon.png?height=96&webp';
+import iconWEBP from '~/images/icon.png?h=96&format=webp';
 // @ts-ignore
-import { src as iconPlaceholder } from '~/images/icon.png?height=96&metadata';
+import iconPNG from '~/images/icon.png?h=96';
 
 // @ts-ignore
-import logoAVIF from '~/images/logo.png?height=96&avif';
+import logoAVIF from '~/images/logo.png?h=96&format=avif';
 // @ts-ignore
-import logoWEBP from '~/images/logo.png?height=96&webp';
+import logoWEBP from '~/images/logo.png?h=96&format=webp';
 // @ts-ignore
-import { src as logoPlaceholder } from '~/images/logo.png?height=96&metadata';
+import logoPNG from '~/images/logo.png?h=96';
 
 import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline, MailOutline } from 'qwik-ionicons';
 
 import LuminescentLogo from '~/components/icons/LuminescentLogo';
+import LoadingIcon from './icons/LoadingIcon';
 
 export default component$(() => {
   return (
@@ -119,7 +120,7 @@ export default component$(() => {
 export const Nav = component$(() => {
   return (
     <nav class="z-20 fixed top-0 w-screen py-2 bg-gray-900/50 backdrop-blur-xl">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="mx-auto max-w-7xl px-4 lg:px-6">
         <Slot />
       </div>
     </nav>
@@ -127,16 +128,17 @@ export const Nav = component$(() => {
 });
 
 export const Brand = component$(() => {
+  const location = useLocation();
   return (
-    <div class="flex flex-1 items-center justify-start">
-      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800/50 drop-shadow-2xl px-3 pt-3 pb-2 rounded-lg text-lg flex items-center whitespace-nowrap">
+    <div class="flex items-center justify-start">
+      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800/50 drop-shadow-2xl pl-3 pr-2 pt-3 pb-2 rounded-lg text-lg flex items-center whitespace-nowrap">
         <picture>
           <source srcSet={logoAVIF} type="image/avif" />
           <source srcSet={logoWEBP} type="image/webp" />
           <img
-            src={logoPlaceholder}
+            src={logoPNG}
             class="hidden sm:flex"
-            width={192}
+            width={192} height={48}
             alt="Nether Depths Logo"
             loading="eager"
             decoding="async"
@@ -146,7 +148,7 @@ export const Brand = component$(() => {
           <source srcSet={iconAVIF} type="image/avif" />
           <source srcSet={iconWEBP} type="image/webp" />
           <img
-            src={iconPlaceholder}
+            src={iconPNG}
             class="h-12 flex sm:hidden"
             width={48} height={48}
             alt="Nether Depths Icon"
@@ -154,6 +156,9 @@ export const Brand = component$(() => {
             decoding="async"
           />
         </picture>
+        <div class={`${location.isNavigating ? '' : '-ml-10 opacity-0'} transition-all`}>
+          <LoadingIcon/>
+        </div>
       </Link>
     </div>
   );
@@ -180,31 +185,30 @@ export const MobileNav = component$(() => {
   );
 });
 
-export const NavButton = component$(({ href, title, icon, external, extraClass }: any) => {
-  const nav = useNavigate();
+export const NavButton = component$(({ href, title, icon, external, extraClass, style }: any) => {
   return <>
     {external &&
-      <a href={href} title={title} class={`group transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white px-4 py-2 rounded-lg ${icon ? 'text-3xl' : ''} items-center`}>
+      <a href={href} title={title} style={style} class={`group transition ease-in-out hover:bg-gray-800 hover:text-white ${icon ? 'text-3xl px-2' : 'px-4'} py-2 rounded-lg items-center ${extraClass}`}>
         <Slot />
       </a>
     }
     {!external &&
-      <button onClick$={() => { document.getElementById('mobile-menu')?.classList.replace('flex', 'hidden'); nav(href); }} title={title} class={`group transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white px-4 py-2 rounded-lg ${icon ? 'text-3xl' : ''} items-center`}>
+      <Link href={href} onClick$={async () => { document.getElementById('mobile-menu')?.classList.replace('flex', 'hidden'); }} title={title} style={style} class={`group transition ease-in-out hover:bg-gray-800 hover:text-white ${icon ? 'text-3xl px-2' : 'px-4'} py-2 rounded-lg items-center ${extraClass}`}>
         <Slot />
-      </button>
+      </Link>
     }
   </>;
 });
 
 export const Dropdown = component$(({ name, extraClass }: any) => {
   return (
-    <div class={`cursor-pointer transition ease-in-out ${extraClass} hover:bg-gray-800/50 text-gray-100 hover:text-white drop-shadow-2xl group rounded-lg items-center gap-4`}>
-      <div class="px-4 py-3 flex gap-2 items-center">
+    <div class={`cursor-pointer transition ease-in-out ${extraClass} hover:bg-gray-800 hover:text-white drop-shadow-2xl group rounded-lg items-center gap-4`}>
+      <div class="px-4 py-2 flex gap-2 items-center">
         {name}
-        <ChevronDown width="24" class="transform group-hover:-rotate-180 transition duration-300 ease-in-out text-2xl fill-current" />
+        <ChevronDown width="24" class="transform group-hover:-rotate-180 transition ease-in-out text-2xl" />
       </div>
-      <div class="absolute top-12 right-0 z-10 hidden group-hover:flex pt-5 text-base">
-        <div class="bg-gray-900/70 rounded-xl px-3 py-4 flex flex-col gap-2 font-medium whitespace-nowrap overflow-y-auto max-h-[calc(100svh-128px)]">
+      <div class="absolute top-8 left-0 z-10 hidden group-hover:flex pt-4 text-base">
+        <div class="bg-black rounded-xl px-3 py-4 flex flex-col gap-2 font-medium whitespace-nowrap overflow-y-auto max-h-[calc(100svh-128px)]">
           <Slot/>
         </div>
       </div>

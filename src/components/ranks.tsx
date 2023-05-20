@@ -1,76 +1,76 @@
 // @ts-nocheck
 
-import allayAVIF from '~/images/ranks/allay.png?avif';
-import allayWEBP from '~/images/ranks/allay.png?webp';
-import { src as allayPlaceholder } from '~/images/ranks/allay.png?metadata';
+import allayAVIF from '~/images/ranks/allay.png?format=avif';
+import allayWEBP from '~/images/ranks/allay.png?format=webp';
+import allayPNG from '~/images/ranks/allay.png';
 
-import axolotlAVIF from '~/images/ranks/axolotl.png?avif';
-import axolotlWEBP from '~/images/ranks/axolotl.png?webp';
-import { src as axolotlPlaceholder } from '~/images/ranks/axolotl.png?metadata';
+import axolotlAVIF from '~/images/ranks/axolotl.png?format=avif';
+import axolotlWEBP from '~/images/ranks/axolotl.png?format=webp';
+import axolotlPNG from '~/images/ranks/axolotl.png';
 
-import blazeAVIF from '~/images/ranks/blaze.png?avif';
-import blazeWEBP from '~/images/ranks/blaze.png?webp';
-import { src as blazePlaceholder } from '~/images/ranks/blaze.png?metadata';
+import blazeAVIF from '~/images/ranks/blaze.png?format=avif';
+import blazeWEBP from '~/images/ranks/blaze.png?format=webp';
+import blazePNG from '~/images/ranks/blaze.png';
 
-import flowerCowAVIF from '~/images/ranks/flowerCow.png?avif';
-import flowerCowWEBP from '~/images/ranks/flowerCow.png?webp';
-import { src as flowerCowPlaceholder } from '~/images/ranks/flowerCow.png?metadata';
+import flowerCowAVIF from '~/images/ranks/flowerCow.png?format=avif';
+import flowerCowWEBP from '~/images/ranks/flowerCow.png?format=webp';
+import flowerCowPNG from '~/images/ranks/flowerCow.png';
 
-import enderDragonAVIF from '~/images/ranks/enderDragon.png?avif';
-import enderDragonWEBP from '~/images/ranks/enderDragon.png?webp';
-import { src as enderDragonPlaceholder } from '~/images/ranks/enderDragon.png?metadata';
+import enderDragonAVIF from '~/images/ranks/enderDragon.png?format=avif';
+import enderDragonWEBP from '~/images/ranks/enderDragon.png?format=webp';
+import enderDragonPNG from '~/images/ranks/enderDragon.png';
 
-import endermanAVIF from '~/images/ranks/enderman.png?avif';
-import endermanWEBP from '~/images/ranks/enderman.png?webp';
-import { src as endermanPlaceholder } from '~/images/ranks/enderman.png?metadata';
+import endermanAVIF from '~/images/ranks/enderman.png?format=avif';
+import endermanWEBP from '~/images/ranks/enderman.png?format=webp';
+import endermanPNG from '~/images/ranks/enderman.png';
 
-import glowSquidAVIF from '~/images/ranks/glowSquid.png?avif';
-import glowSquidWEBP from '~/images/ranks/glowSquid.png?webp';
-import { src as glowSquidPlaceholder } from '~/images/ranks/glowSquid.png?metadata';
+import glowSquidAVIF from '~/images/ranks/glowSquid.png?format=avif';
+import glowSquidWEBP from '~/images/ranks/glowSquid.png?format=webp';
+import glowSquidPNG from '~/images/ranks/glowSquid.png';
 
-import hoglinAVIF from '~/images/ranks/hoglin.png?avif';
-import hoglinWEBP from '~/images/ranks/hoglin.png?webp';
-import { src as hoglinPlaceholder } from '~/images/ranks/hoglin.png?metadata';
+import hoglinAVIF from '~/images/ranks/hoglin.png?format=avif';
+import hoglinWEBP from '~/images/ranks/hoglin.png?format=webp';
+import hoglinPNG from '~/images/ranks/hoglin.png';
 
-import ocelotAVIF from '~/images/ranks/ocelot.png?avif';
-import ocelotWEBP from '~/images/ranks/ocelot.png?webp';
-import { src as ocelotPlaceholder } from '~/images/ranks/ocelot.png?metadata';
+import ocelotAVIF from '~/images/ranks/ocelot.png?format=avif';
+import ocelotWEBP from '~/images/ranks/ocelot.png?format=webp';
+import ocelotPNG from '~/images/ranks/ocelot.png';
 
-import skeletonAVIF from '~/images/ranks/skeleton.png?avif';
-import skeletonWEBP from '~/images/ranks/skeleton.png?webp';
-import { src as skeletonPlaceholder } from '~/images/ranks/skeleton.png?metadata';
+import skeletonAVIF from '~/images/ranks/skeleton.png?format=avif';
+import skeletonWEBP from '~/images/ranks/skeleton.png?format=webp';
+import skeletonPNG from '~/images/ranks/skeleton.png';
 
-import steveAVIF from '~/images/ranks/steve.png?avif';
-import steveWEBP from '~/images/ranks/steve.png?webp';
-import { src as stevePlaceholder } from '~/images/ranks/steve.png?metadata';
+import steveAVIF from '~/images/ranks/steve.png?format=avif';
+import steveWEBP from '~/images/ranks/steve.png?format=webp';
+import stevePNG from '~/images/ranks/steve.png';
 
-import striderAVIF from '~/images/ranks/strider.png?avif';
-import striderWEBP from '~/images/ranks/strider.png?webp';
-import { src as striderPlaceholder } from '~/images/ranks/strider.png?metadata';
+import striderAVIF from '~/images/ranks/strider.png?format=avif';
+import striderWEBP from '~/images/ranks/strider.png?format=webp';
+import striderPNG from '~/images/ranks/strider.png';
 
-import wardenAVIF from '~/images/ranks/warden.png?avif';
-import wardenWEBP from '~/images/ranks/warden.png?webp';
-import { src as wardenPlaceholder } from '~/images/ranks/warden.png?metadata';
+import wardenAVIF from '~/images/ranks/warden.png?format=avif';
+import wardenWEBP from '~/images/ranks/warden.png?format=webp';
+import wardenPNG from '~/images/ranks/warden.png';
 
-import witherAVIF from '~/images/ranks/wither.png?avif';
-import witherWEBP from '~/images/ranks/wither.png?webp';
-import { src as witherPlaceholder } from '~/images/ranks/wither.png?metadata';
+import witherAVIF from '~/images/ranks/wither.png?format=avif';
+import witherWEBP from '~/images/ranks/wither.png?format=webp';
+import witherPNG from '~/images/ranks/wither.png';
 
 const ranks = {
-  allay: { avif: allayAVIF, webp: allayWEBP, placeholder: allayPlaceholder },
-  axolotl: { avif: axolotlAVIF, webp: axolotlWEBP, placeholder: axolotlPlaceholder },
-  blaze: { avif: blazeAVIF, webp: blazeWEBP, placeholder: blazePlaceholder },
-  flowerCow: { avif: flowerCowAVIF, webp: flowerCowWEBP, placeholder: flowerCowPlaceholder },
-  enderDragon: { avif: enderDragonAVIF, webp: enderDragonWEBP, placeholder: enderDragonPlaceholder },
-  enderman: { avif: endermanAVIF, webp: endermanWEBP, placeholder: endermanPlaceholder },
-  glowSquid: { avif: glowSquidAVIF, webp: glowSquidWEBP, placeholder: glowSquidPlaceholder },
-  hoglin: { avif: hoglinAVIF, webp: hoglinWEBP, placeholder: hoglinPlaceholder },
-  ocelot: { avif: ocelotAVIF, webp: ocelotWEBP, placeholder: ocelotPlaceholder },
-  skeleton: { avif: skeletonAVIF, webp: skeletonWEBP, placeholder: skeletonPlaceholder },
-  steve: { avif: steveAVIF, webp: steveWEBP, placeholder: stevePlaceholder },
-  strider: { avif: striderAVIF, webp: striderWEBP, placeholder: striderPlaceholder },
-  warden: { avif: wardenAVIF, webp: wardenWEBP, placeholder: wardenPlaceholder },
-  wither: { avif: witherAVIF, webp: witherWEBP, placeholder: witherPlaceholder },
+  allay: { avif: allayAVIF, webp: allayWEBP, png: allayPNG },
+  axolotl: { avif: axolotlAVIF, webp: axolotlWEBP, png: axolotlPNG },
+  blaze: { avif: blazeAVIF, webp: blazeWEBP, png: blazePNG },
+  flowerCow: { avif: flowerCowAVIF, webp: flowerCowWEBP, png: flowerCowPNG },
+  enderDragon: { avif: enderDragonAVIF, webp: enderDragonWEBP, png: enderDragonPNG },
+  enderman: { avif: endermanAVIF, webp: endermanWEBP, png: endermanPNG },
+  glowSquid: { avif: glowSquidAVIF, webp: glowSquidWEBP, png: glowSquidPNG },
+  hoglin: { avif: hoglinAVIF, webp: hoglinWEBP, png: hoglinPNG },
+  ocelot: { avif: ocelotAVIF, webp: ocelotWEBP, png: ocelotPNG },
+  skeleton: { avif: skeletonAVIF, webp: skeletonWEBP, png: skeletonPNG },
+  steve: { avif: steveAVIF, webp: steveWEBP, png: stevePNG },
+  strider: { avif: striderAVIF, webp: striderWEBP, png: striderPNG },
+  warden: { avif: wardenAVIF, webp: wardenWEBP, png: wardenPNG },
+  wither: { avif: witherAVIF, webp: witherWEBP, png: witherPNG },
 };
 
 export { ranks };

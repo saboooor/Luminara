@@ -19,7 +19,10 @@ html {
   overflow: overlay;
 }
 
-* { scroll-behavior: smooth; }
+* {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
 *::-webkit-scrollbar {
   appearance: none;
   -webkit-appearance: none;
@@ -30,7 +33,7 @@ html {
   border-radius: 3px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #ffffff60;
+  background-color: #ffffff20;
   border-radius: 2px;
 }
 
