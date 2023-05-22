@@ -89,22 +89,22 @@ declare interface Member extends APIGuildMember {
 }
 type AnyGuildChannel = APIGuildChannel<ChannelType>;
 
-export const getMemberFn = server$(async function(memberId: string, props?: RequestEventBase): Promise<Member | Error> {
+export const getGuildMembersFn = server$(async function(props?: RequestEventBase): Promise<Member[] | Error> {
   props = props ?? this;
-  const res = await fetch(`https://discord.com/api/v10/guilds/865519986806095902/members/${memberId}`, {
+  const res = await fetch('https://discord.com/api/v10/guilds/865519986806095902/members?limit=1000', {
     headers: {
       authorization: `Bot ${props.env.get('BOT_TOKEN')}`,
     },
   }).catch(() => null);
-  if (!res) return new Error('Member fetch failed');
-  const member: RESTError | RESTRateLimit | APIGuildMember = await res.json();
-  if ('retry_after' in member) {
-    console.log(`${member.message}, retrying after ${member.retry_after * 1000}ms`);
-    await sleep(member.retry_after * 1000);
-    return await getMemberFn(memberId, props);
+  if (!res) return new Error('Guild Members fetch failed');
+  const members: RESTError | RESTRateLimit | APIGuildMember[] = await res.json();
+  if ('retry_after' in members) {
+    console.log(`${members.message}, retrying after ${members.retry_after * 1000}ms`);
+    await sleep(members.retry_after * 1000);
+    return await getGuildMembersFn(props);
   }
-  if ('code' in member) return new Error(`Member fetch error ${member.code}`);
-  return member;
+  if ('code' in members) return new Error(`Guild Members fetch error ${members.code}`);
+  return members;
 });
 
 export const getGuildChannelsFn = server$(async function(props: RequestEventBase): Promise<AnyGuildChannel[] | Error> {
@@ -164,6 +164,8 @@ export const useAnnouncements = routeLoader$(async (props) => {
   if (rolesList instanceof Error) return rolesList;
   const channelsList = await getGuildChannelsFn(props);
   if (channelsList instanceof Error) return channelsList;
+  const membersList = await getGuildMembersFn(props);
+  if (membersList instanceof Error) return membersList;
 
   for (const message of announcementsJSON) {
     const channelMatches = [...message.content.matchAll(new RegExp(FormattingPatterns.Channel, 'g'))];
@@ -178,9 +180,9 @@ export const useAnnouncements = routeLoader$(async (props) => {
     }
     const userMatches = [...message.content.matchAll(new RegExp(FormattingPatterns.User, 'g'))];
     for (const match of userMatches) {
-      const member = await getMemberFn(match[1], props);
-      if (!member || member instanceof Error) {
-        console.warn(`Channel Id ${match[1]} wasn't found!`);
+      const member = membersList.find((member) => member.user?.id == match[1]);
+      if (!member) {
+        console.warn(`Member Id ${match[1]} wasn't found!`);
         message.content = message.content.replace(match[0], '**@Unknown Member**');
         continue;
       }
@@ -197,17 +199,14 @@ export const useAnnouncements = routeLoader$(async (props) => {
       message.content = message.content.replace(match[0], `**@${role.name ?? 'Unknown Role'}**`);
     }
 
-    if (message.member) continue;
-    const member = await getMemberFn(message.author.id, props);
-    announcementsJSON.filter((m) => m.author.id == message.author.id).forEach((m) => {
-      if (member instanceof Error) return m.member = member;
-      m.member = {
-        ...member,
-        parsedRoles: member.roles.map((roleId) => rolesList.find((role) => role.id == roleId)!),
-      };
-      m.member.parsedRoles!.sort((a, b) => a.position - b.position);
-      m.member.parsedRoles!.reverse();
-    });
+    const member = membersList.find((member) => member.user?.id == message.author.id);
+    if (!member) continue;
+    message.member = {
+      ...member,
+      parsedRoles: member.roles.map((roleId) => rolesList.find((role) => role.id == roleId)!),
+    };
+    message.member.parsedRoles!.sort((a, b) => a.position - b.position);
+    message.member.parsedRoles!.reverse();
   }
 
   announcementsJSON.reverse();
