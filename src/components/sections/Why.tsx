@@ -10,7 +10,7 @@ export default component$(() => {
         <div class="grid lg:grid-cols-3 gap-5">
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
             <h2 class="text-xl sm:text-2xl mb-4">Quick Updates</h2>
-            <p class="text-lg font-normal">We're always one of the first to update our Minecraft version and we're planning to update to 1.20 once it is released as soon as possible!</p>
+            <p class="text-lg font-normal">We're always one of the first to update our Minecraft version and we're planning to update to 1.21 once it is released as soon as possible!</p>
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
             <h2 class="text-xl sm:text-2xl mb-4">Friendly Community</h2>

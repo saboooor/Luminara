@@ -9,14 +9,6 @@ export default component$(() => {
         </h1>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
-            <h2 class="text-xl sm:text-2xl mb-2">Custom Terrain</h2>
-            <p class="text-lg font-normal mb-2">Tired of boring minecraft generation? Nether Depths has beautiful, big, terrain generation. Go explore!</p>
-          </div>
-          <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
-            <h2 class="text-xl sm:text-2xl mb-2">Custom Structures</h2>
-            <p class="text-lg font-normal mb-2">Bored of the old minecraft structures? Nether Depths has bigger, better, cleaner structures. Go explore!</p>
-          </div>
-          <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
             <h2 class="text-xl sm:text-2xl mb-2">Dispenser Tools</h2>
             <p class="text-lg font-normal mb-2">Wanna break things but are too lazy to do it yourself? Make dispensers do them for you, put a tool in a dispenser to break blocks in front of it!</p>
           </div>

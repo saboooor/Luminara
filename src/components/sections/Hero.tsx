@@ -28,7 +28,7 @@ export default component$(() => {
           }
         }}>
           <img class="z-10 mb-2" width={612} height={74} src="https://api.loohpjames.com/serverbanner.png?ip=play.netherdepths.com;backgroundurl=transparent;width=612" alt="Nether Depths" />
-          <span class="uppercase text-sm" id="copy">Click to copy IP</span>
+          <span class="uppercase text-sm" id="copy">Click to copy IP (1.20)</span>
         </div>
         <div class="mt-6 grid sm:flex gap-3 justify-center">
           <Link href="/discord" class="flex gap-4 transition font-bold text-indigo-400 md:text-lg whitespace-nowrap">
