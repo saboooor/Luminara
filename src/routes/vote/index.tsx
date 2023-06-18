@@ -19,7 +19,8 @@ export default component$(() => {
           Vote for <span class="text-red-500">Nether Depths!</span>
         </h1>
         <p class="mb-6 shadow-outline">
-          The blue buttons do not give any reward and are purely a way to support Nether Depths :)
+          The blue buttons do not give any reward and are purely a way to support Nether Depths :)<br />
+          If you're a Bedrock player, dont forget to put a _ before your gamertag!
         </p>
         <div class="mt-6 mb-12 flex flex-wrap gap-3 justify-center">
           <a href="https://bit.ly/NetherVote-MCSL" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
