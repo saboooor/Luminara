@@ -64,7 +64,7 @@ export default component$(() => {
         </h1>
         <p class="mb-6 shadow-outline">
           Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
-          You must allow pop-ups in your browser for it to function properly.
+          <span class="text-red-500">You must allow pop-ups in your browser for it to function properly.</span>
         </p>
         <input type="checkbox" id="blue-sites" checked={store.blue} onChange$={() => store.blue = !store.blue} />
         <label for="blue-sites" class="mb-3 shadow-outline">
@@ -78,14 +78,13 @@ export default component$(() => {
             window.open('https://bit.ly/NetherVote-MCMP');
             window.open('https://bit.ly/NetherVote-MCPS');
             window.open('https://bit.ly/NetherVote-TMCS');
-            if (store.blue) {
-              window.open('https://bit.ly/NetherVote-CF');
-              window.open('https://bit.ly/NetherVote-SMCN');
-              window.open('https://bit.ly/NetherVote-MCSH');
-              window.open('https://bit.ly/NetherVote-PMC');
-              window.open('https://bit.ly/NetherVote-TOPG');
-              window.open('https://top.gg/servers/865519986806095902/vote');
-            }
+            if (!store.blue) return;
+            window.open('https://bit.ly/NetherVote-CF');
+            window.open('https://bit.ly/NetherVote-SMCN');
+            window.open('https://bit.ly/NetherVote-MCSH');
+            window.open('https://bit.ly/NetherVote-PMC');
+            window.open('https://bit.ly/NetherVote-TOPG');
+            window.open('https://top.gg/servers/865519986806095902/vote');
           }} class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             Open vote sites
           </button>
