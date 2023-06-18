@@ -1,7 +1,11 @@
-import { component$, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
+  const store = useStore({
+    blue: true,
+  });
+
   useVisibleTask$(() => {
     const backDrop = document.getElementById('backdrop')!;
     backDrop.style.filter = 'blur(32px)';
@@ -14,9 +18,6 @@ export default component$(() => {
         <h1 class="font-bold text-3xl sm:text-5xl mb-3 shadow-outline">
           Vote for <span class="text-red-500">Nether Depths!</span>
         </h1>
-        <p class="mb-6 shadow-outline">
-          Hold CTRL while clicking to open each site in multiple tabs
-        </p>
         <p class="mb-6 shadow-outline">
           The blue buttons do not give any reward and are purely a way to support Nether Depths :)
         </p>
@@ -58,7 +59,37 @@ export default component$(() => {
             Top.gg
           </a>
         </div>
-
+        <h1 class="font-bold text-3xl sm:text-5xl mb-3 shadow-outline">
+          Fast-vote
+        </h1>
+        <p class="mb-6 shadow-outline">
+          Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
+          You must allow pop-ups in your browser for it to function properly.
+        </p>
+        <input type="checkbox" id="blue-sites" checked={store.blue} onChange$={() => store.blue = !store.blue} />
+        <label for="blue-sites" class="mb-3 shadow-outline">
+          Include blue sites
+        </label>
+        <div class="mt-6 mb-12 flex flex-wrap gap-3 justify-center">
+          <button onClick$={() => {
+            window.open('https://bit.ly/NetherVote-MCSL');
+            window.open('https://bit.ly/NetherVote-MCSO');
+            window.open('https://bit.ly/NetherVote-MCSN');
+            window.open('https://bit.ly/NetherVote-MCMP');
+            window.open('https://bit.ly/NetherVote-MCPS');
+            window.open('https://bit.ly/NetherVote-TMCS');
+            if (store.blue) {
+              window.open('https://bit.ly/NetherVote-CF');
+              window.open('https://bit.ly/NetherVote-SMCN');
+              window.open('https://bit.ly/NetherVote-MCSH');
+              window.open('https://bit.ly/NetherVote-PMC');
+              window.open('https://bit.ly/NetherVote-TOPG');
+              window.open('https://top.gg/servers/865519986806095902/vote');
+            }
+          }} class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+            Open vote sites
+          </button>
+        </div>
       </div>
     </section>
   );
