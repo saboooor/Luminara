@@ -314,7 +314,7 @@ export default component$(() => {
               />
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="/md/vip" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -335,7 +335,7 @@ export default component$(() => {
               />
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="/md/mvp" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -356,7 +356,7 @@ export default component$(() => {
               />
             </picture>
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="/md/goat" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
