@@ -1,5 +1,9 @@
 // @ts-nocheck
 
+// import snifferAVIF from '~/images/ranks/sniffer.png?format=avif';
+// import snifferWEBP from '~/images/ranks/sniffer.png?format=webp';
+// import snifferPNG from '~/images/ranks/sniffer.png';
+
 import allayAVIF from '~/images/ranks/allay.png?format=avif';
 import allayWEBP from '~/images/ranks/allay.png?format=webp';
 import allayPNG from '~/images/ranks/allay.png';
@@ -57,6 +61,7 @@ import witherWEBP from '~/images/ranks/wither.png?format=webp';
 import witherPNG from '~/images/ranks/wither.png';
 
 const ranks = {
+// sniffer: { avif: snifferAVIF, webp: snifferWEBP, png: snifferPNG },
   allay: { avif: allayAVIF, webp: allayWEBP, png: allayPNG },
   axolotl: { avif: axolotlAVIF, webp: axolotlWEBP, png: axolotlPNG },
   blaze: { avif: blazeAVIF, webp: blazeWEBP, png: blazePNG },
