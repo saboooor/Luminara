@@ -33,14 +33,14 @@ export default component$(({ noScrollIndicator }: any) => {
           <a href="https://bit.ly/NetherVote-MCPS" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCPS
           </a>
-          <a href="https://bit.ly/NetherVote-TMCS" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
-            TMCS
+          <a href="https://bit.ly/NetherVote-SMCN" class="flex transition rounded-xl bg-red-600/80 hover:bg-red-600 border-red-600 border px-6 py-3 font-bold text-red-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+            SMCN
           </a>
           <a href="https://bit.ly/NetherVote-CF" class="flex transition rounded-xl bg-cyan-700/70 hover:bg-cyan-700 border-cyan-700 border px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             CurseForge
           </a>
-          <a href="https://bit.ly/NetherVote-SMCN" class="flex transition rounded-xl bg-cyan-700/70 hover:bg-cyan-700 border-cyan-700 border px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
-            SMCN
+          <a href="https://bit.ly/NetherVote-TMCS" class="flex transition rounded-xl bg-cyan-700/70 hover:bg-cyan-700 border-cyan-700 border px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
+            TMCS
           </a>
           <a href="https://bit.ly/NetherVote-MCSH" class="flex transition rounded-xl bg-cyan-700/70 hover:bg-cyan-700 border-cyan-700 border px-6 py-3 font-bold text-indigo-100 md:py-4 md:px-8 md:text-lg whitespace-nowrap justify-center">
             MCSH
@@ -73,10 +73,10 @@ export default component$(({ noScrollIndicator }: any) => {
             window.open('https://bit.ly/NetherVote-MCSN');
             window.open('https://bit.ly/NetherVote-MCMP');
             window.open('https://bit.ly/NetherVote-MCPS');
-            window.open('https://bit.ly/NetherVote-TMCS');
+            window.open('https://bit.ly/NetherVote-SMCN');
             if (!store.blue) return;
             window.open('https://bit.ly/NetherVote-CF');
-            window.open('https://bit.ly/NetherVote-SMCN');
+            window.open('https://bit.ly/NetherVote-TMCS');
             window.open('https://bit.ly/NetherVote-MCSH');
             window.open('https://bit.ly/NetherVote-PMC');
             window.open('https://bit.ly/NetherVote-TOPG');
