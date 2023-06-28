@@ -17,7 +17,7 @@ export default component$(() => {
         <p class="mb-6 sm:mb-14 font-normal text-xl shadow-outline">
           Please note that the staff have full control over what may be allowed and what is not, things may differ as there may be gray areas.<br />
           Attempting to exploit gray areas is not permitted and will end up in a punishment regardless of what the rules indicate.<br />
-          Last updated Mar 13, 2023
+          Last updated Jun 28, 2023
         </p>
         <div class="grid gap-5">
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
@@ -71,6 +71,7 @@ export default component$(() => {
             <h2 class="text-xl font-bold sm:text-2xl mb-4">10. Annoyances</h2>
             <p>If a player is bothered or annoyed by what you're doing that's related to them, you must stop.</p>
             <p>Repetitively trolling (e.g. telling people to do "alt + f4" to make people leave) is not permitted.</p>
+            <p>Please keep jukeboxes at a fair volume if you are living within 256 blocks away from a player's build as the player may request to lower the volume (and punish if volume is repetitively raised) by contacting the staff,</p>
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl font-bold sm:text-2xl mb-4">11. Behaviour</h2>
