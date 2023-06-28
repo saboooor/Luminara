@@ -278,19 +278,19 @@ export default component$(() => {
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl sm:text-2xl text-center font-bold">Sniffer</h2>
             <p class="text-center">2440 Votes</p>
-            {/*
             <picture>
               <source srcSet={ranks.sniffer.avif} type="image/avif" />
               <source srcSet={ranks.sniffer.webp} type="image/webp" />
               <img
                 src={ranks.sniffer.png}
                 class="w-full p-6"
+                width={207}
+                height={207}
                 alt="Sniffer Rank Icon"
                 loading="eager"
                 decoding="async"
               />
             </picture>
-            */}
             <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
             <p>40 Homes</p>
             <p>14 Creative Plots</p>
