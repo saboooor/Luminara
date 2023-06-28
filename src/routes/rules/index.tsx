@@ -71,7 +71,7 @@ export default component$(() => {
             <h2 class="text-xl font-bold sm:text-2xl mb-4">10. Annoyances</h2>
             <p>If a player is bothered or annoyed by what you're doing that's related to them, you must stop.</p>
             <p>Repetitively trolling (e.g. telling people to do "alt + f4" to make people leave) is not permitted.</p>
-            <p>Please keep jukeboxes at a fair radius if you are living within 256 blocks away from a player's build as the player may request to lower the radius (and punish if radius is repetitively raised) by contacting the staff.</p>
+            <p>Please keep jukeboxes at a fair radius if you are living within 512 blocks away from a player's build as the player may request to lower the radius (and punish if radius is repetitively raised) by contacting the staff.</p>
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl font-bold sm:text-2xl mb-4">11. Behaviour</h2>
