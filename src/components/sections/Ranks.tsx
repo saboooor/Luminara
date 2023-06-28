@@ -299,7 +299,7 @@ export default component$(() => {
         <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl sm:text-2xl text-center font-bold">VIP</h2>
-            <p class="text-center">$3.49/mo OR $8.89/quarter</p>
+            <p class="text-center">$3/mo / $8/3mo / $30/yr</p>
             <picture>
               <source srcSet={ranks.enderDragon.avif} type="image/avif" />
               <source srcSet={ranks.enderDragon.webp} type="image/webp" />
@@ -320,7 +320,7 @@ export default component$(() => {
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl sm:text-2xl text-center font-bold">MVP</h2>
-            <p class="text-center">$5.49/mo OR $14.89/quarter</p>
+            <p class="text-center">$5/mo / $14/3mo / $54/yr</p>
             <picture>
               <source srcSet={ranks.wither.avif} type="image/avif" />
               <source srcSet={ranks.wither.webp} type="image/webp" />
@@ -341,7 +341,7 @@ export default component$(() => {
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl sm:text-2xl text-center font-bold">G.O.A.T</h2>
-            <p class="text-center">$7.69/mo OR $20.49/quarter</p>
+            <p class="text-center">$7/mo / $20/3mo / $78/yr</p>
             <picture>
               <source srcSet={ranks.flowerCow.avif} type="image/avif" />
               <source srcSet={ranks.flowerCow.webp} type="image/webp" />
