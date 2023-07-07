@@ -137,8 +137,9 @@ export const Brand = component$(() => {
           <source srcSet={logoWEBP} type="image/webp" />
           <img
             src={logoPNG}
-            class="hidden sm:flex"
-            width={192} height={48}
+            class="hidden sm:flex h-16"
+            height={64}
+            width={108}
             alt="Nether Depths Logo"
             loading="eager"
             decoding="async"
