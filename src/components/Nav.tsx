@@ -1,19 +1,7 @@
 import { component$, Slot } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
 
-// @ts-ignore
-import iconAVIF from '~/images/icon.png?h=96&format=avif';
-// @ts-ignore
-import iconWEBP from '~/images/icon.png?h=96&format=webp';
-// @ts-ignore
-import iconPNG from '~/images/icon.png?h=96';
-
-// @ts-ignore
-import logoAVIF from '~/images/logo.png?h=96&format=avif';
-// @ts-ignore
-import logoWEBP from '~/images/logo.png?h=96&format=webp';
-// @ts-ignore
-import logoPNG from '~/images/logo.png?h=96';
+import NDLogo from '~/images/logo.png?jsx';
 
 import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline, MailOutline } from 'qwik-ionicons';
 
@@ -132,31 +120,9 @@ export const Brand = component$(() => {
   return (
     <div class="flex items-center justify-start">
       <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800/50 drop-shadow-2xl pl-1 px-3 rounded-lg text-lg flex items-center whitespace-nowrap">
-        <picture>
-          <source srcSet={logoAVIF} type="image/avif" />
-          <source srcSet={logoWEBP} type="image/webp" />
-          <img
-            src={logoPNG}
-            class="hidden sm:flex h-16"
-            height={64}
-            width={108}
-            alt="Nether Depths Logo"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
-        <picture>
-          <source srcSet={iconAVIF} type="image/avif" />
-          <source srcSet={iconWEBP} type="image/webp" />
-          <img
-            src={iconPNG}
-            class="h-12 flex sm:hidden"
-            width={48} height={48}
-            alt="Nether Depths Icon"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
+        <div class="w-28">
+          <NDLogo />
+        </div>
         <div class={`${location.isNavigating ? '' : '-ml-10 opacity-0'} transition-all`}>
           <LoadingIcon/>
         </div>
