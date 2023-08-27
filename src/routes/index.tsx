@@ -1,68 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { DocumentHead } from '@builder.io/qwik-city';
 
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkGfm from 'remark-gfm';
-import remarkRehype from 'remark-rehype';
-import rehypeStringify from 'rehype-stringify';
-
-export const Markdown = component$<any>(({ mdContent, extraClass }: any) => (
-  <>
-    {unified()
-      .use(remarkParse)
-      .use(remarkGfm)
-      .use(remarkRehype)
-      .use(rehypeStringify)
-      .process(mdContent)
-      .then((file: any) => {
-        let str = String(file);
-        str.match(/&#x3C;(a?):(\w+):(\d+)>/g)?.forEach((match) => {
-          const emoji = match.match(/&#x3C;(a?):\w+:(\d+)>/)!;
-          const animated = emoji[1] == 'a';
-          const id = emoji[2];
-          str = str.replace(match, `<img src="https://cdn.discordapp.com/emojis/${id}.${animated ? 'gif' : 'png'}" class="inline h-5" />`);
-        });
-        str.match(/\|\|([\s\S]*)\|\|/g)?.forEach((match) => {
-          const spoiler = match.match(/\|\|([\s\S]*)\|\|/)!;
-          str = str.replace(match, `<p class="bg-gray-500 text-gray-500 cursor-pointer spoiler">${spoiler[1]}</p>`);
-        });
-        str.match(/<t:(\d{1,13})(:t)?(:R)?>/g)?.forEach((match) => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13})(:t)?(:R)?>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        str.match(/<t:(\d{1,13}):F>/g)?.forEach((match) => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13}):F>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        str.match(/<t:(\d{1,13}):d>/g)?.forEach((match) => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13}):d>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { month: 'numeric', day: 'numeric', year: 'numeric' });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        str.match(/<t:(\d{1,13}):D>/g)?.forEach(match => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13}):D>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric' });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        str.match(/<t:(\d{1,13}):t>/g)?.forEach(match => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13}):t>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { hour: 'numeric', minute: 'numeric', hour12: true });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        str.match(/<t:(\d{1,13}):T>/g)?.forEach(match => {
-          const date = new Date(Number(match.match(/<t:(\d{1,13}):T>/)![1]) * 1000);
-          const string = date.toLocaleString('default', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
-          str = str.replace(match[0], `**${string}**`);
-        });
-        return <div dangerouslySetInnerHTML={str} class={`whitespace-pre-line [&>p>a]:text-blue-400 [&>p>a]:hover:underline ${extraClass}`} />;
-      })
-    }
-  </>
-));
-
 export default component$(() => {
   return (
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
