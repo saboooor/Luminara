@@ -15,7 +15,7 @@ export default component$(() => {
         <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
           <LogoDiscord width="24" class="fill-current" /> Discord
         </NavButton>
-        <NavButton href="/downloads" title="Downloads" extraClass="flex gap-3">
+        <NavButton href="https://luminescent.dev/downloads" title="Downloads" extraClass="flex gap-3">
           <DownloadOutline width="24" class="fill-current" /> Downloads
         </NavButton>
         <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
@@ -40,7 +40,7 @@ export default component$(() => {
         <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
           <LogoDiscord width="24" class="fill-current" /> Discord
         </NavButton>
-        <NavButton href="/downloads" extraClass="flex gap-3">
+        <NavButton href="https://luminescent.dev/downloads" extraClass="flex gap-3">
           <DownloadOutline width="24" class="fill-current" /> Downloads
         </NavButton>
         <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
