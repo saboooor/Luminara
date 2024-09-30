@@ -1,4 +1,4 @@
-import { component$, useStyles$, useVisibleTask$, QRL } from '@builder.io/qwik';
+import { component$, useStyles$, QRL } from '@builder.io/qwik';
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
 import { RouterHead } from './components/head';
 
@@ -19,29 +19,6 @@ export const onScroll$: any = (fnQrl: QRL<()=>void>) => {
   });
 };
 
-export const blur = () => {
-  // Get the backdrop element
-  const backDrop = document.getElementById('backdrop');
-
-  // Check the scroll distance and round it up
-  const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
-
-  // Set the max blur value (800 / 20 = 30)
-  let blurVal: any = 32;
-
-  // Set the blur value to (scrollTop / 6) if scroll distance is under 300
-  if (scrollTop < 800 && window.location.pathname == '/') blurVal = Math.round(scrollTop / 25);
-
-  // Set blur value with padding for the zoom as well
-  blurVal = String(blurVal).padStart(2, '0');
-
-  // Set filter with blur valur and scale as a decimal: 1.{blur value}
-  backDrop!.style.filter = `blur(${blurVal}px)`;
-  backDrop!.style.transform = `scale(1.${blurVal})`;
-
-  return;
-};
-
 export default component$(() => {
   /**
    * The root of a QwikCity site always start with the <QwikCity> component,
@@ -51,19 +28,14 @@ export default component$(() => {
    */
   useStyles$(globalStyles);
 
-  useVisibleTask$(()=>{
-    blur();
-    onScroll$(() => blur());
-  });
-
   return (
     <QwikCityProvider>
       <head>
-        <meta charSet="utf-8" />
+        <meta charset="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class="bg-red-900 text-gray-200 min-h-screen">
+      <body lang="en" class="bg-gradient-to-b from-purple-900 to-pink-400 text-gray-100 min-h-screen pt-36">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
