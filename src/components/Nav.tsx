@@ -3,7 +3,7 @@ import { Link, useLocation } from '@builder.io/qwik-city';
 
 import NDLogo from '~/images/logo.png?jsx';
 
-import { LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline } from 'qwik-ionicons';
+import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline, MailOutline } from 'qwik-ionicons';
 
 import LuminescentLogo from '~/components/icons/LuminescentLogo';
 import LoadingIcon from './icons/LoadingIcon';
@@ -12,22 +12,51 @@ export default component$(() => {
   return (
     <Nav>
       <MainNav>
-        <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
-          <LogoDiscord width="24" class="fill-current" /> Discord
+        <NavButton href="/announcements" extraClass="hidden lg:flex gap-3">
+          <NotificationsOutline width="24" class="fill-current" /> Announcements
         </NavButton>
-        <NavButton href="https://luminescent.dev/downloads" title="Downloads" extraClass="flex gap-3">
-          <DownloadOutline width="24" class="fill-current" /> Downloads
+        <NavButton href="/rules" extraClass="hidden sm:flex gap-3">
+          <ShieldOutline width="24" class="fill-current" /> Rules
         </NavButton>
-        <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
-          <ColorFillOutline width="24" class="fill-current" /> Gradients
+        <NavButton href="/vote" extraClass="hidden sm:flex gap-3">
+          <TrendingUpOutline width="24" class="fill-current" /> Vote
         </NavButton>
-        <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
-          <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
-            <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
-              <LuminescentLogo/>
+        <NavButton href="/ranks" extraClass="hidden md:flex gap-3">
+          <BarChartOutline width="24" class="fill-current" /> Ranks
+        </NavButton>
+        <NavButton icon external href="https://netherdepths.tebex.io" extraClass="hidden md:flex gap-3">
+          <CartOutline width="24" class="fill-current" />
+        </NavButton>
+        <NavButton icon href="/discord" title="Discord" extraClass="hidden sm:flex">
+          <LogoDiscord width="24" class="fill-current" />
+        </NavButton>
+        <Dropdown name="More" extraClass="hidden sm:flex">
+          <NavButton href="/announcements" extraClass="flex lg:hidden gap-3">
+            <NotificationsOutline width="24" class="fill-current" /> Announcements
+          </NavButton>
+          <NavButton href="/ranks" extraClass="flex md:hidden gap-3">
+            <BarChartOutline width="24" class="fill-current" /> Ranks
+          </NavButton>
+          <NavButton external href="https://netherdepths.tebex.io" extraClass="flex md:hidden gap-3">
+            <CartOutline width="24" class="fill-current" /> Store
+          </NavButton>
+          <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
+            <ColorFillOutline width="24" class="fill-current" /> Gradients
+          </NavButton>
+          <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
+            <MailOutline width="24" class="fill-current" /> Appeal a ban
+          </NavButton>
+          <NavButton href="/downloads" extraClass="flex gap-3">
+            <DownloadOutline width="24" class="fill-current" /> Downloads
+          </NavButton>
+          <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
+            <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
+              <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
+                <LuminescentLogo/>
+              </div>
             </div>
-          </div>
-        </NavButton>
+          </NavButton>
+        </Dropdown>
         <button id="mobile-menu-button" type="button" title="Menu" onClick$={() => {
           const classList = document.getElementById('mobile-menu')?.classList;
           if (classList?.contains('hidden')) classList.replace('hidden', 'flex');
@@ -37,6 +66,21 @@ export default component$(() => {
         </button>
       </MainNav>
       <MobileNav>
+        <NavButton href="/announcements" extraClass="flex gap-3">
+          <NotificationsOutline width="24" class="fill-white" /> Announcements
+        </NavButton>
+        <NavButton href="/rules" extraClass="flex gap-3">
+          <ShieldOutline width="24" class="fill-current" /> Rules
+        </NavButton>
+        <NavButton href="/vote" extraClass="flex gap-3">
+          <TrendingUpOutline width="24" class="fill-current" /> Vote
+        </NavButton>
+        <NavButton href="/ranks" extraClass="flex gap-3">
+          <BarChartOutline width="24" class="fill-current" /> Ranks
+        </NavButton>
+        <NavButton external href="https://netherdepths.tebex.io" extraClass="flex gap-3">
+          <CartOutline width="24" class="fill-current" /> Store
+        </NavButton>
         <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
           <LogoDiscord width="24" class="fill-current" /> Discord
         </NavButton>
@@ -45,6 +89,12 @@ export default component$(() => {
         </NavButton>
         <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
           <ColorFillOutline width="24" class="fill-current" /> Gradients
+        </NavButton>
+        <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
+          <MailOutline width="24" class="fill-current" /> Appeal a ban
+        </NavButton>
+        <NavButton href="/downloads" extraClass="flex gap-3">
+          <DownloadOutline width="24" class="fill-current" /> Downloads
         </NavButton>
         <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
           <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
