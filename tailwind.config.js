@@ -22,7 +22,7 @@ module.exports = {
     extend: {
       colors: {
         gray,
-        luminescent: theme.extend.colors.luminescent,
+        ...theme.extend.colors,
       },
       animation: {
         ...theme.extend.animation,

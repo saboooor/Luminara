@@ -23,21 +23,12 @@ importers:
       '@luminescent/ui-qwik':
         specifier: ^1.2.9
         version: 1.2.9(@luminescent/ui@1.2.9)
-      '@modular-forms/qwik':
-        specifier: ^0.27.0
-        version: 0.27.0(@builder.io/qwik-city@1.9.0(@types/node@20.5.6)(rollup@4.22.5)(typescript@5.6.2))(@builder.io/qwik@1.9.0(@types/node@20.5.6))(typescript@5.6.2)
-      '@prisma/client':
-        specifier: ^5.20.0
-        version: 5.20.0(prisma@5.20.0)
       '@types/eslint':
         specifier: 8.56.11
         version: 8.56.11
       '@types/node':
         specifier: latest
         version: 20.5.6
-      '@types/uuid':
-        specifier: ^10.0.0
-        version: 10.0.0
       '@typescript-eslint/eslint-plugin':
         specifier: 8.8.0
         version: 8.8.0(@typescript-eslint/parser@8.8.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2)
@@ -47,9 +38,6 @@ importers:
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.47)
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       discord-api-types:
         specifier: ^0.37.101
         version: 0.37.101
@@ -59,18 +47,9 @@ importers:
       eslint-plugin-qwik:
         specifier: 1.9.0
         version: 1.9.0(eslint@8.57.0)
-      globals:
-        specifier: ^15.10.0
-        version: 15.10.0
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
-      prisma:
-        specifier: ^5.20.0
-        version: 5.20.0
-      qwik-feather-icons:
-        specifier: 1.2.1
-        version: 1.2.1
       qwik-ionicons:
         specifier: 1.0.5
         version: 1.0.5
@@ -98,18 +77,12 @@ importers:
       unified:
         specifier: 11.0.5
         version: 11.0.5
-      uuid:
-        specifier: ^10.0.0
-        version: 10.0.0
       vite:
         specifier: ^5.4.8
         version: 5.4.8(@types/node@20.5.6)
       vite-tsconfig-paths:
         specifier: 5.0.1
         version: 5.0.1(typescript@5.6.2)(vite@5.4.8(@types/node@20.5.6))
-      zod:
-        specifier: ^3.23.8
-        version: 3.23.8
 
 packages:
 
@@ -446,12 +419,6 @@ packages:
   '@mdx-js/mdx@3.0.1':
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
 
-  '@modular-forms/qwik@0.27.0':
-    resolution: {integrity: sha512-FbyXzxx1rMSHIRkoQ5MOu016BZkItHkk4ezkf67zFrAwlSZSA2ADOqAjeoheiYeVO26CGyPDetQh8v/AXYHDGA==}
-    peerDependencies:
-      '@builder.io/qwik': ^1.4.0
-      '@builder.io/qwik-city': ^1.4.0
-
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -463,30 +430,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@prisma/client@5.20.0':
-    resolution: {integrity: sha512-CLv55ZuMuUawMsxoqxGtLT3bEZoa2W8L3Qnp6rDIFWy+ZBrUcOFKdoeGPSnbBqxc3SkdxJrF+D1veN/WNynZYA==}
-    engines: {node: '>=16.13'}
-    peerDependencies:
-      prisma: '*'
-    peerDependenciesMeta:
-      prisma:
-        optional: true
-
-  '@prisma/debug@5.20.0':
-    resolution: {integrity: sha512-oCx79MJ4HSujokA8S1g0xgZUGybD4SyIOydoHMngFYiwEwYDQ5tBQkK5XoEHuwOYDKUOKRn/J0MEymckc4IgsQ==}
-
-  '@prisma/engines-version@5.20.0-12.06fc58a368dc7be9fbbbe894adf8d445d208c284':
-    resolution: {integrity: sha512-Lg8AS5lpi0auZe2Mn4gjuCg081UZf88k3cn0RCwHgR+6cyHHpttPZBElJTHf83ZGsRNAmVCZCfUGA57WB4u4JA==}
-
-  '@prisma/engines@5.20.0':
-    resolution: {integrity: sha512-DtqkP+hcZvPEbj8t8dK5df2b7d3B8GNauKqaddRRqQBBlgkbdhJkxhoJTrOowlS3vaRt2iMCkU0+CSNn0KhqAQ==}
-
-  '@prisma/fetch-engine@5.20.0':
-    resolution: {integrity: sha512-JVcaPXC940wOGpCOwuqQRTz6I9SaBK0c1BAyC1pcz9xBi+dzFgUu3G/p9GV1FhFs9OKpfSpIhQfUJE9y00zhqw==}
-
-  '@prisma/get-platform@5.20.0':
-    resolution: {integrity: sha512-8/+CehTZZNzJlvuryRgc77hZCWrUDYd/PmlZ7p2yNXtmf2Una4BWnTbak3us6WVdqoz5wmptk6IhsXdG2v5fmA==}
 
   '@rollup/pluginutils@5.1.2':
     resolution: {integrity: sha512-/FIdS3PyZ39bjZlwqFnWqCOVnW7o963LtKMwQOD0NhQqw22gSr2YY1afu3FxRip4ZCZNsD5jq6Aaz6QV3D/Njw==}
@@ -619,9 +562,6 @@ packages:
 
   '@types/unist@3.0.0':
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
-
-  '@types/uuid@10.0.0':
-    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==}
 
   '@typescript-eslint/eslint-plugin@8.8.0':
     resolution: {integrity: sha512-wORFWjU30B2WJ/aXBfOm1LX9v9nyt9D3jsSOxC3cCaTQGCW5k4jNpmjFv3U7p/7s4yvdjHzwtv2Sd2dOyhjS0A==}
@@ -808,10 +748,6 @@ packages:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
 
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
-    engines: {node: '>=6'}
-
   collapse-white-space@2.1.0:
     resolution: {integrity: sha512-loKTxY1zCOuG4j9f6EPnuyyYkf58RnhhWTvRoZEokgB+WbdXehfjFviyOVYkqzEWz1Q5kRiZdBYS5SwxbQYwzw==}
 
@@ -882,9 +818,6 @@ packages:
     peerDependenciesMeta:
       supports-color:
         optional: true
-
-  decode-formdata@0.8.0:
-    resolution: {integrity: sha512-iUzDgnWsw5ToSkFY7VPFA5Gfph6ROoOxOB7Ybna4miUSzLZ4KaSJk6IAB2AdW6+C9vCVWhjjNA4gjT6wF3eZHQ==}
 
   decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
@@ -1116,10 +1049,6 @@ packages:
   globals@13.24.0:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
-
-  globals@15.10.0:
-    resolution: {integrity: sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==}
-    engines: {node: '>=18'}
 
   globalthis@1.0.3:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
@@ -1681,11 +1610,6 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prisma@5.20.0:
-    resolution: {integrity: sha512-6obb3ucKgAnsGS9x9gLOe8qa51XxvJ3vLQtmyf52CTey1Qcez3A6W6ROH5HIz5Q5bW+0VpmZb8WBohieMFGpig==}
-    engines: {node: '>=16.13'}
-    hasBin: true
-
   property-information@6.1.1:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==}
 
@@ -1695,10 +1619,6 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-
-  qwik-feather-icons@1.2.1:
-    resolution: {integrity: sha512-odzMdajSWpUF0+ZsSibWR0/U0FCy0B39eBt/rWEU4sUbCZaAupCT3oP8m0M4fa+tfjUhXcBfLaHw60h6HYsxYQ==}
-    engines: {node: '>=15.0.0'}
 
   qwik-ionicons@1.0.5:
     resolution: {integrity: sha512-bXOS4NNNQqftIkRY3jvA755YA/H9WTYGGqTYpzam8QVkyduVOjvkIvUJE+3BapCxBdO3QEb9+9Nl0cDHUdYzRg==}
@@ -1943,10 +1863,6 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@10.0.0:
-    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
-    hasBin: true
-
   valibot@0.42.1:
     resolution: {integrity: sha512-3keXV29Ar5b//Hqi4MbSdV7lfVp6zuYLZuA9V1PvQUsXqogr+u5lvLPLk3A4f74VUXDnf/JfWMN6sB+koJ/FFw==}
     peerDependencies:
@@ -2029,9 +1945,6 @@ packages:
 
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
-
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -2322,15 +2235,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@modular-forms/qwik@0.27.0(@builder.io/qwik-city@1.9.0(@types/node@20.5.6)(rollup@4.22.5)(typescript@5.6.2))(@builder.io/qwik@1.9.0(@types/node@20.5.6))(typescript@5.6.2)':
-    dependencies:
-      '@builder.io/qwik': 1.9.0(@types/node@20.5.6)
-      '@builder.io/qwik-city': 1.9.0(@types/node@20.5.6)(rollup@4.22.5)(typescript@5.6.2)
-      decode-formdata: 0.8.0
-      valibot: 0.42.1(typescript@5.6.2)
-    transitivePeerDependencies:
-      - typescript
-
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -2342,31 +2246,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
-
-  '@prisma/client@5.20.0(prisma@5.20.0)':
-    optionalDependencies:
-      prisma: 5.20.0
-
-  '@prisma/debug@5.20.0': {}
-
-  '@prisma/engines-version@5.20.0-12.06fc58a368dc7be9fbbbe894adf8d445d208c284': {}
-
-  '@prisma/engines@5.20.0':
-    dependencies:
-      '@prisma/debug': 5.20.0
-      '@prisma/engines-version': 5.20.0-12.06fc58a368dc7be9fbbbe894adf8d445d208c284
-      '@prisma/fetch-engine': 5.20.0
-      '@prisma/get-platform': 5.20.0
-
-  '@prisma/fetch-engine@5.20.0':
-    dependencies:
-      '@prisma/debug': 5.20.0
-      '@prisma/engines-version': 5.20.0-12.06fc58a368dc7be9fbbbe894adf8d445d208c284
-      '@prisma/get-platform': 5.20.0
-
-  '@prisma/get-platform@5.20.0':
-    dependencies:
-      '@prisma/debug': 5.20.0
 
   '@rollup/pluginutils@5.1.2(rollup@4.22.5)':
     dependencies:
@@ -2464,8 +2343,6 @@ snapshots:
   '@types/unist@2.0.6': {}
 
   '@types/unist@3.0.0': {}
-
-  '@types/uuid@10.0.0': {}
 
   '@typescript-eslint/eslint-plugin@8.8.0(@typescript-eslint/parser@8.8.0(eslint@8.57.0)(typescript@5.6.2))(eslint@8.57.0)(typescript@5.6.2)':
     dependencies:
@@ -2680,8 +2557,6 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  clsx@2.1.1: {}
-
   collapse-white-space@2.1.0: {}
 
   color-convert@2.0.1:
@@ -2745,8 +2620,6 @@ snapshots:
   debug@4.3.4:
     dependencies:
       ms: 2.1.2
-
-  decode-formdata@0.8.0: {}
 
   decode-named-character-reference@1.0.2:
     dependencies:
@@ -3079,8 +2952,6 @@ snapshots:
   globals@13.24.0:
     dependencies:
       type-fest: 0.20.2
-
-  globals@15.10.0: {}
 
   globalthis@1.0.3:
     dependencies:
@@ -3928,19 +3799,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prisma@5.20.0:
-    dependencies:
-      '@prisma/engines': 5.20.0
-    optionalDependencies:
-      fsevents: 2.3.3
-
   property-information@6.1.1: {}
 
   punycode@2.1.1: {}
 
   queue-microtask@1.2.3: {}
-
-  qwik-feather-icons@1.2.1: {}
 
   qwik-ionicons@1.0.5: {}
 
@@ -4294,8 +4157,6 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@10.0.0: {}
-
   valibot@0.42.1(typescript@5.6.2):
     optionalDependencies:
       typescript: 5.6.2
@@ -4367,7 +4228,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.22.4: {}
-
-  zod@3.23.8: {}
 
   zwitch@2.0.4: {}
