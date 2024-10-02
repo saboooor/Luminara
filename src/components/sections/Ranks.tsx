@@ -6,7 +6,7 @@ export default component$(() => {
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center drop-shadow-xl">
         <h1 class="mb-4 shadow-outline">
-          <span class="text-red-400">Nether Depths</span> Ranks
+          <span class="text-luminescent-400">Luminara SMP</span> Ranks
         </h1>
         <p class="mb-6 sm:mb-14 font-normal text-xl shadow-outline">
           Different ranks give different perks!
@@ -158,7 +158,7 @@ export default component$(() => {
             <p class="text-center">$3/mo / $8/3mo / $30/yr</p>
             <Ranks.enderDragon class="py-10" />
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/category/ranks" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/category/ranks" target="_blank" class="transition rounded-xl bg-luminescent-700/80 hover:bg-luminescent-700 px-6 py-3 font-bold text-luminescent-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -167,7 +167,7 @@ export default component$(() => {
             <p class="text-center">$5/mo / $14/3mo / $54/yr</p>
             <Ranks.wither class="py-10" />
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/category/mvp" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/category/mvp" target="_blank" class="transition rounded-xl bg-luminescent-700/80 hover:bg-luminescent-700 px-6 py-3 font-bold text-luminescent-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>
@@ -176,7 +176,7 @@ export default component$(() => {
             <p class="text-center">$7/mo / $20/3mo / $78/yr</p>
             <Ranks.moobloom class="py-10" />
             <h2 class="text-lg sm:text-xl my-2 font-bold mb-6">Perks</h2>
-            <a href="https://netherdepths.tebex.io/category/goat" target="_blank" class="transition rounded-xl bg-red-700/80 hover:bg-red-700 px-6 py-3 font-bold text-red-100 text-lg whitespace-nowrap">
+            <a href="https://netherdepths.tebex.io/category/goat" target="_blank" class="transition rounded-xl bg-luminescent-700/80 hover:bg-luminescent-700 px-6 py-3 font-bold text-luminescent-100 text-lg whitespace-nowrap">
               Learn More...
             </a>
           </div>

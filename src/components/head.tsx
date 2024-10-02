@@ -13,15 +13,15 @@ export const RouterHead = component$(() => {
 
   return (
     <>
-      <title>{`Nether Depths - ${head.title}`}</title>
+      <title>{`Luminara SMP - ${head.title}`}</title>
 
       <link rel="canonical" href={loc.url.href} />
       <link rel="icon" href={iconWEBP} />
-      <link rel="mask-icon" href={iconWEBP} color="#330c0c" />
+      <link rel="mask-icon" href={iconWEBP} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta content={`Nether Depths - ${head.title}`} property="og:title" />
+      <meta content={`Luminara SMP - ${head.title}`} property="og:title" />
       <meta content={iconWEBP} property="og:image" />
-      <meta content="#330c0c" name="theme-color" />
+      <meta content="#FEA6AE" name="theme-color" />
 
       {head.meta.map((m) => (
         <>

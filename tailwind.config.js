@@ -1,39 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 
-const red = {
-  '50': '#fef2f2',
-  '100': '#fee2e2',
-  '200': '#fecaca',
-  '300': '#fca5a5',
-  '400': '#f87171',
-  '500': '#ef4444',
-  '600': '#cc2323',
-  '700': '#991717',
-  '800': '#661212',
-  '900': '#330c0c'
-}
+import { content, theme } from '@luminescent/ui-qwik/config';
 
 const gray = {
-  50: "hsl(0deg, 0%, 95%)",
- 100: "hsl(0deg, 0%, 85%)",
- 200: "hsl(0deg, 0%, 75%)",
- 300: "hsl(0deg, 0%, 65%)",
- 400: "hsl(0deg, 0%, 55%)",
- 500: "hsl(0deg, 0%, 45%)",
- 600: "hsl(0deg, 0%, 35%)",
- 700: "hsl(0deg, 0%, 25%)",
- 800: "hsl(0deg, 0%, 15%)",
- 900: "hsl(0deg, 0%, 5%)"
+  50: "hsl(270deg, 2%, 95%)",
+ 100: "hsl(270deg, 4%, 85%)",
+ 200: "hsl(270deg, 6%, 75%)",
+ 300: "hsl(270deg, 8%, 65%)",
+ 400: "hsl(270deg, 10%, 55%)",
+ 500: "hsl(270deg, 12%, 45%)",
+ 600: "hsl(270deg, 14%, 32%)",
+ 700: "hsl(270deg, 16%, 21%)",
+ 800: "hsl(270deg, 18%, 12%)",
+ 850: "hsl(270deg, 20%, 8%)",
+ 900: "hsl(270deg, 22%, 5%)",
 };
 
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', ...content],
   theme: {
     extend: {
       colors: {
-        red, gray,
+        gray,
+        luminescent: theme.extend.colors.luminescent,
+      },
+      animation: {
+        ...theme.extend.animation,
+      },
+      keyframes: {
+        ...theme.extend.keyframes,
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@luminescent/ui'),
+    require('@anuragroy/tailwindcss-animate'),
+  ],
 };

@@ -22,11 +22,11 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Vote for Nether Depths and get rewarded!',
+      content: 'Vote for Luminara SMP and get rewarded! Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
     {
       name: 'og:description',
-      content: 'Vote for Nether Depths and get rewarded!',
+      content: 'Vote for Luminara SMP and get rewarded! Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
   ],
 };

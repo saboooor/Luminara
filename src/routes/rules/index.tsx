@@ -12,7 +12,7 @@ export default component$(() => {
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center drop-shadow-xl">
         <h1 class="mb-4 shadow-outline">
-          <span class="text-red-400">Nether Depths</span> Rules
+          <span class="text-luminescent-400">Luminara SMP</span> Rules
         </h1>
         <p class="mb-6 sm:mb-14 font-normal text-xl shadow-outline">
           Please note that the staff have full control over what may be allowed and what is not, things may differ as there may be gray areas.<br />
@@ -80,7 +80,7 @@ export default component$(() => {
             <p>Some examples of toxicity include but are not limited to:</p>
             <p>- Directing swears towards others.</p>
             <p>- Insulting others in a discrete repetitive way.</p>
-            <p>- Acting like you're above everyone else. (At Nether Depths, everyone is equally treated.)</p>
+            <p>- Acting like you're above everyone else. (At Luminara SMP, everyone is equally treated.)</p>
             <p>- Any type of harassment.</p>
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
@@ -91,7 +91,7 @@ export default component$(() => {
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl text-lg font-normal">
             <h2 class="text-xl font-bold sm:text-2xl mb-4">13. Inclusivity</h2>
-            <p>You may not disrespect/discriminate others. Everyone in Nether Depths are included regardless of sexuality, race, looks, etc.</p>
+            <p>You may not disrespect/discriminate others. Everyone in Luminara SMP are included regardless of sexuality, race, looks, etc.</p>
             <p>Discrimination towards any group that may be against your views is not permitted. That includes but is not limited to people with different sexualities, races, looks, etc.</p>
             <p>Religion is not an excuse as you still must respect others.</p>
             <p>Any form of discrimination is not permitted.</p>
@@ -116,11 +116,11 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'View the rules of Nether Depths',
+      content: 'View the rules of Luminara SMP. Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
     {
       name: 'og:description',
-      content: 'View the rules of Nether Depths',
+      content: 'View the rules of Luminara SMP. Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
   ],
 };

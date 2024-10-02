@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "netherdepths",
-  "short_name": "Nether Depths",
+  "name": "luminarasmp",
+  "short_name": "Luminara SMP",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#330c0c",
-  "description": "Surpass the limits of the Nether."
+  "background_color": "#FEA6AE",
+  "description": "Formerly known as Nether Depths."
 }

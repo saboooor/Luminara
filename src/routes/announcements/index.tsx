@@ -263,10 +263,10 @@ export default component$(() => {
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
         <h1 class="mb-4 shadow-outline">
-          <span class="text-red-400">Nether Depths</span> Announcements
+          <span class="text-luminescent-400">Luminara SMP</span> Announcements
         </h1>
         <p class="font-normal text-xl shadow-outline">
-          Here you will find the latest announcements from Nether Depths.<br/>
+          Here you will find the latest announcements from Luminara SMP.<br/>
           This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
         <p>
@@ -280,13 +280,13 @@ export default component$(() => {
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
         <h1 class="mb-4 shadow-outline">
-          <span class="text-red-400">Nether Depths</span> Announcements
+          <span class="text-luminescent-400">Luminara SMP</span> Announcements
         </h1>
         <p class="font-normal text-xl shadow-outline">
-          Here you will find the latest announcements from Nether Depths.<br/>
+          Here you will find the latest announcements from Luminara SMP.<br/>
           This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
-        <button class="transition rounded-xl bg-red-700/80 hover:bg-red-700 border-red-700 border px-6 py-3 my-4 font-bold text-red-100 text-lg cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
+        <button class="transition rounded-xl bg-luminescent-700/80 hover:bg-luminescent-700 border-luminescent-700 border px-6 py-3 my-4 font-bold text-luminescent-100 text-lg cursor-pointer" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
           Sort by: {store.sort}
         </button>
         {(() => {
@@ -315,7 +315,7 @@ export default component$(() => {
                           </div>
                         </div>
                         <Link width="24" class="fill-current cursor-pointer" onClick$={() => {
-                          navigator.clipboard.writeText(`https://netherdepths.com/announcements#${announcement.id}`);
+                          navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
                           store.notifications.push({
                             title: 'Copied Successfully!',
                             content: 'The link to this announcement has been copied to your clipboard.',
@@ -370,7 +370,7 @@ export default component$(() => {
                               <div class="flex items-center gap-2">
                                 <Markdown mdContent={`${comment.content}${comment.attachments ? `\n\n${comment.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
                                 <Link width="16" class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
-                                  navigator.clipboard.writeText(`https://netherdepths.com/announcements#${comment.id}`);
+                                  navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${comment.id}`);
                                   store.notifications.push({
                                     title: 'Copied Successfully!',
                                     content: 'The link to this comment has been copied to your clipboard.',

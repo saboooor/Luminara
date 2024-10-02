@@ -5,7 +5,7 @@ export default component$(() => {
     <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
         <h1 class="mb-6 sm:mb-14 text-center shadow-outline">
-          Why <span class="text-red-400">Nether Depths?</span>
+          Why <span class="text-luminescent-400">Luminara SMP?</span>
         </h1>
         <div class="grid lg:grid-cols-3 gap-5">
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
@@ -20,7 +20,7 @@ export default component$(() => {
             <h2 class="text-xl sm:text-2xl mb-4">Bedrock-Compatible</h2>
             <p class="text-lg font-normal">On the go? No problem!</p>
             <p class="text-lg font-normal">You can join on Minecraft Bedrock Edition!</p>
-            <p class="text-lg font-normal">IP: play.netherdepths.com PORT: 19132</p>
+            <p class="text-lg font-normal">IP: mc.luminescent.dev PORT: 19132</p>
           </div>
           <div class="bg-black/30 border-black/30 border p-8 rounded-xl">
             <h2 class="text-xl sm:text-2xl mb-10">Survival</h2>

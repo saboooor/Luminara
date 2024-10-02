@@ -1,6 +1,6 @@
 {
-  "name": "nether-depths-website",
-  "description": "Website for Nether Depths",
+  "name": "luminara-website",
+  "description": "Website for Luminara SMP",
   "engines": {
     "node": ">=15.0.0"
   },

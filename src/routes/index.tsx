@@ -43,7 +43,7 @@ export default component$(() => {
         </div>
         <div class="sm:grid grid-cols-2 lg:grid-cols-3 gap-10 mx-auto justify-center items-center drop-shadow-2xl ">
           <button onClick$={() => {
-            navigator.clipboard.writeText('mc.luminescent.dev').catch((err) => {
+            navigator.clipboard.writeText('mc.luminescent.dev').catch(() => {
               const response = document.getElementById('response-desktop') as HTMLParagraphElement;
               response.textContent = 'FAILED TO COPY, CHECK CONSOLE';
               setTimeout(() => response.textContent = 'COPIED SUCCESSFULLY', 3000);
@@ -175,11 +175,11 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Surpass the limits of the Nether',
+      content: 'Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
     {
       name: 'og:description',
-      content: 'Surpass the limits of the Nether',
+      content: 'Formerly known as Nether Depths, Luminara SMP is a Minecraft server with a focus on community and player experience.',
     },
   ],
 };
