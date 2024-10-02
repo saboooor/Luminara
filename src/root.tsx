@@ -35,7 +35,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class="bg-gradient-to-b from-purple-900 to-pink-400 text-gray-100 min-h-screen pt-36">
+      <body lang="en" class="bg-gradient-to-b from-purple-900 to-pink-400 text-gray-100 min-h-screen pt-20">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
