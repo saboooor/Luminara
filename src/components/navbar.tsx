@@ -1,187 +1,109 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
+import { DropdownRaw, LogoDiscord, LogoLuminescentFull, Nav } from '@luminescent/ui-qwik';
+import { GitNetworkOutline, LogoGithub } from 'qwik-ionicons';
+import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, DownloadOutline, ColorFillOutline, MailOutline } from 'qwik-ionicons';
 
-import NDLogo from '~/images/logo.png?jsx';
-
-import { NotificationsOutline, ShieldOutline, TrendingUpOutline, BarChartOutline, CartOutline, LogoDiscord, Menu, DownloadOutline, ChevronDown, ColorFillOutline, MailOutline } from 'qwik-ionicons';
-
-import LuminescentLogo from '~/components/icons/LuminescentLogo';
-import LoadingIcon from './icons/LoadingIcon';
+import Logo from '~/images/logo.png?jsx';
+import LuminescentLogo from './icons/LuminescentLogo';
 
 export default component$(() => {
+  const loc = useLocation();
+
   return (
-    <Nav>
-      <MainNav>
-        <NavButton href="/announcements" extraClass="hidden lg:flex gap-3">
+    <Nav floating fixed colorClass="lum-bg-gray-800/50 !text-gray-100">
+      <Link q:slot="start" href="/" class="lum-btn lum-bg-transparent">
+        <Logo class="w-28" />
+        <div class={{
+          'transition-all': true,
+          '-ml-6 opacity-0': !loc.isNavigating,
+        }}>
+          <div class="lum-loading w-4 h-4" />
+        </div>
+      </Link>
+
+      <Link q:slot="end" href="/announcements" class={{
+        'hidden lg:flex lum-btn lum-bg-transparent hover:text-white': true,
+      }}>
+        <NotificationsOutline width="24" class="fill-current" /> Announcements
+      </Link>
+      <Link q:slot="end" href="/rules" class={{
+        'hidden sm:flex lum-btn lum-bg-transparent hover:text-white': true,
+      }}>
+        <ShieldOutline width="24" class="fill-current" /> Rules
+      </Link>
+      <Link q:slot="end" href="/vote" class={{
+        'hidden sm:flex lum-btn lum-bg-transparent hover:text-white': true,
+      }}>
+        <TrendingUpOutline width="24" class="fill-current" /> Vote
+      </Link>
+      <Link q:slot="end" href="/ranks" class={{
+        'hidden md:flex lum-btn lum-bg-transparent hover:text-white': true,
+      }}>
+        <BarChartOutline width="24" class="fill-current" /> Ranks
+      </Link>
+
+      <DropdownRaw id="nav-resources" q:slot='end' hover
+        display={<div class="flex items-center gap-3">More</div>}
+        class={{ 'lum-bg-transparent hidden sm:flex': true }}>
+        <Link q:slot="extra-buttons" href="/announcements" class="lum-btn lum-bg-transparent flex lg:hidden">
           <NotificationsOutline width="24" class="fill-current" /> Announcements
-        </NavButton>
-        <NavButton href="/rules" extraClass="hidden sm:flex gap-3">
-          <ShieldOutline width="24" class="fill-current" /> Rules
-        </NavButton>
-        <NavButton href="/vote" extraClass="hidden sm:flex gap-3">
-          <TrendingUpOutline width="24" class="fill-current" /> Vote
-        </NavButton>
-        <NavButton href="/ranks" extraClass="hidden md:flex gap-3">
+        </Link>
+        <Link q:slot="extra-buttons" href="/ranks" class="lum-btn lum-bg-transparent flex md:hidden">
           <BarChartOutline width="24" class="fill-current" /> Ranks
-        </NavButton>
-        <NavButton icon external href="https://netherdepths.tebex.io" extraClass="hidden md:flex gap-3">
-          <CartOutline width="24" class="fill-current" />
-        </NavButton>
-        <NavButton icon href="/discord" title="Discord" extraClass="hidden sm:flex">
-          <LogoDiscord width="24" class="fill-current" />
-        </NavButton>
-        <Dropdown name="More" extraClass="hidden sm:flex">
-          <NavButton href="/announcements" extraClass="flex lg:hidden gap-3">
-            <NotificationsOutline width="24" class="fill-current" /> Announcements
-          </NavButton>
-          <NavButton href="/ranks" extraClass="flex md:hidden gap-3">
-            <BarChartOutline width="24" class="fill-current" /> Ranks
-          </NavButton>
-          <NavButton external href="https://netherdepths.tebex.io" extraClass="flex md:hidden gap-3">
-            <CartOutline width="24" class="fill-current" /> Store
-          </NavButton>
-          <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
-            <ColorFillOutline width="24" class="fill-current" /> Gradients
-          </NavButton>
-          <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
-            <MailOutline width="24" class="fill-current" /> Appeal a ban
-          </NavButton>
-          <NavButton href="/downloads" extraClass="flex gap-3">
-            <DownloadOutline width="24" class="fill-current" /> Downloads
-          </NavButton>
-          <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
-            <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
-              <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
-                <LuminescentLogo/>
-              </div>
-            </div>
-          </NavButton>
-        </Dropdown>
-        <button id="mobile-menu-button" type="button" title="Menu" onClick$={() => {
-          const classList = document.getElementById('mobile-menu')?.classList;
-          if (classList?.contains('hidden')) classList.replace('hidden', 'flex');
-          else classList?.replace('flex', 'hidden');
-        }} class="transition ease-in-out hover:bg-gray-800 hover:text-white px-4 py-2 rounded-lg text-3xl sm:hidden">
-          <Menu width="24" class="fill-current"/>
-        </button>
-      </MainNav>
-      <MobileNav>
-        <NavButton href="/announcements" extraClass="flex gap-3">
-          <NotificationsOutline width="24" class="fill-white" /> Announcements
-        </NavButton>
-        <NavButton href="/rules" extraClass="flex gap-3">
-          <ShieldOutline width="24" class="fill-current" /> Rules
-        </NavButton>
-        <NavButton href="/vote" extraClass="flex gap-3">
-          <TrendingUpOutline width="24" class="fill-current" /> Vote
-        </NavButton>
-        <NavButton href="/ranks" extraClass="flex gap-3">
-          <BarChartOutline width="24" class="fill-current" /> Ranks
-        </NavButton>
-        <NavButton external href="https://netherdepths.tebex.io" extraClass="flex gap-3">
+        </Link>
+        <a q:slot="extra-buttons" href="https://netherdepths.tebex.io" class="lum-btn lum-bg-transparent flex md:hidden">
           <CartOutline width="24" class="fill-current" /> Store
-        </NavButton>
-        <NavButton href="/discord" title="Discord" extraClass="flex gap-3">
-          <LogoDiscord width="24" class="fill-current" /> Discord
-        </NavButton>
-        <NavButton href="https://luminescent.dev/downloads" extraClass="flex gap-3">
-          <DownloadOutline width="24" class="fill-current" /> Downloads
-        </NavButton>
-        <NavButton external href="https://simplymc.art" extraClass="flex gap-3">
+        </a>
+        <a q:slot="extra-buttons" href="https://birdflop.com/resources/rgb" class="lum-btn lum-bg-transparent">
           <ColorFillOutline width="24" class="fill-current" /> Gradients
-        </NavButton>
-        <NavButton external href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A/viewform" extraClass="flex gap-3">
+        </a>
+        <a q:slot="extra-buttons" href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A" class="lum-btn lum-bg-transparent">
           <MailOutline width="24" class="fill-current" /> Appeal a ban
-        </NavButton>
-        <NavButton href="/downloads" extraClass="flex gap-3">
+        </a>
+        <Link q:slot="extra-buttons" href="/downloads" class="lum-btn lum-bg-transparent">
           <DownloadOutline width="24" class="fill-current" /> Downloads
-        </NavButton>
-        <NavButton external href="https://luminescent.dev" extraClass="flex gap-3">
+        </Link>
+        <a q:slot="extra-buttons" href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A" class="lum-btn lum-bg-transparent">
           <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
             <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
-              <LuminescentLogo/>
+              <LuminescentLogo />
             </div>
           </div>
-        </NavButton>
-      </MobileNav>
+        </a>
+      </DropdownRaw>
+
+      <a q:slot="end" href="https://netherdepths.tebex.io" class={{
+        'hidden md:flex lum-btn lum-bg-transparent hover:text-white lum-pad-equal-sm': true,
+      }}>
+        <CartOutline width="24" class="fill-current" />
+      </a>
+      <div q:slot='end' class="hidden sm:flex gap-2">
+        <SocialButtons />
+      </div>
+
+      <Link q:slot="mobile" href="/forks" class="lum-btn lum-bg-transparent hover:text-white">
+        <GitNetworkOutline width="24" /> Fork Graph
+      </Link>
+      <a q:slot="mobile" href="https://ui.luminescent.dev" class="lum-btn lum-bg-transparent hover:text-white">
+        <div class="font-semibold flex items-center gap-1">
+          <LogoLuminescentFull width={100} class="mt-1" /> / ui
+        </div>
+      </a>
+      <div q:slot='mobile' class="flex justify-evenly">
+        <SocialButtons />
+      </div>
     </Nav>
   );
 });
 
-export const Nav = component$(() => {
-  return (
-    <nav class="z-20 fixed top-0 w-screen py-2 bg-gray-900/50 backdrop-blur-xl">
-      <div class="mx-auto max-w-7xl px-4 lg:px-6">
-        <Slot />
-      </div>
-    </nav>
-  );
-});
-
-export const Brand = component$(() => {
-  const location = useLocation();
-  return (
-    <div class="flex items-center justify-start">
-      <Link href="/" class="transition ease-in-out text-gray-300 hover:bg-gray-800/50 drop-shadow-2xl pl-1 px-3 rounded-lg text-lg flex items-center whitespace-nowrap">
-        <div class="w-28">
-          <NDLogo />
-        </div>
-        <div class={`${location.isNavigating ? '' : '-ml-10 opacity-0'} transition-all`}>
-          <LoadingIcon/>
-        </div>
-      </Link>
-    </div>
-  );
-});
-
-export const MainNav = component$(() => {
-  return (
-    <div class="relative flex h-16 items-center justify-between">
-      <Brand/>
-      <div class="flex flex-1 items-center justify-end">
-        <div class="flex gap-2 text-gray-300 whitespace-nowrap">
-          <Slot/>
-        </div>
-      </div>
-    </div>
-  );
-});
-
-export const MobileNav = component$(() => {
-  return (
-    <div id="mobile-menu" class="gap-4 py-4 px-3 bg-gray-900/70 rounded-lg mt-2 hidden flex-col sm:hidden">
-      <Slot />
-    </div>
-  );
-});
-
-export const NavButton = component$(({ href, title, icon, external, extraClass, style }: any) => {
+export const SocialButtons = component$(() => {
   return <>
-    {external &&
-      <a href={href} title={title} style={style} class={`group transition ease-in-out hover:bg-gray-800 hover:text-white ${icon ? 'text-3xl px-2' : 'px-4'} py-2 rounded-lg items-center ${extraClass}`}>
-        <Slot />
-      </a>
-    }
-    {!external &&
-      <Link href={href} onClick$={async () => { document.getElementById('mobile-menu')?.classList.replace('flex', 'hidden'); }} title={title} style={style} class={`group transition ease-in-out hover:bg-gray-800 hover:text-white ${icon ? 'text-3xl px-2' : 'px-4'} py-2 rounded-lg items-center ${extraClass}`}>
-        <Slot />
-      </Link>
-    }
+    <a href="https://github.com/saboooor/Nether-Depths" title="GitHub" class="lum-btn lum-bg-transparent hover:text-white fill-current lum-pad-equal-sm">
+      <LogoGithub width="24" />
+    </a>
+    <a href="/discord" title="Discord" class="lum-btn lum-bg-transparent hover:text-white fill-current lum-pad-equal-sm">
+      <LogoDiscord width="24" />
+    </a>
   </>;
-});
-
-export const Dropdown = component$(({ name, extraClass }: any) => {
-  return (
-    <div class={`cursor-pointer transition ease-in-out ${extraClass} hover:bg-gray-800 hover:text-white drop-shadow-2xl group rounded-lg items-center gap-4`}>
-      <div class="px-4 py-2 flex gap-2 items-center">
-        {name}
-        <ChevronDown width="24" class="transform group-hover:-rotate-180 transition ease-in-out text-2xl" />
-      </div>
-      <div class="absolute top-8 left-0 z-10 hidden group-hover:flex pt-4 text-base">
-        <div class="bg-black rounded-xl px-3 py-4 flex flex-col gap-2 font-medium whitespace-nowrap overflow-y-auto max-h-[calc(100svh-128px)]">
-          <Slot/>
-        </div>
-      </div>
-    </div>
-  );
 });
