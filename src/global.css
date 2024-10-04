@@ -40,5 +40,5 @@ img[alt=Attachment] {
 }
 
 .shadow-outline {
-  filter: drop-shadow(1px 0px 0px #303030) drop-shadow(-1px 0px 0px #303030) drop-shadow(0px 1px 0px #303030) drop-shadow(0px -1px 0px #303030);
+  filter: drop-shadow(1px 0px 0px #552d2d90) drop-shadow(-1px 0px 0px #552d2d90) drop-shadow(0px 1px 0px #552d2d90) drop-shadow(0px -1px 0px #552d2d90);
 }
