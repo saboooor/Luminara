@@ -100,7 +100,7 @@ export default component$(() => {
               </a>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row flex-1 gap-5 w-full sm:w-3/4 max-w-7xl px-10 sm:px-0 mx-auto justify-center my-10 sm:items-center text-2xl lg:text-3xl hover:text-white drop-shadow-xl">
+          <div class="flex flex-col sm:flex-row flex-1 gap-5 w-full sm:w-3/4 max-w-7xl mx-auto justify-center my-10 sm:items-center text-2xl lg:text-3xl hover:text-white drop-shadow-xl">
             <button onClick$={() => {
               navigator.clipboard.writeText('mc.luminescent.dev').catch(() => {
                 const response = document.getElementById('response-mobile') as HTMLParagraphElement;
@@ -148,20 +148,20 @@ export default component$(() => {
                 </p>
               </div>
             </a>
-            <div class="flex flex-col lg:flex-row w-full justify-between gap-4 text-2xl">
-              <Link href="/announcements" class="flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+            <div class="flex flex-col lg:flex-row w-full justify-between gap-4">
+              <Link href="/announcements" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
                 <Megaphone class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Announcements
               </Link>
-              <a href="https://netherdepths.tebex.io" class="flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <a href="https://netherdepths.tebex.io" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
                 <Cart class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Store
               </a>
-              <Link href="/vote" class="flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <Link href="/vote" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
                 <Keys class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Vote
               </Link>
-              <Link href="/rules" class="flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <Link href="/rules" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
                 <OpenBook class="transition-all duration-500 group-hover:duration-300 group-hover:scale-125 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Rules
               </Link>
