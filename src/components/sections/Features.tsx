@@ -62,7 +62,7 @@ export default component$(() => {
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <Header>Donation Perks</Header>
           <p class="text-lg font-normal mb-4">You can donate to get some perks like /stack, /condense, custom armor stands, and more!</p>
-          <a href="https://netherdepths.tebex.io" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+          <a href="https://luminara.tebex.io" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
             Learn More...
           </a>
         </div>

@@ -145,21 +145,21 @@ export default component$(() => {
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <Header subheader="$3/mo / $8/3mo / $30/yr">VIP</Header>
           <Ranks.enderDragon class="py-10" />
-          <a href="https://netherdepths.tebex.io/category/ranks" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+          <a href="https://luminara.tebex.io/category/ranks" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
             Learn More...
           </a>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <Header subheader="$5/mo / $14/3mo / $54/yr">MVP</Header>
           <Ranks.wither class="py-10" />
-          <a href="https://netherdepths.tebex.io/category/mvp" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+          <a href="https://luminara.tebex.io/category/mvp" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
             Learn More...
           </a>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <Header subheader="$7/mo / $20/3mo / $78/yr">G.O.A.T</Header>
           <Ranks.moobloom class="py-10" />
-          <a href="https://netherdepths.tebex.io/category/goat" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+          <a href="https://luminara.tebex.io/category/goat" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
             Learn More...
           </a>
         </div>

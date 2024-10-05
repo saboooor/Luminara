@@ -153,7 +153,7 @@ export default component$(() => {
                 <Megaphone class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Announcements
               </Link>
-              <a href="https://netherdepths.tebex.io" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <a href="https://luminara.tebex.io" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
                 <Cart class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Store
               </a>

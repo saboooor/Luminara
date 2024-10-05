@@ -52,7 +52,7 @@ export default component$(() => {
         <Link q:slot="extra-buttons" href="/ranks" class="lum-btn lum-bg-transparent flex md:hidden">
           <BarChartOutline width="24" class="fill-current" /> Ranks
         </Link>
-        <a q:slot="extra-buttons" href="https://netherdepths.tebex.io" class="lum-btn lum-bg-transparent flex md:hidden">
+        <a q:slot="extra-buttons" href="https://luminara.tebex.io" class="lum-btn lum-bg-transparent flex md:hidden">
           <CartOutline width="24" class="fill-current" /> Store
         </a>
         <a q:slot="extra-buttons" href="https://birdflop.com/resources/rgb" class="lum-btn lum-bg-transparent">
@@ -73,7 +73,7 @@ export default component$(() => {
         </a>
       </DropdownRaw>
 
-      <a q:slot="end" href="https://netherdepths.tebex.io" class={{
+      <a q:slot="end" href="https://luminara.tebex.io" class={{
         'hidden md:flex lum-btn lum-bg-transparent hover:text-white lum-pad-equal-sm': true,
       }}>
         <CartOutline width="24" class="fill-current" />
