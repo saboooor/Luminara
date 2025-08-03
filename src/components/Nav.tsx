@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
 import { SelectMenuRaw, LogoDiscord, Nav } from '@luminescent/ui-qwik';
-import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Mail, Download, Github, Menu, Palette } from 'lucide-icons-qwik';
+import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Download, Github, Menu, Palette } from 'lucide-icons-qwik';
 
 import Logo from '~/images/logo.png?jsx';
 import LuminescentLogo from './icons/LuminescentLogo';
