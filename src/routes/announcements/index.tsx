@@ -8,6 +8,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import { RESTError, RESTRateLimit, APIMessage, MessageFlags, APIGuildMember, APIRole, APIReaction, FormattingPatterns, APIGuildChannel, ChannelType } from 'discord-api-types/v10';
 import { Link } from 'lucide-icons-qwik';
+import { Toggle } from '@luminescent/ui-qwik';
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export const Markdown = component$<any>(({ mdContent, extraClass }: any) => (
@@ -209,24 +210,7 @@ export const useAnnouncements = routeLoader$(async (props) => {
     message.member.parsedRoles!.reverse();
   }
 
-  announcementsJSON.reverse();
-
-  const announcementListOrganized = [];
-  let currentArticle = [];
-  for (const message of announcementsJSON) {
-    if (message.crossposted) {
-      if (currentArticle.length > 0) announcementListOrganized.push(currentArticle);
-      currentArticle = [];
-      currentArticle.push(message);
-    }
-    else {
-      currentArticle.push(message);
-    }
-  }
-  if (currentArticle.length > 0) announcementListOrganized.push(currentArticle);
-  announcementListOrganized.reverse();
-
-  return announcementListOrganized;
+  return announcementsJSON;
 });
 
 export default component$(() => {
@@ -239,10 +223,12 @@ export default component$(() => {
     }[];
     sort: 'newest' | 'oldest';
     changed: boolean;
+    onlyPublished: boolean;
   } = useStore({
     notifications: [],
     sort: 'newest',
     changed: false,
+    onlyPublished: true,
   });
 
   // eslint-disable-next-line qwik/no-use-visible-task
@@ -282,6 +268,13 @@ export default component$(() => {
         Here you will find the latest announcements from Luminara SMP.<br/>
         This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
       </p>
+      <Toggle
+        label="Show only published announcements"
+        checked={store.onlyPublished}
+        onChange$={(e, el) => {
+          store.onlyPublished = el.checked;
+        }}
+      />
       <button class="lum-btn" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
         Sort by: {store.sort}
       </button>
@@ -291,101 +284,52 @@ export default component$(() => {
         return (
           <div class="flex flex-col gap-1">
             {
-              articleList.value.map((announcementArticle: any) => {
-                const announcement = announcementArticle[0];
-                let lastUser = announcement.author.id;
+              articleList.value.map((announcement: any) => {
+                if (store.onlyPublished && !announcement.crossposted) return null;
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
-                  <article class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200">
-                    <div class="flex items-start mb-4">
-                      <div class="flex-1 text-xl font-bold md:text-2xl justify-start">
-                        <div class="flex items-center gap-1 mb-4">
-                          {announcement.member && <p style={{ backgroundColor: `#${announcement.member.parsedRoles[0].color.toString(16)}` }} class="text-xs md:text-sm px-2 py-1 rounded-md text-white">
+                  <article class={{
+                    "lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200": true,
+                    "opacity-50": !announcement.crossposted,
+                    "border-luminescent-400": announcement.crossposted && !store.onlyPublished
+                  }}>
+                    <div class={`group`}>
+                      <div class="text-sm font-semibold md:text-lg mb-2">
+                        <div class="flex items-center gap-1 mb-2 text-white">
+                          <img src={`https://cdn.discordapp.com/avatars/${announcement.author.id}/${announcement.member?.avatar ?? announcement.author.avatar}`} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" width={16} height={16} />
+                          <p class="text-white!">{announcement.member?.nick ?? announcement.author.username}</p>
+                          {(announcement.member && announcement.member.parsedRoles) && <p style={{ backgroundColor: `#${announcement.member.parsedRoles[0].color.toString(16)}` }} class="text-xs px-2 py-1 rounded-md">
                             {announcement.member.parsedRoles[0].name}
                           </p>}
-                          <p class="text-xs md:text-sm font-light whitespace-nowrap">{announcement.timestamp.toLocaleString()}</p>
                         </div>
-                        <h3 class="mt-0! mb-2! flex items-center gap-2">
-                          <img src={`https://cdn.discordapp.com/avatars/${announcement.author.id}/${announcement.member?.avatar ?? announcement.author.avatar}`} class="w-6 h-6 md:w-10 md:h-10 md:mr-2 rounded-lg" width={24} height={24} />
-                          <p>{announcement.member?.nick ?? announcement.author.username}</p>
-                        </h3>
+                        <div class="flex items-center gap-1">
+                          <p class="text-xs font-light whitespace-nowrap">{announcement.timestamp.toLocaleString()}</p>
+                        </div>
                       </div>
-                      <Link size={24} class=" cursor-pointer" onClick$={() => {
-                        navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
-                        store.notifications.push({
-                          title: 'Copied Successfully!',
-                          content: 'The link to this announcement has been copied to your clipboard.',
-                        });
-                        setTimeout(() => {
-                          store.notifications.shift();
-                        }, 5000);
-                      }} />
-                    </div>
-                    <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-base md:text-lg break-all" />
-                    { announcement.reactions &&
-                      <div class="flex flex-wrap gap-1 mt-4">
-                        { announcement.reactions.map((reaction: APIReaction, i: number) => (
-                          <div key={i} class="flex items-center gap-1">
-                            <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
-                            <p>{reaction.count}</p>
-                          </div>
-                        )) }
+                      <div class="flex items-center gap-1">
+                        <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
+                        <Link size={16} class=" justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
+                          navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
+                          store.notifications.push({
+                            title: 'Copied Successfully!',
+                            content: 'The link to this announcement has been copied to your clipboard.',
+                          });
+                          setTimeout(() => {
+                            store.notifications.shift();
+                          }, 5000);
+                        }} />
                       </div>
-                    }
-                    { announcementArticle.length > 1 &&
-                      <>
-                        <hr class="mb-1! border-gray-900/20 border" />
-                      </>
-                    }
-                    {
-                      announcementArticle.map((comment: any) => {
-                        if (comment == announcement) return;
-                        const diffUser = lastUser == comment.author.id;
-                        if (!diffUser) lastUser = comment.author.id;
-                        return <>
-                          <span id={comment.id} class="pointer-events-none block h-24 -mt-24" />
-                          <div class={`group ${diffUser ? 'mt-2' : 'mt-4'}`}>
-                            { !diffUser &&
-                              <div class="text-sm font-semibold md:text-lg mb-2">
-                                <div class="flex items-center gap-1 mb-2 text-white">
-                                  <img src={`https://cdn.discordapp.com/avatars/${comment.author.id}/${comment.member?.avatar ?? comment.author.avatar}`} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" width={16} height={16} />
-                                  <p>{comment.member?.nick ?? comment.author.username}</p>
-                                  {(comment.member && comment.member.parsedRoles) && <p style={{ backgroundColor: `#${comment.member.parsedRoles[0].color.toString(16)}` }} class="text-xs px-2 py-1 rounded-md">
-                                    {comment.member.parsedRoles[0].name}
-                                  </p>}
-                                </div>
-                                <div class="flex items-center gap-1">
-                                  <p class="text-xs font-light whitespace-nowrap">{comment.timestamp.toLocaleString()}</p>
-                                </div>
-                              </div>
-                            }
-                            <div class="flex items-center gap-1">
-                              <Markdown mdContent={`${comment.content}${comment.attachments ? `\n\n${comment.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
-                              <Link size={16} class=" justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
-                                navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${comment.id}`);
-                                store.notifications.push({
-                                  title: 'Copied Successfully!',
-                                  content: 'The link to this comment has been copied to your clipboard.',
-                                });
-                                setTimeout(() => {
-                                  store.notifications.shift();
-                                }, 5000);
-                              }} />
+                      { announcement.reactions &&
+                        <div class="flex flex-wrap gap-1 mt-2">
+                          { announcement.reactions.map((reaction: APIReaction, i: number) => (
+                            <div key={i} class="flex items-center gap-1">
+                              <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
+                              <p>{reaction.count}</p>
                             </div>
-                            { comment.reactions &&
-                              <div class="flex flex-wrap gap-1 mt-2">
-                                { comment.reactions.map((reaction: APIReaction, i: number) => (
-                                  <div key={i} class="flex items-center gap-1">
-                                    <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
-                                    <p>{reaction.count}</p>
-                                  </div>
-                                )) }
-                              </div>
-                            }
-                          </div>
-                        </>;
-                      })
-                    }
+                          )) }
+                        </div>
+                      }
+                    </div>
                   </article>
                 </>;
               })
@@ -425,7 +369,7 @@ export const head: DocumentHead = ({ resolveValue }) => {
     ],
   };
 
-  const announcement = articleList[0][0].content;
+  const announcement = articleList[0].content;
   return {
     title: 'Announcements',
     meta: [
