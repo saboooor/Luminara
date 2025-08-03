@@ -1,6 +1,6 @@
 import { component$, useStore } from '@builder.io/qwik';
 import { Toggle } from '@luminescent/ui-qwik';
-import { ChevronDown } from 'qwik-ionicons';
+import { ChevronDown } from 'lucide-icons-qwik';
 
 export default component$(({ noScrollIndicator }: any) => {
   const store = useStore({
@@ -8,7 +8,7 @@ export default component$(({ noScrollIndicator }: any) => {
   });
 
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-center gap-8">
+    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-center gap-1">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-20">
         Vote for <span class="text-pink-400">Luminara SMP!</span>
       </h1>
@@ -17,7 +17,7 @@ export default component$(({ noScrollIndicator }: any) => {
         The blue buttons do not give any reward and are purely a way to support Luminara SMP<br />
         If you're a Bedrock player, dont forget to put a _ before your gamertag!
       </p>
-      <div class="flex flex-wrap gap-3 justify-center">
+      <div class="flex flex-wrap gap-1 justify-center">
         <a href="https://minecraft-server-list.com/server/507849/vote/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSL
         </a>
@@ -44,8 +44,8 @@ export default component$(({ noScrollIndicator }: any) => {
         Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
         <span class="text-pink-400">You must allow pop-ups in your browser for it to function properly.</span>
       </p>
-      <Toggle label="Include blue sites" checked={store.blue} onChange$={() => store.blue = !store.blue} onColor="purple" offColor="gray"/>
-      <div class="mb-12 flex flex-wrap gap-3 justify-center">
+      <Toggle label="Include blue sites" checked={store.blue} onChange$={() => store.blue = !store.blue}/>
+      <div class="mb-12 flex flex-wrap gap-1 justify-center">
         <button onClick$={() => {
           window.open('https://minecraft-server-list.com/server/507849/vote');
           window.open('https://minecraftservers.org/vote/667461');
@@ -59,10 +59,10 @@ export default component$(({ noScrollIndicator }: any) => {
         </button>
       </div>
       { !noScrollIndicator &&
-        <div class="absolute bottom-8 cursor-pointer flex gap-4 items-center font-bold text-white md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
+        <div class="absolute bottom-8 cursor-pointer flex gap-1 items-center font-bold text-white md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
           document.getElementById('ranks')?.scrollIntoView();
         }}>
-          <ChevronDown width="24" class="fill-current" /> Rank Info
+          <ChevronDown size={24} /> Rank Info
         </div>
       }
     </section>

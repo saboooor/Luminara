@@ -9,8 +9,8 @@ import Megaphone from '~/images/icons/megaphone.png?jsx';
 import Cart from '~/images/icons/cart.png?jsx';
 import Keys from '~/images/icons/keys.png?jsx';
 import OpenBook from '~/images/icons/open_book.png?jsx';
-import { LogoDiscord, LogoPurpur } from '@luminescent/ui-qwik';
-import { ChevronDown } from 'qwik-ionicons';
+import { Hoverable, LogoDiscord, LogoPurpur } from '@luminescent/ui-qwik';
+import { ChevronDown } from 'lucide-icons-qwik';
 
 export default component$(() => {
   const store = useStore({
@@ -23,7 +23,7 @@ export default component$(() => {
   // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(async () => {
     const srvjson = await fetch('https://api.mcsrvstat.us/2/mc.luminescent.dev');
-    const srvdata = await srvjson.json();
+    const srvdata = await srvjson.json() as any;
     if (!srvdata.online || srvdata.protocol == 1) {
       store.online = false;
     }
@@ -33,7 +33,7 @@ export default component$(() => {
       store.version = srvdata.protocol_name;
     }
     const discordjson = await fetch('https://discord.com/api/guilds/865519986806095902/widget.json');
-    const discorddata = await discordjson.json();
+    const discorddata = await discordjson.json() as any;
     store.discordonline = discorddata.presence_count;
   });
 
@@ -54,7 +54,7 @@ export default component$(() => {
                 });
               }} class="hidden sm:flex lum-btn lum-bg-transparent hover:lum-bg-transparent lum-pad-xl rounded-full justify-end gap-5 items-center text-right font-medium group transition-all duration-300 hover:saturate-150">
                 <div>
-                  <p class="text-green-300 font-bold">
+                  <p class="text-green-300! font-bold">
                     {store.online === null && 'LOADING...'}
                     {store.online && `${store.players == 1 ? store.players + ' PLAYER ONLINE - ' : store.players + ' PLAYERS ONLINE - '} ${store.version}`}
                     {store.online === false && 'SERVER OFFLINE'}
@@ -74,7 +74,7 @@ export default component$(() => {
                   </div>
                 </div>
                 <div class="flex flex-col gap-2 transition-all duration-300 group-hover:gap-3">
-                  <LogoPurpur width={48} class="text-green-300"/>
+                  <LogoPurpur size={48} class="text-green-300"/>
                   <div class="bg-green-300 h-1 rounded-full mx-3" style={{ filter: 'drop-shadow(0 0 3px rgb(134 239 172))' }} />
                 </div>
               </button>
@@ -83,13 +83,13 @@ export default component$(() => {
               <Logo />
             </div>
             <div class="flex justify-start items-center">
-              <a href="/discord" class="lum-btn lum-bg-transparent hover:lum-bg-transparent lum-pad-xl rounded-full  justify-start text-left hidden sm:flex gap-5 items-center font-medium group transition-all duration-300 hover:saturate-150">
+              <a href="/discord" class="lum-btn lum-bg-transparent hover:lum-bg-transparent lum-pad-xl rounded-full justify-start text-left hidden sm:flex gap-5 items-center font-medium group transition-all duration-300 hover:saturate-150">
                 <div class="flex flex-col gap-2 transition-all duration-300 group-hover:gap-3">
-                  <LogoDiscord width={48} class="text-indigo-300" />
+                  <LogoDiscord size={48} class="text-indigo-300" />
                   <div class="bg-indigo-300 h-1 rounded-full mx-3" style={{ filter: 'drop-shadow(0 0 3px rgb(165 180 252))' }} />
                 </div>
                 <div>
-                  <p class="text-indigo-300 font-bold">
+                  <p class="text-indigo-300! font-bold">
                     {store.discordonline === null && 'LOADING...'}
                     {store.discordonline && `${store.discordonline} USERS ONLINE`}
                   </p>
@@ -109,7 +109,7 @@ export default component$(() => {
               });
             }}  class="sm:hidden flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 items-center font-medium text-left group transition-all duration-300 hover:saturate-150">
               <div class="flex flex-col gap-2 transition-all duration-300 group-hover:scale-125">
-                <LogoPurpur width={48} class="text-green-300" />
+                <LogoPurpur size={48} class="text-green-300" />
                 <div class="bg-green-300 h-1 rounded-full mx-3" style={{ filter: 'drop-shadow(0 0 3px rgb(134 239 172))' }} />
               </div>
               <div>
@@ -135,7 +135,7 @@ export default component$(() => {
             </button>
             <a href="/discord" class="sm:hidden flex lum-btn lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 items-center font-medium text-left group transition-all duration-300 hover:saturate-150">
               <div class="flex flex-col gap-2 transition-all duration-300 group-hover:scale-125">
-                <LogoDiscord width={48} class="text-indigo-300" />
+                <LogoDiscord size={48} class="text-indigo-300" />
                 <div class="bg-indigo-300 h-1 rounded-full mx-3" style={{ filter: 'drop-shadow(0 0 3px rgb(165 180 252))' }} />
               </div>
               <div>
@@ -149,29 +149,37 @@ export default component$(() => {
               </div>
             </a>
             <div class="flex flex-col lg:flex-row w-full justify-between gap-4">
-              <Link href="/announcements" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <Link href="/announcements" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150"
+                onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
+              >
                 <Megaphone class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Announcements
               </Link>
-              <a href="https://luminara.tebex.io" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <a href="https://luminara.tebex.io" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150"
+                onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
+              >
                 <Cart class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Store
               </a>
-              <Link href="/vote" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
+              <Link href="/vote" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150"
+                onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
+              >
                 <Keys class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Vote
               </Link>
-              <Link href="/rules" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150">
-                <OpenBook class="transition-all duration-500 group-hover:duration-300 group-hover:scale-125 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
+              <Link href="/rules" class="flex lum-btn !text-xl lg:!text-2xl lum-bg-transparent hover:lum-bg-transparent lg:lum-pad-equal-5xl rounded-3xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150"
+                onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
+              >
+                <OpenBook class="transition-all duration-500 group-hover:duration-300 lg:group-hover:-translate-y-5 w-12 h-12 lg:w-44 lg:h-44" />
                 Rules
               </Link>
             </div>
           </div>
         </div>
-        <div class="absolute -bottom-6 sm:bottom-8 cursor-pointer flex gap-4 items-center font-bold text-white text-sm md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
+        <div class="absolute -bottom-6 sm:bottom-8 cursor-pointer flex gap-2 items-center font-bold text-white text-sm md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
           document.getElementById('start')?.scrollIntoView();
         }}>
-          <ChevronDown width="24" class="fill-current" /> Learn More
+          <ChevronDown size={24} /> Learn More
         </div>
       </div>
       <div id="start" class="mb-32" />

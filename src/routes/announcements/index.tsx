@@ -6,9 +6,8 @@ import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
-import { Link } from 'qwik-ionicons';
 import { RESTError, RESTRateLimit, APIMessage, MessageFlags, APIGuildMember, APIRole, APIReaction, FormattingPatterns, APIGuildChannel, ChannelType } from 'discord-api-types/v10';
-import { Header } from '@luminescent/ui-qwik';
+import { Link } from 'lucide-icons-qwik';
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export const Markdown = component$<any>(({ mdContent, extraClass }: any) => (
@@ -115,7 +114,7 @@ export const getGuildChannelsFn = server$(async function(props: RequestEventBase
     },
   }).catch(() => null);
   if (!res) return new Error('Guild Channel fetch failed');
-  const channels: RESTError | RESTRateLimit | AnyGuildChannel[] = await res.json();
+  const channels: RESTError | RESTRateLimit | any[] = await res.json();
   if ('retry_after' in channels) {
     console.log(`${channels.message}, retrying after ${channels.retry_after * 1000}ms`);
     await sleep(channels.retry_after * 1000);
@@ -275,7 +274,7 @@ export default component$(() => {
   );
 
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-start gap-8">
+    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-start gap-1">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-10">
         <span class="text-pink-400">Luminara SMP</span> Announcements
       </h1>
@@ -290,7 +289,7 @@ export default component$(() => {
         if (store.sort != 'newest') store.changed = true;
         if (store.changed) articleList.value.reverse();
         return (
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
             {
               articleList.value.map((announcementArticle: any) => {
                 const announcement = announcementArticle[0];
@@ -300,18 +299,18 @@ export default component$(() => {
                   <article class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200">
                     <div class="flex items-start mb-4">
                       <div class="flex-1 text-xl font-bold md:text-2xl justify-start">
-                        <div class="flex items-center gap-2 mb-4">
+                        <div class="flex items-center gap-1 mb-4">
                           {announcement.member && <p style={{ backgroundColor: `#${announcement.member.parsedRoles[0].color.toString(16)}` }} class="text-xs md:text-sm px-2 py-1 rounded-md text-white">
                             {announcement.member.parsedRoles[0].name}
                           </p>}
                           <p class="text-xs md:text-sm font-light whitespace-nowrap">{announcement.timestamp.toLocaleString()}</p>
                         </div>
-                        <Header>
+                        <h3 class="mt-0! mb-2! flex items-center gap-2">
                           <img src={`https://cdn.discordapp.com/avatars/${announcement.author.id}/${announcement.member?.avatar ?? announcement.author.avatar}`} class="w-6 h-6 md:w-10 md:h-10 md:mr-2 rounded-lg" width={24} height={24} />
                           <p>{announcement.member?.nick ?? announcement.author.username}</p>
-                        </Header>
+                        </h3>
                       </div>
-                      <Link width="24" class="fill-current cursor-pointer" onClick$={() => {
+                      <Link size={24} class="fill-current cursor-pointer" onClick$={() => {
                         navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
                         store.notifications.push({
                           title: 'Copied Successfully!',
@@ -324,9 +323,9 @@ export default component$(() => {
                     </div>
                     <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-base md:text-lg break-all" />
                     { announcement.reactions &&
-                      <div class="flex flex-wrap gap-4 mt-4">
+                      <div class="flex flex-wrap gap-1 mt-4">
                         { announcement.reactions.map((reaction: APIReaction, i: number) => (
-                          <div key={i} class="flex items-center gap-2">
+                          <div key={i} class="flex items-center gap-1">
                             <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
                             <p>{reaction.count}</p>
                           </div>
@@ -349,21 +348,21 @@ export default component$(() => {
                           <div class={`group ${diffUser ? 'mt-2' : 'mt-4'}`}>
                             { !diffUser &&
                               <div class="text-sm font-semibold md:text-lg mb-2">
-                                <div class="flex items-center gap-2 mb-2 text-white">
+                                <div class="flex items-center gap-1 mb-2 text-white">
                                   <img src={`https://cdn.discordapp.com/avatars/${comment.author.id}/${comment.member?.avatar ?? comment.author.avatar}`} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" width={16} height={16} />
                                   <p>{comment.member?.nick ?? comment.author.username}</p>
                                   {(comment.member && comment.member.parsedRoles) && <p style={{ backgroundColor: `#${comment.member.parsedRoles[0].color.toString(16)}` }} class="text-xs px-2 py-1 rounded-md">
                                     {comment.member.parsedRoles[0].name}
                                   </p>}
                                 </div>
-                                <div class="flex items-center gap-2">
+                                <div class="flex items-center gap-1">
                                   <p class="text-xs font-light whitespace-nowrap">{comment.timestamp.toLocaleString()}</p>
                                 </div>
                               </div>
                             }
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-1">
                               <Markdown mdContent={`${comment.content}${comment.attachments ? `\n\n${comment.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
-                              <Link width="16" class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
+                              <Link size={16} class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
                                 navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${comment.id}`);
                                 store.notifications.push({
                                   title: 'Copied Successfully!',
@@ -375,9 +374,9 @@ export default component$(() => {
                               }} />
                             </div>
                             { comment.reactions &&
-                              <div class="flex flex-wrap gap-4 mt-2">
+                              <div class="flex flex-wrap gap-1 mt-2">
                                 { comment.reactions.map((reaction: APIReaction, i: number) => (
-                                  <div key={i} class="flex items-center gap-2">
+                                  <div key={i} class="flex items-center gap-1">
                                     <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
                                     <p>{reaction.count}</p>
                                   </div>

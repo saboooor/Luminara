@@ -1,5 +1,5 @@
 import { component$, Slot, useVisibleTask$ } from '@builder.io/qwik';
-import Header from '~/components/navbar';
+import Nav from '~/components/Nav';
 
 import Backgrounds from '~/components/backgrounds';
 import { useLocation } from '@builder.io/qwik-city';
@@ -10,7 +10,7 @@ export default component$(() => {
   const loc = useLocation();
 
   // eslint-disable-next-line qwik/no-use-visible-task
-  useVisibleTask$(async () => {
+  useVisibleTask$(() => {
     const canvas = document.getElementById('particles') as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
 
@@ -83,17 +83,13 @@ export default component$(() => {
 
   return (
     <>
-      <main>
-        <Background class={{
-          'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-full object-cover opacity-40': true,
-          'blur-xl scale-110': loc.url.pathname != '/',
-        }} />
-        <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-full"></canvas>
-        <Header/>
-        <section>
-          <Slot />
-        </section>
-      </main>
+      <Background class={{
+        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-full object-cover opacity-40': true,
+        'blur-xl scale-110': loc.url.pathname != '/',
+      }} />
+      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-full" />
+      <Nav />
+      <Slot />
     </>
   );
 });

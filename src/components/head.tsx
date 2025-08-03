@@ -13,32 +13,31 @@ export const RouterHead = component$(() => {
 
   return (
     <>
-      <title>{`Luminara SMP - ${head.title}`}</title>
+      <title>{`${head.title}`}</title>
+      <meta content={`${head.title}`} property="og:title" />
+      <meta content="#FEA6AE" name="theme-color" />
+      <meta content="/branding/icon.png" property="og:image" />
 
       <link rel="canonical" href={loc.url.href} />
       <link rel="icon" href={iconWEBP} />
       <link rel="mask-icon" href={iconWEBP} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta content={`Luminara SMP - ${head.title}`} property="og:title" />
       <meta content={iconWEBP} property="og:image" />
-      <meta content="#FEA6AE" name="theme-color" />
 
-      {head.meta.map((m) => (
-        <>
-          <meta {...m} />
-        </>
+      {head.meta.map((m, i) => (
+        <meta {...m} key={i} />
       ))}
 
-      {head.links.map((l) => (
-        <>
-          <link {...l} />
-        </>
+      {head.links.map((l, i) => (
+        <link {...l} key={i} />
       ))}
 
-      {head.styles.map((s) => (
-        <>
-          <style {...s.props} dangerouslySetInnerHTML={s.style} />
-        </>
+      {head.styles.map((s, i) => (
+        <style {...s.props} key={i} dangerouslySetInnerHTML={s.style} />
+      ))}
+
+      {head.scripts.map((s, i) => (
+        <script {...s.props} key={i} dangerouslySetInnerHTML={s.script} />
       ))}
     </>
   );
