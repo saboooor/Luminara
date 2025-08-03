@@ -334,8 +334,7 @@ export default component$(() => {
                     }
                     { announcementArticle.length > 1 &&
                       <>
-                        <br/>
-                        <hr class="mb-1 border-gray-900/20 border" />
+                        <hr class="mb-1! border-gray-900/20 border" />
                       </>
                     }
                     {
