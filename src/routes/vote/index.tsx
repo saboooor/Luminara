@@ -6,7 +6,6 @@ import Vote from '~/components/sections/Vote';
 export default component$(() => {
   return <>
     <Vote />
-    <div id="ranks" class="mb-32" />
     <Ranks />
   </>;
 });

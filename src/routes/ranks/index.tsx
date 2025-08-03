@@ -6,7 +6,7 @@ import Vote from '~/components/sections/Vote';
 export default component$(() => {
   return <>
     <Ranks />
-    <Vote noScrollIndicator />
+    <Vote />
   </>;
 });
 

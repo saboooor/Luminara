@@ -1,8 +1,6 @@
 import { component$, useStore } from '@builder.io/qwik';
-import { Toggle } from '@luminescent/ui-qwik';
-import { ChevronDown } from 'lucide-icons-qwik';
 
-export default component$(({ noScrollIndicator }: any) => {
+export default component$(() => {
   const store = useStore({
     blue: true,
   });
@@ -44,7 +42,6 @@ export default component$(({ noScrollIndicator }: any) => {
         Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
         <span class="text-pink-400">You must allow pop-ups in your browser for it to function properly.</span>
       </p>
-      <Toggle label="Include blue sites" checked={store.blue} onChange$={() => store.blue = !store.blue}/>
       <div class="mb-12 flex flex-wrap gap-1 justify-center">
         <button onClick$={() => {
           window.open('https://minecraft-server-list.com/server/507849/vote');
@@ -58,13 +55,6 @@ export default component$(({ noScrollIndicator }: any) => {
           Open vote sites
         </button>
       </div>
-      { !noScrollIndicator &&
-        <div class="absolute bottom-8 cursor-pointer flex gap-1 items-center font-bold text-white md:text-lg z-10 animate-bounce shadow-outline" onClick$={() => {
-          document.getElementById('ranks')?.scrollIntoView();
-        }}>
-          <ChevronDown size={24} /> Rank Info
-        </div>
-      }
     </section>
   );
 });

@@ -310,7 +310,7 @@ export default component$(() => {
                           <p>{announcement.member?.nick ?? announcement.author.username}</p>
                         </h3>
                       </div>
-                      <Link size={24} class="fill-current cursor-pointer" onClick$={() => {
+                      <Link size={24} class=" cursor-pointer" onClick$={() => {
                         navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
                         store.notifications.push({
                           title: 'Copied Successfully!',
@@ -362,7 +362,7 @@ export default component$(() => {
                             }
                             <div class="flex items-center gap-1">
                               <Markdown mdContent={`${comment.content}${comment.attachments ? `\n\n${comment.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
-                              <Link size={16} class="fill-current justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
+                              <Link size={16} class=" justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
                                 navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${comment.id}`);
                                 store.notifications.push({
                                   title: 'Copied Successfully!',
