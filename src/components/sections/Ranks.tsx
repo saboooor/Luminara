@@ -11,23 +11,23 @@ export default component$(() => {
         Different ranks give different perks!
       </p>
       <div class="grid gap-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
-          <h3 class="mt-0! mb-2! flex items-center gap-2">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+          <h3 class="my-0! flex items-center gap-2">
             Player
           </h3>
           <p>
             Starter Rank
           </p>
           <Ranks.steve class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>3 Homes</p>
           <p>1 Creative Plot</p>
           <p>1 Auction House Slot</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>noenter</p>
           <p>noenterplayer</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Skeleton
           </h3>
@@ -35,14 +35,14 @@ export default component$(() => {
             6 votes
           </p>
           <Ranks.skeleton class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>6 Homes</p>
           <p>2 Creative Plots</p>
           <p>/suicide</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>trappeddestination</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Enderman
           </h3>
@@ -50,29 +50,29 @@ export default component$(() => {
             12 votes
           </p>
           <Ranks.enderman class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>9 Homes</p>
           <p>3 Creative Plots</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>nofluidflow</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            Blaze
+            Breeze
           </h3>
           <p>
             24 votes
           </p>
           <Ranks.blaze class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>12 Homes</p>
           <p>4 Creative Plots</p>
           <p>/nick</p>
           <p>/hat</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>nofirespread</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Strider
           </h3>
@@ -80,31 +80,31 @@ export default component$(() => {
             48 votes
           </p>
           <Ranks.strider class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>15 Homes</p>
           <p>5 Creative Plots</p>
           <p>/craft</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>noitemdrop</p>
           <p>nofiredamage</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            Hoglin
+            Armadillo
           </h3>
           <p>
             84 votes
           </p>
           <Ranks.hoglin class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>18 Homes</p>
           <p>6 Creative Plots</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>exitmessage</p>
           <p>entermessage</p>
           <p>noelytra</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Axolotl
           </h3>
@@ -112,17 +112,17 @@ export default component$(() => {
             148 votes
           </p>
           <Ranks.axolotl class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>21 Homes</p>
           <p>7 Creative Plots</p>
           <p>/ptime</p>
           <p>/pweather</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>novehicle</p>
           <p>playertime</p>
           <p>playerweather</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Warden
           </h3>
@@ -130,16 +130,16 @@ export default component$(() => {
             260 votes
           </p>
           <Ranks.warden class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>24 Homes</p>
           <p>8 Creative Plots</p>
           <p>/rest</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>keepinventory</p>
           <p>keeplevel</p>
           <p>nohunger</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Glow Squid
           </h3>
@@ -147,16 +147,16 @@ export default component$(() => {
             456 votes
           </p>
           <Ranks.glowSquid class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>27 Homes</p>
           <p>9 Creative Plots</p>
           <p>/ranknick (Custom Rank)</p>
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Claim Flags</h2>
+          <h4>Claim Flags</h4>
           <p>changebiome</p>
           <p>noenderpearl</p>
           <p>noflight</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Ocelot
           </h3>
@@ -164,14 +164,14 @@ export default component$(() => {
             796 votes
           </p>
           <Ranks.ocelot class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>30 Homes</p>
           <p>10 Creative Plots</p>
           <p>/nick formatting</p>
           <p>/enderchest</p>
           <p>/condense</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Allay
           </h3>
@@ -179,14 +179,14 @@ export default component$(() => {
             1394 votes
           </p>
           <Ranks.allay class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>36 Homes</p>
           <p>12 Creative Plots</p>
           <p>Image Maps</p>
           <p>/speed</p>
           <p>/stack</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Sniffer
           </h3>
@@ -194,13 +194,13 @@ export default component$(() => {
             2440 Votes
           </p>
           <Ranks.sniffer class="py-10" />
-          <h2 class="text-lg sm:text-xl my-2 font-bold">Perks</h2>
+          <h4>Perks</h4>
           <p>40 Homes</p>
           <p>14 Creative Plots</p>
         </div>
       </div>
       <div class="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             VIP
           </h3>
@@ -212,7 +212,7 @@ export default component$(() => {
             Learn More...
           </a>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             MVP
           </h3>
@@ -224,7 +224,7 @@ export default component$(() => {
             Learn More...
           </a>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
+        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             G.O.A.T
           </h3>

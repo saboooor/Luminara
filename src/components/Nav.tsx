@@ -66,7 +66,7 @@ export default component$(() => {
         <a q:slot="extra-buttons" href="https://drive.proton.me/urls/B1Q1P4K464#y310qg8itvhl" class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg">
           <Download size={24} /> Downloads
         </a>
-        <a q:slot="extra-buttons" href="https://docs.google.com/forms/d/e/1FAIpQLSdRfcr9hIV1ohL0GCy498ubGkXn4uLbIgAE0UrRiiHLGiAx9A" class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg">
+        <a q:slot="extra-buttons" href="https://luminescent.dev" class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg">
           <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
             <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
               <LuminescentLogo />
