@@ -1,4 +1,5 @@
 import { component$, useStore } from '@builder.io/qwik';
+import { Toggle } from '@luminescent/ui-qwik';
 
 export default component$(() => {
   const store = useStore({
@@ -6,7 +7,7 @@ export default component$(() => {
   });
 
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-center gap-1">
+    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col justify-center text-left gap-1 min-h-screen">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-20">
         Vote for <span class="text-pink-400">Luminara SMP!</span>
       </h1>
@@ -15,7 +16,7 @@ export default component$(() => {
         The blue buttons do not give any reward and are purely a way to support Luminara SMP<br />
         If you're a Bedrock player, dont forget to put a _ before your gamertag!
       </p>
-      <div class="flex flex-wrap gap-1 justify-center">
+      <div class="flex flex-wrap gap-1">
         <a href="https://minecraft-server-list.com/server/507849/vote/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSL
         </a>
@@ -35,6 +36,20 @@ export default component$(() => {
           SMCN
         </a>
       </div>
+      <div class="flex flex-wrap gap-1">
+        <a href="https://minecraft-servers.biz/server/luminara/" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          MCSB
+        </a>
+        <a href="https://topminecraftservers.org/vote/41347" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          TMCS
+        </a>
+        <a href="https://topg.org/minecraft-servers/server-674840" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          TOPG
+        </a>
+        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          CF
+        </a>
+      </div>
       <h1 class="shadow-outline text-4xl font-bold text-white">
         Fast-vote
       </h1>
@@ -42,7 +57,8 @@ export default component$(() => {
         Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
         <span class="text-pink-400">You must allow pop-ups in your browser for it to function properly.</span>
       </p>
-      <div class="mb-12 flex flex-wrap gap-1 justify-center">
+
+      <div class="flex flex-wrap gap-1 my-2">
         <button onClick$={() => {
           window.open('https://minecraft-server-list.com/server/507849/vote');
           window.open('https://minecraftservers.org/vote/667461');
@@ -51,10 +67,22 @@ export default component$(() => {
           window.open('https://minecraftpocket-servers.com/server/129088/vote');
           window.open('https://servers-minecraft.net/server-luminara.40623/vote');
           if (!store.blue) return;
+
+          window.open('https://minecraft-servers.biz/server/luminara/');
+          window.open('https://topminecraftservers.org/vote/41347');
+          window.open('https://topg.org/minecraft-servers/server-674840');
+          window.open('https://www.curseforge.com/servers/minecraft/game/luminara');
         }} class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           Open vote sites
         </button>
       </div>
+      <Toggle
+        label="Open promotional vote sites"
+        checked={store.blue}
+        onChange$={(e, el) => {
+          store.blue = el.checked;
+        }}
+      />
     </section>
   );
 });
