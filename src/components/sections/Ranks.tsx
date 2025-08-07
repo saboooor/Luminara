@@ -47,7 +47,7 @@ export default component$(() => {
             Enderman
           </h3>
           <p>
-            12 votes
+            18 votes
           </p>
           <Ranks.enderman class="py-10" />
           <h4>Perks</h4>
@@ -61,7 +61,7 @@ export default component$(() => {
             Breeze
           </h3>
           <p>
-            24 votes
+            36 votes
           </p>
           <Ranks.blaze class="py-10" />
           <h4>Perks</h4>
@@ -77,7 +77,7 @@ export default component$(() => {
             Strider
           </h3>
           <p>
-            48 votes
+            66 votes
           </p>
           <Ranks.strider class="py-10" />
           <h4>Perks</h4>
@@ -93,7 +93,7 @@ export default component$(() => {
             Armadillo
           </h3>
           <p>
-            84 votes
+            100 votes
           </p>
           <Ranks.hoglin class="py-10" />
           <h4>Perks</h4>
@@ -109,7 +109,7 @@ export default component$(() => {
             Axolotl
           </h3>
           <p>
-            148 votes
+            200 votes
           </p>
           <Ranks.axolotl class="py-10" />
           <h4>Perks</h4>
@@ -127,7 +127,7 @@ export default component$(() => {
             Warden
           </h3>
           <p>
-            260 votes
+            350 votes
           </p>
           <Ranks.warden class="py-10" />
           <h4>Perks</h4>
@@ -144,7 +144,7 @@ export default component$(() => {
             Glow Squid
           </h3>
           <p>
-            456 votes
+            550 votes
           </p>
           <Ranks.glowSquid class="py-10" />
           <h4>Perks</h4>
@@ -161,7 +161,7 @@ export default component$(() => {
             Ocelot
           </h3>
           <p>
-            796 votes
+            800 votes
           </p>
           <Ranks.ocelot class="py-10" />
           <h4>Perks</h4>
@@ -176,7 +176,7 @@ export default component$(() => {
             Allay
           </h3>
           <p>
-            1394 votes
+            1500 votes
           </p>
           <Ranks.allay class="py-10" />
           <h4>Perks</h4>
@@ -191,7 +191,7 @@ export default component$(() => {
             Sniffer
           </h3>
           <p>
-            2440 Votes
+            2000 Votes
           </p>
           <Ranks.sniffer class="py-10" />
           <h4>Perks</h4>
