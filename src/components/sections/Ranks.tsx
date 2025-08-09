@@ -205,7 +205,7 @@ export default component$(() => {
             VIP
           </h3>
           <p>
-            $3/mo / $8/3mo / $30/yr
+            $5/mo / $10/qtr / $35/yr
           </p>
           <Ranks.enderDragon class="py-10" />
           <a href="https://luminara.tebex.io/category/ranks" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
@@ -217,7 +217,7 @@ export default component$(() => {
             MVP
           </h3>
           <p>
-            $5/mo / $14/3mo / $54/yr
+            $7/mo / $16/qtr / $57/yr
           </p>
           <Ranks.wither class="py-10" />
           <a href="https://luminara.tebex.io/category/mvp" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
@@ -229,7 +229,7 @@ export default component$(() => {
             G.O.A.T
           </h3>
           <p>
-            $7/mo / $20/3mo / $78/yr
+            $9/mo / $24/qtr / $80/yr
           </p>
           <Ranks.moobloom class="py-10" />
           <a href="https://luminara.tebex.io/category/goat" target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
