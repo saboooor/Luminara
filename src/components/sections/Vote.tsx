@@ -37,17 +37,14 @@ export default component$(() => {
         </a>
       </div>
       <div class="flex flex-wrap gap-1">
-        <a href="https://minecraft-servers.biz/server/luminara/" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
-          MCSB
-        </a>
-        <a href="https://topminecraftservers.org/vote/41347" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
-          TMCS
+        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          CF
         </a>
         <a href="https://topg.org/minecraft-servers/server-674840" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           TOPG
         </a>
-        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
-          CF
+        <a href="https://topminecraftservers.org/vote/41347" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          TMCS
         </a>
       </div>
       <h1 class="shadow-outline text-4xl font-bold text-white">

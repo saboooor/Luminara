@@ -289,11 +289,11 @@ export default component$(() => {
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                   <article class={{
-                    "lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200": true,
-                    "opacity-50": !announcement.crossposted,
-                    "border-luminescent-400": announcement.crossposted && !store.onlyPublished
+                    'lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200': true,
+                    'opacity-50': !announcement.crossposted,
+                    'border-luminescent-400': announcement.crossposted && !store.onlyPublished,
                   }}>
-                    <div class={`group`}>
+                    <div class={'group'}>
                       <div class="text-sm font-semibold md:text-lg mb-2">
                         <div class="flex items-center gap-1 mb-2 text-white">
                           <img src={`https://cdn.discordapp.com/avatars/${announcement.author.id}/${announcement.member?.avatar ?? announcement.author.avatar}`} class="w-4 h-4 md:w-6 md:h-6 md:mr-1 rounded-md" width={16} height={16} />
@@ -309,7 +309,7 @@ export default component$(() => {
                       <div class="flex items-center gap-1">
                         <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
                         <Link size={16} class=" justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
-                          navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
+                          void navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
                           store.notifications.push({
                             title: 'Copied Successfully!',
                             content: 'The link to this announcement has been copied to your clipboard.',
