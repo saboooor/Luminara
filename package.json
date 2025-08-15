@@ -1,10 +1,11 @@
 {
   "name": "luminara-website",
+  "homepage": "https://luminaramc.org",
   "description": "Website for Luminara SMP",
   "engines": {
-    "node": ">=15.0.0"
+    "node": ">=23.11.0"
   },
-  "private": true,
+  "author": "saboooor",
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
