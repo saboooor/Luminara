@@ -16,7 +16,7 @@ export const RouterHead = component$(() => {
       <title>{`${head.title}`}</title>
       <meta content={`${head.title}`} property="og:title" />
       <meta content="#FEA6AE" name="theme-color" />
-      <meta content="/branding/icon.png" property="og:image" />
+      <meta content="/icon.png" property="og:image" />
 
       <link rel="canonical" href={loc.url.href} />
       <link rel="icon" href={iconWEBP} />
