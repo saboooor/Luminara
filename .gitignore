@@ -36,6 +36,12 @@ lerna-debug.log*
 .yarn/*
 !.yarn/releases
 
+config/
+data/
+.DS_Store
+package-lock.json
+config.json
+
 # Cloudflare
 functions/**/*.js
 
