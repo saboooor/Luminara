@@ -1,10 +1,9 @@
 import { component$ } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
-import { SelectMenuRaw, LogoDiscord, Nav } from '@luminescent/ui-qwik';
+import { SelectMenuRaw, LogoDiscord, Nav, LogoLuminescentFull } from '@luminescent/ui-qwik';
 import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Download, Github, Menu, Palette } from 'lucide-icons-qwik';
 
 import Logo from '~/images/logo.png?jsx';
-import LuminescentLogo from './icons/LuminescentLogo';
 
 export default component$(() => {
   const loc = useLocation();
@@ -67,11 +66,7 @@ export default component$(() => {
           <Download size={24} /> Downloads
         </a>
         <a q:slot="extra-buttons" href="https://luminescent.dev" class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg">
-          <div style="filter: drop-shadow(0 0 0 #DD6CFF);" class="h-8 w-32 transition text-gray-300 rounded-md flex items-center whitespace-nowrap">
-            <div style="filter: drop-shadow(0 0 1rem #CB6CE6);">
-              <LuminescentLogo />
-            </div>
-          </div>
+          <LogoLuminescentFull />
         </a>
       </SelectMenuRaw>
 

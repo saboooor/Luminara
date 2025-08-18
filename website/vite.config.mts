@@ -37,6 +37,13 @@ export default defineConfig(({ command, mode }): UserConfig => {
       // Put problematic deps that break bundling here, mostly those with binaries.
       // For example ['better-sqlite3'] if you use that in server functions.
       exclude: [],
+      include: [
+        'rehype-stringify',
+        'remark-gfm',
+        'remark-parse',
+        'remark-rehype',
+        'unified'
+      ]
     },
 
     /**

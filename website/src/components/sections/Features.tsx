@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { Hoverable, LogoDiscord } from '@luminescent/ui-qwik';
 
-import features from './Features.json';
+import features from './features';
 import { Link } from 'lucide-icons-qwik';
 
 type Feature = {

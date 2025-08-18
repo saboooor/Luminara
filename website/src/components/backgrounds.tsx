@@ -1,7 +1,9 @@
-// @ts-nocheck
-import { component$ } from '@builder.io/qwik';
+import { component$, useStore } from '@builder.io/qwik';
+//@ts-ignore
 import Cave from '~/images/backgrounds/cave.png?jsx&w=1280;1920;2560;3840';
+//@ts-ignore
 import UndergroundBase from '~/images/backgrounds/underground_base.png?jsx&w=1280;1920;2560;3840';
+//@ts-ignore
 import Village from '~/images/backgrounds/village.png?jsx&w=1280;1920;2560;3840';
 const DumyEnd = '/backgrounds/dumy_end.mov';
 const DumyPortal = '/backgrounds/dumy_portal.mov';
@@ -17,12 +19,19 @@ const backgrounds = [
 ];
 
 export default component$((props: any) => {
-  const i = Math.floor(Math.random() * backgrounds.length);
-  const Background = backgrounds[i];
-  return <>{backgrounds[i] === DumyEnd || backgrounds[i] === DumyPortal || backgrounds[i] === DumyIsland ?
-    <video autoPlay loop muted {...props}>
-      <source src={backgrounds[i]} type="video/mp4" />
-    </video>
-    : <Background {...props} />}
+  const bgStore = useStore({
+    current: Math.floor(Math.random() * backgrounds.length),
+  });
+  return <>
+    {(backgrounds[bgStore.current] === DumyEnd
+    || backgrounds[bgStore.current] === DumyPortal
+    || backgrounds[bgStore.current] === DumyIsland) &&
+      <video autoPlay loop muted {...props}>
+        <source src={backgrounds[bgStore.current]} type="video/mp4" />
+      </video>
+    }
+    {backgrounds[bgStore.current] === Cave && <Cave {...props} />}
+    {backgrounds[bgStore.current] === UndergroundBase && <UndergroundBase {...props} />}
+    {backgrounds[bgStore.current] === Village && <Village {...props} />}
   </>;
 });

@@ -24,41 +24,36 @@ export const OnThisPage = component$(() => {
   const created = formatDate(frontmatter.date_created);
   const updated = formatDate(frontmatter.last_updated);
 
-  const useActiveItem = (itemIds: string[]) => {
-    const activeId = useSignal<string | null>(null);
-    useOnDocument('scroll', $(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              activeId.value = entry.target.id;
-            }
-          });
-        },
-        { rootMargin: '0% 0% -80% 0%' },
-      );
+  const activeId = useSignal<string | null>(null);
+  const itemIds = contentHeadings.map((h) => h.id);
+  useOnDocument('scroll', $(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            activeId.value = entry.target.id;
+          }
+        });
+      },
+      { rootMargin: '0% 0% -80% 0%' },
+    );
 
+    itemIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
       itemIds.forEach((id) => {
         const element = document.getElementById(id);
         if (element) {
-          observer.observe(element);
+          observer.unobserve(element);
         }
       });
-
-      return () => {
-        itemIds.forEach((id) => {
-          const element = document.getElementById(id);
-          if (element) {
-            observer.unobserve(element);
-          }
-        });
-      };
-    }));
-
-    return activeId;
-  };
-
-  const activeId = useActiveItem(contentHeadings.map((h) => h.id));
+    };
+  }));
 
   return (
     <aside
