@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
 // @ts-ignore
-import iconWEBP from '../../public/icon.png?w=96&h=96&format=webp';
+import icon from '/icon.png';
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
@@ -19,10 +19,10 @@ export const RouterHead = component$(() => {
       <meta content="/icon.png" property="og:image" />
 
       <link rel="canonical" href={loc.url.href} />
-      <link rel="icon" href={iconWEBP} />
-      <link rel="mask-icon" href={iconWEBP} />
+      <link rel="icon" href={icon} />
+      <link rel="mask-icon" href={icon} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta content={iconWEBP} property="og:image" />
+      <meta content={icon} property="og:image" />
 
       {head.meta.map((m, i) => (
         <meta {...m} key={i} />

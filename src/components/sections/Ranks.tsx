@@ -3,7 +3,7 @@ import * as Ranks from '~/components/ranks';
 
 export default component$(() => {
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col gap-1">
+    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-10">
         <span class="text-pink-400">Luminara SMP</span> Ranks
       </h1>
@@ -11,7 +11,7 @@ export default component$(() => {
         Different ranks give different perks!
       </p>
       <div class="grid gap-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="my-0! flex items-center gap-2">
             Player
           </h3>
@@ -27,7 +27,7 @@ export default component$(() => {
           <p>noenter</p>
           <p>noenterplayer</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Skeleton
           </h3>
@@ -42,7 +42,7 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p>trappeddestination</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Enderman
           </h3>
@@ -56,7 +56,7 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p>nofluidflow</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Breeze
           </h3>
@@ -72,7 +72,7 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p>nofirespread</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Strider
           </h3>
@@ -88,7 +88,7 @@ export default component$(() => {
           <p>noitemdrop</p>
           <p>nofiredamage</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Armadillo
           </h3>
@@ -104,7 +104,7 @@ export default component$(() => {
           <p>entermessage</p>
           <p>noelytra</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Axolotl
           </h3>
@@ -122,7 +122,7 @@ export default component$(() => {
           <p>playertime</p>
           <p>playerweather</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Warden
           </h3>
@@ -139,7 +139,7 @@ export default component$(() => {
           <p>keeplevel</p>
           <p>nohunger</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Glow Squid
           </h3>
@@ -156,7 +156,7 @@ export default component$(() => {
           <p>noenderpearl</p>
           <p>noflight</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Ocelot
           </h3>
@@ -171,7 +171,7 @@ export default component$(() => {
           <p>/enderchest</p>
           <p>/condense</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Allay
           </h3>
@@ -186,7 +186,7 @@ export default component$(() => {
           <p>/speed</p>
           <p>/stack</p>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             Sniffer
           </h3>
@@ -200,7 +200,7 @@ export default component$(() => {
         </div>
       </div>
       <div class="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             VIP
           </h3>
@@ -212,7 +212,7 @@ export default component$(() => {
             Learn More...
           </a>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             MVP
           </h3>
@@ -224,7 +224,7 @@ export default component$(() => {
             Learn More...
           </a>
         </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out gap-0">
+        <div class="lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             G.O.A.T
           </h3>

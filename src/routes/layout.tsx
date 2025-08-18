@@ -1,12 +1,10 @@
 import { component$, Slot, useVisibleTask$ } from '@builder.io/qwik';
 import Nav from '~/components/Nav';
 
-import Backgrounds from '~/components/backgrounds';
+import Background from '~/components/backgrounds';
 import { useLocation } from '@builder.io/qwik-city';
 
 export default component$(() => {
-  const Background = Backgrounds[Math.floor(Math.random() * Backgrounds.length)];
-
   const loc = useLocation();
 
   // eslint-disable-next-line qwik/no-use-visible-task
@@ -84,7 +82,7 @@ export default component$(() => {
   return (
     <>
       <Background class={{
-        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-full object-cover opacity-40': true,
+        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-full object-cover brightness-50': true,
         'blur-xl scale-110': loc.url.pathname != '/',
       }} />
       <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-full" />

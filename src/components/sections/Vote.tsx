@@ -7,7 +7,7 @@ export default component$(() => {
   });
 
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col justify-center text-left gap-1 min-h-screen">
+    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-20">
         Vote for <span class="text-pink-400">Luminara SMP!</span>
       </h1>
@@ -17,33 +17,33 @@ export default component$(() => {
         If you're a Bedrock player, dont forget to put a _ before your gamertag!
       </p>
       <div class="flex flex-wrap gap-1">
-        <a href="https://minecraft-server-list.com/server/507849/vote/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://minecraft-server-list.com/server/507849/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSL
         </a>
-        <a href="https://minecraftservers.org/vote/667461" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://minecraftservers.org/vote/667461" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSO
         </a>
-        <a href="https://minecraft-server.net/vote/ssaabboooorr/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://minecraft-server.net/vote/ssaabboooorr/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSN
         </a>
-        <a href="https://minecraft-mp.com/server/337205/vote/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://minecraft-mp.com/server/337205/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCMP
         </a>
-        <a href="https://minecraftpocket-servers.com/server/129088/vote/" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://minecraftpocket-servers.com/server/129088/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCPS
         </a>
-        <a href="https://servers-minecraft.net/server-luminara.40623/vote" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+        <a href="https://servers-minecraft.net/server-luminara.40623/vote" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           SMCN
         </a>
       </div>
       <div class="flex flex-wrap gap-1">
-        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           CF
         </a>
-        <a href="https://topg.org/minecraft-servers/server-674840" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+        <a href="https://topg.org/minecraft-servers/server-674840" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           TOPG
         </a>
-        <a href="https://topminecraftservers.org/vote/41347" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+        <a href="https://topminecraftservers.org/vote/41347" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           TMCS
         </a>
       </div>

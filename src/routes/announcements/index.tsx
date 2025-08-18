@@ -243,7 +243,7 @@ export default component$(() => {
   });
 
   if (articleList.value instanceof Error) return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 mt-24">
+    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
         <h1 class="mb-4 shadow-outline">
           <span class="text-luminescent-400">Luminara SMP</span> Announcements
@@ -260,7 +260,7 @@ export default component$(() => {
   );
 
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-start gap-1">
+    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <h1 class="shadow-outline text-4xl font-bold text-white mt-10">
         <span class="text-pink-400">Luminara SMP</span> Announcements
       </h1>
@@ -275,9 +275,11 @@ export default component$(() => {
           store.onlyPublished = el.checked;
         }}
       />
-      <button class="lum-btn" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
-        Sort by: {store.sort}
-      </button>
+      <div class="my-2">
+        <button class="lum-btn" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
+          Sort by: {store.sort}
+        </button>
+      </div>
       {(() => {
         if (store.sort != 'newest') store.changed = true;
         if (store.changed) articleList.value.reverse();
@@ -289,7 +291,7 @@ export default component$(() => {
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                   <article class={{
-                    'lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200': true,
+                    'lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl': true,
                     'opacity-50': !announcement.crossposted,
                     'border-luminescent-400': announcement.crossposted && !store.onlyPublished,
                   }}>

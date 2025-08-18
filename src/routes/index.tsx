@@ -39,7 +39,7 @@ export default component$(() => {
 
   return (
     <>
-      <div class="flex flex-col h-[calc(100svh-80px)] justify-center items-center">
+      <div class="flex flex-col min-h-screen justify-center items-center bg-gradient-to-b from-pink-400/30 pt-20">
         <div class="flex flex-col justify-center items-center lg:gap-[25svh] gap-5">
           <div class="lg:hidden relative floating max-w-72 mx-auto mt-5">
             <Logo class="w-3/4 mx-auto" />
