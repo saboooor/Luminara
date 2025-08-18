@@ -8,87 +8,78 @@ export default component$(() => {
         <span class="text-pink-400">Luminara SMP</span> Rules
       </h1>
       <p class="mb-6 text-xl shadow-outline">
-        Please note that the staff have full control over what may be allowed and what is not, things may differ as there may be gray areas.<br />
-        Attempting to exploit gray areas is not permitted and will end up in a punishment regardless of what the rules indicate.<br />
-        Last updated Jun 28, 2023
+        Please note that the staff may have full discretion over all rules and their enforcement.<br />
+        Voice/Private chat is typically unmoderated, if a user is being obnoxious in a voice/private chat, they may be muted.<br />
+        Last updated Aug 18, 2025
       </p>
       <div class="grid gap-1">
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             1. Grief
           </h3>
-          <p>Claimed structures MAY NOT be griefed.</p>
-          <p>Griefing is only allowed if builds are UNCLAIMED.</p>
-          <p>Keeping your build unclaimed indicates that you have no issue with other players griefing your build and will not be recovered afterwards.</p>
-          <p>Intentionally lagging the server is NOT allowed.</p>
+          <p>Claimed structures may not be griefed.</p>
+          <p>Griefing is only allowed if builds are unclaimed.</p>
+          <p>Keeping your build unclaimed indicates that you have no issue with other players griefing your build, although it may be reverted if asked.</p>
+          <p>Intentionally lagging the server is not allowed.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
             2. Sensitivity
           </h3>
-          <p>If a player is uncomfortable about a topic and asks you to stop, you MUST stop or move to a private chat, no questions asked.</p>
-          <p>This rule applies common sense, meaning it only applies to sensitive topics and things that may make others literally uncomfortable.</p>
-          <p>Arguing / Fooling around with this rule will result in a mute.</p>
+          <p>If a player is uncomfortable about a topic and asks you to stop, you must stop or move to a private chat, no questions asked.</p>
+          <p>This rule only applies to sensitive topics that may make others literally uncomfortable.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            3. Language
+            3. Hate Speech
           </h3>
-          <p>This is an English server, other languages in text chat are not permitted.</p>
-          <p>With the exception of well-known words / phrases.</p>
-          <p>All slurs are forbidden in text chat and builds.</p>
+          <p>Anything that is recognized as a slur are all forbidden.</p>
+          <p>Hate speech towards any individual(s) is not tolerated, this is a friendly server, not a place for hate.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            4. Player Killing
-          </h3>
-          <p>Player killing is NOT allowed if they have PvP turned off with /pvp off.</p>
-          <p>Keeping PvP on indicates that you're prepared for fights with other players.</p>
-        </div>
-        <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
-          <h3 class="mt-0! mb-2! flex items-center gap-2">
-            5. Impersonation
+            4. Impersonation
           </h3>
           <p>Impersonating Staff (A.K.A. Acting like you're staff) or players is not permitted.</p>
           <p>This includes mini-modding (Moderating chat as a player).</p>
-          <p>Mini-modding may also be taken as a form of toxicity.</p>
+          <p>Mini-modding may also be sometimes taken as a form of toxicity.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            6. Building
+            5. Building
           </h3>
-          <p>Building inside a 100 block radius outside of a player's build without permission is not recommended as the owner of that build may request to move it by contacting the staff.</p>
+          <p>Building inside a 100 block radius outside of a player's build without permission is not recommended as the owner of that build may request to move your build by contacting the staff.</p>
+          <p>On a second note, you can also contact the staff if you would like to move your build to a better looking area.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            7. Spam
+            6. Spam
           </h3>
           <p>Keep spam to a minimum. This includes pinging people repetitively on Discord.</p>
           <p>Flooding the chat with pointless content (ex. copypasta) to an irritating point is not allowed.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            8. Cheating
+            7. Cheating
           </h3>
           <p>X-raying, hacking, duping, or exploiting bugs and glitches are not allowed.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            9. Advertisements
+            8. Advertisements
           </h3>
           <p>You may not talk about other servers unless they're well-known by minecraft players worldwide. (ex. hypixel, hive, etc.)</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            10. Annoyances
+            9. Annoyances
           </h3>
           <p>If a player is bothered or annoyed by what you're doing that's related to them, you must stop.</p>
           <p>Repetitively trolling (e.g. telling people to do "alt + f4" to make people leave) is not permitted.</p>
-          <p>Please keep jukeboxes at a fair radius if you are living within 512 blocks away from a player's build as the player may request to lower the radius (and punish if radius is repetitively raised) by contacting the staff.</p>
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            11. Behaviour
+            10. Behaviour
           </h3>
           <p>If a player is uncomfortable with controversial/sensitive topics, move your conversation to a private chat (As stated in Rule 2.).</p>
           <p>Toxicity is not tolerated.</p>
@@ -100,7 +91,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            12. Privacy
+            11. Privacy
           </h3>
           <p>Leaking others' most likely private information is not permitted.</p>
           <p>Some people may see privacy in a different way than you would, please respect it.</p>
@@ -108,7 +99,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            13. Inclusivity
+            12. Inclusivity
           </h3>
           <p>You may not disrespect/discriminate others. Everyone in Luminara SMP are included regardless of sexuality, race, looks, etc.</p>
           <p>Discrimination towards any group that may be against your views is not permitted. That includes but is not limited to people with different sexualities, races, looks, etc.</p>
@@ -118,13 +109,11 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-bg-gray-900/40 backdrop-blur-lg !text-gray-200 hover:lum-bg-gray-900/50 transition duration-1000 hover:duration-75 ease-out">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
-            14. Plugin Rules
+            13. Plugin Rules
           </h3>
-          <p>You may not pressure people into turning off /nosleep. They want to keep the night for a reason.</p>
+          <p>You may not pressure people into turning off /nosleep. They may keep the night for any reason.</p>
           <p>Abusing the Jobs plugin or any other plugin that earns you money is not allowed.</p>
-          <p>This includes but is not limited to:</p>
-          <p>- Using alts for an economic advantage (For example: Jobs) (Not including voting)</p>
-          <p>- "Scamming" (Charging others for something that should've been extremely cheaper)</p>
+          <p>You may not use an alt for an economic advantage (For example: Jobs)</p>
         </div>
       </div>
     </section>
