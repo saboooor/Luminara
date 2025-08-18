@@ -23,7 +23,7 @@ export default component$(() => {
   // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(async () => {
     const srvjson = await fetch('https://api.mcsrvstat.us/2/mc.luminescent.dev');
-    const srvdata = await srvjson.json() as any;
+    const srvdata = await srvjson.json();
     if (!srvdata.online || srvdata.protocol == 1) {
       store.online = false;
     }
@@ -33,7 +33,7 @@ export default component$(() => {
       store.version = srvdata.protocol_name;
     }
     const discordjson = await fetch('https://discord.com/api/guilds/865519986806095902/widget.json');
-    const discorddata = await discordjson.json() as any;
+    const discorddata = await discordjson.json();
     store.discordonline = discorddata.presence_count;
   });
 
