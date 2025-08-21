@@ -65,10 +65,9 @@ export default component$(() => {
           window.open('https://servers-minecraft.net/server-luminara.40623/vote');
           if (!store.blue) return;
 
-          window.open('https://minecraft-servers.biz/server/luminara/');
-          window.open('https://topminecraftservers.org/vote/41347');
-          window.open('https://topg.org/minecraft-servers/server-674840');
           window.open('https://www.curseforge.com/servers/minecraft/game/luminara');
+          window.open('https://topg.org/minecraft-servers/server-674840');
+          window.open('https://topminecraftservers.org/vote/41347');
         }} class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           Open vote sites
         </button>
