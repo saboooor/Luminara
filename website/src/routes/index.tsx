@@ -114,28 +114,28 @@ export default component$(() => {
           </div>
           <div class="flex flex-col lg:flex-row w-full justify-between gap-2 mt-4">
             <Link href="/announcements"
-              class="lum-btn lum-bg-gray-900/30 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 backdrop-blur-lg lum-btn-p-3 lg:p-10"
+              class="lum-btn lum-bg-transparent hover:lum-bg-gray-900 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 lum-btn-p-3 lg:p-10"
               onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
             >
               <Megaphone class="transition-all duration-500 group-hover:duration-300 w-10 h-10 lg:w-44 lg:h-44 rounded-none" />
               Announcements
             </Link>
             <a href="https://luminara.tebex.io"
-              class="lum-btn lum-bg-gray-900/30 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 backdrop-blur-lg lum-btn-p-3 lg:p-10"
+              class="lum-btn lum-bg-transparent hover:lum-bg-gray-900 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 lum-btn-p-3 lg:p-10"
               onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
             >
               <Cart class="transition-all duration-500 group-hover:duration-300 w-10 h-10 lg:w-44 lg:h-44" />
               Store
             </a>
             <Link href="/vote"
-              class="lum-btn lum-bg-gray-900/30 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 backdrop-blur-lg lum-btn-p-3 lg:p-10"
+              class="lum-btn lum-bg-transparent hover:lum-bg-gray-900 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 lum-btn-p-3 lg:p-10"
               onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
             >
               <Keys class="transition-all duration-500 group-hover:duration-300 w-10 h-10 lg:w-44 lg:h-44" />
               Vote
             </Link>
             <Link href="/rules"
-              class="lum-btn lum-bg-gray-900/30 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 backdrop-blur-lg lum-btn-p-3 lg:p-10"
+              class="lum-btn lum-bg-transparent hover:lum-bg-gray-900 !text-xl lg:!text-2xl lg:lum-pad-equal-5xl gap-5 lg:gap-10 lg:flex-col items-center transition-all duration-500 hover:duration-200 group lg:hover:scale-110 lg:hover:translate-y-2 hover:drop-shadow-2xl hover:saturate-150 lum-btn-p-3 lg:p-10"
               onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)} onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
             >
               <OpenBook class="transition-all duration-500 group-hover:duration-300 w-10 h-10 lg:w-44 lg:h-44" />

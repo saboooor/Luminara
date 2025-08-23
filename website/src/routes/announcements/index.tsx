@@ -291,7 +291,7 @@ export default component$(() => {
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                   <article class={{
-                    'lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105': true,
+                    'lum-card gap-0 lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105': true,
                     'opacity-50': !announcement.crossposted,
                     'border-luminescent-400': announcement.crossposted && !store.onlyPublished,
                   }}>

@@ -17,7 +17,7 @@ export default component$(() => {
       </h1>
       <div class="grid lg:grid-cols-3 gap-2">
         {features.map((feature: Feature, i) => (
-          <div key={i} class="lum-card lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl"
+          <div key={i} class="lum-card lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105"
             onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)}
             onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}>
             <h4 class="mt-0! mb-2! flex items-center gap-2">

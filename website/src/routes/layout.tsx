@@ -50,7 +50,7 @@ export default component$(() => {
       }
       // Update particle position
       update() {
-        const speedFactor = location.pathname !== '/' ? 0.25 : 0.5; // Change speed based on URL
+        const speedFactor = location.pathname !== '/' ? 0.5 : 1; // Change speed based on URL
         this.y += this.speed * speedFactor;
         this.x += this.speed * speedFactor;
         if (this.y > canvas.height) this.y = 0; // Reset position if particle goes out of the canvas
