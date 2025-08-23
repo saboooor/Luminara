@@ -245,10 +245,10 @@ export default component$(() => {
   if (articleList.value instanceof Error) return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
-        <h1 class="mb-4 shadow-outline">
+        <h1 class="mb-4">
           <span class="text-luminescent-400">Luminara SMP</span> Announcements
         </h1>
-        <p class="font-normal text-xl shadow-outline">
+        <p class="font-normal text-xl">
           Here you will find the latest announcements from Luminara SMP.<br/>
           This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
         </p>
@@ -261,10 +261,10 @@ export default component$(() => {
 
   return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
-      <h1 class="shadow-outline text-4xl font-bold text-white mt-10">
+      <h1 class="text-4xl font-bold text-white mt-10">
         <span class="text-pink-400">Luminara SMP</span> Announcements
       </h1>
-      <p class="font-normal text-xl shadow-outline">
+      <p class="font-normal text-xl">
         Here you will find the latest announcements from Luminara SMP.<br/>
         This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
       </p>
@@ -284,14 +284,14 @@ export default component$(() => {
         if (store.sort != 'newest') store.changed = true;
         if (store.changed) articleList.value.reverse();
         return (
-          <div class="flex flex-col gap-1">
+          <div class="flex flex-col gap-2">
             {
               articleList.value.map((announcement: any) => {
                 if (store.onlyPublished && !announcement.crossposted) return null;
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                   <article class={{
-                    'lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105 backdrop-blur-xl shadow-2xl': true,
+                    'lum-card gap-0 lum-bg-lum-card-bg/30 transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105': true,
                     'opacity-50': !announcement.crossposted,
                     'border-luminescent-400': announcement.crossposted && !store.onlyPublished,
                   }}>
@@ -340,7 +340,7 @@ export default component$(() => {
         );
       })()}
       { !!store.notifications.length &&
-        <div class="fixed block bottom-4 right-4 px-4 py-3 rounded-lg bg-green-500/50 backdrop-blur-xl">
+        <div class="fixed block bottom-4 right-4 px-4 py-3 rounded-lg bg-green-500/50">
           {
             store.notifications.map((notification, i) => (
               <div key={i}>

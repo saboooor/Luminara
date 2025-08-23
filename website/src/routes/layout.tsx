@@ -37,6 +37,7 @@ export default component$(() => {
       y: number;
       size: number;
       speed: number;
+      rotation: number;
       img: number;
 
       constructor() {
@@ -44,25 +45,37 @@ export default component$(() => {
         this.y = Math.random() * canvas.height; // Random y position
         this.size = (Math.random() * 10 + 10); // Random size
         this.speed = (Math.random() * 0.5 + 1); // Random speed
+        this.rotation = Math.random() * 2 * Math.PI; // Random rotation
         this.img = Math.floor(Math.random() * 11);
       }
       // Update particle position
       update() {
-        const speedFactor = location.pathname !== '/' ? 0.5 : 1; // Change speed based on URL
+        const speedFactor = location.pathname !== '/' ? 0.25 : 0.5; // Change speed based on URL
         this.y += this.speed * speedFactor;
         this.x += this.speed * speedFactor;
         if (this.y > canvas.height) this.y = 0; // Reset position if particle goes out of the canvas
         if (this.x > canvas.width) this.x = 0; // Reset position if particle goes out of the canvas
+
+        this.rotation += 0.01; // Change rotation slightly
       }
       // Draw particle
       draw() {
         // use image as particle
-        ctx.drawImage(particleImages[this.img], this.x, this.y, this.size, this.size);
+        ctx.save();
+        ctx.translate(this.x + this.size / 2, this.y + this.size / 2);
+        ctx.rotate(this.rotation);
+        ctx.drawImage(particleImages[this.img], -this.size / 2, -this.size / 2, this.size, this.size);
+        ctx.restore();
       }
     }
 
-    // Create particles
-    const numberOfParticles = 32;
+    // Create particles, mobile will have fewer particles
+    let numberOfParticles = 32;
+
+    if (window.innerWidth < 768) {
+      numberOfParticles = 12;
+    }
+
     const particles: Particle[] = Array.from({ length: numberOfParticles }, () => new Particle());
 
     // Animation loop
@@ -82,10 +95,10 @@ export default component$(() => {
   return (
     <>
       <Background class={{
-        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-full object-cover brightness-50': true,
+        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-lvh object-cover brightness-50': true,
         'blur-xl scale-110': loc.url.pathname != '/',
       }} />
-      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-full" />
+      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-lvh bg-gradient-to-b from-pink-400/30 " />
       <Nav />
       <Slot />
     </>

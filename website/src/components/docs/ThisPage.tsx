@@ -57,7 +57,7 @@ export const OnThisPage = component$(() => {
 
   return (
     <aside
-      class='hidden xl:flex w-1/6 fixed right-0 h-dvh lum-card bg-transparent border-r-0 sm:border-y-0 top-0 z-[40] pt-14 sm:pt-20 px-0 sm:px-6 pb-0'
+      class='hidden xl:flex w-1/6 fixed inset-y-24 right-12 lum-card z-[40] pt-14 sm:pt-20 px-0 sm:px-6 pb-0'
     >
       {contentHeadings.length > 0 ? (
         <>

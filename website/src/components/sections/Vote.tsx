@@ -8,15 +8,15 @@ export default component$(() => {
 
   return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
-      <h1 class="shadow-outline text-4xl font-bold text-white mt-20">
+      <h1 class="text-4xl font-bold text-white mt-20">
         Vote for <span class="text-pink-400">Luminara SMP!</span>
       </h1>
-      <p class="mb-6 text-xl shadow-outline">
+      <p class="mb-6 text-xl">
         Voting for Luminara SMP helps us grow and reach more players by getting the server higher in the server list websites!<br />
         The blue buttons do not give any reward and are purely a way to support Luminara SMP<br />
         If you're a Bedrock player, dont forget to put a _ before your gamertag!
       </p>
-      <div class="flex flex-wrap gap-1">
+      <div class="flex flex-wrap gap-2 mb-2">
         <a href="https://minecraft-server-list.com/server/507849/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSL
         </a>
@@ -36,7 +36,7 @@ export default component$(() => {
           SMCN
         </a>
       </div>
-      <div class="flex flex-wrap gap-1">
+      <div class="flex flex-wrap gap-2">
         <a href="https://www.curseforge.com/servers/minecraft/game/luminara" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           CF
         </a>
@@ -47,15 +47,15 @@ export default component$(() => {
           TMCS
         </a>
       </div>
-      <h1 class="shadow-outline text-4xl font-bold text-white">
+      <h1 class="text-4xl font-bold text-white">
         Fast-vote
       </h1>
-      <p class="mb-2 shadow-outline">
+      <p class="mb-2">
         Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
         <span class="text-pink-400">You must allow pop-ups in your browser for it to function properly.</span>
       </p>
 
-      <div class="flex flex-wrap gap-1 my-2">
+      <div class="flex flex-wrap gap-2 my-2">
         <button onClick$={() => {
           window.open('https://minecraft-server-list.com/server/507849/vote');
           window.open('https://minecraftservers.org/vote/667461');

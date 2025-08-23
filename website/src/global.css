@@ -12,16 +12,16 @@
 
 @theme {
   --lum-default-alpha: 70;
-  --lum-border-radius: 0.625rem;
+  --lum-border-radius: 1.5rem;
 
 
-  --color-gray-50: oklch(98.5% 0.042 343.839);
-  --color-gray-100: oklch(96.7% 0.043 350.542);
-  --color-gray-200: oklch(92.8% 0.046 350.531);
-  --color-gray-300: oklch(87.2% 0.05 344.338);
-  --color-gray-400: oklch(70.7% 0.062 348.325);
-  --color-gray-500: oklch(55.1% 0.067 350.364);
-  --color-gray-600: oklch(44.6% 0.07 342.802);
+  --color-gray-50: oklch(98.5% 0.012 343.839);
+  --color-gray-100: oklch(96.7% 0.013 350.542);
+  --color-gray-200: oklch(92.8% 0.016 350.531);
+  --color-gray-300: oklch(87.2% 0.03 344.338);
+  --color-gray-400: oklch(70.7% 0.042 348.325);
+  --color-gray-500: oklch(55.1% 0.057 350.364);
+  --color-gray-600: oklch(44.6% 0.068 342.802);
   --color-gray-700: oklch(37.3% 0.074 345.733);
   --color-gray-800: oklch(27.8% 0.073 342.848);
   --color-gray-850: oklch(23.2% 0.07 345.733);
@@ -85,6 +85,13 @@ img[alt=Attachment] {
   border-radius: 5px;
 }
 
+img {
+  border-radius: 0;
+}
+
 .shadow-outline {
-  filter: drop-shadow(1px 0px 0px #552d2d90) drop-shadow(-1px 0px 0px #552d2d90) drop-shadow(0px 1px 0px #552d2d90) drop-shadow(0px -1px 0px #552d2d90);
+  filter: drop-shadow(1px 0px 0px var(--color-gray-950))
+    drop-shadow(-1px 0px 0px var(--color-gray-950))
+    drop-shadow(0px 1px 0px var(--color-gray-950))
+    drop-shadow(0px -1px 0px var(--color-gray-950));
 }

@@ -12,7 +12,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class="text-gray-100 min-h-screen">
+      <body lang="en" class="bg-bg text-gray-100 min-h-lvh">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
