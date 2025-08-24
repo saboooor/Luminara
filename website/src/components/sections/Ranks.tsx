@@ -69,8 +69,6 @@ export default component$(() => {
           <p>4 Creative Plots</p>
           <p>/nick</p>
           <p>/hat</p>
-          <h4>Claim Flags</h4>
-          <p>nofirespread</p>
         </div>
         <div class="lum-card gap-0 lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
@@ -86,7 +84,7 @@ export default component$(() => {
           <p>/craft</p>
           <h4>Claim Flags</h4>
           <p>noitemdrop</p>
-          <p>nofiredamage</p>
+          <p>nomobspawntype PHANTOM</p>
         </div>
         <div class="lum-card gap-0 lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105">
           <h3 class="mt-0! mb-2! flex items-center gap-2">
