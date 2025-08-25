@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { Hoverable } from '@luminescent/ui-qwik';
 
-import features from './why';
+import features from './whylist';
 
 type Feature = {
   icon: any;
