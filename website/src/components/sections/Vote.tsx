@@ -52,7 +52,7 @@ export default component$(() => {
       </h1>
       <p class="mb-2">
         Fast-vote will let you open all the vote sites at once in separate tabs.<br/>
-        <span class="text-pink-400">You must allow pop-ups in your browser for it to function properly.</span>
+        <span class="text-red-500">You must allow pop-ups in your browser for it to function properly.</span>
       </p>
 
       <div class="flex flex-wrap gap-2 my-2">
