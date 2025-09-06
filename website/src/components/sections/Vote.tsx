@@ -20,6 +20,9 @@ export default component$(() => {
         <a href="https://minecraft-server-list.com/server/507849/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSL
         </a>
+        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
+          CF
+        </a>
         <a href="https://minecraftservers.org/vote/667461" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCSO
         </a>
@@ -32,19 +35,16 @@ export default component$(() => {
         <a href="https://minecraftpocket-servers.com/server/129088/vote/" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           MCPS
         </a>
-        <a href="https://servers-minecraft.net/server-luminara.40623/vote" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
-          SMCN
-        </a>
       </div>
       <div class="flex flex-wrap gap-2">
-        <a href="https://www.curseforge.com/servers/minecraft/game/luminara" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
-          CF
-        </a>
         <a href="https://topg.org/minecraft-servers/server-674840" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           TOPG
         </a>
         <a href="https://topminecraftservers.org/vote/41347" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
           TMCS
+        </a>
+        <a href="https://servers-minecraft.net/server-luminara.40623/vote" target="_blank" class="lum-btn lum-pad-xl rounded-xl lum-bg-blue-600 hover:lum-bg-blue-500">
+          SMCN
         </a>
       </div>
       <h1 class="text-4xl font-bold text-white">
@@ -58,16 +58,16 @@ export default component$(() => {
       <div class="flex flex-wrap gap-2 my-2">
         <button onClick$={() => {
           window.open('https://minecraft-server-list.com/server/507849/vote');
+          window.open('https://www.curseforge.com/servers/minecraft/game/luminara');
           window.open('https://minecraftservers.org/vote/667461');
           window.open('https://minecraft-server.net/vote/ssaabboooorr');
           window.open('https://minecraft-mp.com/server/337205/vote');
           window.open('https://minecraftpocket-servers.com/server/129088/vote');
-          window.open('https://servers-minecraft.net/server-luminara.40623/vote');
           if (!store.blue) return;
 
-          window.open('https://www.curseforge.com/servers/minecraft/game/luminara');
           window.open('https://topg.org/minecraft-servers/server-674840');
           window.open('https://topminecraftservers.org/vote/41347');
+          window.open('https://servers-minecraft.net/server-luminara.40623/vote');
         }} class="lum-btn lum-pad-xl rounded-xl lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
           Open vote sites
         </button>
