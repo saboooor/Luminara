@@ -19,7 +19,7 @@ export default [
   {
     'title': 'Discord Server',
     'description': 'Please join the Discord server for important updates and to chat with the community!',
-    'discord': '/discord',
+    'discord': 'https://discord.luminaramc.org',
   },
   {
     'title': 'Sit Anywhere',

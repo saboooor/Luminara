@@ -22,7 +22,7 @@ export default component$(() => {
 
   // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(async () => {
-    const srvjson = await fetch('https://api.mcsrvstat.us/2/mc.luminescent.dev');
+    const srvjson = await fetch('https://api.mcsrvstat.us/2/luminaramc.org');
     const srvdata = await srvjson.json();
     if (!srvdata.online || srvdata.protocol == 1) {
       store.online = false;
@@ -50,7 +50,7 @@ export default component$(() => {
           <div class="sm:flex gap-20">
             <div class="flex justify-end items-center">
               <button onClick$={() => {
-                navigator.clipboard.writeText('mc.luminescent.dev').catch(() => {
+                navigator.clipboard.writeText('luminaramc.org').catch(() => {
                   const response = document.getElementById('response-desktop') as HTMLParagraphElement;
                   response.textContent = 'FAILED TO COPY, CHECK CONSOLE';
                   setTimeout(() => response.textContent = 'COPIED SUCCESSFULLY', 3000);
@@ -68,7 +68,7 @@ export default component$(() => {
                   <div class="h-5 text-sm mt-0.5 overflow-hidden">
                     <div class="transition-all duration-300 group-hover:-translate-y-5 group-focus:-translate-y-10">
                       <p>
-                        MC.LUMINESCENT.DEV
+                        LUMINARAMC.ORG
                       </p>
                       <p>
                         CLICK TO COPY IP
@@ -92,7 +92,7 @@ export default component$(() => {
               </h2>
             </div>
             <div class="flex justify-start items-center">
-              <a href="/discord" class="lum-btn lum-bg-transparent hover:lum-bg-transparent lum-pad-xl rounded-full justify-start text-left gap-5 items-center font-medium group transition-all duration-300 hover:saturate-150 w-72">
+              <a href="https://discord.luminaramc.org" class="lum-btn lum-bg-transparent hover:lum-bg-transparent lum-pad-xl rounded-full justify-start text-left gap-5 items-center font-medium group transition-all duration-300 hover:saturate-150 w-72">
                 <div class="flex flex-col gap-2 transition-all duration-300 group-hover:gap-3">
                   <LogoDiscord size={48} class="text-indigo-300" />
                   <div class="bg-indigo-300 h-1 rounded-full mx-3" style={{ filter: 'drop-shadow(0 0 3px rgb(165 180 252))' }} />

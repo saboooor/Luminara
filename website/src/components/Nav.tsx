@@ -147,7 +147,7 @@ export const SocialButtons = component$(() => {
     <a href="https://github.com/saboooor/Nether-Depths" title="GitHub" class="lum-btn lum-bg-transparent p-2 rounded-lum-1 hover:lum-bg-nav-bg">
       <Github size={24} />
     </a>
-    <a href="/discord" title="Discord" class="lum-btn lum-bg-transparent p-2 rounded-lum-1 hover:lum-bg-nav-bg">
+    <a href="https://discord.luminaramc.org" title="Discord" class="lum-btn lum-bg-transparent p-2 rounded-lum-1 hover:lum-bg-nav-bg">
       <LogoDiscord size={24} />
     </a>
   </>;
