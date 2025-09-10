@@ -3,7 +3,7 @@ import { component$ } from '@builder.io/qwik';
 import { LogoDiscord } from '@luminescent/ui-qwik';
 
 export const onGet = ({ redirect }: RequestEvent) => {
-  throw redirect(301, 'https://discord.luminaramc.org');
+  throw redirect(301, 'https://discord.gg/Mw7fNpdg5N');
 };
 
 export default component$(() => {
