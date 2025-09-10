@@ -1,4 +1,4 @@
-import { Link, RequestEvent } from '@builder.io/qwik-city';
+import { RequestEvent } from '@builder.io/qwik-city';
 import { component$ } from '@builder.io/qwik';
 import { LogoDiscord } from '@luminescent/ui-qwik';
 
@@ -12,10 +12,10 @@ export default component$(() => {
       <h1 class="text-center">
         Join our Discord server!
       </h1>
-      <Link href="https://discord.luminaramc.org" class="lum-btn text-2xl lum-btn-p-6 gap-6">
+      <a href="https://discord.luminaramc.org" class="lum-btn text-2xl lum-btn-p-6 gap-6">
         <LogoDiscord size={36} />
         Join
-      </Link>
+      </a>
     </div>
   </>;
 });
