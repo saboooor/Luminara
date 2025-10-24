@@ -6,7 +6,7 @@ import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
-import { RESTError, RESTRateLimit, APIMessage, MessageFlags, APIGuildMember, APIRole, APIReaction, FormattingPatterns, APIGuildChannel, ChannelType } from 'discord-api-types/v10';
+import { RESTError, RESTRateLimit, APIMessage, MessageFlags, APIGuildMember, APIRole, APIReaction, FormattingPatterns, APIGuildChannel, GuildChannelType } from 'discord-api-types/v10';
 import { Link } from 'lucide-icons-qwik';
 import { Toggle } from '@luminescent/ui-qwik';
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -88,7 +88,7 @@ export const getAnnouncementsFn = server$(async function(props?: RequestEventBas
 declare interface Member extends APIGuildMember {
   parsedRoles?: APIRole[];
 }
-type AnyGuildChannel = APIGuildChannel<ChannelType>;
+type AnyGuildChannel = APIGuildChannel<GuildChannelType>;
 
 export const getGuildMembersFn = server$(async function(props?: RequestEventBase): Promise<Member[] | Error> {
   props = props ?? this;
@@ -269,12 +269,13 @@ export default component$(() => {
         This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
       </p>
       <Toggle
-        label="Show only published announcements"
         checked={store.onlyPublished}
         onChange$={(e, el) => {
           store.onlyPublished = el.checked;
         }}
-      />
+      >
+        Show only published announcements
+      </Toggle>
       <div class="my-2">
         <button class="lum-btn" onClick$={() => { store.sort = store.sort == 'newest' ? 'oldest' : 'newest'; }}>
           Sort by: {store.sort}

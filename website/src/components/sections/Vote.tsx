@@ -73,12 +73,13 @@ export default component$(() => {
         </button>
       </div>
       <Toggle
-        label="Open promotional vote sites"
         checked={store.blue}
         onChange$={(e, el) => {
           store.blue = el.checked;
         }}
-      />
+      >
+        Open promotional vote sites
+      </Toggle>
     </section>
   );
 });
