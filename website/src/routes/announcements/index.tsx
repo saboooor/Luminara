@@ -250,7 +250,7 @@ export default component$(() => {
         </h1>
         <p class="font-normal text-xl">
           Here you will find the latest announcements from Luminara SMP.<br/>
-          This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
+          This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
         </p>
         <p>
           Error: {articleList.value.message}
@@ -266,7 +266,7 @@ export default component$(() => {
       </h1>
       <p class="font-normal text-xl">
         Here you will find the latest announcements from Luminara SMP.<br/>
-        This is based on the announcements channel in the <a href='https://discord.gg/2Z8qZ9Y' class="text-blue-400">Discord Server</a>.
+        This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
       </p>
       <Toggle
         label="Show only published announcements"
@@ -311,7 +311,7 @@ export default component$(() => {
                       <div class="flex items-center gap-1">
                         <Markdown mdContent={`${announcement.content}${announcement.attachments ? `\n\n${announcement.attachments.map((attachment: any) => `![Attachment](${attachment.url})`).join(' ')}` : ''}`} extraClass="text-xs md:text-sm" />
                         <Link size={16} class=" justify-end cursor-pointer hidden group-hover:flex" onClick$={() => {
-                          void navigator.clipboard.writeText(`https://mc.luminescent.dev/announcements#${announcement.id}`);
+                          void navigator.clipboard.writeText(`https://luminaramc.org/announcements#${announcement.id}`);
                           store.notifications.push({
                             title: 'Copied Successfully!',
                             content: 'The link to this announcement has been copied to your clipboard.',
