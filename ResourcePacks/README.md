@@ -1,5 +1,8 @@
 These are all the resource packs used in Luminara
+
 They are uploaded here in case they end up being unavailable later
+
+Updated as of March 5 2026
 
 Here are all the original links
 - https://modrinth.com/resourcepack/twemoji-visibility
