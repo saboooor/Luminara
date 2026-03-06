@@ -1,22 +1,22 @@
 {
-  "pack":{
-    "pack_format":15,
-    "description":[
-       "Pylon Resource Pack",
-       "\n§7v0.5.1 Merged with Slimefun"
+  "pack": {
+    "pack_format": 15,
+    "description": [
+       "Pylon + Slimefun Resource Pack",
+       "\n§7v0.5.1"
     ],
-    "supported_formats":{
+    "supported_formats": {
       "min_inclusive": 15,
       "max_inclusive": 999
     },
-  "min_format": 15,
-  "max_format": 999
+    "min_format": 15,
+    "max_format": 999
   },
-  "overlays":{
-    "entries":[
+  "overlays": {
+    "entries": [
       {
         "directory": "overlay_1_21_6_plus",
-        "formats":{
+        "formats": {
           "min_inclusive": 55,
           "max_inclusive": 999
         },
@@ -25,25 +25,25 @@
       },
       {
         "directory": "pylon_untouched",
-        "formats":{
-          "min_inclusive": 75,
+        "formats": {
+          "min_inclusive": 55,
           "max_inclusive": 999
         },
-        "min_format": 75,
+        "min_format": 55,
         "max_format": 999
       },
       {
         "directory": "pylon_slimefun_merge",
-        "formats":{
-          "min_inclusive": 75,
+        "formats": {
+          "min_inclusive": 55,
           "max_inclusive": 999
         },
-        "min_format": 75,
+        "min_format": 55,
         "max_format": 999
       }
     ]
   },
-  "Credits":{
+  "Credits": {
     "Raulh22":"https://www.planetminecraft.com/texture-pack/slimefun-texture-by-raulh22/",
     "Den4enko":"https://github.com/Den4enko/Slimefun-Resourcepack",
     "LoneDev":" https://www.spigotmc.org/resources/addon-slimefun4-textures-for-itemsadder.83877/",
@@ -61,6 +61,7 @@
     "Pandicka":"https://github.com/AlmostPanda",
     "dongji": "On Discord",
     "cromecloride": "On Discord",
-    "Leo": "On Discord"
+    "Leo": "On Discord",
+    "Sab": "https://github.com/saboooor"
   }
 }
