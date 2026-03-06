@@ -6,29 +6,36 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.join(__dirname, '.');
+const pylonDir = path.join(__dirname, '../../../../pylon_untouched/assets/minecraft/items');
+const comp1216Dir = path.join(__dirname, '../../../../overlay_1_21_6_plus/assets/minecraft/items');
 const compDir = path.join(__dirname, '../../../../assets/minecraft/items');
 
 fs.readdirSync(rootDir).forEach(file => {
   const filePath = path.join(rootDir, file);
+  const pylonFilePath = path.join(pylonDir, file);
   const stats = fs.statSync(filePath);
 
   // check if there is an equivalent file in the compDir
   const compFilePath = path.join(compDir, file);
-  if (fs.existsSync(compFilePath)) {
+  const comp1216FilePath = path.join(comp1216Dir, file);
+  if (fs.existsSync(compFilePath) || fs.existsSync(comp1216FilePath)) {
 
     // load json data for both files
-    const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    const compFileData = JSON.parse(fs.readFileSync(compFilePath, 'utf-8'));
+    // load file data from pylon to get fresh data
+    const fileData = JSON.parse(
+      fs.existsSync(pylonFilePath)
+      ? fs.readFileSync(pylonFilePath, 'utf-8')
+      : fs.readFileSync(filePath, 'utf-8')
+    );
+    // prefer the 1.21.6+ version if it exists, otherwise fall back to the regular version
+    let compFileData = JSON.parse(
+      fs.existsSync(comp1216FilePath)
+      ? fs.readFileSync(comp1216FilePath, 'utf-8')
+      : fs.readFileSync(compFilePath, 'utf-8')
+    );
 
     const oldFallback = fileData.model.fallback;
 
-    if (oldFallback.type !== 'minecraft:model') {
-      if (!JSON.stringify(fileData).includes('slimefun'))
-        return console.warn(`WARN: File ${file} does not contain 'slimefun' in its data, please manually check if it should be merged or not.`);
-      else
-        return console.info(`INFO: Skipping ${file} as its fallback is not of type minecraft:model`);
-    }
-    
     compFileData.model.fallback = oldFallback;
     fileData.model.fallback = compFileData.model;
 

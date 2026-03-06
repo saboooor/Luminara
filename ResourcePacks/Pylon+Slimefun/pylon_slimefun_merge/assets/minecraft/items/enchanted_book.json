@@ -44,6 +44,10 @@
       "type": "minecraft:select",
       "property": "minecraft:component",
       "component": "minecraft:custom_data",
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/enchanted_book"
+      },
       "cases": [
         {
           "when": {
@@ -81,23 +85,23 @@
         {
           "when": {
             "PublicBukkitValues": {
-              "slimefun:slimefun_item": "ENDER_FLAME"
-            }
-          },
-          "model": {
-            "type": "model",
-            "model": "infinityexpansion:materials/ender_flame"
-          }
-        },
-        {
-          "when": {
-            "PublicBukkitValues": {
               "slimefun:slimefun_item": "TOME_OF_KNOWLEDGE_SHARING"
             }
           },
           "model": {
             "type": "model",
             "model": "slimefun:slimefun/magical_gadgets/tome_of_knowledge_sharing"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ENDER_FLAME"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion:materials/ender_flame"
           }
         },
         {
@@ -111,11 +115,7 @@
             "model": "infinityexpansion2:tools/ender_flame"
           }
         }
-      ],
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/enchanted_book"
-      }
+      ]
     }
   },
   "oversized_in_gui": true

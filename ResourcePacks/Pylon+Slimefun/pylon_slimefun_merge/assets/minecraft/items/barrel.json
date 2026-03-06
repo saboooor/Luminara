@@ -52,8 +52,8 @@
         }
       ],
       "fallback": {
-        "type": "model",
-        "model": "block/barrel"
+        "type": "minecraft:model",
+        "model": "minecraft:block/barrel"
       }
     }
   }
