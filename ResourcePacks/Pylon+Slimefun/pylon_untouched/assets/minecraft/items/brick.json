@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:unfired_refractory_brick", "model": {"type": "minecraft:model", "model": "pylon:item/resources/unfired_refractory_brick"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:item/brick"}}}

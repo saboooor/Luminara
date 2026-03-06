@@ -1,0 +1,72 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:solar_lens",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/hydraulic_machines/solar_lens"
+        }
+      },
+      {
+        "when": "pylon:loupe",
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_false": {
+            "type": "model",
+            "model": "pylon:item/science/loupe"
+          },
+          "on_true": {
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "model": {
+                  "type": "model",
+                  "model": "pylon:item/science/loupe"
+                },
+                "when": [
+                  "gui",
+                  "ground",
+                  "fixed",
+                  "thirdperson_lefthand",
+                  "thirdperson_righthand"
+                ]
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "pylon:item/science/loupe_scope"
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "MAGICAL_GLASS"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_items/magical_glass"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/glass_pane"
+      }
+    }
+  }
+}

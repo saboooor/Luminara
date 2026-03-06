@@ -1,0 +1,1 @@
+{"parent": "block/orientable", "author": "Pandicka", "textures": {"front": "pylon:block/machines/smeltery/smeltery_burner", "side": "pylon:block/machines/smeltery/refractory_bricks", "top": "pylon:block/machines/smeltery/refractory_bricks"}, "display": {"fixed": {"scale": [0.5, 0.5, 0.5]}}}

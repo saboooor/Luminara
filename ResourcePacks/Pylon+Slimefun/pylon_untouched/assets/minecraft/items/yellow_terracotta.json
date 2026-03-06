@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:sulfur", "model": {"type": "model", "model": "pylon:block/fluids/water", "tints": [{"type": "constant", "value": 12427298}]}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/yellow_terracotta"}}}

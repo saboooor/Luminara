@@ -1,0 +1,234 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:bronze_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/bronze_sheet"
+        }
+      },
+      {
+        "when": "pylon:copper_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/copper_sheet"
+        }
+      },
+      {
+        "when": "pylon:gold_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/gold_sheet"
+        }
+      },
+      {
+        "when": "pylon:iron_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/iron_sheet"
+        }
+      },
+      {
+        "when": "pylon:palladium_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/palladium_sheet"
+        }
+      },
+      {
+        "when": "pylon:steel_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/steel_sheet"
+        }
+      },
+      {
+        "when": "pylon:tin_sheet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/components/tin_sheet"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "MAGICAL_BOOK_COVER"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_items/magical_book_cover"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "STEEL_PLATE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/miscellaneous/steel_plate"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "REINFORCED_CLOTH"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/technical_components/reinforced_cloth"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "CLOTH"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/miscellaneous/cloth"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "RAG"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/items/rag"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "BANDAGE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/items/bandage"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "SCROLL_OF_DIMENSIONAL_TELEPOSITION"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_gadgets/scroll_of_dimensional_teleposition"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "REINFORCED_PLATE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/miscellaneous/reinforced_plate"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "PLASTIC_SHEET"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/technical_components/plastic_sheet"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "MACHINE_PLATE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion:materials/machine_plate"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "RAW_PLASTIC"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimy_tree_taps:materials/raw_plastic"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "SOUL_PAPER"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "bump:magical_items/soul_paper"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "APPRAISAL_PAPER_ARMOR"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "bump:tools/appraisal_paper_armor"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "APPRAISAL_PAPER_DAMAGE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "bump:tools/appraisal_paper_damage"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "IE_MACHINE_PLATE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion2:materials/machine_plate"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/paper"
+      }
+    }
+  }
+}

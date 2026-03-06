@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:hydraulic_fluid", "model": {"type": "model", "model": "pylon:block/fluids/water", "tints": [{"type": "constant", "value": 2508772}]}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/blue_concrete_powder"}}}

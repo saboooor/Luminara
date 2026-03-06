@@ -1,0 +1,60 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:igneous_composite",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/building/igneous_composite"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "WITHER_PROOF_OBSIDIAN"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/technical_components/wither_proof_obsidian"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "WITHER_ASSEMBLER"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/wither_assembler"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "MOD_PLATE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimetinker:materials/mod_plate"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/obsidian"
+      }
+    }
+  }
+}

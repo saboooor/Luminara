@@ -1,0 +1,130 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:cargo_inserter",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/machines/cargo/cargo_inserter"
+        }
+      },
+      {
+        "when": "pylon:cargo_accumulator:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_buffer:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_filter:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_fluid_accumulator:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_inserter:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_merger:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt_x"
+        }
+      },
+      {
+        "when": "pylon:cargo_meter:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_monitor:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_splitter:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_valve:input",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/input_alt"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "BIO_REACTOR"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/bio_reactor"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "CROP_GROWTH_ACCELERATOR"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/crop_growth_accelerator"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "CROP_GROWTH_ACCELERATOR_2"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/crop_growth_accelerator_2"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/lime_terracotta"
+      }
+    }
+  }
+}

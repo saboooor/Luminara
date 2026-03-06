@@ -24,7 +24,16 @@
         "max_format": 999
       },
       {
-        "directory": "overlay_1_21_11_plus",
+        "directory": "pylon_untouched",
+        "formats":{
+          "min_inclusive": 75,
+          "max_inclusive": 999
+        },
+        "min_format": 75,
+        "max_format": 999
+      },
+      {
+        "directory": "pylon_slimefun_merge",
         "formats":{
           "min_inclusive": 75,
           "max_inclusive": 999

@@ -1,0 +1,163 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:iron",
+        "model": {
+          "type": "model",
+          "model": "pylon:block/fluids/iron"
+        }
+      },
+      {
+        "when": "pylon:cargo_extractor",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/machines/cargo/cargo_extractor"
+        }
+      },
+      {
+        "when": "pylon:cargo_accumulator:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_buffer:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_extractor:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_fluid_accumulator:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_gate:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_merger:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_meter:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_monitor:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      },
+      {
+        "when": "pylon:cargo_valve:output",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:block/machines/cargo/display/output_alt"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIC_INGOT_FACTORY"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electric_ingot_factory"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIC_INGOT_FACTORY_2"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electric_ingot_factory2"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIC_INGOT_FACTORY_3"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electric_ingot_factory3"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIFIED_CRUCIBLE"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electrified_crucible"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIFIED_CRUCIBLE_2"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electrified_crucible2"
+          }
+        },
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "ELECTRIFIED_CRUCIBLE_3"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "slimefun:slimefun/energy/electrified_crucible3"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/red_terracotta"
+      }
+    }
+  }
+}

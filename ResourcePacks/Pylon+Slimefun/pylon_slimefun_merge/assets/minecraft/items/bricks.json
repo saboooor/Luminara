@@ -1,0 +1,38 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "pylon:smeltery_caster",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pylon:item/machines/smeltery/smeltery_caster"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "select",
+      "property": "component",
+      "component": "custom_data",
+      "cases": [
+        {
+          "when": {
+            "PublicBukkitValues": {
+              "slimefun:slimefun_item": "COPPER_SINGULARITY"
+            }
+          },
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion:singularities/copper_singularity"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/bricks"
+      }
+    }
+  }
+}

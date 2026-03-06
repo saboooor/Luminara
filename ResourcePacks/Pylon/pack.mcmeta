@@ -1,0 +1,15 @@
+{
+  "pack":{
+    "description":[
+       "Pylon Resource Pack",
+       "\n§7v0.5.1"
+    ],
+    "min_format": [75, 0],
+    "max_format": [500, 0]
+  },
+  "Credits":{
+    "dongji": "On Discord",
+    "cromecloride": "On Discord",
+    "Leo": "On Discord"
+  }
+}

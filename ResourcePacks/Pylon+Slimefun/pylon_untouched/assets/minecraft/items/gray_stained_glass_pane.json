@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "rebar:background", "model": {"type": "minecraft:model", "model": "rebar:item/ui/background"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:item/gray_stained_glass_pane"}}, "oversized_in_gui": true}

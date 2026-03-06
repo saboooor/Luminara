@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:lumber_axe", "model": {"type": "minecraft:model", "model": "pylon:item/tools/lumber_axe"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:item/wooden_axe"}}}

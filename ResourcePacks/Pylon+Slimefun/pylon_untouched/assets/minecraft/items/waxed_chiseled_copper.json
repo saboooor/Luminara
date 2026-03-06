@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:hydraulic_pipe_bender", "model": {"type": "minecraft:model", "model": "pylon:block/machines/hydraulic_machines/pipe_bender"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/chiseled_copper"}}}
