@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MONSTER_JERKY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/monster_jerky"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LATIAO"}},
+        "model": {
+          "type": "model",
+          "model": "bump:foods/latiao"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/rotten_flesh"
+    }
+  }
+}

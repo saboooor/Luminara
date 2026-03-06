@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:cargo_accumulator", "model": {"type": "minecraft:model", "model": "pylon:block/machines/cargo/cargo_accumulator"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/redstone_lamp"}}}

@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_STAINLESS_MACHINE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_stainless_machine"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/brain_coral_block"
+    }
+  }
+}

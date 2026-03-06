@@ -1,0 +1,121 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILICON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/valuables/silicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLANK_RUNE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/blank_rune"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_AIR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_air"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_EARTH"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_earth"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_FIRE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_fire"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_WATER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_water"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_ENDER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_ender"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_LIGHTNING"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_lightning"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_RAINBOW"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_rainbow"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_SOULBOUND"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_soulbound"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_ENCHANTMENT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_enchantment"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_RUNE_VILLAGERS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_rune_villagers"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RUBBER"}},
+        "model": {
+          "type": "model",
+          "model": "slimy_tree_taps:materials/rubber"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"fluffymachines:fireproof":1,"slimefun:slimefun_item":"FIREPROOF_RUNE"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:misc/fireproof_rune"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/firework_star",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": -1
+        },
+        {
+          "type": "minecraft:firework",
+          "default": -7697782
+        }
+      ]
+    }
+  }
+}

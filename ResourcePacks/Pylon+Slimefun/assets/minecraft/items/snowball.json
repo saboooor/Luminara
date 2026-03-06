@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HEAVY_CREAM"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/heavy_cream"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/grenade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NITROGEN_TRIIODIDE_GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/nitrogen_triiodide_grenade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ARSENIC_GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/arsenic_grenade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PYRO_POWDER_GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/pyro_powder_grenade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"THIOACETONE_GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/thioacetone_grenade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OSMIUM_DUST_GRENADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/osmium_dust_grenade"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/snowball"
+    }
+  }
+}

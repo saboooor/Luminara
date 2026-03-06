@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"extra_gear:armor/copper/copper_helmet",
+    "layer1":"extra_gear:armor/copper/copper_helmet",
+    "layer2":"minecraft:trims/items/helmet_trim_diamond"
+  }
+}

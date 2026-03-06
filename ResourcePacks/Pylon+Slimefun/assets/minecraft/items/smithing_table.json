@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CHEF_ANDROID_TRAINER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:basic_machines/gn_chef_android_trainer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TINKERS_TABLE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:workstations/tinkers_table"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TINKERS_ARMOUR_TABLE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:workstations/tinkers_armour_table"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_MULTIBLOCK_GEAR"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machines/gear_fabricator"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/smithing_table"
+    }
+  }
+}

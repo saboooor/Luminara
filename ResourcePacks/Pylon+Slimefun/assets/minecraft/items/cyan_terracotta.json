@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REACTOR_ACCESS_PORT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/cargo/reactor_access_port"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/cyan_terracotta"
+    }
+  }
+}

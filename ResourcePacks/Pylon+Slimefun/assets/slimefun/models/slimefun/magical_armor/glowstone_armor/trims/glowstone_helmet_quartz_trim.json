@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/magical_armor/glowstone_armor/glowstone_helmet",
+    "layer1":"slimefun:slimefun/magical_armor/glowstone_armor/glowstone_helmet",
+    "layer2":"minecraft:trims/items/helmet_trim_quartz"
+  }
+}

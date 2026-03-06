@@ -1,0 +1,901 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:custom_data",
+    "value": {"PublicBukkitValues":{"slimetinker:st_tool_type":"PICK"}},
+    "on_true": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/rod/pick/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/rod/pick/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/rod/pick/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/rod/pick/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/rod/pick/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/rod/pick/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/rod/pick/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/rod/pick/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/rod/pick/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/rod/pick/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/rod/pick/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/rod/pick/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/rod/pick/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/rod/pick/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/rod/pick/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/rod/pick/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/rod/pick/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/rod/pick/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/rod/pick/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/rod/pick/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/rod/pick/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/rod/pick/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/rod/pick/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REDSTONE_ALLOY"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/rod/pick/redstone_alloy"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SMITHIUM"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/rod/pick/smithium"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/pick/wood"
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/pick/wood"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/rod/pick/wood"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/rod/pick/wood"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/rod/pick/wood"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/rod/pick/wood"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/rod/pick/wood"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/rod/pick/wood"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/rod/pick/wood"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/rod/pick/wood"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/rod/pick/wood"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/rod/pick/wood"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/rod/pick/wood"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/rod/pick/wood"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/rod/pick/wood"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/rod/pick/wood"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/rod/pick/wood"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/rod/pick/wood"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/rod/pick/wood"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/rod/pick/wood"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/rod/pick/wood"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/rod/pick/wood"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/rod/pick/wood"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/rod/pick/wood"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/rod/pick/wood"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/rod/pick/wood"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/head/pick/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/head/pick/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/head/pick/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/head/pick/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/head/pick/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/head/pick/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/head/pick/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/head/pick/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/head/pick/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/head/pick/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/head/pick/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/head/pick/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/head/pick/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/head/pick/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/head/pick/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/head/pick/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/head/pick/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/head/pick/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/head/pick/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/head/pick/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/head/pick/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/head/pick/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/head/pick/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"FERROSILICON"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/head/pick/ferrosilicon"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BOOMERITE"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/head/pick/boomerite"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:custom_data",
+                                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICEINIUM"}},
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "slimetinker:tools/head/pick/niceinium"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:custom_data",
+                                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SMITHIUM"}},
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "slimetinker:tools/head/pick/smithium"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/pick/wooden_head"
+                                                              },
+                                                              "fallback": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/pick/wooden_head"
+                                                              }
+                                                            },
+                                                            "fallback": {
+                                                              "type": "model",
+                                                              "model": "slimetinker:tools/head/pick/wooden_head"
+                                                            }
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/head/pick/wooden_head"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/head/pick/wooden_head"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/head/pick/wooden_head"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/head/pick/wooden_head"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/head/pick/wooden_head"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/head/pick/wooden_head"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/head/pick/wooden_head"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/head/pick/wooden_head"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/head/pick/wooden_head"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/head/pick/wooden_head"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/head/pick/wooden_head"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/head/pick/wooden_head"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/head/pick/wooden_head"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/head/pick/wooden_head"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/head/pick/wooden_head"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/head/pick/wooden_head"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/head/pick/wooden_head"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/head/pick/wooden_head"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/head/pick/wooden_head"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/head/pick/wooden_head"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/head/pick/wooden_head"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/head/pick/wooden_head"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/head/pick/wooden_head"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/head/pick/wooden_head"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/head/pick/wooden_head"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"CRIMSON_ROOT"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/bind/pick/crimson_root"
+           },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"LEATHER"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/bind/pick/leather"
+             },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SILICON"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/bind/pick/silicon"
+               },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SLIME"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/bind/pick/slime"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"STRING"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/bind/pick/string"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"TWISTED_VINE"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/bind/pick/twisted_vine"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"VINE"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/bind/pick/vine"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WARPED_ROOT"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/bind/pick/warped_root"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WEEPING_VINE"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/bind/pick/weeping_vine"
+                          },
+                          "on_false": {
+                            "type": "minecraft:model",
+                            "model": "item/air"
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "item/air"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "item/air"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "item/air"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "item/air"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "item/air"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "item/air"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "item/air"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "item/air"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "item/air"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TOOL_PICKAXE_DUMMY"}},
+          "model": {
+            "type": "model",
+            "model": "slimetinker:tool_building_guide/tool_pickaxe_dummy"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "item/wooden_pickaxe"
+      }
+    },
+    "fallback": {
+      "type": "model",
+      "model": "item/wooden_pickaxe"
+    }
+  }
+}

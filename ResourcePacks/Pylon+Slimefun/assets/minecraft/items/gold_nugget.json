@@ -1,0 +1,111 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGIC_LUMP_1"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/magic_lump_1"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGIC_LUMP_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/magic_lump_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGIC_LUMP_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/magic_lump_3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LUMP_1"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ender_lump_1"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LUMP_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ender_lump_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LUMP_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ender_lump_3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OLD_COIN"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/old_coin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_ALU_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_alu_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_COR_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_cor_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_ALU_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_alu_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_NICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_nice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_ANNIVERSARIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_anniversarium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_BIT_SYNTHETIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_bit_synthetic"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/gold_nugget"
+    }
+  }
+}

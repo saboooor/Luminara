@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DOLLY"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:misc/dolly"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIE_REPAIR_KIT"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/die_repair_kit"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/minecart"
+    }
+  }
+}

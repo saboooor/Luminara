@@ -1,0 +1,202 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SWORD_OF_BEHEADING"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/weapons/sword_of_beheading"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_BRASS_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/aluminum_brass_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_BRONZE_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/aluminum_bronze_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/aluminum_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BILLON_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/billon_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BRASS_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/brass_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BRONZE_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/bronze_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/cobalt_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/copper_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CORINTHIAN_BRONZE_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/corinthian_bronze_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/damascus_steel_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DURALUMIN_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/duralumin_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FERROSILICON_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/ferrosilicon_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HARDENED_METAL"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/hardened_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/lead_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/magnesium_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NICKEL_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/nickel_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/reinforced_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/silver_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLDER_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/solder_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/steel_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/tin_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/zinc_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOUL_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/soul_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DEVIL_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/devil_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OSMIUM_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:melee_weapons/osmium_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_KITCHEN_KNIFE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_kitchen_knife"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_sword"
+    }
+  }
+}

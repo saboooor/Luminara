@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OLD_CPU"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/old_cpu"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_TAPIOCA_PEARLS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_tapioca_pearls"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/prismarine_crystals"
+    }
+  }
+}

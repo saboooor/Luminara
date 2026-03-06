@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ULTIMATE_STEW"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:food/ultimate_stew"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/suspicious_stew"
+    }
+  }
+}

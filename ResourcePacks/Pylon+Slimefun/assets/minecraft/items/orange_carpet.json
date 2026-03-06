@@ -1,0 +1,90 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_SHOVELHEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_shovelhead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_PICKAXEHEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_pickaxehead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_AXE_HEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_axe_head"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_HOEHEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_hoehead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_SWORDBLADE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_swordblade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_TOOLROD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_toolrod"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_HELM_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_helm_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_CHEST_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_chest_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_LEG_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_leg_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_BOOT_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_boot_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAST_MAIL_LINK"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:casts/cast_mail_link"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/orange_carpet"
+    }
+  }
+}

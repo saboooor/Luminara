@@ -1,0 +1,188 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/damascus_armor/damascus_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/reinforced_armor/reinforced_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLAR_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/solar_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GILDED_IRON_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gilded_iron_armor/gilded_iron_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SCUBA_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_12K_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gold_12k_armor/gold_12k_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NIGHT_VISION_GOGGLES"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/night_vision_goggles"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_STEEL_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor_steel/slime_steel_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BEE_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/bee_armor/bee_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELYTRA_CAP"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/elytra_cap/elytra_cap"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_HELMT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/aluminum/aluminum_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/cobalt/cobalt_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/lead/lead_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/magnesium/magnesium_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVR_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/silver/silver_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEL_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/steel/steel_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/tin/tin_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_HELMET"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/zinc/zinc_helmet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CHEFS_HAT"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_chefs_hat"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/golden_helmet"
+    }
+  }
+}

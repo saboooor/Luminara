@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CONCRETE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/rainbow_concrete"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CONCRETE_XMAS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/rainbow_concrete_xmas"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/white_concrete"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BONE_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/bone_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEACH_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/peach_sword"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/wooden_sword"
+    }
+  }
+}

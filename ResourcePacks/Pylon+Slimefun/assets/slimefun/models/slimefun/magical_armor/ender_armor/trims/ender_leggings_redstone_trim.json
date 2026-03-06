@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/magical_armor/ender_armor/ender_leggings",
+    "layer1":"slimefun:slimefun/magical_armor/ender_armor/ender_leggings",
+    "layer2":"minecraft:trims/items/leggings_trim_redstone"
+  }
+}

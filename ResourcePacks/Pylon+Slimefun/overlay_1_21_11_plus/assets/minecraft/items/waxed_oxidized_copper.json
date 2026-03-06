@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:improved_manual_core_drill", "model": {"type": "minecraft:model", "model": "pylon:item/machines/simple_machines/improved_manual_core_drill"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/oxidized_copper"}}}

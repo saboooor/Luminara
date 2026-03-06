@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE__UI_IR_NEED_VOID"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:icons/ui_ir_need_void"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE__UI_IR_NEED_INFINITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:icons/ui_ir_need_infinity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE__UI_ISR_NEED"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:icons/ui_isr_need"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE__UI_NO_POWER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:icons/ui_no_power"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/red_stained_glass_pane"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGICAL_ZOMBIE_PILLS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/magical_zombie_pills"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"*":"VITAMINS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/items/vitamins"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/nether_wart"
+    }
+  }
+}

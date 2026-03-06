@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GPS_MARKER_TOOL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gps/gps_marker_tool"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RADIO"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/radio"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/redstone_torch"
+    }
+  }
+}

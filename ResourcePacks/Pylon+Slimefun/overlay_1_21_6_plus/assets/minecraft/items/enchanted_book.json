@@ -1,0 +1,56 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/enchanted_book"
+    },
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_guide_mode":"SURVIVAL_MODE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gui/slimefun_guide"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_guide_mode":"CHEAT_MODE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gui/slimefun_cheat"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"_UI_BACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gui/_ui_back"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TOME_OF_KNOWLEDGE_SHARING"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/tome_of_knowledge_sharing"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_FLAME"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/ender_flame"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ENDER_FLAME"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/ender_flame"
+        }
+      }
+    ]
+  },
+  "oversized_in_gui": true
+}

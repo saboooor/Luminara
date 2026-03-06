@@ -1,0 +1,901 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:custom_data",
+    "value": {"PublicBukkitValues":{"slimetinker:st_tool_type":"AXE"}},
+    "on_true": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/rod/axe/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/rod/axe/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/rod/axe/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/rod/axe/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/rod/axe/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/rod/axe/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/rod/axe/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/rod/axe/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/rod/axe/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/rod/axe/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/rod/axe/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/rod/axe/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/rod/axe/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/rod/axe/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/rod/axe/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/rod/axe/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/rod/axe/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/rod/axe/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/rod/axe/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/rod/axe/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/rod/axe/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/rod/axe/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/rod/axe/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REDSTONE_ALLOY"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/rod/axe/redstone_alloy"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SMITHIUM"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/rod/axe/smithium"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/axe/wood"
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/axe/wood"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/rod/axe/wood"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/rod/axe/wood"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/rod/axe/wood"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/rod/axe/wood"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/rod/axe/wood"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/rod/axe/wood"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/rod/axe/wood"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/rod/axe/wood"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/rod/axe/wood"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/rod/axe/wood"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/rod/axe/wood"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/rod/axe/wood"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/rod/axe/wood"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/rod/axe/wood"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/rod/axe/wood"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/rod/axe/wood"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/rod/axe/wood"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/rod/axe/wood"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/rod/axe/wood"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/rod/axe/wood"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/rod/axe/wood"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/rod/axe/wood"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/rod/axe/wood"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/rod/axe/wood"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/head/axe/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/head/axe/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/head/axe/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/head/axe/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/head/axe/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/head/axe/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/head/axe/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/head/axe/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/head/axe/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/head/axe/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/head/axe/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/head/axe/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/head/axe/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/head/axe/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/head/axe/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/head/axe/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/head/axe/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/head/axe/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/head/axe/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/head/axe/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/head/axe/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/head/axe/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/head/axe/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"FERROSILICON"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/head/axe/ferrosilicon"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BOOMERITE"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/head/axe/boomerite"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:custom_data",
+                                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICEINIUM"}},
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "slimetinker:tools/head/axe/niceinium"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:custom_data",
+                                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SMITHIUM"}},
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "slimetinker:tools/head/axe/smithium"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/axe/wooden_head"
+                                                              },
+                                                              "fallback": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/axe/wooden_head"
+                                                              }
+                                                            },
+                                                            "fallback": {
+                                                              "type": "model",
+                                                              "model": "slimetinker:tools/head/axe/wooden_head"
+                                                            }
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/head/axe/wooden_head"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/head/axe/wooden_head"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/head/axe/wooden_head"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/head/axe/wooden_head"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/head/axe/wooden_head"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/head/axe/wooden_head"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/head/axe/wooden_head"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/head/axe/wooden_head"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/head/axe/wooden_head"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/head/axe/wooden_head"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/head/axe/wooden_head"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/head/axe/wooden_head"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/head/axe/wooden_head"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/head/axe/wooden_head"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/head/axe/wooden_head"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/head/axe/wooden_head"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/head/axe/wooden_head"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/head/axe/wooden_head"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/head/axe/wooden_head"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/head/axe/wooden_head"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/head/axe/wooden_head"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/head/axe/wooden_head"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/head/axe/wooden_head"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/head/axe/wooden_head"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/head/axe/wooden_head"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"CRIMSON_ROOT"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/bind/axe/crimson_root"
+           },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"LEATHER"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/bind/axe/leather"
+             },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SILICON"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/bind/axe/silicon"
+               },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SLIME"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/bind/axe/slime"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"STRING"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/bind/axe/string"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"TWISTED_VINE"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/bind/axe/twisted_vine"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"VINE"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/bind/axe/vine"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WARPED_ROOT"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/bind/axe/warped_root"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WEEPING_VINE"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/bind/axe/weeping_vine"
+                          },
+                          "on_false": {
+                            "type": "minecraft:model",
+                            "model": "item/air"
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "item/air"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "item/air"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "item/air"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "item/air"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "item/air"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "item/air"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "item/air"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "item/air"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "item/air"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TOOL_AXE_DUMMY"}},
+          "model": {
+            "type": "model",
+            "model": "slimetinker:tool_building_guide/tool_axe_dummy"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "item/wooden_axe"
+      }
+    },
+    "fallback": {
+      "type": "model",
+      "model": "item/wooden_axe"
+    }
+  }
+}

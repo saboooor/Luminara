@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_FRIED_EGG"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_fried_egg"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_HARD_BOILED_EGG"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_hard_boiled_egg"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/egg"
+    }
+  }
+}

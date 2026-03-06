@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SEARED_BRICK_BLOCK"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/seared_brick_block"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/polished_blackstone_bricks"
+    }
+  }
+}

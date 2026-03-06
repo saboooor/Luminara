@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CLAY_VALENTINE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/valentine/rainbow_clay_valentine"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_MAGNESIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_magnesium"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/pink_terracotta"
+    }
+  }
+}

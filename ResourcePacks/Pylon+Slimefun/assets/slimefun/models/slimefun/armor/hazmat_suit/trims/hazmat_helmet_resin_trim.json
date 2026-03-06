@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/armor/hazmat_suit/hazmat_helmet",
+    "layer1":"slimefun:slimefun/armor/hazmat_suit/hazmat_helmet",
+    "layer2":"minecraft:trims/items/helmet_trim_resin"
+  }
+}

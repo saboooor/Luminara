@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"_UI_SEARCH"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gui/_ui_search"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/name_tag"
+    }
+  }
+}

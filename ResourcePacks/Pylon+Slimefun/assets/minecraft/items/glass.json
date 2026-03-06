@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PRESSURE_CHAMBER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/pressure_chamber"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_VOID_GLASS"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/void_glass"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/glass"
+    }
+  }
+}

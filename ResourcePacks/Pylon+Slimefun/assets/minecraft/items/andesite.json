@@ -1,0 +1,45 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COMPRESSED_COBBLESTONE_1"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/compressed_cobblestone_1"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COMPRESSED_COBBLESTONE_2"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/compressed_cobblestone_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_COMPRESSED_COBBLESTONE_1"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/compressed_cobblestone_1"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_COMPRESSED_COBBLESTONE_2"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/compressed_cobblestone_2"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_COMPRESSED_COBBLESTONE_3"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/compressed_cobblestone_3"}
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/andesite"
+    }
+  }
+}

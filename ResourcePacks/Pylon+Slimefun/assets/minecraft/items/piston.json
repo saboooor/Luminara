@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COMPRESSOR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/compressor"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REFINERY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/refinery"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/piston_inventory"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"APPRAISAL"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "bump:machines/appraisal"
+        }
+      },
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"SUN_ENERGY"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/sun_energy"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/bell"
+    }
+  }
+}

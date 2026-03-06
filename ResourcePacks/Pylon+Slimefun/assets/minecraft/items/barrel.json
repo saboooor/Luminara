@@ -1,0 +1,34 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_FERMENTER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:basic_machines/gn_fermenter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_LARGE_FERMENTER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:basic_machines/gn_large_fermenter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MEDIUM_FLUFFY_BARREL"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:barrels/medium_fluffy_barrel"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/barrel"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BROKEN_SPAWNER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/broken_spawner"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_SPAWNER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/reinforced_spawner"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/spawner"
+    }
+  }
+}

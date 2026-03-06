@@ -1,0 +1,223 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BRASS_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/brass_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_BRASS_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/aluminum_brass_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_BRONZE_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/aluminum_bronze_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CORINTHIAN_BRONZE_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/corinthian_bronze_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_24K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_24k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_22K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_22k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_20K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_20k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_18K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_18k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_16K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_16k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_14K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_14k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_12K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_12k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_10K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_10k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_8K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_8k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_6K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_6k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_4K"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/gold_ingots/gold_4k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GILDED_IRON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/gilded_iron"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLISTERING_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/radioactive_materials/blistering_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLISTERING_INGOT_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/radioactive_materials/blistering_ingot_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLISTERING_INGOT_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/radioactive_materials/blistering_ingot_3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MACHINE_CIRCUIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/machine_circuit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BIG_PORTABLE_CHARGER"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:portable_chargers/big_portable_charger"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_NICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_nice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_ANNIVERSARIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_anniversarium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MACHINE_CIRCUIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/machine_circuit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"GOLD_INGOT","slimefun:slimefun_item":"IE_OSCILLATOR_GOLD_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_gold_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"GOLD_INGOT","slimefun:slimefun_item":"IE_OSCILLATOR"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_gold_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_AURUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_aurum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_MANGANESE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_manganese"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_PLATINUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_platinum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_INGOT_SYNTHETIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_ingot_synthetic"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/gold_ingot"
+    }
+  }
+}

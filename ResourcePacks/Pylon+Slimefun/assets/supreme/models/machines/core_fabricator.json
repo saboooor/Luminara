@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+	"author": "Math",
+    "textures": {
+        "layer0": "supreme:machines/core_fabricator"
+    },
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 1, 0 ],
+			"scale": [ 0.55, 0.55, 0.55 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 1, 0 ],
+			"scale": [ 0.55, 0.55, 0.55 ]
+		}
+	}
+}

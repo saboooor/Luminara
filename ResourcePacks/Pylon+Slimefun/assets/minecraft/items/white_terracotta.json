@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CLAY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/rainbow_clay"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CLAY_XMAS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/rainbow_clay_xmas"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/white_terracotta"
+    }
+  }
+}

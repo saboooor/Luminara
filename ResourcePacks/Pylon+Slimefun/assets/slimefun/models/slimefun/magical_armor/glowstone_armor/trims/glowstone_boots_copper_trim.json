@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/magical_armor/glowstone_armor/glowstone_boots",
+    "layer1":"slimefun:slimefun/magical_armor/glowstone_armor/glowstone_boots",
+    "layer2":"minecraft:trims/items/boots_trim_copper"
+  }
+}

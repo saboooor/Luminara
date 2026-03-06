@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_REINFORCED_SICKLE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_reinforced_sickle"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_HOE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/infinity_hoe"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_hoe"
+    }
+  }
+}

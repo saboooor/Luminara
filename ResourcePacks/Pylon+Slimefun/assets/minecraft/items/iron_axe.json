@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SEISMIC_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/weapons/seismic_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BATTLE_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:melee_weapons/battle_axe"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_axe"
+    }
+  }
+}

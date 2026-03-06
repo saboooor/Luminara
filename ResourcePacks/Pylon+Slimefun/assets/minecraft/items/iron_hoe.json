@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_TREE_TAP"}},
+        "model": {
+          "type": "model",
+          "model": "slimy_tree_taps:treetap/reinforced_tree_tap"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SIMPLE_WRENCH"}},
+        "model": {
+          "type": "model",
+          "model": "simpleutils:simple_wrench"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SCYTHE"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:tools/scythe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_PEELER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_peeler"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_STEEL_SICKLE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_steel_sickle"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_hoe"
+    }
+  }
+}

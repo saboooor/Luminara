@@ -1,0 +1,433 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[ANCIENT_DEBRIS]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_ancient_debris"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[DIAMOND_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[DIAMOND]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[EMERALD_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[EMERALD]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[GOLD_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[GOLD]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[IRON_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_iron"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[IRON]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_iron"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[LAPIS_LAZULI_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_lapis_lazuli"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[LAPIS_LAZULI]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_lapis_lazuli"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[NETHERITE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_netherite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[REDSTONE_DUST]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_[REDSTONE_ORE]"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_ALUMINUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_aluminum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_ALUMINUM_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_aluminum_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_ALUMINUM_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_aluminum_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_BILLON"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_billon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_BOOSTED_URANIUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_uranium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_CARBON"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_slag"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_COBALT"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_cobalt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_COPPER"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_copper"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_CORINTHIAN_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_corinthian_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_DAMASCUS_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_damascus_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_DURALUMIN"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_duralumin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GILDED_IRON"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gilded_iron"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_4K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_4k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_6K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_6k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_8K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_8k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_10K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_10k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_12K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_12k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_14K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_14k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_16K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_16k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_18K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_18k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_20K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_20k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_22K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_22k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_GOLD_24K"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_gold_24k"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_HARDENED_METAL"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_hardened_metal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_LEAD"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_lead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_MAGNESIUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_magnesium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_MAGNESIUM_SALT"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_magnesium_salt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_MAGNET"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_magnet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_NEPTUNIUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_netherite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_NICKEL"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_nickel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_PLUTONIUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_plutonium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_REDSTONE_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_REINFORCED_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_reinforced_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SALT"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_salt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SILICON"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_silicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SILVER"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_silver"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SLAG"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_slag"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SOLDER"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_solder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_SULFATE"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_sulfate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_TIN"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_tin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_URANIUM"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_uranium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MOLTEN_ZINC"}},
+        "model": {
+          "type": "model",
+          "model": "liquid:molten_zinc"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/lava_bucket"
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_ANVIL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_anvil"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GPS_TELEPORTATION_MATRIX"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gps/gps_teleportation_matrix"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_ANVIL_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_anvil_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IRON_GOLEM_ASSEMBLER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/iron_golem_assembler"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/aluminum_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IRON_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/iron_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/lead_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MACHINE_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/machine_core"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/silver_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/tin_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/zinc_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TERFENOL_D_BLOCK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/terfenol_d_block"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_REFRIDGERATOR"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:basic_machines/gn_refridgerator"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_SILVER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_silver"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_ALUMINUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_aluminum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_ZINC"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_zinc"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_TIN"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_tin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_DAMASCUS_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_damascus_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_DURALIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_duralium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_HARD_METAL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_hard_metal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_SOLDER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_solder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_BILLON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_billon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_ALU_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_alu_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_NICKEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_nickel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_COBALT"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_cobalt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_REINFORCED"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_reinforced"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_SEFIRITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_sefirite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_CRINGLEIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_cringleium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_SMITHIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_smithium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MACHINE_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/machine_core"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_IRON_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/iron_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_TIN_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/tin_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_LEAD_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/lead_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_SILVER_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/silver_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ZINC_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/zinc_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ALUMINUM_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/aluminum_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MAGNESIUM_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/magnesium_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ZIRCONIUM_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_zirconium_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_TITANIUM_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_titanium_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_IRIDIUM_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_iridium_plate"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/iron_block"
+    }
+  }
+}

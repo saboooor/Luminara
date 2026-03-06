@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAKESHIFT_SMELTERY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/makeshift_smeltery"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CRANK_GENERATOR"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:generators/crank_generator"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FOUNDRY"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:multiblocks/foundry"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GENERATOR_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:generators/generator_core"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREHEATED_FURNACE"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:multiblocks/superheated_furnace"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/blast_furnace"
+    }
+  }
+}

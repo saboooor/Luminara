@@ -1,0 +1,8 @@
+{
+  "parent":"item/generated",
+  "author":"RelativoBR",
+  "textures":{
+    "layer0":"supreme:armor/leggings/supreme_leggings_supreme",
+    "layer1":"minecraft:trims/items/leggings_trim_copper"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "slimetinker:tools/head/sword/damascus_steel"
+  }
+}

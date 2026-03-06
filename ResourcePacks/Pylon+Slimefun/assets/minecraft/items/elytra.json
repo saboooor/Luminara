@@ -1,0 +1,66 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFUSED_ELYTRA"}},
+        "model": {
+          "type": "condition",
+          "property": "broken",
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_gadgets/elytra/infused_elytra"
+          },
+          "on_true": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_gadgets/elytra/infused_broken_elytra"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOULBOUND_ELYTRA"}},
+        "model": {
+          "type": "condition",
+          "property": "broken",
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_gadgets/elytra/soulbound_elytra"
+          },
+          "on_true": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_gadgets/elytra/soulbound_broken_elytra"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BEE_WINGS"}},
+        "model": {
+          "type": "condition",
+          "property": "broken",
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_armor/bee_armor/elytra/bee_wings"
+          },
+          "on_true": {
+            "type": "model",
+            "model": "slimefun:slimefun/magical_armor/bee_armor/elytra/broken_bee_wings"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "condition",
+      "property": "broken",
+      "on_false": {
+        "type": "model",
+        "model": "item/elytra"
+      },
+      "on_true": {
+        "type": "model",
+        "model": "item/elytra_broken"
+      }
+    }
+  }
+}

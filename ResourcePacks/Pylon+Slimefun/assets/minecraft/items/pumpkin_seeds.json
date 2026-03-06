@@ -1,0 +1,132 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRASS_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/grass_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_RICE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_rice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_QUINOA"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_quinoa"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_RYE_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_rye_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SQUASH_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_squash_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CUCUMBER_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cucumber_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CHILI_PEPPER_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_chili_pepper_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_LENTILS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_lentils"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_PEANUTS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_peanuts"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CAULIFLOWER_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cauliflower_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CUMIN_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cumin_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CANTALOUPE_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cantaloupe_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_HONEYDEW_MELON_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_honeydew_melon_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SESAME_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_sesame_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SALMON_ROE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_salmon_roe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_MUSTARD_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_mustard_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_DUST_GLOW_INK"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_dust_glow_ink"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/pumpkin_seeds"
+    }
+  }
+}

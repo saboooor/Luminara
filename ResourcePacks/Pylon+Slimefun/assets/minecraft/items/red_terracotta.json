@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_INGOT_FACTORY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_ingot_factory"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_INGOT_FACTORY_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_ingot_factory2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_INGOT_FACTORY_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_ingot_factory3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIFIED_CRUCIBLE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electrified_crucible"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIFIED_CRUCIBLE_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electrified_crucible2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIFIED_CRUCIBLE_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electrified_crucible3"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/red_terracotta"
+    }
+  }
+}

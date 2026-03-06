@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MECHA_GEAR"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/mecha_gear"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/ender_pearl"
+    }
+  }
+}

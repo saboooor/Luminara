@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"extra_gear:armor/copper/copper_chestplate",
+    "layer1":"extra_gear:armor/copper/copper_chestplate",
+    "layer2":"minecraft:trims/items/chestplate_trim_amethyst"
+  }
+}

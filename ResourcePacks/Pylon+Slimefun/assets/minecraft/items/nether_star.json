@@ -1,0 +1,90 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EARTH_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/earth_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FORTUNE_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/fortune_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_MATRIX"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/infinity_matrix"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGIC_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/magic_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"METAL_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/metal_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_STAR_ANISE"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_star_anise"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_EARTH_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/earth_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_FORTUNE_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/fortune_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MAGIC_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/magic_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_METAL_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/metal_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_MATRIX"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/infinity_matrix"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/nether_star"
+    }
+  }
+}

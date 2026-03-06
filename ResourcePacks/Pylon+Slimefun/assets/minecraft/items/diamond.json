@@ -1,0 +1,83 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SYNTHETIC_DIAMOND"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/valuables/synthetic_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"QUARRY_OSCILLATOR_DIAMOND"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/quarry_oscillator_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"VEIN_MINER_RUNE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/vein_miner_rune"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITE_MACHINE_CIRCUIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/infinite_machine_circuit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAKE"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/make"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CPU"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/cpu"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_MACHINE_CIRCUIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/infinity_machine_circuit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"DIAMOND","slimefun:slimefun_item":"IE_OSCILLATOR_DIAMOND"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"DIAMOND","slimefun:slimefun_item":"IE_OSCILLATOR"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_diamond"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_VEIN_MINER_RUNE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/vein_miner_rune"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/diamond"
+    }
+  }
+}

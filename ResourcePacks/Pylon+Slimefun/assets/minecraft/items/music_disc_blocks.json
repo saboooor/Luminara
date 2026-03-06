@@ -1,0 +1,104 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SOLDER"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_solder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_BILLON"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_billon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SULFATE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_sulfate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_CARBON"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_carbon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SILICON"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_silicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_NICKEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_nickel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_DURALUMIN"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_duralumin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_DAMASCUS"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_damascus_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_COBALT"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_cobalt"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/music_disc_blocks"
+    }
+  }
+}

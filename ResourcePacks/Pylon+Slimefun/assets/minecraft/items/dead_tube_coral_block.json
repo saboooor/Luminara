@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_PETRIFIER_MACHINE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_petrifier_machine"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/dead_tube_coral_block"
+    }
+  }
+}

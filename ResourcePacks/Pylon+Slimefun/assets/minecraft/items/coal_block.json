@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COAL_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/coal_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_COAL_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/coal_singularity"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/coal_block"
+    }
+  }
+}

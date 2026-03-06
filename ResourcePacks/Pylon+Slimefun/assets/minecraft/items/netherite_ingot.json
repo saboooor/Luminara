@@ -1,0 +1,90 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"VOID_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/void_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARBONADO_PORTABLE_CHARGER"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:portable_chargers/carbonado_portable_charger"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NEODYMIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/neodymium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DYSPROSIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/dysprosium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NDFEB_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/ndfeb_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_VOID_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/void_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_UNKNOWN_SMITHING_TEMPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/unknown_smithing_template"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_ADAMANTIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_adamantium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_CARBONADO"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_carbonado"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_ENERGIZED"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_energized"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNERITE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornerite"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_ingot"
+    }
+  }
+}

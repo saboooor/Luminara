@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/infinity_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/infinity_singularity"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/smooth_quartz"
+    }
+  }
+}

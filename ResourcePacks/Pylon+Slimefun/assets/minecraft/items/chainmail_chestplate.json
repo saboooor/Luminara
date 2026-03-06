@@ -1,0 +1,132 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DURALUMIN_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/duralumin_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLDER_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/solder_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BILLON_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/billon_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/steel_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/damascus_steel_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/reinforced_alloy_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARBONADO_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/carbonado_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PARACHUTE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/parachute"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HAZMAT_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EMPTY_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/empty_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MOB_DATA_CARD_EMPTY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/empty_data_card"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/chainmail_chestplate"
+    }
+  }
+}

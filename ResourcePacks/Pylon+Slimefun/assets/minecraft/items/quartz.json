@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"QUARRY_OSCILLATOR_QUARTZ"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/quarry_oscillator_quartz"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BORAX"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/borax"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"QUARTZ","slimefun:slimefun_item":"IE_OSCILLATOR_QUARTZ"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_quartz"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"QUARTZ","slimefun:slimefun_item":"IE_OSCILLATOR"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_quartz"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/quartz"
+    }
+  }
+}

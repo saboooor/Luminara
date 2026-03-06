@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_GOLD_PAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_gold_pan"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_GOLD_PAN_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_gold_pan2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELECTRIC_GOLD_PAN_3"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/electric_gold_pan3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TREE_GROWTH_ACCELERATOR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/tree_growth_accelerator"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/brown_terracotta"
+    }
+  }
+}

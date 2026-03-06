@@ -1,0 +1,160 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/damascus_armor/damascus_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/reinforced_armor/reinforced_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GILDED_IRON_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gilded_iron_armor/gilded_iron_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HAZMAT_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_12K_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gold_12k_armor/gold_12k_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_STEEL_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor_steel/slime_steel_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BEE_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/bee_armor/bee_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/aluminum/aluminum_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/cobalt/cobalt_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/lead/lead_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/magnesium/magnesium_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/silver/silver_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/steel/steel_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/tin/tin_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/zinc/zinc_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/golden_leggings"
+    }
+  }
+}

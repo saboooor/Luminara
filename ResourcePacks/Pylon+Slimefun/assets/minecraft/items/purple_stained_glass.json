@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WITHER_PROOF_GLASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_components/wither_proof_glass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GPS_TELEPORTER_PYLON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/gps/gps_teleporter_pylon"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/purple_stained_glass"
+    }
+  }
+}

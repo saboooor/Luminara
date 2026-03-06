@@ -1,0 +1,9 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "minecraft:bee_wings"
+      }
+    ]
+  }
+}

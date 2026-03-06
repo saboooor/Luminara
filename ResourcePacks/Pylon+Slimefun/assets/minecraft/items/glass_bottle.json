@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"JUICER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/juicer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FLASK_OF_KNOWLEDGE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/flask_of_knowledge"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/glass_bottle"
+    }
+  }
+}

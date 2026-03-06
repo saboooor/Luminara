@@ -1,0 +1,34 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_THRUSTER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_components/steel_thruster"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BLENDER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_blender"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_STEEL_BOWL"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_steel_bowl"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/bucket"
+    }
+  }
+}

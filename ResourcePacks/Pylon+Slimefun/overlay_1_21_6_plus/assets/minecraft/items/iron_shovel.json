@@ -1,0 +1,901 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:custom_data",
+    "value": {"PublicBukkitValues":{"slimetinker:st_tool_type":"SHOVEL"}},
+    "on_true": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/rod/shovel/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/rod/shovel/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/rod/shovel/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/rod/shovel/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/rod/shovel/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/rod/shovel/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/rod/shovel/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/rod/shovel/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/rod/shovel/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/rod/shovel/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/rod/shovel/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/rod/shovel/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/rod/shovel/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/rod/shovel/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/rod/shovel/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/rod/shovel/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/rod/shovel/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/rod/shovel/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/rod/shovel/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/rod/shovel/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/rod/shovel/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/rod/shovel/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/rod/shovel/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REDSTONE_ALLOY"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/rod/shovel/redstone_alloy"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SMITHIUM"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/rod/shovel/smithium"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/shovel/wood"
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/shovel/wood"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/rod/shovel/wood"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/rod/shovel/wood"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/rod/shovel/wood"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/rod/shovel/wood"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/rod/shovel/wood"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/rod/shovel/wood"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/rod/shovel/wood"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/rod/shovel/wood"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/rod/shovel/wood"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/rod/shovel/wood"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/rod/shovel/wood"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/rod/shovel/wood"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/rod/shovel/wood"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/rod/shovel/wood"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/rod/shovel/wood"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/rod/shovel/wood"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/rod/shovel/wood"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/rod/shovel/wood"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/rod/shovel/wood"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/rod/shovel/wood"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/rod/shovel/wood"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/rod/shovel/wood"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/rod/shovel/wood"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/rod/shovel/wood"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/head/shovel/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/head/shovel/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/head/shovel/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/head/shovel/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/head/shovel/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/head/shovel/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/head/shovel/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/head/shovel/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/head/shovel/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/head/shovel/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/head/shovel/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/head/shovel/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/head/shovel/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/head/shovel/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/head/shovel/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/head/shovel/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/head/shovel/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/head/shovel/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/head/shovel/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/head/shovel/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/head/shovel/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/head/shovel/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/head/shovel/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"FERROSILICON"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/head/shovel/ferrosilicon"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BOOMERITE"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/head/shovel/boomerite"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:custom_data",
+                                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICEINIUM"}},
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "slimetinker:tools/head/shovel/niceinium"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:custom_data",
+                                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SMITHIUM"}},
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "slimetinker:tools/head/shovel/smithium"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/shovel/iron_head"
+                                                              },
+                                                              "fallback": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/shovel/iron_head"
+                                                              }
+                                                            },
+                                                            "fallback": {
+                                                              "type": "model",
+                                                              "model": "slimetinker:tools/head/shovel/iron_head"
+                                                            }
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/head/shovel/iron_head"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/head/shovel/iron_head"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/head/shovel/iron_head"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/head/shovel/iron_head"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/head/shovel/iron_head"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/head/shovel/iron_head"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/head/shovel/iron_head"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/head/shovel/iron_head"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/head/shovel/iron_head"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/head/shovel/iron_head"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/head/shovel/iron_head"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/head/shovel/iron_head"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/head/shovel/iron_head"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/head/shovel/iron_head"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/head/shovel/iron_head"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/head/shovel/iron_head"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/head/shovel/iron_head"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/head/shovel/iron_head"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/head/shovel/iron_head"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/head/shovel/iron_head"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/head/shovel/iron_head"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/head/shovel/iron_head"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/head/shovel/iron_head"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/head/shovel/iron_head"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/head/shovel/iron_head"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"CRIMSON_ROOT"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/bind/shovel/crimson_root"
+           },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"LEATHER"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/bind/shovel/leather"
+             },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SILICON"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/bind/shovel/silicon"
+               },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SLIME"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/bind/shovel/slime"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"STRING"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/bind/shovel/string"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"TWISTED_VINE"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/bind/shovel/twisted_vine"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"VINE"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/bind/shovel/vine"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WARPED_ROOT"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/bind/shovel/warped_root"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WEEPING_VINE"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/bind/shovel/weeping_vine"
+                          },
+                          "on_false": {
+                            "type": "minecraft:model",
+                            "model": "item/air"
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "item/air"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "item/air"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "item/air"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "item/air"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "item/air"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "item/air"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "item/air"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "item/air"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "item/air"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_WHISK"}},
+          "model": {
+            "type": "model",
+            "model": "gastronomicon:tools/gn_whisk"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "item/iron_shovel"
+      }
+    },
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_shovel"
+    }
+  }
+}

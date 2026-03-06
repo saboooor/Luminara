@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_INDUCTIVE_MACHINE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_inductive_machine"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/dead_fire_coral_block"
+    }
+  }
+}

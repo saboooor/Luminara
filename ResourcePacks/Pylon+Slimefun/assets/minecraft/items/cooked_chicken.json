@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHICKEN_JERKY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/chicken_jerky"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_COOKED_TURKEY"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cooked_turkey"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/cooked_chicken"
+    }
+  }
+}

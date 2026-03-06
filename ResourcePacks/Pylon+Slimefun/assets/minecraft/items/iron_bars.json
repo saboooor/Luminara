@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_FISHING_NET_I"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:electric_machines/gn_fishing_net_i"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_FISHING_NET_II"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:electric_machines/gn_fishing_net_ii"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_FISHING_NET_III"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:electric_machines/gn_fishing_net_iii"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_OSCILLATOR_FRAME"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/oscillator_frame"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_bars"
+    }
+  }
+}

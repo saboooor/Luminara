@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_DILL"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_dill"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/short_grass",
+      "tints": [
+        {
+          "type": "minecraft:grass",
+          "downfall": 1.0,
+          "temperature": 0.5
+        }
+      ]
+    }
+  }
+}

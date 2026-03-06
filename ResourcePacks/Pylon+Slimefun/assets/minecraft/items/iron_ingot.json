@@ -1,0 +1,293 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/reinforced_alloy_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HARDENED_METAL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/hardened_metal_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/damascus_steel_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/steel_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DURALUMIN_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/duralumin_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BILLON_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/billon_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLDER_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/solder_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NICKEL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/nickel_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/cobalt_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/tin_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/silver_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/lead_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/aluminum_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/zinc_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/magnesium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITE_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/infinite_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MYTHRIL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/mythril"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TITANIUM"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/titanium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MEDIUM_PORTABLE_CHARGER"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:portable_chargers/medium_portable_charger"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIMESTEEL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/slimesteel_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_SLIMESTEEL_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/reinforced_slimesteel_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OSMIUM_SUPERALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/osmium_superalloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OSMIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/osmium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LANTHANUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/lanthanum_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GADOLINIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/gadolinium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TERBIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/terbium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ERBIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/erbium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"YTTERBIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/ytterbium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TERFENOL_D"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/terfenol_d"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_SEFIRITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_sefirite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_CRINGLEIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_cringleium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_SMITHIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_smithium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MYTHRIL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/mythril"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_TITANIUM"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/titanium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/infinity_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_ZIRCONIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_zirconium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_TITANIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_titanium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ALLOY_IRIDIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_alloy_iridium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_ingot"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_ingot"
+    }
+  }
+}

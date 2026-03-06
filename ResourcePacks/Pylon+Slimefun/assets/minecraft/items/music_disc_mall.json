@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CENTER_CARD_ULTIMATE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/center_card_ultimate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SYNTHETIC_SAPPHIRE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_synthetic_sapphire"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SYNTHETIC_EMERALD"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_synthetic_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_ELECTRO_MAGNET"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_electro_magnet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_ELECTRIC_MOTOR"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_electric_motor"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_HEATING_COIL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_heating_coil"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SYNTHETIC_DIAMOND"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_synthetic_diamond"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/music_disc_mall"
+    }
+  }
+}

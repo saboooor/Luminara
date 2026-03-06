@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOULBOUND_HOE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/tools/soulbound_hoe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIAMOND_TREE_TAP"}},
+        "model": {
+          "type": "model",
+          "model": "slimy_tree_taps:treetap/diamond_tree_tap"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/diamond_hoe"
+    }
+  }
+}

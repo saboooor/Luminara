@@ -1,0 +1,547 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOULBOUND_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                  "threshold": 0.65,
+                  "model": {
+                    "type": "model",
+                    "model": "slimefun:slimefun/weapons/soulbound_bow/soulbound_bow_1"
+                  }
+                },
+                {
+                  "threshold": 0.9,
+                  "model": {
+                    "type": "model",
+                    "model": "slimefun:slimefun/weapons/soulbound_bow/soulbound_bow_2"
+                  }
+                }
+              ],
+            "fallback": {
+              "type": "model",
+              "model": "slimefun:slimefun/weapons/soulbound_bow/soulbound_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/weapons/soulbound_bow/soulbound_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EXPLOSIVE_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                  "threshold": 0.65,
+                  "model": {
+                    "type": "model",
+                    "model": "slimefun:slimefun/weapons/explosive_bow/explosive_bow_1"
+                  }
+                },
+                {
+                  "threshold": 0.9,
+                  "model": {
+                    "type": "model",
+                    "model": "slimefun:slimefun/weapons/explosive_bow/explosive_bow_2"
+                  }
+                }
+              ],
+            "fallback": {
+              "type": "model",
+              "model": "slimefun:slimefun/weapons/explosive_bow/explosive_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/weapons/explosive_bow/explosive_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ICY_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "slimefun:slimefun/weapons/icy_bow/icy_bow_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "slimefun:slimefun/weapons/icy_bow/icy_bow_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "slimefun:slimefun/weapons/icy_bow/icy_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "slimefun:slimefun/weapons/icy_bow/icy_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "infinityexpansion:tools/sky_piercer/sky_piercer_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "infinityexpansion:tools/sky_piercer/sky_piercer_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "infinityexpansion:tools/sky_piercer/sky_piercer_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "infinityexpansion:tools/sky_piercer/sky_piercer"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ACRI_ARCUM"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "foxymachines:weapons/acri_arcum/acri_arcum_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "foxymachines:weapons/acri_arcum/acri_arcum_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "foxymachines:weapons/acri_arcum/acri_arcum_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "foxymachines:weapons/acri_arcum/acri_arcum"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LIGHT_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "bump:magical_weapons/light_bow/light_bow_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "bump:magical_weapons/light_bow/light_bow_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "bump:magical_weapons/light_bow/light_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "bump:magical_weapons/light_bow/light_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WITHERSKULL_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "bump:magical_weapons/witherskull_bow/witherskull_bow_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "bump:magical_weapons/witherskull_bow/witherskull_bow_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "bump:magical_weapons/witherskull_bow/witherskull_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "bump:magical_weapons/witherskull_bow/witherskull_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_BOW"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "infinityexpansion2:gear/sky_piercer/infinity_bow_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "infinityexpansion2:gear/sky_piercer/infinity_bow_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "infinityexpansion2:gear/sky_piercer/infinity_bow_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "infinityexpansion2:gear/sky_piercer/infinity_bow"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_THORNIUM"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_thornium_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_thornium_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_thornium_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_thornium"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_MAGIC"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_magic_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_magic_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_magic_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_magic"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_RARE"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_rare_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_rare_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_rare_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_rare"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_EPIC"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_epic_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_epic_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_epic_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_epic"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_LEGENDARY"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_legendary_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_legendary_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_legendary_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_legendary"
+          }
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOW_SUPREME"}},
+        "model": {
+          "type": "condition",
+          "property": "using_item",
+          "on_true": {
+            "type": "range_dispatch",
+            "property": "use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_supreme_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "model",
+                  "model": "supreme:weapons/bow/supreme_bow_supreme_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "supreme:weapons/bow/supreme_bow_supreme_0"
+            }
+          },
+          "on_false": {
+            "type": "model",
+            "model": "supreme:weapons/bow/supreme_bow_supreme"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "condition",
+      "property": "using_item",
+      "on_true": {
+        "type": "range_dispatch",
+        "property": "use_duration",
+        "scale": 0.05,
+        "entries": [
+          {
+            "threshold": 0.65,
+            "model": {
+              "type": "model",
+              "model": "item/bow_pulling_1"
+            }
+          },
+          {
+            "threshold": 0.9,
+            "model": {
+              "type": "model",
+              "model": "item/bow_pulling_2"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "item/bow_pulling_0"
+        }
+      },
+      "on_false": {
+        "type": "model",
+        "model": "item/bow"
+      }
+    }
+  }
+}
+  

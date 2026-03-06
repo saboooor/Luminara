@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/armor/hazmat_suit/hazmat_leggings",
+    "layer1":"slimefun:slimefun/armor/hazmat_suit/hazmat_leggings",
+    "layer2":"minecraft:trims/items/leggings_trim_gold"
+  }
+}

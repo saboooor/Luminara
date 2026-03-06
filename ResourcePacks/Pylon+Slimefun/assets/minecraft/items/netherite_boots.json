@@ -1,0 +1,314 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/damascus_armor/damascus_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/reinforced_armor/reinforced_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GILDED_IRON_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gilded_iron_armor/gilded_iron_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RUBBER_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_12K_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/gold_12k_armor/gold_12k_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_STEEL_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor_steel/slime_steel_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FARMER_SHOES"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/farmer_armor/farmer_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BOOTS_OF_THE_STOMPER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/stomper_armor/stomper_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DURALUMIN_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/duralumin_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLDER_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/solder_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BILLON_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/billon_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/steel_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/damascus_steel_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/reinforced_alloy_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARBONADO_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/carbonado_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ARMORED_JETBOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetboots/armored_jetboots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOULBOUND_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/soulbound_armor/soulbound_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BEE_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/bee_armor/bee_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:armor/infinity_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/aluminum/aluminum_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/cobalt/cobalt_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/lead/lead_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/magnesium/magnesium_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/silver/silver_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/steel/steel_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/tin/tin_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/zinc/zinc_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:gear/infinity_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_TITANIUM_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_titanium_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AURUM_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_aurum_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ADAMANTIUM_BOOTS"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_adamantium_boots"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_THORNIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_thornium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_MAGIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_magic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_RARE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_rare"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_EPIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_epic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_LEGENDARY"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_legendary"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_BOOTS_SUPREME"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:armor/boots/supreme_boots_supreme"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_boots"
+    }
+  }
+}

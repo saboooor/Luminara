@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_GLASS_PANE_HALLOWEEN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/halloween/rainbow_glass_pane_halloween"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/orange_stained_glass_pane"
+    }
+  }
+}

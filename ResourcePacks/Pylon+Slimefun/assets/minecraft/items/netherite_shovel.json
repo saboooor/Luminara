@@ -1,0 +1,97 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_SHOVEL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:tools/mountain_eater"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PAXEL"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:tools/netherite_paxel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_SHOVEL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/infinity_shovel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_TITANIUM_SHOVEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_titanium_shovel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AURUM_SHOVEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_aurum_shovel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ADAMANTIUM_SHOVEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_adamantium_shovel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_THORNIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_thornium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_MAGIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_magic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_RARE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_rare"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_EPIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_epic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_LEGENDARY"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_legendary"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SHOVEL_SUPREME"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/shovel/supreme_shovel_supreme"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_shovel"
+    }
+  }
+}

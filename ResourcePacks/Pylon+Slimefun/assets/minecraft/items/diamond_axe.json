@@ -1,0 +1,111 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LUMBER_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/tools/lumber_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOULBOUND_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/tools/soulbound_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_FLUFFY_WRENCH"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:wrenches/reinforced_fluffy_wrench"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"UPGRADED_LUMBER_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:tools/upgraded_lumber_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PAXEL"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:tools/paxel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_TITANIUM_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_titanium_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AURUM_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_aurum_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ADAMANTIUM_AXE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_adamantium_axe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_THORNIUM"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_thornium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_MAGIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_magic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_RARE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_rare"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_EPIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_epic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_LEGENDARY"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_legendary"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AXE_SUPREME"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:weapons/axe/supreme_axe_supreme"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/diamond_axe"
+    }
+  }
+}

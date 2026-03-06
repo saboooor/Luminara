@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRAINER_BASE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/strainer_base"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_STRAINER_BASE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:machines/strainer_base"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:block/sandstone_wall_inventory"
+    }
+  }
+}

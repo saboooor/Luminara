@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BORON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/boron"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/charcoal"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BAKING_TRAY"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_baking_tray"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/light_gray_carpet"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"fluffymachines:barrels/bottomless_fluffy_barrel"
+  }
+}

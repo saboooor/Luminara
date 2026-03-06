@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_TOAST"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_toast"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_NAAN_BREAD"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_naan_bread"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/bread"
+    }
+  }
+}

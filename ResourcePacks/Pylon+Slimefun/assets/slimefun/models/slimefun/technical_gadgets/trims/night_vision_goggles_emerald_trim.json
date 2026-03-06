@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/technical_gadgets/night_vision_goggles",
+    "layer1":"slimefun:slimefun/technical_gadgets/night_vision_goggles",
+    "layer2":"minecraft:trims/items/helmet_trim_emerald"
+  }
+}

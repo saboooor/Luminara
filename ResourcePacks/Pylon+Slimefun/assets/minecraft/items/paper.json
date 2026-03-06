@@ -1,0 +1,118 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGICAL_BOOK_COVER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/magical_book_cover"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/steel_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_CLOTH"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_components/reinforced_cloth"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLOTH"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/cloth"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAG"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/items/rag"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BANDAGE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/items/bandage"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SCROLL_OF_DIMENSIONAL_TELEPOSITION"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/scroll_of_dimensional_teleposition"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/reinforced_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PLASTIC_SHEET"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_components/plastic_sheet"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MACHINE_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/machine_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAW_PLASTIC"}},
+        "model": {
+          "type": "model",
+          "model": "slimy_tree_taps:materials/raw_plastic"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOUL_PAPER"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/soul_paper"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"APPRAISAL_PAPER_ARMOR"}},
+        "model": {
+          "type": "model",
+          "model": "bump:tools/appraisal_paper_armor"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"APPRAISAL_PAPER_DAMAGE"}},
+        "model": {
+          "type": "model",
+          "model": "bump:tools/appraisal_paper_damage"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MACHINE_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/machine_plate"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/paper"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGSTEEL_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/magsteel_plate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MAGSTEEL_PLATE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/magsteel_plate"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_scrap"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLADE_OF_VAMPIRES"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/weapons/blade_of_vampires"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GILDED_IRON_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:swords/gilded_iron_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GUARD_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/guard_sword"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SKY_SWORD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_weapons/sky_sword"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/golden_sword"
+    }
+  }
+}

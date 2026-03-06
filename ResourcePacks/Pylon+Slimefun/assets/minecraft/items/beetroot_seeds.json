@@ -1,0 +1,76 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"KSF_STUFF"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/ksf_stuff"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_OATS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_oats"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SOYBEANS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_soybeans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SORGHUM_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_sorghum_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SPINACH_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_spinach_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_beans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BAKED_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_baked_beans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_CHICKPEAS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_chickpeas"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_DUST_AMETHYST"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_dust_amethyst"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/beetroot_seeds"
+    }
+  }
+}

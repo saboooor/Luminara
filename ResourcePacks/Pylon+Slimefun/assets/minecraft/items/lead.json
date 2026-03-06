@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRAPPLING_HOOK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/tools/grappling_hook"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/lead"
+    }
+  }
+}

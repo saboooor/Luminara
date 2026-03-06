@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_GINGER"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_ginger"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_HORSERADISH"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_horseradish"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_LICORICE"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_licorice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_WASABI"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_wasabi"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/hanging_roots"
+    }
+  }
+}

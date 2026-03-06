@@ -1,0 +1,139 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"END_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/end_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COAL_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/coal_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIAMOND_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/diamond_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EMERALD_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/emerald_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/ender_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/aluminum_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/copper_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/lead_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/silver_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/tin_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/glowstone_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/gold_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IRON_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/iron_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LAPIS_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/lapis_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OBSIDIAN_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/obsidian_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"QUARTZ_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/quartz_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REDSTONE_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/redstone_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/slime_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIRT_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/dirt_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NETHERITE_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/netherite_essence"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ENDER_ESSENCE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/ender_essence"}
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/blaze_powder"
+    }
+  }
+}

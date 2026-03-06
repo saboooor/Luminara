@@ -1,0 +1,34 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SQUASH"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_squash"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CANTALOUPE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_cantaloupe"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_HONEYDEW_MELON"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_honeydew_melon"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/melon"
+    }
+  }
+}

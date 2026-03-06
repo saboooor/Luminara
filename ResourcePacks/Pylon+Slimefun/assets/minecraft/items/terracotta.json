@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_COPPER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_copper"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_ALU_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_alu_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_COR_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_cor_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_REDSTONE_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_BOOMERITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_boomerite"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/terracotta"
+    }
+  }
+}

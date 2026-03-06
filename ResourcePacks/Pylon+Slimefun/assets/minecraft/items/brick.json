@@ -1,0 +1,123 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BRONZE_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/bronze_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/copper_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REDSTONE_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/ingots/redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_CARAMEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_caramel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ADAMANTITE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/adamantite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGSTEEL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/magsteel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SMALL_PORTABLE_CHARGER"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:portable_chargers/small_portable_charger"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HOLMIUM_INGOT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/holmium_ingot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SEARED_BRICK"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/seared_brick"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_BOOMERITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_boomerite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_FONDNESS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_fondness"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_DEVOTION"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_devotion"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_PASSION"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_passion"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INGOT_CAST_LOVE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/ingots/ingot_cast_love"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ADAMANTITE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/adamantite"}
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MAGSTEEL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/magsteel"}
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/brick"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HAZMAT_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_leggings"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_LEGGINGS"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/chainmail_leggings"
+    }
+  }
+}

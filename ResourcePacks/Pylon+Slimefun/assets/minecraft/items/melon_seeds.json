@@ -1,0 +1,104 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_TURNIP_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_turnip_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BOK_CHOY_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_bok_choy_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BROCCOLI_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_broccoli_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BASIL_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_basil_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_MINT_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_mint_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_PARSLEY_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_parsley_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_ASPARAGUS_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_asparagus_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_GREEN_ONION_SEEDS"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_green_onion_seeds"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_RAPESEED"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_rapeseed"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_BLACK_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_black_beans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_SOY_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_soy_beans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_PINTO_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_pinto_beans"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_DUST_NETHERITE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_dust_netherite"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/melon_seeds"
+    }
+  }
+}

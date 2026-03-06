@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_OREGANO"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_oregano"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/spruce_leaves",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": -10380959
+        }
+      ]
+    }
+  }
+}

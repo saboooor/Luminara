@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_CUMIN"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_cumin"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/dandelion"
+    }
+  }
+}

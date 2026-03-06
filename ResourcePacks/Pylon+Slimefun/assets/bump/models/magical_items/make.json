@@ -1,0 +1,13 @@
+{
+  "parent":"block/cube",
+  "author":"Haiman",
+  "textures":{
+    "up":"bump:magical_items/make_top",
+    "down":"bump:magical_items/make_bottom",
+    "north":"bump:magical_items/make_front",
+    "south":"bump:magical_items/make_side",
+    "east":"bump:magical_items/make_side",
+    "west":"bump:magical_items/make_side",
+    "particle":"bump:magical_items/make_front"
+  }
+}

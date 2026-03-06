@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/gold_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/copper_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SULFATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/valuables/sulfate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_MISO"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_miso"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_TURMERIC_POWDER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_turmeric_powder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE__UI_ENERGY_PRODUCTION"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:icons/ui_energy_production"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_DUST_SYNTHETIC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_dust_synthetic"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/glowstone_dust"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CORN_ON_THE_COB"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:foods/corn_on_the_cob"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/golden_carrot"
+    }
+  }
+}

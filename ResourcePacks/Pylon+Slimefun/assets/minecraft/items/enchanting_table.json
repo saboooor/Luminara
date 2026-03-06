@@ -1,0 +1,104 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_ALTAR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/ancient_altar"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_ENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_enchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_DISENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_disenchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_ENCHANTER_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_enchanter_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_DISENCHANTER_2"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_disenchanter_2"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ADVANCED_ENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/advanced_enchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ADVANCED_DISENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/advanced_disenchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_ENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/infinity_enchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_DISENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/infinity_disenchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ADVANCED_ENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:sf_expansion/advanced_enchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_ENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:sf_expansion/infinity_enchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_ADVANCED_DISENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:sf_expansion/advanced_disenchanter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_DISENCHANTER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:sf_expansion/infinity_disenchanter"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/enchanting_table"
+    }
+  }
+}

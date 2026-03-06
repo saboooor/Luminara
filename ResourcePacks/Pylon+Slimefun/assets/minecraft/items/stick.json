@@ -1,0 +1,90 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRANDMAS_WALKING_STICK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/weapons/grandmas_walking_stick"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRANDPAS_WALKING_STICK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/weapons/grandpas_walking_stick"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STAFF_ELEMENTAL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/staff_elemental"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STAFF_ELEMENTAL_WIND"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/staff_elemental_wind"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STAFF_ELEMENTAL_WATER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/staff_elemental_water"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STAFF_ELEMENTAL_FIRE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/staff_elemental_fire"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STAFF_ELEMENTAL_STORM"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_gadgets/staff_elemental_storm"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SPLINT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/items/splint"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEACH_WOOD"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/peach_wood"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_ROLLING_PIN"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_rolling_pin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_CINNAMON"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_cinnamon"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/stick"
+    }
+  }
+}

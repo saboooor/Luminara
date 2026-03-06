@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_VANILLA_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_vanilla_plant"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/vine",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": -12012264
+        }
+      ]
+    }
+  }
+}

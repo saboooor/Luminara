@@ -1,0 +1,418 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MEDICINE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/items/medicine"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"APPLE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/apple_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARROT_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/carrot_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MELON_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/melon_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PUMPKIN_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/pumpkin_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SWEET_BERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/sweet_berry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLDEN_APPLE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/golden_apple_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_MILK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_milk"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_CHOCOLATE_MILK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_chocolate_milk"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_EGG_NOG"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_egg_nog"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_APPLE_CIDER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_apple_cider"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_HOT_CHOCOLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_hot_chocolate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOW_BERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/glow_berry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLACKBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/blackberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLACKBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/blackberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLUEBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/blueberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLUEBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/blueberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHERRY_ICED_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cherry_iced_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cherry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COCONUT_MILK"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/coconut_milk"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COWBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cowberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COWBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cowberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CRANBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cranberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CRANBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/cranberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DRAGON_FRUIT_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/dragon_fruit_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELDERBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/elderberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELDERBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/elderberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRAPE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/grape_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRAPE_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/grape_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEMON_ICED_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/lemon_iced_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEMON_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/lemon_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEMONADE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/lemonade"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LIME_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/lime_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LIME_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/lime_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OAK_APPLE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/oak_apple_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ORANGE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/orange_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEACH_ICED_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/peach_iced_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEACH_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/peach_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEAR_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/pear_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PINEAPPLE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/pineapple_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PINEAPPLE_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/pineapple_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PLUM_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/plum_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"POMEGRANATE_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/pomegranate_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RASPBERRY_ICED_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/raspberry_iced_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RASPBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/raspberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RASPBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/raspberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRAWBERRY_ICED_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/strawberry_iced_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRAWBERRY_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/strawberry_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRAWBERRY_SMOOTHIE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/strawberry_smoothie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"THAI_TEA"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/thai_tea"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TOMATO_JUICE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/tomato_juice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WINE"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:drinks/wine"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"XUEBI"}},
+        "model": {
+          "type": "model",
+          "model": "bump:foods/xuebi"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"KELE"}},
+        "model": {
+          "type": "model",
+          "model": "bump:foods/kele"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_PEANUT_BUTTER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_peanut_butter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_KETCHUP"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_ketchup"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SOY_SAUCE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_soy_sauce"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/potion",
+      "tints": [
+        {
+          "type": "minecraft:potion",
+          "default": -13083194
+        }
+      ]
+    }
+  }
+}

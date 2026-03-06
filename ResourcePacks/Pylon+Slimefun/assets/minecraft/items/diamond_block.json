@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIAMOND_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:singularities/diamond_singularity"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITE_MACHINE_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/infinite_machine_core"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_MACHINE_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/infinity_machine_core"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_DIAMOND_SINGULARITY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:singularities/diamond_singularity"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/diamond_block"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STICKY_RESIN"}},
+        "model": {
+          "type": "model",
+          "model": "slimy_tree_taps:materials/sticky_resin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"THIOACETONE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/thioacetone"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CARAMEL"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_caramel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_PULLED_PORK"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_pulled_pork"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_GROUND_BEEF"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_ground_beef"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/brown_dye"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BASIL"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_basil"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_CURRY_LEAF"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_curry_leaf"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_KAFFIR_LIME"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_kaffir_lime"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_SPINACH"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_spinach"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_RUNNER_BEANS"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_runner_beans"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/kelp"
+    }
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OAK_APPLE_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/oak_apple_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLACK_PEPPER_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/black_pepper_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLACKBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/blackberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLUEBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/blueberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CABBAGE_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/cabbage_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHERRY_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/cherry_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CILANTRO_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/cilantro_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COCONUT_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/coconut_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CORN_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/corn_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COWBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/cowberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CRANBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/cranberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CURRY_LEAF_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/curry_leaf_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DRAGON_FRUIT_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/dragon_fruit_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELDERBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/elderberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GARLIC_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/garlic_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRAPE_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/grape_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEMON_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/lemon_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LETTUCE_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/lettuce_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LIME_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/lime_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MUSTARD_SEED_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/mustard_seed_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ONION_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/onion_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ORANGE_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/orange_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEACH_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/peach_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PEAR_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/pear_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PINEAPPLE_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/pineapple_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PLUM_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/plum_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"POMEGRANATE_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/pomegranate_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RASPBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/raspberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRAWBERRY_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/strawberry_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SWEET_POTATO_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/sweet_potato_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TEA_LEAF_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/tea_leaf_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TOMATO_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/tomato_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COAL_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/coal_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIAMOND_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/diamond_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EMERALD_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/emerald_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/ender_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/glowstone_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GOLD_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/gold_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IRON_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/iron_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LAPIS_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/lapis_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OBSIDIAN_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/obsidian_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/aluminum_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/copper_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/lead_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/silver_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/tin_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"QUARTZ_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/quartz_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REDSTONE_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/redstone_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/slime_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RED_BELL_PEPPER_BUSH"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:fruits/red_bell_pepper_bush"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DIRT_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/dirt_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NETHERITE_PLANT"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:plants/netherite_plant"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BROCCOLI"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_broccoli"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_LYCHEE_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_lychee_sapling"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BANANA_SAPLING"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:ingredient/gn_banana_sapling"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/oak_sapling"
+    }
+  }
+}

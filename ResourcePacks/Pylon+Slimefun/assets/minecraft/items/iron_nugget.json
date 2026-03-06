@@ -1,0 +1,167 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"VOID_BIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/void_bit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_LEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_lead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_SILVER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_silver"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_ALUMINUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_aluminum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_MAGNESIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_magnesium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_ZINC"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_zinc"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_TIN"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_tin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_DAMASCUS_STTEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_damascus_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_DURALIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_duralium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_HARD_METAL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_hard_metal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_SOLDER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_solder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_BILLON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_billon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_NICKEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_nickel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_COBALT"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_cobalt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_REINFORCED"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_reinforced"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_SEFIRITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_sefirite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_CRINGLEIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_cringleium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_SMITHIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_smithium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_VOID_BIT"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:materials/void_bit"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_THORNIUM_BIT"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_thornium_bit"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_nugget"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SMELTERY_CONTROLLER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/smeltery_controller"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TINKERS_SMELTERY_CORE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:workstations/tinkers_smeltery_core"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:block/chiseled_polished_blackstone"
+    }
+  }
+}

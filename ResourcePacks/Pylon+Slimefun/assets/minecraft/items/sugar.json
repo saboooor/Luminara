@@ -1,0 +1,139 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGIC_SUGAR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/food/magic_sugar"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/tin_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/silver_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/aluminum_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/zinc_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/dusts/magnesium_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WHEAT_FLOUR"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/wheat_flour"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SALT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/salt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_SALT"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/valuables/magnesium_salt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CORNMEAL"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:misc/cornmeal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"KOUXIANGTANG"}},
+        "model": {
+          "type": "model",
+          "model": "bump:foods/kouxiangtang"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WATER_SUGAR"}},
+        "model": {
+          "type": "model",
+          "model": "bump:magical_items/water_sugar"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"OSMIUM_DUST"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/osmium_dust"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_COOKED_RICE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_cooked_rice"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_BARLEY_FLOUR"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_barley_flour"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_SORGHUM_FLOUR"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_sorghum_flour"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_RYE_FLOUR"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_rye_flour"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_TAPIOCA_STARCH"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:food/gn_tapioca_starch"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/sugar"
+    }
+  }
+}

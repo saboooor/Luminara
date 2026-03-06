@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_FONDNESS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_fondness"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_DEVOTION"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_devotion"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_PASSION"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_passion"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NUGGET_CAST_LOVE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_love"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_CAST_LOVE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/blocks/block_cast_love"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SYNTHETIC_RUBY"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_synthetic_ruby"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/pink_dye"
+    }
+  }
+}

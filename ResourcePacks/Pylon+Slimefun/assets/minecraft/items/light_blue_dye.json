@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SEGGANESSON"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/segganesson"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"UNPATENTABLIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:resources/unpatentablium"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/light_blue_dye"
+    }
+  }
+}

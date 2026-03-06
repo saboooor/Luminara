@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"CLT_ROSEMARY"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_rosemary"
+        }
+      },
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"CLT_THYME"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_thyme"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/birch_leaves",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": -8345771
+        }
+      ]
+    }
+  }
+}

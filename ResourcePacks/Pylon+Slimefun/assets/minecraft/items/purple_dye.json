@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STRANGE_NETHER_GOO"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/strange_nether_goo"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"NITROGEN_TRIIDIDE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:explosives/nitrogen_triiodide"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CLT_LAVENDER"}},
+        "model": {
+          "type": "model",
+          "model": "cultivation:products/clt_lavender"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SYNTHETIC_AMETHYST"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:components/supreme_synthetic_amethyst"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/purple_dye"
+    }
+  }
+}

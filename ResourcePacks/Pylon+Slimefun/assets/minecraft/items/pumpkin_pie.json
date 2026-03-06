@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_FRUIT_CAKE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_fruit_cake"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_APPLE_PIE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_apple_pie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHRISTMAS_CAKE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/christmas/christmas_cake"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARROT_PIE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/easter/carrot_pie"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EASTER_APPLE_PIE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/easter/easter_apple_pie"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/pumpkin_pie"
+    }
+  }
+}

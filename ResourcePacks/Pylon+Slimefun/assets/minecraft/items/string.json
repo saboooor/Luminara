@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHAIN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/miscellaneous/chain"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_WIRE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_components/copper_wire"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FANGBIANMIAN"}},
+        "model": {
+          "type": "model",
+          "model": "bump:foods/fangbianmian"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FIBER_OPTIC_CABLE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefunwarfare:general/fiber_optic_cable"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_STEEL_WIRE"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_steel_wire"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_STEEL_SPRING"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_steel_spring"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/string"
+    }
+  }
+}

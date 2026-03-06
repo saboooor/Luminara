@@ -1,0 +1,57 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "fallback": {
+      "type": "model",
+      "model": "block/acacia_button_inventory"
+    },
+    "cases": [
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"NUGGET_CAST_COPPER"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_copper"
+        }
+      },
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"NUGGET_CAST_BRONZE"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_bronze"
+        }
+      },
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"NUGGET_CAST_REDSTONE_ALLOY"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_redstone_alloy"
+        }
+      },
+      {
+        "when": {
+          "PublicBukkitValues":{
+            "slimefun:slimefun_item":"NUGGET_CAST_BOOMERITE"
+          }
+        },
+        "model": {
+          "type": "model",
+          "model": "slimetinker:materials/nuggets/nugget_cast_boomerite"
+        }
+      }
+    ]
+  }
+}

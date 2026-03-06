@@ -1,0 +1,279 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COMMON_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/common_talisman"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANVIL_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/anvil"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_ANVIL_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/anvil"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MINER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/miner"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_MINER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/miner"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HUNTER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/hunter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_HUNTER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/hunter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LAVA_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/lava_walker"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_LAVA_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/lava_walker"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WATER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/water_breather"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_WATER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/water_breather"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANGEL_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/angel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_ANGEL_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/angel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FIRE_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/firefighter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_FIRE_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/firefighter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGICIAN_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/magican"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_MAGICIAN_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/magican"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TRAVELLER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/traveller"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_TRAVELLER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/traveller"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WARRIOR_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/warrior"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_WARRIOR_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/warrior"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"KNIGHT_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/knight"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_KNIGHT_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/knight"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SYNTHETIC_EMERALD"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/resources/valuables/synthetic_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WHIRLWIND_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/whirlwind"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_WHIRLWIND_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/whirlwind"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WIZARD_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/wizard"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_WIZARD_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/wizard"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CAVEMAN_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/caveman"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_CAVEMAN_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/caveman"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WISE_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/wise"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_WISE_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/wise"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/0_default"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"FARMER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman1/farmer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_FARMER_TALISMAN"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/talisman2/farmer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"QUARRY_OSCILLATOR_EMERALD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:materials/quarry_oscillator_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"EMERALD","slimefun:slimefun_item":"IE_OSCILLATOR_EMERALD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_emerald"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:oscillator_target":"EMERALD","slimefun:slimefun_item":"IE_OSCILLATOR"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:tools/oscillator_emerald"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/emerald"
+    }
+  }
+}

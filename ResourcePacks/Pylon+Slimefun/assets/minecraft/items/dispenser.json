@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GRIND_STONE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/grind_stone"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ORE_CRUSHER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/ore_crusher"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BLOCK_PLACER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/block_placer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANCIENT_PEDESTAL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_items/ancient_pedestal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANDROID_INTERFACE_ITEMS"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/androids/android_interface_items"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ANDROID_INTERFACE_FUEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/androids/android_interface_fuel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EXP_DISPENSER"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:multiblocks/exp_dispenser"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/dispenser"
+    }
+  }
+}

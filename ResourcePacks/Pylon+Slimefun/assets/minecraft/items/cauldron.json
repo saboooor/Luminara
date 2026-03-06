@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ORE_WASHER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/ore_washer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COMPOSTER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/composter"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CRUCIBLE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/basic_machines/crucible"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"KITCHEN"}},
+        "model": {
+          "type": "model",
+          "model": "exotic_garden:misc/kitchen"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_STEEL_POT"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_steel_pot"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_DISTILLATION_CHAMBER"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_distillation_chamber"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_MILL"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:basic_machines/gn_mill"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/cauldron"
+    }
+  }
+}

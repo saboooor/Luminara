@@ -1,0 +1,125 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_STONE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_stone"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_GRANITE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_granite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_DIORITE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_diorite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_ANDESITE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_andesite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_GRAVEL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_gravel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SAND"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_sand"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_ENDSTONE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_end_stone"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_CLAY"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_clay"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SNOW"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_snow"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_APPLE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_apple"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_NETHER_STAR"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_nether_star"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_WITHER_ROSE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_wither_rose"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_SLIME_BALL"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_slime_ball"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_INK_SAC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_ink_sac"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_GLOW_INK_SAC"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_glow_ink_sac"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_CARD_HONEY_BOTTLE"}},
+        "model": {
+          "type": "model",
+          "model": "supreme:machine_cards/card_honey_bottle"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/music_disc_strad"
+    }
+  }
+}

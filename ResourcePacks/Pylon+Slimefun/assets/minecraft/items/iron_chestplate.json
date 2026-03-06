@@ -1,0 +1,328 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ENDER_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/ender_armor/ender_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor/slime_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GLOWSTONE_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/glowstone_armor/glowstone_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/damascus_armor/damascus_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/reinforced_armor/reinforced_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CACTUS_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/cactus_armor/cactus_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DURALUMIN_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/duralumin_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SOLDER_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/solder_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BILLON_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/billon_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/steel_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DAMASCUS_STEEL_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/damascus_steel_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"REINFORCED_ALLOY_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/reinforced_alloy_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CARBONADO_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/carbonado_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PARACHUTE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/parachute"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"HAZMAT_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/armor/hazmat_suit/hazmat_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_STEEL_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/slime_armor_steel/slime_steel_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"RAINBOW_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/magical_armor/rainbow_armor/rainbow_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ARMORED_JETPACK"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/technical_gadgets/jetpack/armored_jetpack"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"EMPTY_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/empty_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SLIME_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/slime_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGMA_CUBE_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/magma_cube_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COW_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/cow_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SHEEP_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/sheep_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CHICKEN_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/chicken_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BEE_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/bee_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"VILLAGER_DATA_CARD"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:mob_simulation/villager_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ALUMINUM_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/aluminum/aluminum_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COBALT_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/cobalt/cobalt_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"COPPER_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/copper/copper_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"LEAD_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/lead/lead_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"MAGNESIUM_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/magnesium/magnesium_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SILVER_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/silver/silver_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"STEEL_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/steel/steel_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TIN_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/tin/tin_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ZINC_CHESTPLATE"}},
+        "model": {
+          "type": "model",
+          "model": "extra_gear:armor/zinc/zinc_chestplate"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_MOB_DATA_CARD_EMPTY"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/empty_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"slime","slimefun:slimefun_item":"IE_MOB_DATA_CARD_SLIME"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/slime_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"magma_cube","slimefun:slimefun_item":"IE_MOB_DATA_CARD_MAGMA_CUBE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/magma_cube_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"cow","slimefun:slimefun_item":"IE_MOB_DATA_CARD_COW"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/cow_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"sheep","slimefun:slimefun_item":"IE_MOB_DATA_CARD_SHEEP"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/sheep_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"chicken","slimefun:slimefun_item":"IE_MOB_DATA_CARD_CHICKEN"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/chicken_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"bee","slimefun:slimefun_item":"IE_MOB_DATA_CARD_BEE"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/bee_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"villager","slimefun:slimefun_item":"IE_MOB_DATA_CARD_VILLAGER"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/villager_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"pig","slimefun:slimefun_item":"IE_MOB_DATA_CARD_PIG"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/pig_data_card"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"infinityexpansion2:mob_data_id":"ghast","slimefun:slimefun_item":"IE_MOB_DATA_CARD_GHAST"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:mob_simulation/ghast_data_card"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_chestplate"
+    }
+  }
+}

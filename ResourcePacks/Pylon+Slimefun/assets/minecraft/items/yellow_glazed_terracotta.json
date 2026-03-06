@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CELESTIAL_PANEL"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion:machines/solar_panel_3"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_SOLAR_PANEL_3"}},
+        "model": {
+          "type": "model",
+          "model": "infinityexpansion2:generators/solar_panel_3"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/yellow_glazed_terracotta"
+    }
+  }
+}

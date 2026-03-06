@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/magical_armor/elytra_cap/elytra_cap",
+    "layer1":"slimefun:slimefun/magical_armor/elytra_cap/elytra_cap",
+    "layer2":"minecraft:trims/items/helmet_trim_amethyst"
+  }
+}

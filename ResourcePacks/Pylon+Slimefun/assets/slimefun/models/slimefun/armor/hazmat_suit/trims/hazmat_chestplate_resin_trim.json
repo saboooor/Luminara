@@ -1,0 +1,9 @@
+{
+  "parent":"item/generated",
+  "author":"Pandicka",
+  "textures":{
+    "layer0":"slimefun:slimefun/armor/hazmat_suit/hazmat_chestplate",
+    "layer1":"slimefun:slimefun/armor/hazmat_suit/hazmat_chestplate",
+    "layer2":"minecraft:trims/items/chestplate_trim_resin"
+  }
+}

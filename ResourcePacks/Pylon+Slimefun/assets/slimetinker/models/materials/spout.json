@@ -1,0 +1,13 @@
+{
+  "parent":"block/cube",
+  "author":"Tinker's Construct",
+  "textures":{
+    "up":"slimetinker:materials/seared_brick_block",
+    "down":"slimetinker:materials/seared_brick_block",
+    "north":"slimetinker:materials/spout_front",
+    "south":"slimetinker:materials/spout_back",
+    "east":"slimetinker:materials/spout_front",
+    "west":"slimetinker:materials/spout_back",
+    "particle":"slimetinker:materials/seared_brick_block"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_CRAB_TRAP"}},
+        "model": {
+          "type": "model",
+          "model": "gastronomicon:tools/gn_crab_trap"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/oak_trapdoor_bottom"
+    }
+  }
+}

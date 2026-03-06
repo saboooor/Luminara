@@ -1,0 +1,1 @@
+{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:ethanol", "model": {"type": "model", "model": "pylon:block/fluids/water", "tints": [{"type": "constant", "value": 14211288}]}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/light_gray_concrete_powder"}}}

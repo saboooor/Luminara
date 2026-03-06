@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "author":"Haiman",
+  "textures": {
+    "end": "bump:magical_items/peach_wood_top",
+    "side": "bump:magical_items/peach_wood_side"
+  }
+}

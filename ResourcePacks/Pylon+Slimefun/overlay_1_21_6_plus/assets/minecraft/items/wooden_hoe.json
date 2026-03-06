@@ -1,0 +1,915 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:custom_data",
+    "value": {"PublicBukkitValues":{"slimetinker:st_tool_type":"HOE"}},
+    "on_true": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/rod/hoe/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/rod/hoe/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/rod/hoe/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/rod/hoe/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/rod/hoe/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/rod/hoe/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/rod/hoe/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/rod/hoe/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/rod/hoe/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/rod/hoe/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/rod/hoe/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/rod/hoe/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/rod/hoe/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/rod/hoe/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/rod/hoe/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/rod/hoe/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/rod/hoe/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/rod/hoe/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/rod/hoe/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/rod/hoe/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/rod/hoe/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/rod/hoe/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/rod/hoe/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REDSTONE_ALLOY"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/rod/hoe/redstone_alloy"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SMITHIUM"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/rod/hoe/smithium"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/hoe/wood"
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/hoe/wood"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/rod/hoe/wood"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/rod/hoe/wood"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/rod/hoe/wood"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/rod/hoe/wood"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/rod/hoe/wood"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/rod/hoe/wood"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/rod/hoe/wood"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/rod/hoe/wood"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/rod/hoe/wood"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/rod/hoe/wood"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/rod/hoe/wood"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/rod/hoe/wood"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/rod/hoe/wood"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/rod/hoe/wood"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/rod/hoe/wood"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/rod/hoe/wood"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/rod/hoe/wood"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/rod/hoe/wood"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/rod/hoe/wood"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/rod/hoe/wood"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/rod/hoe/wood"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/rod/hoe/wood"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/rod/hoe/wood"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/rod/hoe/wood"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/head/hoe/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/head/hoe/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/head/hoe/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/head/hoe/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/head/hoe/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/head/hoe/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/head/hoe/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/head/hoe/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/head/hoe/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/head/hoe/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/head/hoe/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/head/hoe/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/head/hoe/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/head/hoe/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/head/hoe/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/head/hoe/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/head/hoe/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/head/hoe/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/head/hoe/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/head/hoe/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/head/hoe/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/head/hoe/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/head/hoe/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"FERROSILICON"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/head/hoe/ferrosilicon"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BOOMERITE"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/head/hoe/boomerite"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:custom_data",
+                                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICEINIUM"}},
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "slimetinker:tools/head/hoe/niceinium"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:custom_data",
+                                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SMITHIUM"}},
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "slimetinker:tools/head/hoe/smithium"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                              },
+                                                              "fallback": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                              }
+                                                            },
+                                                            "fallback": {
+                                                              "type": "model",
+                                                              "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                            }
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/head/hoe/wooden_head"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/head/hoe/wooden_head"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/head/hoe/wooden_head"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/head/hoe/wooden_head"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/head/hoe/wooden_head"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/head/hoe/wooden_head"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/head/hoe/wooden_head"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/head/hoe/wooden_head"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/head/hoe/wooden_head"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/head/hoe/wooden_head"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/head/hoe/wooden_head"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/head/hoe/wooden_head"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/head/hoe/wooden_head"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/head/hoe/wooden_head"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/head/hoe/wooden_head"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/head/hoe/wooden_head"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/head/hoe/wooden_head"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/head/hoe/wooden_head"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/head/hoe/wooden_head"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/head/hoe/wooden_head"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"CRIMSON_ROOT"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/bind/hoe/crimson_root"
+           },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"LEATHER"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/bind/hoe/leather"
+             },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SILICON"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/bind/hoe/silicon"
+               },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SLIME"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/bind/hoe/slime"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"STRING"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/bind/hoe/string"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"TWISTED_VINE"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/bind/hoe/twisted_vine"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"VINE"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/bind/hoe/vine"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WARPED_ROOT"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/bind/hoe/warped_root"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WEEPING_VINE"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/bind/hoe/weeping_vine"
+                          },
+                          "on_false": {
+                            "type": "minecraft:model",
+                            "model": "item/air"
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "item/air"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "item/air"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "item/air"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "item/air"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "item/air"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "item/air"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "item/air"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "item/air"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "item/air"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"TREE_TAP"}},
+          "model": {
+            "type": "model",
+            "model": "slimy_tree_taps:treetap/tree_tap"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"CROOK"}},
+          "model": {
+            "type": "model",
+            "model": "exotic_garden:misc/crook"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"GN_WOODEN_SICKLE"}},
+          "model": {
+            "type": "model",
+            "model": "gastronomicon:tools/gn_wooden_sickle"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "item/wooden_hoe"
+      }
+    },
+    "fallback": {
+      "type": "model",
+      "model": "item/wooden_hoe"
+    }
+  }
+}

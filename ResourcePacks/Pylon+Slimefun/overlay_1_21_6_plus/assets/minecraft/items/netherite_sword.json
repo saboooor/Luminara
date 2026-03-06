@@ -1,0 +1,978 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:custom_data",
+    "value": {"PublicBukkitValues":{"slimetinker:st_tool_type":"SWORD"}},
+    "on_true": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/rod/sword/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/rod/sword/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/rod/sword/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/rod/sword/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/rod/sword/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/rod/sword/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/rod/sword/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/rod/sword/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/rod/sword/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/rod/sword/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/rod/sword/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/rod/sword/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/rod/sword/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/rod/sword/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/rod/sword/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/rod/sword/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/rod/sword/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/rod/sword/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/rod/sword/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/rod/sword/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/rod/sword/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/rod/sword/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/rod/sword/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"REDSTONE_ALLOY"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/rod/sword/redstone_alloy"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_rod":"SMITHIUM"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/rod/sword/smithium"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/rod/sword/netherite_sword"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/rod/sword/netherite_sword"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/rod/sword/netherite_sword"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/rod/sword/netherite_sword"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/rod/sword/netherite_sword"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/rod/sword/netherite_sword"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/rod/sword/netherite_sword"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/rod/sword/netherite_sword"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/rod/sword/netherite_sword"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/rod/sword/netherite_sword"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/rod/sword/netherite_sword"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/rod/sword/netherite_sword"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"IRON"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/head/sword/iron"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"GOLD"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/head/sword/gold"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COPPER"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/head/sword/copper"
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"LEAD"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/head/sword/lead"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SILVER"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/head/sword/silver"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/head/sword/aluminum"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"TIN"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/head/sword/tin"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ZINC"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/head/sword/zinc"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"MAGNESIUM"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/head/sword/magnesium"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"STEEL"}},
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "slimetinker:tools/head/sword/steel"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DAMASCUS_STEEL"}},
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "slimetinker:tools/head/sword/damascus_steel"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"DURALIUM"}},
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "slimetinker:tools/head/sword/duralium"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:condition",
+                                  "property": "minecraft:component",
+                                  "predicate": "minecraft:custom_data",
+                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRONZE"}},
+                                  "on_true": {
+                                    "type": "minecraft:model",
+                                    "model": "slimetinker:tools/head/sword/bronze"
+                                  },
+                                  "on_false": {
+                                    "type": "minecraft:condition",
+                                    "property": "minecraft:component",
+                                    "predicate": "minecraft:custom_data",
+                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRONZE"}},
+                                    "on_true": {
+                                      "type": "minecraft:model",
+                                      "model": "slimetinker:tools/head/sword/aluminum_bronze"
+                                    },
+                                    "on_false": {
+                                      "type": "minecraft:condition",
+                                      "property": "minecraft:component",
+                                      "predicate": "minecraft:custom_data",
+                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"HARDENED_METAL"}},
+                                      "on_true": {
+                                        "type": "minecraft:model",
+                                        "model": "slimetinker:tools/head/sword/hardened_metal"
+                                      },
+                                      "on_false": {
+                                        "type": "minecraft:condition",
+                                        "property": "minecraft:component",
+                                        "predicate": "minecraft:custom_data",
+                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"CORINTHIAN_BRONZE"}},
+                                        "on_true": {
+                                          "type": "minecraft:model",
+                                          "model": "slimetinker:tools/head/sword/corinthian_bronze"
+                                        },
+                                        "on_false": {
+                                          "type": "minecraft:condition",
+                                          "property": "minecraft:component",
+                                          "predicate": "minecraft:custom_data",
+                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SOLDER"}},
+                                          "on_true": {
+                                            "type": "minecraft:model",
+                                            "model": "slimetinker:tools/head/sword/solder"
+                                          },
+                                          "on_false": {
+                                            "type": "minecraft:condition",
+                                            "property": "minecraft:component",
+                                            "predicate": "minecraft:custom_data",
+                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BILLON"}},
+                                            "on_true": {
+                                              "type": "minecraft:model",
+                                              "model": "slimetinker:tools/head/sword/billon"
+                                            },
+                                            "on_false": {
+                                              "type": "minecraft:condition",
+                                              "property": "minecraft:component",
+                                              "predicate": "minecraft:custom_data",
+                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BRASS"}},
+                                              "on_true": {
+                                                "type": "minecraft:model",
+                                                "model": "slimetinker:tools/head/sword/brass"
+                                              },
+                                              "on_false": {
+                                                "type": "minecraft:condition",
+                                                "property": "minecraft:component",
+                                                "predicate": "minecraft:custom_data",
+                                                "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"ALUMINUM_BRASS"}},
+                                                "on_true": {
+                                                  "type": "minecraft:model",
+                                                  "model": "slimetinker:tools/head/sword/aluminum_brass"
+                                                },
+                                                "on_false": {
+                                                  "type": "minecraft:condition",
+                                                  "property": "minecraft:component",
+                                                  "predicate": "minecraft:custom_data",
+                                                  "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICKEL"}},
+                                                  "on_true": {
+                                                    "type": "minecraft:model",
+                                                    "model": "slimetinker:tools/head/sword/nickel"
+                                                  },
+                                                  "on_false": {
+                                                    "type": "minecraft:condition",
+                                                    "property": "minecraft:component",
+                                                    "predicate": "minecraft:custom_data",
+                                                    "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"COBALT"}},
+                                                    "on_true": {
+                                                      "type": "minecraft:model",
+                                                      "model": "slimetinker:tools/head/sword/cobalt"
+                                                    },
+                                                    "on_false": {
+                                                      "type": "minecraft:condition",
+                                                      "property": "minecraft:component",
+                                                      "predicate": "minecraft:custom_data",
+                                                      "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"REINFORCED_ALLOY"}},
+                                                      "on_true": {
+                                                        "type": "minecraft:model",
+                                                        "model": "slimetinker:tools/head/sword/reinforced_alloy"
+                                                      },
+                                                      "on_false": {
+                                                        "type": "minecraft:condition",
+                                                        "property": "minecraft:component",
+                                                        "predicate": "minecraft:custom_data",
+                                                        "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"FERROSILICON"}},
+                                                        "on_true": {
+                                                          "type": "minecraft:model",
+                                                          "model": "slimetinker:tools/head/sword/ferrosilicon"
+                                                        },
+                                                        "on_false": {
+                                                          "type": "minecraft:condition",
+                                                          "property": "minecraft:component",
+                                                          "predicate": "minecraft:custom_data",
+                                                          "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"BOOMERITE"}},
+                                                          "on_true": {
+                                                            "type": "minecraft:model",
+                                                            "model": "slimetinker:tools/head/sword/boomerite"
+                                                          },
+                                                          "on_false": {
+                                                            "type": "minecraft:condition",
+                                                            "property": "minecraft:component",
+                                                            "predicate": "minecraft:custom_data",
+                                                            "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"NICEINIUM"}},
+                                                            "on_true": {
+                                                              "type": "minecraft:model",
+                                                              "model": "slimetinker:tools/head/sword/niceinium"
+                                                            },
+                                                            "on_false": {
+                                                              "type": "minecraft:condition",
+                                                              "property": "minecraft:component",
+                                                              "predicate": "minecraft:custom_data",
+                                                              "value": {"PublicBukkitValues":{"slimetinker:st_material_head":"SMITHIUM"}},
+                                                              "on_true": {
+                                                                "type": "minecraft:model",
+                                                                "model": "slimetinker:tools/head/sword/smithium"
+                                                              },
+                                                              "on_false": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                              },
+                                                              "fallback": {
+                                                                "type": "model",
+                                                                "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                              }
+                                                            },
+                                                            "fallback": {
+                                                              "type": "model",
+                                                              "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                            }
+                                                          },
+                                                          "fallback": {
+                                                            "type": "model",
+                                                            "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                          }
+                                                        },
+                                                        "fallback": {
+                                                          "type": "model",
+                                                          "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                        }
+                                                      },
+                                                      "fallback": {
+                                                        "type": "model",
+                                                        "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                      }
+                                                    },
+                                                    "fallback": {
+                                                      "type": "model",
+                                                      "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                    }
+                                                  },
+                                                  "fallback": {
+                                                    "type": "model",
+                                                    "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                  }
+                                                },
+                                                "fallback": {
+                                                  "type": "model",
+                                                  "model": "slimetinker:tools/head/sword/netherite_blade"
+                                                }
+                                              },
+                                              "fallback": {
+                                                "type": "model",
+                                                "model": "slimetinker:tools/head/sword/netherite_blade"
+                                              }
+                                            },
+                                            "fallback": {
+                                              "type": "model",
+                                              "model": "slimetinker:tools/head/sword/netherite_blade"
+                                            }
+                                          },
+                                          "fallback": {
+                                            "type": "model",
+                                            "model": "slimetinker:tools/head/sword/netherite_blade"
+                                          }
+                                        },
+                                        "fallback": {
+                                          "type": "model",
+                                          "model": "slimetinker:tools/head/sword/netherite_blade"
+                                        }
+                                      },
+                                      "fallback": {
+                                        "type": "model",
+                                        "model": "slimetinker:tools/head/sword/netherite_blade"
+                                      }
+                                    },
+                                    "fallback": {
+                                      "type": "model",
+                                      "model": "slimetinker:tools/head/sword/netherite_blade"
+                                    }
+                                  },
+                                  "fallback": {
+                                    "type": "model",
+                                    "model": "slimetinker:tools/head/sword/netherite_blade"
+                                  }
+                                },
+                                "fallback": {
+                                  "type": "model",
+                                  "model": "slimetinker:tools/head/sword/netherite_blade"
+                                }
+                              },
+                              "fallback": {
+                                "type": "model",
+                                "model": "slimetinker:tools/head/sword/netherite_blade"
+                              }
+                            },
+                            "fallback": {
+                              "type": "model",
+                              "model": "slimetinker:tools/head/sword/netherite_blade"
+                            }
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "slimetinker:tools/head/sword/netherite_blade"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "slimetinker:tools/head/sword/netherite_blade"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "slimetinker:tools/head/sword/netherite_blade"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "slimetinker:tools/head/sword/netherite_blade"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "slimetinker:tools/head/sword/netherite_blade"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "slimetinker:tools/head/sword/netherite_blade"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "slimetinker:tools/head/sword/netherite_blade"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "slimetinker:tools/head/sword/netherite_blade"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "slimetinker:tools/head/sword/netherite_blade"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:custom_data",
+          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"CRIMSON_ROOT"}},
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "slimetinker:tools/bind/sword/crimson_root"
+           },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"LEATHER"}},
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "slimetinker:tools/bind/sword/leather"
+             },
+            "on_false": {
+              "type": "minecraft:condition",
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SILICON"}},
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "slimetinker:tools/bind/sword/silicon"
+               },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"SLIME"}},
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "slimetinker:tools/bind/sword/slime"
+                },
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"STRING"}},
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "slimetinker:tools/bind/sword/string"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"TWISTED_VINE"}},
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "slimetinker:tools/bind/sword/twisted_vine"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"VINE"}},
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "slimetinker:tools/bind/sword/vine"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WARPED_ROOT"}},
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "slimetinker:tools/bind/sword/warped_root"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {"PublicBukkitValues":{"slimetinker:st_material_binder":"WEEPING_VINE"}},
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "slimetinker:tools/bind/sword/weeping_vine"
+                          },
+                          "on_false": {
+                            "type": "minecraft:model",
+                            "model": "item/air"
+                          },
+                          "fallback": {
+                            "type": "model",
+                            "model": "item/air"
+                          }
+                        },
+                        "fallback": {
+                          "type": "model",
+                          "model": "item/air"
+                        }
+                      },
+                      "fallback": {
+                        "type": "model",
+                        "model": "item/air"
+                      }
+                    },
+                    "fallback": {
+                      "type": "model",
+                      "model": "item/air"
+                    }
+                  },
+                  "fallback": {
+                    "type": "model",
+                    "model": "item/air"
+                  }
+                },
+                "fallback": {
+                  "type": "model",
+                  "model": "item/air"
+                }
+              },
+              "fallback": {
+                "type": "model",
+                "model": "item/air"
+              }
+            },
+            "fallback": {
+              "type": "model",
+              "model": "item/air"
+            }
+          },
+          "fallback": {
+            "type": "model",
+            "model": "item/air"
+          }
+        }
+      ]
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_data",
+      "cases": [
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"INFINITY_BLADE"}},
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion:tools/infinity_blade"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"ELUCIDATOR"}},
+          "model": {
+            "type": "model",
+            "model": "foxymachines:weapons/elucidator"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"IE_INFINITY_SWORD"}},
+          "model": {
+            "type": "model",
+            "model": "infinityexpansion2:gear/infinity_sword"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_TITANIUM_SWORD"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_titanium_sword"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_AURUM_SWORD"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_aurum_sword"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_ADAMANTIUM_SWORD"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_adamantium_sword"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_THORNIUM"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_thornium"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_MAGIC"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_magic"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_RARE"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_rare"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_EPIC"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_epic"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_LEGENDARY"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_legendary"
+          }
+        },
+        {
+          "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"SUPREME_SWORD_SUPREME"}},
+          "model": {
+            "type": "model",
+            "model": "supreme:weapons/sword/supreme_sword_supreme"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "item/netherite_sword"
+      }
+    },
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_sword"
+    }
+  }
+}

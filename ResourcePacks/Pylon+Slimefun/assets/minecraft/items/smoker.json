@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_DRIER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_drier"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"AUTO_BREWER"}},
+        "model": {
+          "type": "model",
+          "model": "slimefun:slimefun/energy/auto_brewer"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"WARP_PAD"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:misc/warp_pad"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"BIG_FLUFFY_BARREL"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:barrels/big_fluffy_barrel"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "block/smoker"
+    }
+  }
+}

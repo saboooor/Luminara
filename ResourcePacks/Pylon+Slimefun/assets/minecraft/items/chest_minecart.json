@@ -1,0 +1,237 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"DOLLY"}},
+        "model": {
+          "type": "model",
+          "model": "fluffymachines:misc/filled_dolly"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_DUMMY"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_building_guide/part_repair_kit_dummy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_IRON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_iron"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_GOLD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_gold"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_COPPER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_copper"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_LEAD"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_lead"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_SILVER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_silver"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_ALUMINUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_aluminum"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_TIN"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_tin"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_ZINC"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_zinc"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_MAGNESIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_magnesium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_DAMASCUS_STEEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_damascus_steel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_DURALIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_duralium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_ALUMINUM_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_aluminum_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_HARDENED_METAL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_hardened_metal"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_CORINTHIAN_BRONZE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_corinthian_bronze"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_SOLDER"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_solder"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_BILLON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_billon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_ALUMINUM_BRASS"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_aluminum_brass"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_NICKEL"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_nickel"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_COBALT"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_cobalt"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_REINFORCED_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_reinforced_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_FERROSILICON"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_ferrosilicon"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_REDSTONE_ALLOY"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_redstone_alloy"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_BOOMERITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_boomerite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_SEFIRITE"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_sefirite"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_NICEINIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_niceinium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_SMITHIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_smithium"
+        }
+      },
+      {
+        "when": {"PublicBukkitValues":{"slimefun:slimefun_item":"PART_REPAIR_KIT_ANNIVERSARIUM"}},
+        "model": {
+          "type": "model",
+          "model": "slimetinker:part_dictionary/repair_kit/part_repair_kit_anniversarium"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/chest_minecart"
+    }
+  }
+}
