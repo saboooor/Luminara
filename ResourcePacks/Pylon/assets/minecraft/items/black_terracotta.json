@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:fluid_pipe_igneous_composite", "model": {"type": "minecraft:model", "model": "pylon:block/machines/pipes/igneous_composite_pipe"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/black_terracotta"}}}

@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:portable_crafting_table", "model": {"type": "minecraft:model", "model": "pylon:item/tools/portable_crafting_table"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/crafting_table"}}}

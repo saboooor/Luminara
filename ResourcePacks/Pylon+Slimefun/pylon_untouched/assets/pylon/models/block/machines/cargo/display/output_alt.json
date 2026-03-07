@@ -1,8 +1,0 @@
-{
-	"parent": "pylon:block/machines/cargo/display/input_alt",
-	"textures": {
-		"main": "pylon:block/machines/cargo/cargo_extractor",
-		"particle": "pylon:block/machines/cargo/cargo_extractor"
-	},
-	"author": "Pandicka"
-}

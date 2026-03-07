@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"slimefun:slimefun/armor/reinforced_armor/reinforced_boots",
-    "layer1":"minecraft:trims/items/boots_trim_diamond"
-  }
-}

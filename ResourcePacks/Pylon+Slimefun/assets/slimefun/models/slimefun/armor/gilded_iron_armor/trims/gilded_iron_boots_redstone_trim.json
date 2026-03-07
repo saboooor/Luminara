@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"slimefun:slimefun/armor/gilded_iron_armor/gilded_iron_boots",
-    "layer1":"minecraft:trims/items/boots_trim_redstone"
-  }
-}

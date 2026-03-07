@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:steel_block", "model": {"type": "minecraft:model", "model": "pylon:item/resources/steel_block"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/netherite_block"}}}

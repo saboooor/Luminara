@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:smeltery_controller", "model": {"type": "minecraft:model", "model": "pylon:item/machines/smeltery/smeltery_controller"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/blast_furnace"}}}

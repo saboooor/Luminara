@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:fluid_pipe_palladium", "model": {"type": "minecraft:model", "model": "pylon:block/machines/pipes/palladium_pipe"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/diamond_block"}}}

@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"slimefun:slimefun/armor/gold_12k_armor/gold_12k_chestplate",
-    "layer1":"minecraft:trims/items/chestplate_trim_gold"
-  }
-}

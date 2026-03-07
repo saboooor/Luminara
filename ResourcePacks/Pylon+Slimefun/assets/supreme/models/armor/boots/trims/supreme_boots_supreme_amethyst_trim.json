@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"RelativoBR",
-  "textures":{
-    "layer0":"supreme:armor/boots/supreme_boots_supreme",
-    "layer1":"minecraft:trims/items/boots_trim_amethyst"
-  }
-}

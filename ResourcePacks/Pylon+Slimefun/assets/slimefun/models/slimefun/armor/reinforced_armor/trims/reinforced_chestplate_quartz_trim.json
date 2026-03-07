@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"slimefun:slimefun/armor/reinforced_armor/reinforced_chestplate",
-    "layer1":"minecraft:trims/items/chestplate_trim_quartz"
-  }
-}

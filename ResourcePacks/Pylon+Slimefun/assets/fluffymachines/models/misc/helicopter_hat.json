@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"fluffymachines:misc/helicopter_hat",
-    "layer1":"fluffymachines:misc/helicopter_hat"
-  }
-}

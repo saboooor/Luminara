@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:hydraulic_table_saw", "model": {"type": "minecraft:model", "model": "pylon:block/machines/hydraulic_machines/table_saw"}}], "fallback": {"type": "minecraft:model", "model": "minecraft:block/cut_copper"}}}

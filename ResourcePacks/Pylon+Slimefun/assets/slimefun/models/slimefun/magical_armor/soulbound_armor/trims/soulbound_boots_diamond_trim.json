@@ -1,8 +1,0 @@
-{
-  "parent":"item/generated",
-  "author":"Pandicka",
-  "textures":{
-    "layer0":"slimefun:slimefun/magical_armor/soulbound_armor/soulbound_boots",
-    "layer1":"minecraft:trims/items/boots_trim_diamond"
-  }
-}

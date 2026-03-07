@@ -1,1 +1,0 @@
-{"model": {"type": "minecraft:select", "property": "custom_model_data", "index": 0, "cases": [{"when": "pylon:pit_kiln", "model": {"type": "minecraft:model", "model": "pylon:block/machines/smeltery/pit_kiln"}}], "fallback": {"type": "minecraft:special", "base": "minecraft:item/decorated_pot", "model": {"type": "minecraft:decorated_pot"}}}}
