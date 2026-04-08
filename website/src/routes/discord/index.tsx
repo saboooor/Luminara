@@ -1,6 +1,6 @@
-import { RequestEvent } from '@builder.io/qwik-city';
-import { component$ } from '@builder.io/qwik';
-import { LogoDiscord } from '@luminescent/ui-qwik';
+import { RequestEvent } from '@qwik.dev/router';
+import { component$ } from '@qwik.dev/core';
+import { SiDiscord } from 'simple-icons-qwik';
 
 export const onGet = ({ redirect }: RequestEvent) => {
   throw redirect(301, 'https://discord.gg/Mw7fNpdg5N');
@@ -13,7 +13,7 @@ export default component$(() => {
         Join our Discord server!
       </h1>
       <a href="https://discord.luminaramc.org" class="lum-btn text-2xl lum-btn-p-6 gap-6">
-        <LogoDiscord size={36} />
+        <SiDiscord size={36} />
         Join
       </a>
     </div>

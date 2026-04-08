@@ -1,5 +1,5 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { component$ } from '@qwik.dev/core';
+import type { DocumentHead } from '@qwik.dev/router';
 import Ranks from '~/components/sections/Ranks';
 import Vote from '~/components/sections/Vote';
 

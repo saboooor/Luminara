@@ -1,3 +1,2 @@
 reject:
-  - "typescript" # lint broken on 5.9
-  - "vite" # build broken past 5.4.14
+  - "vite" # frozen on v8

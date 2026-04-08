@@ -1,5 +1,5 @@
-import { $, component$, useOnDocument, useSignal } from '@builder.io/qwik';
-import { useContent, useDocumentHead } from '@builder.io/qwik-city';
+import { $, component$, useOnDocument, useSignal } from '@qwik.dev/core';
+import { useContent, useDocumentHead } from '@qwik.dev/router';
 import { Clock } from 'lucide-icons-qwik';
 
 const formatDate = (dateStr?: string): string => {

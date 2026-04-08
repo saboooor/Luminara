@@ -1,5 +1,5 @@
-import { component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
-import { DocumentHead, RequestEventBase, routeLoader$, server$ } from '@builder.io/qwik-city';
+import { component$, useStore, useVisibleTask$ } from '@qwik.dev/core';
+import { DocumentHead, RequestEventBase, routeLoader$, server$ } from '@qwik.dev/router';
 
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';

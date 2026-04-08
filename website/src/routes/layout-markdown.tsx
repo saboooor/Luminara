@@ -1,4 +1,4 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot } from '@qwik.dev/core';
 import { OnThisPage } from '~/components/docs/ThisPage';
 
 import Layout from './layout';
@@ -6,7 +6,7 @@ import Layout from './layout';
 export default component$(() => {
   return (
     <Layout>
-      <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto pr-[calc(1/6*100%)]">
+      <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto pr-[calc(1/6*100%)] markdown">
         <Slot />
       </section>
       <OnThisPage />

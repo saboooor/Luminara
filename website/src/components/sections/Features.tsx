@@ -1,8 +1,7 @@
-import { component$ } from '@builder.io/qwik';
-import { Hoverable, LogoDiscord } from '@luminescent/ui-qwik';
+import { component$ } from '@qwik.dev/core';
+import { Hoverable } from '@luminescent/ui-qwik';
 
 import features from './featureslist';
-import { Link } from 'lucide-icons-qwik';
 
 type Feature = {
   title: string;
@@ -13,29 +12,21 @@ type Feature = {
 
 export default component$(() => {
   return (
-    <section class="mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-16 flex flex-col items-center gap-1">
-      <h1 class="text-4xl font-bold text-white">
+    <section class="flex flex-col w-full p-10 items-center justify-center bg-gray-950/70 backdrop-blur-sm">
+      <h3 class="font-extrabold text-5xl mb-10">
         Features
-      </h1>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-2">
+      </h3>
+      <div class="grid lg:grid-cols-3 gap-2 max-w-5xl">
         {features.map((feature: Feature, i) => (
-          <div key={i} class="lum-card lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105"
+          <div key={i} class="lum-card lum-grad-bg-lum-card-bg/10 duration-200! relative"
             onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)}
             onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}>
-            <h3 class="mt-0! mb-2! flex items-center gap-1">
+            <h3 class="mb-2 flex items-center gap-2 font-bold text-2xl">
               {feature.title}
             </h3>
-            <p class="flex-1 text-lg font-normal mb-2">{feature.description}</p>
-            {feature.discord && (
-              <a href={feature.discord} class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
-                <LogoDiscord size={24} /> Join Discord
-              </a>
-            )}
-            {feature.learnmore && (
-              <a href={feature.learnmore} target="_blank" class="lum-btn lum-bg-luminescent-600 hover:lum-bg-luminescent-500">
-                <Link size={24} /> Learn More
-              </a>
-            )}
+            <p class="text-lum-text-secondary">
+              {feature.description}
+            </p>
           </div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-import { component$, useStore } from '@builder.io/qwik';
+import { component$, useStore } from '@qwik.dev/core';
 //@ts-ignore
 import Cave from '~/images/backgrounds/cave.png?jsx&w=640;1280;1920;2560;3840';
 //@ts-ignore

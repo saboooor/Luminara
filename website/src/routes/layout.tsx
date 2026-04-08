@@ -1,8 +1,8 @@
-import { component$, Slot, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, Slot, useVisibleTask$ } from '@qwik.dev/core';
 import Nav from '~/components/Nav';
 
 import Background from '~/components/backgrounds';
-import { useLocation } from '@builder.io/qwik-city';
+import { useLocation } from '@qwik.dev/router';
 
 export default component$(() => {
   const loc = useLocation();
@@ -94,11 +94,12 @@ export default component$(() => {
 
   return (
     <>
-      <Background class={{
-        'transition-all duration-1000 fixed top-0 overflow-hidden -z-10 w-full h-lvh object-cover brightness-50': true,
-        'blur-xl scale-110': loc.url.pathname != '/',
+      <Background id="bg" class={{
+        'fixed scale-120 bottom-0 blur-none overflow-hidden -z-10 w-lvw h-lvh object-cover': true,
+        'transition-all duration-1000': loc.isNavigating,
+        'blur-xl! bottom-0! opacity-5 scale-150': loc.url.pathname != '/',
       }} />
-      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-lvh bg-gradient-to-b from-pink-400/30 " />
+      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-lvh bg-linear-to-b from-pink-400/30 " />
       <Nav />
       <Slot />
     </>

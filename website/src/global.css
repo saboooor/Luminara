@@ -5,44 +5,48 @@
 @plugin "@anuragroy/tailwindcss-animate";
 
 @import "@luminescent/ui";
-@import "@luminescent/ui/formatting";
 
-@config "@luminescent/ui-qwik/config";
 @source "../node_modules/@luminescent/ui-qwik";
 
+.markdown {
+  @import "@luminescent/ui/formatting";
+}
+
 @theme {
-  --lum-default-alpha: 70;
-  --lum-border-radius: 1.5rem;
+  --lum-border-radius: 0.6rem;
 
+  --font-display: "Figtree", "sans-serif";
 
-  --color-gray-50: oklch(98.5% 0.012 343.839);
-  --color-gray-100: oklch(96.7% 0.013 350.542);
-  --color-gray-200: oklch(92.8% 0.016 350.531);
-  --color-gray-300: oklch(87.2% 0.03 344.338);
-  --color-gray-400: oklch(70.7% 0.042 348.325);
-  --color-gray-500: oklch(55.1% 0.057 350.364);
-  --color-gray-600: oklch(44.6% 0.068 342.802);
-  --color-gray-700: oklch(37.3% 0.074 345.733);
-  --color-gray-800: oklch(27.8% 0.073 342.848);
-  --color-gray-850: oklch(23.2% 0.07 345.733);
-  --color-gray-900: oklch(21% 0.074 350.665);
-  --color-gray-950: oklch(13% 0.068 352.692);
+  --color-gray-50: var(--color-mauve-50);
+  --color-gray-100: var(--color-mauve-100);
+  --color-gray-200: var(--color-mauve-200);
+  --color-gray-300: var(--color-mauve-300);
+  --color-gray-400: var(--color-mauve-400);
+  --color-gray-500: var(--color-mauve-500);
+  --color-gray-600: var(--color-mauve-600);
+  --color-gray-700: var(--color-mauve-700);
+  --color-gray-800: var(--color-mauve-800);
+  --color-gray-900: var(--color-mauve-900);
+  --color-gray-950: var(--color-mauve-950);
 
-
+  --color-lum-accent: var(--color-red-300);
   --color-lum-border: #dfdfdfaa;
-  --color-nav-bg: --alpha(var(--color-pink-950) / 70%);
-  --color-bg: var(--color-gray-900);
+  --color-lum-card-bg: var(--color-red-300);
+  --color-nav-bg: --alpha(var(--color-red-300) / 20%);
+  --color-bg: color-mix(in oklch, var(--color-red-300) 20%, var(--color-black) 80%);
+  --lum-border-superellipse: 2;
 
   --lum-depth: 1
 }
 
-a.lum-btn, a.lum-card {
-  color: var(--color-lum-text) !important;
-  text-decoration: none;
+@supports (corner-shape: squircle) {
+  :root {
+    --lum-border-radius: 2rem;
+  }
 }
 
 html {
-  font-family: Figtree, sans-serif;
+  overflow: overlay;
 }
 
 * {
@@ -70,25 +74,6 @@ html {
 
 *::-webkit-scrollbar-corner {
   background-color: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: max(0.7em, 18px);
-  margin-bottom: max(0.7em, 18px);
-}
-
-img[alt=Attachment] {
-  max-width: 200px;
-  border-radius: 5px;
-}
-
-img {
-  border-radius: 0;
 }
 
 .shadow-outline {
