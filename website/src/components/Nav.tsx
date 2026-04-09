@@ -1,7 +1,7 @@
 import { component$ } from '@qwik.dev/core';
 import { Link, useLocation } from '@qwik.dev/router';
 import { SelectMenu, Nav } from '@luminescent/ui-qwik';
-import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Download, Menu, Palette, Loader2, Ellipsis } from 'lucide-icons-qwik';
+import { Crown, Megaphone, Scale, Vote, ShoppingCart, Download, Palette, Loader2, Ellipsis } from 'lucide-icons-qwik';
 import { LuminescentFull } from '@luminescent/icons-qwik';
 import { SiDiscord, SiGithub } from 'simple-icons-qwik';
 
@@ -28,22 +28,22 @@ export default component$(() => {
       <Link q:slot="end" href="/announcements" class={{
         'hidden lg:flex lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <Bell size={24} /> Announcements
+        <Megaphone size={24} /> Announcements
       </Link>
       <Link q:slot="end" href="/rules" class={{
         'hidden sm:flex lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <Shield size={24} /> Rules
+        <Scale size={24} /> Rules
       </Link>
       <Link q:slot="end" href="/vote" class={{
         'hidden sm:flex lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <TrendingUp size={24} /> Vote
+        <Vote size={24} /> Vote
       </Link>
       <Link q:slot="end" href="/ranks" class={{
         'hidden md:flex lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <BarChart size={24} /> Ranks
+        <Crown size={24} /> Ranks
       </Link>
 
       <SelectMenu id="nav-resources" q:slot='end' hover customDropdown
@@ -55,11 +55,11 @@ export default component$(() => {
         </span>
         <Link q:slot="extra-buttons" href="/announcements"
           class="lum-btn lum-bg-transparent flex lg:hidden rounded-lum-1 hover:lum-bg-nav-bg">
-          <Bell size={24} /> Announcements
+          <Megaphone size={24} /> Announcements
         </Link>
         <Link q:slot="extra-buttons" href="/ranks"
           class="lum-btn lum-bg-transparent flex md:hidden rounded-lum-1 hover:lum-bg-nav-bg">
-          <BarChart size={24} /> Ranks
+          <Crown size={24} /> Ranks
         </Link>
         <a q:slot="extra-buttons" href="https://luminara.tebex.io"
           class="lum-btn lum-bg-transparent flex md:hidden rounded-lum-1 hover:lum-bg-nav-bg">
@@ -86,22 +86,22 @@ export default component$(() => {
       <Link q:slot="mobile" href="/announcements" class={{
         'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <Bell size={24} /> Announcements
+        <Megaphone size={24} /> Announcements
       </Link>
       <Link q:slot="mobile" href="/rules" class={{
         'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <Shield size={24} /> Rules
+        <Scale size={24} /> Rules
       </Link>
       <Link q:slot="mobile" href="/vote" class={{
         'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <TrendingUp size={24} /> Vote
+        <Vote size={24} /> Vote
       </Link>
       <Link q:slot="mobile" href="/ranks" class={{
         'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true,
       }}>
-        <BarChart size={24} /> Ranks
+        <Crown size={24} /> Ranks
       </Link>
 
       <SelectMenu id="nav-resources" q:slot='mobile' customDropdown
@@ -113,11 +113,11 @@ export default component$(() => {
         </span>
         <Link q:slot="extra-buttons" href="/announcements"
           class="lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg">
-          <Bell size={24} /> Announcements
+          <Megaphone size={24} /> Announcements
         </Link>
         <Link q:slot="extra-buttons" href="/ranks"
           class="lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg">
-          <BarChart size={24} /> Ranks
+          <Crown size={24} /> Ranks
         </Link>
         <a q:slot="extra-buttons" href="https://luminara.tebex.io"
           class="lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg">

@@ -1,17 +1,20 @@
 import { component$ } from '@qwik.dev/core';
+import { Crown } from 'lucide-icons-qwik';
 import * as Ranks from '~/components/ranks';
 
 export default component$(() => {
   return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-6xl mx-auto">
-      <h1 class="text-4xl font-bold text-white mt-10">
-        <span class="text-pink-400">Luminara SMP</span> Ranks
+      <h1 class="flex gap-3 text-2xl font-extrabold items-center my-2">
+        <Crown size={32} />
+        Ranks
       </h1>
-      <h2 class="mb-6 text-xl">
-        Different ranks give different perks!
-      </h2>
+      <p class="mb-4 border-b border-lum-border/10 pb-4 text-lum-text-secondary">
+        Different ranks are available on Luminara SMP, each with their own unique perks and benefits. Ranks can be obtained by voting for the server on various server listing websites. The more you vote, the higher rank you can achieve, unlocking more perks and benefits along the way.
+      </p>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mb-5">
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.bee width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.bee class="w-12 h-auto" />
             <div>
@@ -31,7 +34,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noenter</p>
           <p class="text-lum-text-secondary">noenterplayer</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.turtle width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.turtle class="w-12 h-auto" />
             <div>
@@ -50,7 +54,8 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">trappeddestination</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.panda width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.panda class="w-12 h-auto" />
             <div>
@@ -68,7 +73,8 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">nofluidflow</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.dolphin width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.dolphin class="w-12 h-auto" />
             <div>
@@ -86,7 +92,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/nick</p>
           <p class="text-lum-text-secondary">/hat</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.frog width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.frog class="w-12 h-auto" />
             <div>
@@ -106,7 +113,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noitemdrop</p>
           <p class="text-lum-text-secondary">nomobspawntype PHANTOM</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.armadillo width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.armadillo class="w-12 h-auto" />
             <div>
@@ -126,7 +134,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">entermessage</p>
           <p class="text-lum-text-secondary">noelytra</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.axolotl width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.axolotl class="w-12 h-auto" />
             <div>
@@ -148,7 +157,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">playertime</p>
           <p class="text-lum-text-secondary">playerweather</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.mooshroom width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.mooshroom class="w-12 h-auto" />
             <div>
@@ -169,7 +179,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">keeplevel</p>
           <p class="text-lum-text-secondary">nohunger</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.glowSquid width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.glowSquid class="w-12 h-auto" />
             <div>
@@ -191,7 +202,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">ownerfly</p>
           <p class="text-lum-text-secondary">ownermemberfly (/fly in claims)</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.ocelot width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.ocelot class="w-12 h-auto" />
             <div>
@@ -210,7 +222,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/enderchest</p>
           <p class="text-lum-text-secondary">/condense</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.allay width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.allay class="w-12 h-auto" />
             <div>
@@ -229,7 +242,8 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/speed</p>
           <p class="text-lum-text-secondary">/stack</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.bee width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.sniffer class="w-12 h-auto" />
             <div>
@@ -248,7 +262,8 @@ export default component$(() => {
         </div>
       </div>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.enderDragon width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.enderDragon class="w-12 h-auto" />
             <div>
@@ -261,7 +276,8 @@ export default component$(() => {
             </div>
           </div>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.wither width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.wither class="w-12 h-auto" />
             <div>
@@ -274,7 +290,8 @@ export default component$(() => {
             </div>
           </div>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
+          <Ranks.moobloom width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
           <div class="flex items-center gap-4">
             <Ranks.moobloom class="w-12 h-auto" />
             <div>

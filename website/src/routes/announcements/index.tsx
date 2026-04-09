@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import { RESTError, RESTRateLimit, APIMessage, MessageFlags, APIGuildMember, APIRole, APIReaction, FormattingPatterns, APIGuildChannel, GuildChannelType } from 'discord-api-types/v10';
-import { Link } from 'lucide-icons-qwik';
+import { Link, Megaphone } from 'lucide-icons-qwik';
 import { Toggle } from '@luminescent/ui-qwik';
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -245,26 +245,18 @@ export default component$(() => {
   if (articleList.value instanceof Error) return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
-        <h1 class="mb-4">
-          <span class="text-luminescent-400">Luminara SMP</span> Announcements
-        </h1>
-        <p class="font-normal text-xl">
-          Here you will find the latest announcements from Luminara SMP.<br/>
-          This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
-        </p>
-        <p class="text-lum-text-secondary">
-          Error: {articleList.value.message}
-        </p>
+        Error: {articleList.value.message}
       </div>
     </section>
   );
 
   return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
-      <h1 class="text-4xl font-bold text-white mt-10">
-        <span class="text-pink-400">Luminara SMP</span> Announcements
+      <h1 class="flex gap-2 text-2xl font-extrabold items-center my-2">
+        <Megaphone size={32} />
+        Announcements
       </h1>
-      <p class="font-normal text-xl">
+      <p class="mb-4 border-b border-lum-border/10 pb-4 text-lum-text-secondary">
         Here you will find the latest announcements from Luminara SMP.<br/>
         This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
       </p>
@@ -292,7 +284,7 @@ export default component$(() => {
                 return <>
                   <span id={announcement.id} class="pointer-events-none block h-24 -mt-24" />
                   <article class={{
-                    'lum-card gap-0 lum-bg-lum-card-bg transition duration-300 hover:duration-300 ease-out lum-hoverable hover:scale-105': true,
+                    'lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative': true,
                     'opacity-50': !announcement.crossposted,
                     'border-luminescent-400': announcement.crossposted && !store.onlyPublished,
                   }}>
