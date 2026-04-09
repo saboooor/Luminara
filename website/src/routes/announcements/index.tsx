@@ -252,7 +252,7 @@ export default component$(() => {
           Here you will find the latest announcements from Luminara SMP.<br/>
           This is based on the announcements channel in the <a href='https://discord.luminaramc.org' class="text-blue-400">Discord Server</a>.
         </p>
-        <p>
+        <p class="text-lum-text-secondary">
           Error: {articleList.value.message}
         </p>
       </div>
@@ -327,7 +327,7 @@ export default component$(() => {
                           { announcement.reactions.map((reaction: APIReaction, i: number) => (
                             <div key={i} class="flex items-center gap-1">
                               <Markdown mdContent={reaction.emoji.id ? `<${reaction.emoji.animated ? 'a' : ''}:${reaction.emoji.name}:${reaction.emoji.id}>` : reaction.emoji.name} />
-                              <p>{reaction.count}</p>
+                              <p class="text-lum-text-secondary">{reaction.count}</p>
                             </div>
                           )) }
                         </div>

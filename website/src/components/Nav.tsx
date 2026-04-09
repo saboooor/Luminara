@@ -1,7 +1,7 @@
 import { component$ } from '@qwik.dev/core';
 import { Link, useLocation } from '@qwik.dev/router';
 import { SelectMenu, Nav } from '@luminescent/ui-qwik';
-import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Download, Menu, Palette, Loader2 } from 'lucide-icons-qwik';
+import { BarChart, Bell, Shield, TrendingUp, ShoppingCart, Download, Menu, Palette, Loader2, Ellipsis } from 'lucide-icons-qwik';
 import { LuminescentFull } from '@luminescent/icons-qwik';
 import { SiDiscord, SiGithub } from 'simple-icons-qwik';
 
@@ -11,7 +11,7 @@ export default component$(() => {
   const loc = useLocation();
 
   return (
-    <Nav floating fixed colorClass="lum-bg-nav-bg !text-gray-100"
+    <Nav floating fixed colorClass="lum-grad-bg-nav-bg"
       style={{
         '--lum-border-radius': '1rem',
       }}>
@@ -50,7 +50,7 @@ export default component$(() => {
         class={{ 'lum-bg-transparent hidden sm:flex rounded-lum-2 hover:lum-bg-nav-bg': true }}
         panelClass='lum-bg-nav-bg'>
         <span q:slot="dropdown" class="flex items-center gap-2">
-          <Menu size={24} />
+          <Ellipsis size={24} />
           More
         </span>
         <Link q:slot="extra-buttons" href="/announcements"
@@ -108,7 +108,7 @@ export default component$(() => {
         class={{ 'lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg': true }}
         panelClass='lum-bg-nav-bg'>
         <span q:slot="dropdown" class="flex items-center gap-2">
-          <Menu size={24} />
+          <Ellipsis size={24} />
           More
         </span>
         <Link q:slot="extra-buttons" href="/announcements"

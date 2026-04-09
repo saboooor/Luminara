@@ -41,15 +41,100 @@ export default component$(() => {
     store.discordonline = discorddata.presence_count;
   });
 
+  // eslint-disable-next-line qwik/no-use-visible-task
+  useVisibleTask$(() => {
+    const canvas = document.getElementById('particles') as HTMLCanvasElement;
+    const ctx = canvas.getContext('2d')!;
+
+    // Preload images
+    const particleImages: HTMLImageElement[] = Array.from({ length: 12 }, (_, i) => {
+      const img = new Image();
+      img.src = `/particle/cherry_${i}.png`;
+      return img;
+    });
+
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.imageSmoothingEnabled = false;
+
+    // Handle canvas resize
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      ctx.imageSmoothingEnabled = false;
+    });
+
+    // Define particle class
+    class Particle {
+      x: number;
+      y: number;
+      size: number;
+      speed: number;
+      rotation: number;
+      img: number;
+
+      constructor() {
+        this.x = Math.random() * canvas.width; // Random x position
+        this.y = Math.random() * canvas.height; // Random y position
+        this.size = (Math.random() * 10 + 10); // Random size
+        this.speed = (Math.random() * 0.5 + 1); // Random speed
+        this.rotation = Math.random() * 2 * Math.PI; // Random rotation
+        this.img = Math.floor(Math.random() * 11);
+      }
+      // Update particle position
+      update() {
+        const speedFactor = location.pathname !== '/' ? 0.5 : 1; // Change speed based on URL
+        this.y += this.speed * speedFactor;
+        this.x += this.speed * speedFactor;
+        if (this.y > canvas.height) this.y = 0; // Reset position if particle goes out of the canvas
+        if (this.x > canvas.width) this.x = 0; // Reset position if particle goes out of the canvas
+
+        this.rotation += 0.01; // Change rotation slightly
+      }
+      // Draw particle
+      draw() {
+        // use image as particle
+        ctx.save();
+        ctx.translate(this.x + this.size / 2, this.y + this.size / 2);
+        ctx.rotate(this.rotation);
+        ctx.drawImage(particleImages[this.img], -this.size / 2, -this.size / 2, this.size, this.size);
+        ctx.restore();
+      }
+    }
+
+    // Create particles, mobile will have fewer particles
+    let numberOfParticles = 32;
+
+    if (window.innerWidth < 768) {
+      numberOfParticles = 12;
+    }
+
+    const particles: Particle[] = Array.from({ length: numberOfParticles }, () => new Particle());
+
+    // Animation loop
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(particle => {
+        particle.update();
+        particle.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    // Start animation
+    animate();
+  });
+
   return (
     <>
+      <canvas id="particles" class="fixed top-0 overflow-hidden -z-10 w-full h-lvh brightness-50" />
       <section class="min-h-svh flex flex-col gap-32 items-center justify-center relative overflow-hidden">
         <div id="hero" class="flex flex-col md:flex-row md:gap-5 text-gray-100 px-20 items-center justify-center md:justify-between pt-18 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full">
           <div class="relative flex flex-col gap-2 xl:gap-4">
             <div class={{
               'relative mr-auto': true,
             }}>
-              <div class="absolute -inset-4 blur-lg backdrop-blur-md rounded-4xl" />
               <h1 class={{
                 'text-7xl xl:text-8xl font-extrabold relative flex items-center drop-shadow-lg text-transparent bg-clip-text': true,
                 'animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-600': true,
@@ -60,7 +145,6 @@ export default component$(() => {
             <div class={{
               'relative mr-auto': true,
             }}>
-              <div class="absolute -inset-2 blur-lg backdrop-blur-md rounded-2xl" />
               <h2 class="text-xl! md:text-2xl! xl:text-3xl! font-bold animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800 drop-shadow-md">
                 Minecraft with enhanced features, world-generation, and a friendly community.
               </h2>
@@ -74,7 +158,7 @@ export default component$(() => {
                   setTimeout(() => response.textContent = 'COPIED SUCCESSFULLY', 3000);
                 });
               }}
-              class="lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-green-300/40 hover:lum-bg-green-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800">
+              class="lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-green-500/20 hover:lum-bg-green-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800">
               <Purpur size={36} /> 
               <span class="flex flex-col gap-1 text-left">
                 <span class="font-bold flex items-center gap-2">
@@ -89,7 +173,7 @@ export default component$(() => {
               </span>
             </button>
             <a href="https://discord.luminaramc.org"
-              class="fill-current lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-indigo-300/40 hover:lum-bg-indigo-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-600">
+              class="fill-current lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-indigo-500/20 hover:lum-bg-indigo-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-600">
               <SiDiscord size={36} />
               <span class="flex flex-col gap-1 text-left">
                 <span class="font-bold flex items-center gap-2">
@@ -104,9 +188,10 @@ export default component$(() => {
           </div>
         </div>
       </section>
-      <div id="start" class="h-32 bg-linear-to-b from-transparent to-gray-950/70" />
-      <Why />
-      <Features />
+      <div class="bg-gray-900/70 backdrop-blur-lg mask-[linear-gradient(to_bottom,transparent_0px,black_8rem,black_100%)] pt-32">
+        <Why />
+        <Features />
+      </div>
     </>
   );
 });

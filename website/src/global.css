@@ -13,27 +13,27 @@
 }
 
 @theme {
-  --lum-border-radius: 0.6rem;
+  --lum-border-radius: 1rem;
 
   --font-display: "Figtree", "sans-serif";
 
-  --color-gray-50: var(--color-mauve-50);
-  --color-gray-100: var(--color-mauve-100);
-  --color-gray-200: var(--color-mauve-200);
-  --color-gray-300: var(--color-mauve-300);
-  --color-gray-400: var(--color-mauve-400);
-  --color-gray-500: var(--color-mauve-500);
-  --color-gray-600: var(--color-mauve-600);
-  --color-gray-700: var(--color-mauve-700);
-  --color-gray-800: var(--color-mauve-800);
-  --color-gray-900: var(--color-mauve-900);
-  --color-gray-950: var(--color-mauve-950);
+  --color-gray-50: oklch(98.5% 0.01 0);
+  --color-gray-100: oklch(96% 0.013 10.44);
+  --color-gray-200: oklch(92.2% 0.015 10.44);
+  --color-gray-300: oklch(86.5% 0.022 10.44);
+  --color-gray-400: oklch(71.1% 0.029 10.44);
+  --color-gray-500: oklch(54.2% 0.044 10.44);
+  --color-gray-600: oklch(43.5% 0.039 10.44);
+  --color-gray-700: oklch(36.4% 0.039 10.44);
+  --color-gray-800: oklch(26.3% 0.034 10.44);
+  --color-gray-900: oklch(21.2% 0.029 10.44);
+  --color-gray-950: oklch(14.5% 0.018 10.44);
 
   --color-lum-accent: var(--color-red-300);
   --color-lum-border: #dfdfdfaa;
-  --color-lum-card-bg: var(--color-red-300);
-  --color-nav-bg: --alpha(var(--color-red-300) / 20%);
-  --color-bg: color-mix(in oklch, var(--color-red-300) 20%, var(--color-black) 80%);
+  --color-lum-card-bg: var(--color-gray-500);
+  --color-nav-bg: --alpha(oklch(79.66% 0.0957 10.44) / 30%);
+  --color-bg: var(--color-gray-950);
   --lum-border-superellipse: 2;
 
   --lum-depth: 1
