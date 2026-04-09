@@ -242,14 +242,6 @@ export default component$(() => {
     }
   });
 
-  if (articleList.value instanceof Error) return (
-    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
-      <div class="font-bold text-orange-100 text-3xl sm:text-4xl mb-6 items-center justify-center">
-        Error: {articleList.value.message}
-      </div>
-    </section>
-  );
-
   return (
     <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto">
       <h1 class="flex gap-2 text-2xl font-extrabold items-center my-2">
@@ -274,6 +266,7 @@ export default component$(() => {
         </button>
       </div>
       {(() => {
+        if (articleList.value instanceof Error) return <p class="text-red-500">Failed to load announcements: {articleList.value.message}</p>;
         if (store.sort != 'newest') store.changed = true;
         if (store.changed) articleList.value.reverse();
         return (
