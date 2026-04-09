@@ -13,7 +13,7 @@ export default component$(() => {
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mb-5">
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.bee class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Bee
@@ -33,7 +33,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.turtle class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Turtle
@@ -52,7 +52,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.panda class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Panda
@@ -70,7 +70,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.dolphin class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Dolphin
@@ -88,7 +88,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.frog class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Frog
@@ -108,7 +108,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.armadillo class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Armadillo
@@ -150,7 +150,7 @@ export default component$(() => {
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative">
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.mooshroom class="w-12 h-auto" />
             <div>
               <h3 class="flex items-center gap-2 font-bold text-2xl">
                 Mooshroom

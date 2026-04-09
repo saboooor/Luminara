@@ -1,4 +1,4 @@
-import { component$, Slot, useVisibleTask$ } from '@qwik.dev/core';
+import { component$, Slot } from '@qwik.dev/core';
 import Nav from '~/components/Nav';
 
 import Background from '~/components/backgrounds';

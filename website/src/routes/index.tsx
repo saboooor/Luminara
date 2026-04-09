@@ -37,7 +37,7 @@ export default component$(() => {
       store.version = srvdata.protocol_name;
     }
     const discordjson = await fetch('https://discord.com/api/guilds/865519986806095902/widget.json');
-    const discorddata = await discordjson.json() as any
+    const discorddata = await discordjson.json() as any;
     store.discordonline = discorddata.presence_count;
   });
 
@@ -152,17 +152,17 @@ export default component$(() => {
           </div>
           <div class="flex flex-col gap-2 mt-8">
             <button onClick$={() => {
-                navigator.clipboard.writeText('luminaramc.org').catch(() => {
-                  const response = document.getElementById('response-desktop') as HTMLParagraphElement;
-                  response.textContent = 'FAILED TO COPY, CHECK CONSOLE';
-                  setTimeout(() => response.textContent = 'COPIED SUCCESSFULLY', 3000);
-                });
-              }}
-              class="lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-green-500/20 hover:lum-bg-green-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800">
-              <Purpur size={36} /> 
+              navigator.clipboard.writeText('luminaramc.org').catch(() => {
+                const response = document.getElementById('response-desktop') as HTMLParagraphElement;
+                response.textContent = 'FAILED TO COPY, CHECK CONSOLE';
+                setTimeout(() => response.textContent = 'COPIED SUCCESSFULLY', 3000);
+              });
+            }}
+            class="lum-btn xl:lum-btn-p-4 backdrop-blur-sm text-lg lum-grad-bg-green-500/20 hover:lum-bg-green-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800">
+              <Purpur size={36} />
               <span class="flex flex-col gap-1 text-left">
                 <span class="font-bold flex items-center gap-2">
-                  luminaramc.org
+                  ip: luminaramc.org
                 </span>
                 <span class="text-sm flex items-center gap-1">
                   {store.online === null && <Loader2 size={16} class="animate-spin" />}
@@ -177,7 +177,7 @@ export default component$(() => {
               <SiDiscord size={36} />
               <span class="flex flex-col gap-1 text-left">
                 <span class="font-bold flex items-center gap-2">
-                  Discord
+                  discord
                 </span>
                 <span class="text-sm flex items-center gap-1">
                   {store.discordonline === null && <Loader2 size={16} class="animate-spin" />}
