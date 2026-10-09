@@ -149,7 +149,7 @@ export const SocialButtons = component$(() => {
     <a href="https://luminara.tebex.io" title="Store" class="lum-btn lum-bg-transparent p-2 rounded-lum-2 hover:lum-bg-nav-bg">
       <ShoppingCart size={24} />
     </a>
-    <a href="https://github.com/saboooor/Nether-Depths" title="GitHub" class="lum-btn lum-bg-transparent p-2 rounded-lum-2 hover:lum-bg-nav-bg fill-current">
+    <a href="https://github.com/saboooor/Luminara" title="GitHub" class="lum-btn lum-bg-transparent p-2 rounded-lum-2 hover:lum-bg-nav-bg fill-current">
       <SiGithub size={24} />
     </a>
     <a href="https://discord.luminaramc.org" title="Discord" class="lum-btn lum-bg-transparent p-2 rounded-lum-2 hover:lum-bg-nav-bg fill-current">

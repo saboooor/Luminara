@@ -2,8 +2,6 @@
 
 @import "tailwindcss";
 
-@plugin "@anuragroy/tailwindcss-animate";
-
 @import "@luminescent/ui";
 
 @source "../node_modules/@luminescent/ui-qwik";
