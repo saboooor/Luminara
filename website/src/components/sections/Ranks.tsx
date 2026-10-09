@@ -27,7 +27,7 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">3 Homes</p>
+          <p class="text-lum-text-secondary">2 Homes</p>
           <p class="text-lum-text-secondary">1 Creative Plot</p>
           <p class="text-lum-text-secondary">1 Auction House Slot</p>
           <h4>Claim Flags</h4>
@@ -48,7 +48,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">6 Homes</p>
           <p class="text-lum-text-secondary">2 Creative Plots</p>
           <p class="text-lum-text-secondary">/suicide</p>
           <h4>Claim Flags</h4>
@@ -68,7 +67,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">9 Homes</p>
           <p class="text-lum-text-secondary">3 Creative Plots</p>
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">nofluidflow</p>
@@ -87,7 +85,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">12 Homes</p>
           <p class="text-lum-text-secondary">4 Creative Plots</p>
           <p class="text-lum-text-secondary">/nick</p>
           <p class="text-lum-text-secondary">/hat</p>
@@ -106,7 +103,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">15 Homes</p>
           <p class="text-lum-text-secondary">5 Creative Plots</p>
           <p class="text-lum-text-secondary">/craft</p>
           <h4>Claim Flags</h4>
@@ -127,7 +123,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">18 Homes</p>
           <p class="text-lum-text-secondary">6 Creative Plots</p>
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">exitmessage</p>
@@ -148,7 +143,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">21 Homes</p>
           <p class="text-lum-text-secondary">7 Creative Plots</p>
           <p class="text-lum-text-secondary">/ptime</p>
           <p class="text-lum-text-secondary">/pweather</p>
@@ -171,7 +165,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">24 Homes</p>
           <p class="text-lum-text-secondary">8 Creative Plots</p>
           <p class="text-lum-text-secondary">/rest</p>
           <h4>Claim Flags</h4>
@@ -193,7 +186,7 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">27 Homes</p>
+          <p class="text-lum-text-secondary">4 Homes</p>
           <p class="text-lum-text-secondary">9 Creative Plots</p>
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">changebiome</p>
@@ -216,7 +209,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">30 Homes</p>
           <p class="text-lum-text-secondary">10 Creative Plots</p>
           <p class="text-lum-text-secondary">/nick formatting</p>
           <p class="text-lum-text-secondary">/enderchest</p>
@@ -236,7 +228,7 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">36 Homes</p>
+          <p class="text-lum-text-secondary">8 Homes</p>
           <p class="text-lum-text-secondary">12 Creative Plots</p>
           <p class="text-lum-text-secondary">Image Maps</p>
           <p class="text-lum-text-secondary">/speed</p>
@@ -256,7 +248,6 @@ export default component$(() => {
             </div>
           </div>
           <h4>Perks</h4>
-          <p class="text-lum-text-secondary">40 Homes</p>
           <p class="text-lum-text-secondary">14 Creative Plots</p>
           <p class="text-lum-text-secondary">/ranknick (Custom Rank)</p>
         </div>
