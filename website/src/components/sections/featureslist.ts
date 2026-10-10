@@ -47,11 +47,6 @@ export default [
     'learnmore': 'https://wiki.aurelium.dev/auraskills',
   },
   {
-    'title': 'Slimefun',
-    'description': 'A plugin that adds a ton of new content to the game, including new crafting recipes, machines, and more!',
-    'learnmore': 'https://slimefun-4.fandom.com/wiki/Slimefun_4_Wiki',
-  },
-  {
     'title': 'Custom World Generation',
     'description': 'Tired of vanilla? The world is custom generated with beautiful unique biomes, structures, and terrain features!',
   },
