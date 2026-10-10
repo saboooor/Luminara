@@ -1,19 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "@luminescent/ui";
+@import '@luminescent/ui';
 
 @source "../node_modules/@luminescent/ui-qwik";
 
 .markdown {
-  @import "@luminescent/ui/formatting";
+  @import '@luminescent/ui/formatting';
 }
 
 @theme {
   --lum-border-radius: 1rem;
 
-  --font-display: "Figtree", "sans-serif";
+  --font-display: 'Figtree', 'sans-serif';
 
   --color-gray-50: oklch(98.5% 0.01 0);
   --color-gray-100: oklch(96% 0.013 10.44);
@@ -32,7 +32,7 @@
   --color-lum-card-bg: var(--color-gray-500);
   --color-nav-bg: --alpha(oklch(79.66% 0.0957 10.44) / 30%);
   --color-bg: var(--color-gray-950);
-  --lum-depth: 1
+  --lum-depth: 1;
 }
 
 html {

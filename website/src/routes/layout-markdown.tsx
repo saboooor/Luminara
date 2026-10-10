@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <Layout>
       <OnThisPage />
-      <section class="flex flex-col min-h-screen justify-center pt-20 max-w-7xl mx-auto pr-[calc(1/6*100%)] markdown">
+      <section class="markdown mx-auto flex min-h-screen max-w-7xl flex-col justify-center pt-20 pr-[calc(1/6*100%)]">
         <Slot />
       </section>
     </Layout>

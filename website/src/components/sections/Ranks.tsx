@@ -4,26 +4,25 @@ import * as Ranks from '~/components/ranks';
 
 export default component$(() => {
   return (
-    <section class="flex flex-col min-h-screen justify-center pt-20 max-w-6xl mx-auto">
-      <h1 class="flex gap-3 text-2xl font-extrabold items-center my-2">
+    <section class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center pt-20">
+      <h1 class="my-2 flex items-center gap-3 text-2xl font-extrabold">
         <Crown size={32} />
         Ranks
       </h1>
-      <p class="mb-4 border-b border-lum-border/10 pb-4 text-lum-text-secondary">
-        Different ranks are available on Luminara SMP, each with their own unique perks and benefits. Ranks can be obtained by voting for the server on various server listing websites. The more you vote, the higher rank you can achieve, unlocking more perks and benefits along the way.
+      <p class="border-lum-border/10 text-lum-text-secondary mb-4 border-b pb-4">
+        Different ranks are available on Luminara SMP, each with their own
+        unique perks and benefits. Ranks can be obtained by voting for the
+        server on various server listing websites. The more you vote, the higher
+        rank you can achieve, unlocking more perks and benefits along the way.
       </p>
-      <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mb-5">
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.bee width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+      <div class="mb-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.bee class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.bee class="w-12 h-auto" />
+            <Ranks.bee class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Bee
-              </h3>
-              <p class="text-lum-text-secondary">
-                Starter Rank
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Bee</h3>
+              <p class="text-lum-text-secondary">Starter Rank</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -34,17 +33,13 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noenter</p>
           <p class="text-lum-text-secondary">noenterplayer</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.turtle width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.turtle class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.turtle class="w-12 h-auto" />
+            <Ranks.turtle class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Turtle
-              </h3>
-              <p class="text-lum-text-secondary">
-                6 votes
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Turtle</h3>
+              <p class="text-lum-text-secondary">6 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -53,17 +48,13 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">trappeddestination</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.panda width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.panda class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.panda class="w-12 h-auto" />
+            <Ranks.panda class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Panda
-              </h3>
-              <p class="text-lum-text-secondary">
-                18 votes
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Panda</h3>
+              <p class="text-lum-text-secondary">18 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -71,17 +62,15 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">nofluidflow</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.dolphin width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.dolphin class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.dolphin class="w-12 h-auto" />
+            <Ranks.dolphin class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Dolphin
               </h3>
-              <p class="text-lum-text-secondary">
-                36 votes
-              </p>
+              <p class="text-lum-text-secondary">36 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -89,17 +78,13 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/nick</p>
           <p class="text-lum-text-secondary">/hat</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.frog width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.frog class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.frog class="w-12 h-auto" />
+            <Ranks.frog class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Frog
-              </h3>
-              <p class="text-lum-text-secondary">
-                66 votes
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Frog</h3>
+              <p class="text-lum-text-secondary">66 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -109,17 +94,15 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noitemdrop</p>
           <p class="text-lum-text-secondary">nomobspawntype PHANTOM</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.armadillo width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.armadillo class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.armadillo class="w-12 h-auto" />
+            <Ranks.armadillo class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Armadillo
               </h3>
-              <p class="text-lum-text-secondary">
-                100 votes
-              </p>
+              <p class="text-lum-text-secondary">100 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -129,17 +112,15 @@ export default component$(() => {
           <p class="text-lum-text-secondary">entermessage</p>
           <p class="text-lum-text-secondary">noelytra</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.axolotl width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.axolotl class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.axolotl class="w-12 h-auto" />
+            <Ranks.axolotl class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Axolotl
               </h3>
-              <p class="text-lum-text-secondary">
-                200 votes
-              </p>
+              <p class="text-lum-text-secondary">200 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -151,17 +132,15 @@ export default component$(() => {
           <p class="text-lum-text-secondary">playertime</p>
           <p class="text-lum-text-secondary">playerweather</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.mooshroom width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.mooshroom class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.mooshroom class="w-12 h-auto" />
+            <Ranks.mooshroom class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Mooshroom
               </h3>
-              <p class="text-lum-text-secondary">
-                350 votes
-              </p>
+              <p class="text-lum-text-secondary">350 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -172,17 +151,15 @@ export default component$(() => {
           <p class="text-lum-text-secondary">keeplevel</p>
           <p class="text-lum-text-secondary">nohunger</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.glowSquid width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.glowSquid class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.glowSquid class="w-12 h-auto" />
+            <Ranks.glowSquid class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Glow Squid
               </h3>
-              <p class="text-lum-text-secondary">
-                550 votes
-              </p>
+              <p class="text-lum-text-secondary">550 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -195,17 +172,13 @@ export default component$(() => {
           <p class="text-lum-text-secondary">ownerfly</p>
           <p class="text-lum-text-secondary">ownermemberfly (/fly in claims)</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.ocelot width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.ocelot class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.ocelot class="w-12 h-auto" />
+            <Ranks.ocelot class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Ocelot
-              </h3>
-              <p class="text-lum-text-secondary">
-                800 votes
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Ocelot</h3>
+              <p class="text-lum-text-secondary">800 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -214,17 +187,13 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/enderchest</p>
           <p class="text-lum-text-secondary">/condense</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.allay width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.allay class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.allay class="w-12 h-auto" />
+            <Ranks.allay class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Allay
-              </h3>
-              <p class="text-lum-text-secondary">
-                1500 votes
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Allay</h3>
+              <p class="text-lum-text-secondary">1500 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -234,17 +203,15 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/speed</p>
           <p class="text-lum-text-secondary">/stack</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.bee width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.bee class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.sniffer class="w-12 h-auto" />
+            <Ranks.sniffer class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Sniffer
               </h3>
-              <p class="text-lum-text-secondary">
-                2000 votes
-              </p>
+              <p class="text-lum-text-secondary">2000 votes</p>
             </div>
           </div>
           <h4>Perks</h4>
@@ -253,45 +220,37 @@ export default component$(() => {
         </div>
       </div>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.enderDragon width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.enderDragon class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.enderDragon class="w-12 h-auto" />
+            <Ranks.enderDragon class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Ender Dragon
               </h3>
-              <p class="text-lum-text-secondary">
-                $5/mo / $10/qtr / $35/yr
-              </p>
+              <p class="text-lum-text-secondary">$5/mo / $10/qtr / $35/yr</p>
             </div>
           </div>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.wither width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.wither class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.wither class="w-12 h-auto" />
+            <Ranks.wither class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
-                Wither
-              </h3>
-              <p class="text-lum-text-secondary">
-                $7/mo / $16/qtr / $57/yr
-              </p>
+              <h3 class="flex items-center gap-2 text-2xl font-bold">Wither</h3>
+              <p class="text-lum-text-secondary">$7/mo / $16/qtr / $57/yr</p>
             </div>
           </div>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 duration-200! relative overflow-clip">
-          <Ranks.moobloom width={720} height={720} class="absolute w-full h-full inset-0 object-cover -z-1 blur-xl scale-150 saturate-200 opacity-20" />
+        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+          <Ranks.moobloom class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
-            <Ranks.moobloom class="w-12 h-auto" />
+            <Ranks.moobloom class="h-auto w-12" />
             <div>
-              <h3 class="flex items-center gap-2 font-bold text-2xl">
+              <h3 class="flex items-center gap-2 text-2xl font-bold">
                 Moobloom
               </h3>
-              <p class="text-lum-text-secondary">
-                $9/mo / $24/qtr / $80/yr
-              </p>
+              <p class="text-lum-text-secondary">$9/mo / $24/qtr / $80/yr</p>
             </div>
           </div>
         </div>

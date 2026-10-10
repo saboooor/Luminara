@@ -3,30 +3,25 @@ import { Hoverable } from '@luminescent/ui-qwik';
 
 import features from './whylist';
 
-type Feature = {
-  icon: any;
-  title: string;
-  description: string;
-}
-
 export default component$(() => {
   return (
-    <section class="flex flex-col w-full p-10 items-center justify-center">
-      <h3 class="font-extrabold text-5xl my-10">
+    <section class="flex w-full flex-col items-center justify-center p-10">
+      <h3 class="my-10 text-5xl font-extrabold">
         Why <span class="text-red-200">Luminara SMP?</span>
       </h3>
-      <div class="grid lg:grid-cols-3 gap-2 max-w-5xl">
-        {features.map((feature: Feature, i) => (
-          <div key={i} class="lum-card lum-grad-bg-lum-card-bg/30 duration-200! relative"
+      <div class="grid max-w-5xl gap-2 lg:grid-cols-3">
+        {features.map((feature, i) => (
+          <div
+            key={i}
+            class="lum-card lum-grad-bg-lum-card-bg/30 relative duration-200!"
             onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)}
-            onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}>
-            <h3 class="mb-2 flex items-center gap-2 font-bold text-2xl">
+            onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
+          >
+            <h3 class="mb-2 flex items-center gap-2 text-2xl font-bold">
               <feature.icon />
               {feature.title}
             </h3>
-            <p class="text-lum-text-secondary">
-              {feature.description}
-            </p>
+            <p class="text-lum-text-secondary">{feature.description}</p>
           </div>
         ))}
       </div>

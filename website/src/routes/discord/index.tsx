@@ -7,15 +7,18 @@ export const onGet = ({ redirect }: RequestEvent) => {
 };
 
 export default component$(() => {
-  return <>
-    <div class="flex flex-col min-h-svh justify-center items-center pt-20 max-w-7xl mx-auto">
-      <h1 class="text-center">
-        Join our Discord server!
-      </h1>
-      <a href="https://discord.luminaramc.org" class="lum-btn text-2xl lum-btn-p-6 gap-6">
-        <SiDiscord size={36} />
-        Join
-      </a>
-    </div>
-  </>;
+  return (
+    <>
+      <div class="mx-auto flex min-h-svh max-w-7xl flex-col items-center justify-center pt-20">
+        <h1 class="text-center">Join our Discord server!</h1>
+        <a
+          href="https://discord.luminaramc.org"
+          class="lum-btn lum-btn-p-6 gap-6 text-2xl"
+        >
+          <SiDiscord size={36} />
+          Join
+        </a>
+      </div>
+    </>
+  );
 });

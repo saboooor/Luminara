@@ -9,11 +9,14 @@ export default component$(() => {
 
   return (
     <>
-      <Background id="bg" class={{
-        'fixed scale-120 bottom-0 blur-none overflow-hidden -z-10 w-lvw h-lvh object-cover opacity-60': true,
-        'transition-all duration-1000': loc.isNavigating,
-        'blur-xl! bottom-0! opacity-50 scale-150': loc.url.pathname != '/',
-      }} />
+      <Background
+        id="bg"
+        class={{
+          'fixed bottom-0 -z-10 h-lvh w-lvw scale-120 overflow-hidden object-cover opacity-60 blur-none': true,
+          'transition-all duration-1000': loc.isNavigating,
+          'bottom-0! scale-150 opacity-50 blur-xl!': loc.url.pathname != '/',
+        }}
+      />
       <Nav />
       <Slot />
     </>
