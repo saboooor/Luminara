@@ -38,7 +38,6 @@
     "@qwik.dev/core": "2.0.0-rc.2",
     "@qwik.dev/router": "2.0.0-rc.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/eslint": "9.6.1",
     "@types/node": "^26.6.5",
     "@types/sanitize-html": "^2.16.2",
     "discord-api-types": "^0.38.56",

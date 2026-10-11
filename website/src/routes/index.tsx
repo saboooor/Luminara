@@ -33,7 +33,7 @@ export default component$(() => {
     })
   );
 
-  // eslint-disable-next-line qwik/no-use-visible-task
+  // oxlint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(async () => {
     const srvjson = await fetch('https://api.mcsrvstat.us/2/luminaramc.org');
     const srvdata = (await srvjson.json()) as {
@@ -58,7 +58,7 @@ export default component$(() => {
     store.discordonline = discorddata.presence_count;
   });
 
-  // eslint-disable-next-line qwik/no-use-visible-task
+  // oxlint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
     const canvas = document.getElementById('particles') as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
