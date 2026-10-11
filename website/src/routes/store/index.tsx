@@ -1,11 +1,18 @@
 import { billingSuffix, savingsLabel } from '~/lib/package-price';
 import { paidRanks } from '~/components/paid-ranks';
-import { component$, useSignal, useVisibleTask$ } from '@qwik.dev/core';
+import {
+  $,
+  component$,
+  useSignal,
+  useTask$,
+  useVisibleTask$,
+} from '@qwik.dev/core';
 import {
   Form,
   routeAction$,
   routeLoader$,
   useLocation,
+  useNavigate,
   z,
   zod$,
   type DocumentHead,
@@ -15,6 +22,7 @@ import User from 'lucide-icons-qwik/icons/User';
 import Loader2 from 'lucide-icons-qwik/icons/Loader2';
 import Sparkles from 'lucide-icons-qwik/icons/Sparkles';
 import X from 'lucide-icons-qwik/icons/X';
+import Link from 'lucide-icons-qwik/icons/Link';
 import {
   getPackages,
   getCategories,
@@ -153,10 +161,47 @@ export const useCheckout = routeAction$(
   })
 );
 
+const PackageLink = component$<{ pkg: StorePackage }>(({ pkg }) => {
+  const location = useLocation();
+  const status = useSignal('');
+  const link = new URL(location.url.pathname, location.url.origin);
+  link.searchParams.set('category', String(pkg.category.id));
+  link.searchParams.set('package', String(pkg.id));
+
+  return (
+    <div class="flex flex-col gap-2">
+      <button
+        type="button"
+        class="lum-btn lum-bg-transparent w-full"
+        aria-label={`Copy link to ${pkg.name}`}
+        onClick$={async () => {
+          try {
+            await navigator.clipboard.writeText(link.href);
+            status.value = 'Link copied!';
+          } catch {
+            status.value = 'Copy failed. Use the package link below.';
+          }
+        }}
+      >
+        <Link size={18} /> Copy link
+      </button>
+      <p role="status" class="text-lum-text-secondary text-sm">
+        {status.value}
+      </p>
+      {status.value.startsWith('Copy failed') && (
+        <a href={link.href} class="text-sm underline">
+          Package link
+        </a>
+      )}
+    </div>
+  );
+});
+
 export default component$(() => {
   const store = useStorePackages();
   const sidebar = useStoreSidebar();
   const location = useLocation();
+  const navigate = useNavigate();
   const checkout = useCheckout();
   const username = useSignal('');
   const usernameDialog = useSignal<HTMLDialogElement>();
@@ -189,10 +234,34 @@ export default component$(() => {
     { strategy: 'document-ready' }
   );
   const selectedPackage = useSignal<StorePackage | null>(null);
-  const category = useSignal('');
+  useTask$(({ track }) => {
+    const url = new URL(track(() => location.url.href));
+    const packageId = url.searchParams.get('package');
+    selectedPackage.value =
+      store.value.packages.find((pkg) => String(pkg.id) === packageId) ??
+      (String(sidebar.value.featured?.package.id) === packageId
+        ? sidebar.value.featured!.package
+        : null);
+    modalOpen.value = Boolean(selectedPackage.value);
+  });
+  const openPackage = $((pkg: StorePackage) => {
+    const url = new URL(location.url.href);
+    url.searchParams.set('category', String(pkg.category.id));
+    url.searchParams.set('package', String(pkg.id));
+    return navigate(url.href, { scroll: false });
+  });
+  const closePackage = $(() => {
+    modalOpen.value = false;
+    const url = new URL(location.url.href);
+    url.searchParams.delete('package');
+    return navigate(url.href, { scroll: false });
+  });
   const categories = store.value.categories;
   const selectedCategory =
-    categories.find((item) => String(item.id) === category.value) ??
+    categories.find((item) => item.id === selectedPackage.value?.category.id) ??
+    categories.find(
+      (item) => String(item.id) === location.url.searchParams.get('category')
+    ) ??
     categories[0];
 
   return (
@@ -231,6 +300,59 @@ export default component$(() => {
           {checkout.value.message}
         </p>
       )}
+      {categories.length > 0 && (
+        <div class="flex gap-2 *:flex-1" aria-label="Store categories">
+          {categories.map((item) => {
+            const rank = paidRanks.find((rank) => rank.name === item.name);
+            const Icon = rank?.icon;
+            return (
+              <button
+                key={item.id}
+                class={{
+                  'lum-card lum-grad-bg-lum-card-bg/20 relative isolate cursor-pointer overflow-clip text-left duration-200!': true,
+                  'ring-2 ring-pink-400': selectedCategory?.id === item.id,
+                }}
+                aria-pressed={selectedCategory?.id === item.id}
+                onClick$={() => {
+                  const url = new URL(location.url.href);
+                  url.searchParams.set('category', String(item.id));
+                  url.searchParams.delete('package');
+                  return navigate(url.href, { scroll: false });
+                }}
+              >
+                {Icon && (
+                  <Icon class="pointer-events-none absolute inset-0 z-0 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
+                )}
+                {Icon ? (
+                  <Icon class="h-auto w-12 shrink-0" />
+                ) : item.image_url ? (
+                  <img
+                    src={item.image_url}
+                    alt={item.name}
+                    width={56}
+                    height={56}
+                    class="h-auto w-12 shrink-0 object-contain"
+                  />
+                ) : (
+                  <Sparkles size={40} class="shrink-0 text-pink-300" />
+                )}
+                <span class="relative z-10 flex items-center gap-4">
+                  <span class="min-w-0">
+                    <span class="flex items-center gap-2 text-xl font-bold">
+                      {rank?.name ?? item.name}
+                    </span>
+                    {rank && (
+                      <span class="text-lum-text-secondary block">
+                        {rank.pricing}
+                      </span>
+                    )}
+                  </span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      )}
       <div
         class={{
           'grid items-start gap-6': true,
@@ -240,59 +362,6 @@ export default component$(() => {
         }}
       >
         <div class="flex min-w-0 flex-col gap-6">
-          {categories.length > 0 && (
-            <div
-              class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3"
-              aria-label="Store categories"
-            >
-              {categories.map((item) => {
-                const rank = paidRanks.find((rank) => rank.name === item.name);
-                const Icon = rank?.icon;
-                return (
-                  <button
-                    key={item.id}
-                    class={{
-                      'lum-card lum-grad-bg-lum-card-bg/20 relative isolate cursor-pointer overflow-clip text-left duration-200!': true,
-                      'ring-2 ring-pink-400': selectedCategory?.id === item.id,
-                    }}
-                    aria-pressed={selectedCategory?.id === item.id}
-                    onClick$={() => {
-                      category.value = String(item.id);
-                    }}
-                  >
-                    {Icon && (
-                      <Icon class="pointer-events-none absolute inset-0 z-0 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
-                    )}
-                    {Icon ? (
-                      <Icon class="h-auto w-12 shrink-0" />
-                    ) : item.image_url ? (
-                      <img
-                        src={item.image_url}
-                        alt={item.name}
-                        width={56}
-                        height={56}
-                        class="h-auto w-12 shrink-0 object-contain"
-                      />
-                    ) : (
-                      <Sparkles size={40} class="shrink-0 text-pink-300" />
-                    )}
-                    <span class="relative z-10 flex items-center gap-4">
-                      <span class="min-w-0">
-                        <span class="flex items-center gap-2 text-xl font-bold">
-                          {rank?.name ?? item.name}
-                        </span>
-                        {rank && (
-                          <span class="text-lum-text-secondary block">
-                            {rank.pricing}
-                          </span>
-                        )}
-                      </span>
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
           {store.value.packages.length === 0 ? (
             <div class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col items-center gap-4 py-12 text-center">
               <Sparkles size={40} />
@@ -324,6 +393,16 @@ export default component$(() => {
                     key={pkg.id}
                     class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col gap-4 overflow-hidden"
                   >
+                    {pkg.image && (
+                      <img
+                        src={pkg.image}
+                        alt={pkg.name}
+                        width={96}
+                        height={96}
+                        class="h-24 w-24 self-center object-contain"
+                        loading="lazy"
+                      />
+                    )}
                     <div>
                       <p class="text-lum-text-secondary text-sm">
                         {pkg.category.name}
@@ -352,13 +431,11 @@ export default component$(() => {
                       type="button"
                       class="lum-btn lum-grad-bg-pink-500/20 mt-auto w-full disabled:cursor-not-allowed disabled:opacity-50"
                       disabled={checkout.isRunning}
-                      onClick$={() => {
-                        selectedPackage.value = pkg;
-                        modalOpen.value = true;
-                      }}
+                      onClick$={() => openPackage(pkg)}
                     >
                       <ShoppingCart size={20} /> Purchase
                     </button>
+                    <PackageLink pkg={pkg} />
                   </article>
                 ))}
             </div>
@@ -384,6 +461,16 @@ export default component$(() => {
                 <h3 class="text-xl font-bold">
                   {sidebar.value.featured.package.name}
                 </h3>
+                {sidebar.value.featured.package.image && (
+                  <img
+                    src={sidebar.value.featured.package.image}
+                    alt={sidebar.value.featured.package.name}
+                    width={96}
+                    height={96}
+                    class="h-24 w-24 self-center object-contain"
+                    loading="lazy"
+                  />
+                )}
                 <div
                   class="store-description text-lum-text-secondary"
                   dangerouslySetInnerHTML={
@@ -414,13 +501,11 @@ export default component$(() => {
                   type="button"
                   class="lum-btn lum-grad-bg-pink-500/20 w-full disabled:opacity-50"
                   disabled={checkout.isRunning}
-                  onClick$={() => {
-                    selectedPackage.value = sidebar.value.featured!.package;
-                    modalOpen.value = true;
-                  }}
+                  onClick$={() => openPackage(sidebar.value.featured!.package)}
                 >
                   <ShoppingCart size={20} /> Purchase
                 </button>
+                <PackageLink pkg={sidebar.value.featured.package} />
               </article>
             )}
             {sidebar.value.recent && (
@@ -496,10 +581,10 @@ export default component$(() => {
         }}
         onCancel$={(event) => {
           event.preventDefault();
-          modalOpen.value = false;
+          void closePackage();
         }}
         onClick$={(event, dialog) => {
-          if (event.target === dialog) modalOpen.value = false;
+          if (event.target === dialog) void closePackage();
         }}
       >
         <div class="lum-card lum-grad-bg-gray-900/95 rounded-lum relative z-10 max-h-[90vh] w-full max-w-md overflow-y-auto border border-gray-800 p-6 drop-shadow-2xl backdrop-blur-2xl">
@@ -511,9 +596,7 @@ export default component$(() => {
               type="button"
               aria-label="Close checkout"
               class="lum-btn lum-bg-transparent p-2"
-              onClick$={() => {
-                modalOpen.value = false;
-              }}
+              onClick$={closePackage}
             >
               <X size={20} />
             </button>
