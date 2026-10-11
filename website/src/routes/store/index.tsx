@@ -10,7 +10,11 @@ import {
   zod$,
   type DocumentHead,
 } from '@qwik.dev/router';
-import { ShoppingCart, User, Loader2, Sparkles, X } from 'lucide-icons-qwik';
+import ShoppingCart from 'lucide-icons-qwik/icons/ShoppingCart';
+import User from 'lucide-icons-qwik/icons/User';
+import Loader2 from 'lucide-icons-qwik/icons/Loader2';
+import Sparkles from 'lucide-icons-qwik/icons/Sparkles';
+import X from 'lucide-icons-qwik/icons/X';
 import {
   getPackages,
   getCategories,

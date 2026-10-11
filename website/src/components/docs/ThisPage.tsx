@@ -1,6 +1,6 @@
 import { $, component$, useOnDocument, useSignal } from '@qwik.dev/core';
 import { useContent, useDocumentHead } from '@qwik.dev/router';
-import { Clock } from 'lucide-icons-qwik';
+import Clock from 'lucide-icons-qwik/icons/Clock';
 
 const formatDate = (dateStr: unknown): string => {
   if (typeof dateStr !== 'string' || !dateStr) return 'Unknown';

@@ -1,6 +1,6 @@
 import { component$ } from '@qwik.dev/core';
 import { Link } from '@qwik.dev/router';
-import { Crown } from 'lucide-icons-qwik';
+import Crown from 'lucide-icons-qwik/icons/Crown';
 import * as Ranks from '~/components/ranks';
 import { paidRanks } from '~/components/paid-ranks';
 

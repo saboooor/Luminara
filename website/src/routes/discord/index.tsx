@@ -1,6 +1,6 @@
 import { RequestEvent } from '@qwik.dev/router';
 import { component$ } from '@qwik.dev/core';
-import { SiDiscord } from 'simple-icons-qwik';
+import SiDiscord from 'simple-icons-qwik/icons/SiDiscord';
 
 export const onGet = ({ redirect }: RequestEvent) => {
   throw redirect(301, 'https://discord.gg/Mw7fNpdg5N');

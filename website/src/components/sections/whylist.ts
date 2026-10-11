@@ -1,4 +1,6 @@
-import { RefreshCw, Smartphone, Smile } from 'lucide-icons-qwik';
+import RefreshCw from 'lucide-icons-qwik/icons/RefreshCw';
+import Smartphone from 'lucide-icons-qwik/icons/Smartphone';
+import Smile from 'lucide-icons-qwik/icons/Smile';
 
 export default [
   {

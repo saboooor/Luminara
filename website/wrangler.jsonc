@@ -6,7 +6,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "luminaramc-org",
   "main": "./dist/_worker.js",
-  "compatibility_date": "2025-08-15",
+  "compatibility_date": "2026-10-11",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "binding": "ASSET",

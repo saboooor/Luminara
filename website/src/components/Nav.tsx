@@ -1,18 +1,17 @@
 import { component$, Fragment } from '@qwik.dev/core';
 import { Link, useLocation } from '@qwik.dev/router';
 import { Nav, Dropdown } from '@luminescent/ui-qwik';
-import {
-  Crown,
-  Scale,
-  Vote,
-  ShoppingCart,
-  Download,
-  Palette,
-  Loader2,
-  Ellipsis,
-} from 'lucide-icons-qwik';
+import Crown from 'lucide-icons-qwik/icons/Crown';
+import Scale from 'lucide-icons-qwik/icons/Scale';
+import Vote from 'lucide-icons-qwik/icons/Vote';
+import ShoppingCart from 'lucide-icons-qwik/icons/ShoppingCart';
+import Download from 'lucide-icons-qwik/icons/Download';
+import Palette from 'lucide-icons-qwik/icons/Palette';
+import Loader2 from 'lucide-icons-qwik/icons/Loader2';
+import Ellipsis from 'lucide-icons-qwik/icons/Ellipsis';
 import { LuminescentFull } from '@luminescent/icons-qwik';
-import { SiDiscord, SiGithub } from 'simple-icons-qwik';
+import SiDiscord from 'simple-icons-qwik/icons/SiDiscord';
+import SiGithub from 'simple-icons-qwik/icons/SiGithub';
 
 import Logo from '~/images/logo.png?jsx';
 

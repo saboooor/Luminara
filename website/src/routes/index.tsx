@@ -11,8 +11,8 @@ import Why from '~/components/sections/Why';
 import Features from '~/components/sections/Features';
 
 import Logo from '~/images/logo.png?jsx';
-import { Loader2 } from 'lucide-icons-qwik';
-import { SiDiscord } from 'simple-icons-qwik';
+import Loader2 from 'lucide-icons-qwik/icons/Loader2';
+import SiDiscord from 'simple-icons-qwik/icons/SiDiscord';
 import { Purpur } from '@luminescent/icons-qwik';
 
 export default component$(() => {

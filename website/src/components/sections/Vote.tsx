@@ -1,7 +1,9 @@
 import { component$, useStore } from '@qwik.dev/core';
 import { Toggle } from '@luminescent/ui-qwik';
-import { Gauge, Road, Vote } from 'lucide-icons-qwik';
-import { SiCurseforge } from 'simple-icons-qwik';
+import Gauge from 'lucide-icons-qwik/icons/Gauge';
+import Road from 'lucide-icons-qwik/icons/Road';
+import Vote from 'lucide-icons-qwik/icons/Vote';
+import SiCurseforge from 'simple-icons-qwik/icons/SiCurseforge';
 import MCSL from '~/images/vote/mcsl.png?jsx';
 import MCSO from '~/images/vote/mcso.png?jsx';
 import MCMP from '~/images/vote/mcmp.png?jsx';
