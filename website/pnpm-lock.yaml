@@ -218,10 +218,6 @@ overrides:
 importers:
 
   .:
-    dependencies:
-      sanitize-html:
-        specifier: ^2.18.0
-        version: 2.18.0
     devDependencies:
       '@luminescent/icons-qwik':
         specifier: 0.1.2
@@ -271,6 +267,9 @@ importers:
       remark-rehype:
         specifier: 11.1.2
         version: 11.1.2
+      sanitize-html:
+        specifier: ^2.18.0
+        version: 2.18.0
       simple-icons-qwik:
         specifier: 16.19.0-qwik-v2
         version: 16.19.0-qwik-v2

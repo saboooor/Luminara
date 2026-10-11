@@ -39,6 +39,7 @@
     "@qwik.dev/router": "2.0.0-rc.2",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.5",
+    "sanitize-html": "^2.18.0",
     "@types/sanitize-html": "^2.16.2",
     "discord-api-types": "^0.38.56",
     "globals": "^17.13.0",
@@ -57,8 +58,5 @@
     "vite": "catalog:",
     "vite-plus": "catalog:",
     "wrangler": "^4.149.0"
-  },
-  "dependencies": {
-    "sanitize-html": "^2.18.0"
   }
 }
