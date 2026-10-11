@@ -1,6 +1,8 @@
 import { component$ } from '@qwik.dev/core';
+import { Link } from '@qwik.dev/router';
 import { Crown } from 'lucide-icons-qwik';
 import * as Ranks from '~/components/ranks';
+import { paidRanks } from '~/components/paid-ranks';
 
 export default component$(() => {
   return (
@@ -220,40 +222,28 @@ export default component$(() => {
         </div>
       </div>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
-          <Ranks.enderDragon class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
-          <div class="flex items-center gap-4">
-            <Ranks.enderDragon class="h-auto w-12" />
-            <div>
-              <h3 class="flex items-center gap-2 text-2xl font-bold">
-                Ender Dragon
-              </h3>
-              <p class="text-lum-text-secondary">$5/mo / $10/qtr / $35/yr</p>
-            </div>
-          </div>
-        </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
-          <Ranks.wither class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
-          <div class="flex items-center gap-4">
-            <Ranks.wither class="h-auto w-12" />
-            <div>
-              <h3 class="flex items-center gap-2 text-2xl font-bold">Wither</h3>
-              <p class="text-lum-text-secondary">$7/mo / $16/qtr / $57/yr</p>
-            </div>
-          </div>
-        </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
-          <Ranks.moobloom class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
-          <div class="flex items-center gap-4">
-            <Ranks.moobloom class="h-auto w-12" />
-            <div>
-              <h3 class="flex items-center gap-2 text-2xl font-bold">
-                Moobloom
-              </h3>
-              <p class="text-lum-text-secondary">$9/mo / $24/qtr / $80/yr</p>
-            </div>
-          </div>
-        </div>
+        {paidRanks.map((rank) => {
+          const Icon = rank.icon;
+          return (
+            <Link
+              key={rank.name}
+              href="/store"
+              class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!"
+            >
+              <Icon class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
+              <div class="flex items-center gap-4">
+                <Icon class="h-auto w-12" />
+                <div>
+                  <h3 class="flex items-center gap-2 text-2xl font-bold">
+                    {rank.name}
+                  </h3>
+                  <p class="text-lum-text-secondary">{rank.pricing}</p>
+                  <p class="text-lum-text-secondary">Click to learn more, there are too many perks to list here!</p>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

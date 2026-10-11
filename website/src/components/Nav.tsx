@@ -155,12 +155,12 @@ export default component$(() => {
           <Ellipsis size={20} />
           More
         </Fragment>
-        <a
-          href="https://luminara.tebex.io"
+        <Link
+          href="/store"
           class="lum-btn lum-btn-p-1! lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg"
         >
           <ShoppingCart size={20} /> Store
-        </a>
+        </Link>
         <a
           href="https://birdflop.com/resources/rgb"
           class="lum-btn lum-btn-p-1! lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg"
@@ -187,13 +187,13 @@ export default component$(() => {
 export const SocialButtons = component$(() => {
   return (
     <>
-      <a
-        href="https://luminara.tebex.io"
+      <Link
+        href="/store"
         title="Store"
         class="lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg p-2"
       >
         <ShoppingCart size={24} />
-      </a>
+      </Link>
       <a
         href="https://github.com/saboooor/Luminara"
         title="GitHub"
