@@ -84,13 +84,10 @@ export const DocsSidebar = component$<{ sideMenuOpen: Signal<boolean> }>(
     );
 
     return (
-      <aside
-        style={{ '--lum-border-radius': '1.2rem' }}
-        class="lum-card lum-bg-transparent lg:bg-lum-card-bg/50 fixed top-40 left-4 z-40 max-w-[calc(100vw-2rem)] rounded-none border-y-0 border-l-0 px-0 pt-0 pb-0 lg:sticky lg:top-20 lg:left-auto lg:h-[calc(100dvh-5rem)] lg:w-64 lg:px-4 lg:pt-10 lg:backdrop-blur-lg"
-      >
+      <aside class="lg:lum-card lg:lum-grad-bg-gray-900/50 fixed top-40 left-4 z-40 max-w-[calc(100vw-2rem)] px-0 pt-0 pb-0 lg:inset-y-24 lg:top-24 lg:left-12 lg:w-1/6 lg:px-6 lg:pt-20 lg:backdrop-blur-lg">
         <div
           id="docs-sidebar"
-          class="relative flex flex-col lg:h-full lg:gap-4 lg:overflow-y-auto"
+          class="relative flex min-h-0 flex-col lg:h-full lg:gap-4 lg:overflow-y-auto"
         >
           <div class="hidden items-center gap-3 border-b border-gray-700 px-2 py-3 lg:flex">
             <Book />

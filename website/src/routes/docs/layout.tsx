@@ -3,7 +3,7 @@ import { routeLoader$, useLocation } from '@qwik.dev/router';
 import { Breadcrumbs } from '~/components/docs/Breadcrumbs';
 import { DocsSidebar } from '~/components/docs/SideBar';
 import Contributors from '~/components/docs/Contributors';
-import { OnThisPage } from '~/components/docs/DocsThisPage';
+import { OnThisPage } from '~/components/docs/ThisPage';
 
 type MDX = {
   title: string;
@@ -63,7 +63,7 @@ export default component$(() => {
   });
   const title = currentItem ? currentItem[1].title : 'Docs';
   return (
-    <div class="grid min-h-dvh grid-cols-1 items-start gap-6 pt-20 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-8 xl:grid-cols-[16rem_minmax(0,1fr)_16rem]">
+    <div class="min-h-dvh pt-20 lg:pl-[calc(100%/6+3rem)] xl:pr-[calc(100%/6+3rem)]">
       <DocsSidebar sideMenuOpen={sideMenuOpen} />
       <Breadcrumbs sideMenuOpen={sideMenuOpen} />
       <main class="markdown mx-auto w-full max-w-4xl min-w-0 px-4 pt-24 pb-24 sm:px-6">

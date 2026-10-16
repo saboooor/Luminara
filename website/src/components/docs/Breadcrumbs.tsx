@@ -23,7 +23,7 @@ export const Breadcrumbs = component$<{ sideMenuOpen: Signal<boolean> }>(
 
     return (
       <nav
-        class="lum-card lum-grad-bg-gray-900/50 lum-btn-p-2 fixed top-24 left-4 z-50 w-fit max-w-[calc(100vw-2rem)] flex-row items-center gap-1 p-2 text-sm backdrop-blur-lg lg:left-72 lg:max-w-[calc(100vw-24rem)]"
+        class="lum-card lum-grad-bg-gray-900/50 lum-btn-p-2 fixed top-24 left-4 z-50 w-fit max-w-[calc(100vw-2rem)] flex-row items-center gap-1 p-2 text-sm backdrop-blur-lg lg:left-[calc(100%/6+4rem)] lg:max-w-[calc(100vw-24rem)]"
         aria-label="Breadcrumb"
       >
         <button

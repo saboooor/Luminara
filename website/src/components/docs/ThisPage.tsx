@@ -59,7 +59,7 @@ export const OnThisPage = component$(() => {
   );
 
   return (
-    <aside class="lum-card fixed inset-y-24 right-12 z-[40] hidden w-1/6 px-0 pt-14 pb-0 sm:px-6 sm:pt-20 xl:flex">
+    <aside class="lum-card lum-grad-bg-gray-900/50 fixed inset-y-24 right-12 z-[40] hidden w-1/6 px-0 pt-14 pb-0 backdrop-blur-lg sm:px-6 sm:pt-20 xl:flex">
       {contentHeadings.length > 0 ? (
         <>
           <h6 class="border-b border-b-gray-700 py-3">On this page</h6>
