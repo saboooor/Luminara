@@ -1,6 +1,7 @@
 import { component$, Fragment } from '@qwik.dev/core';
 import { Link, useLocation } from '@qwik.dev/router';
 import { Nav, Dropdown } from '@luminescent/ui-qwik';
+import Book from 'lucide-icons-qwik/icons/Book';
 import Crown from 'lucide-icons-qwik/icons/Crown';
 import Scale from 'lucide-icons-qwik/icons/Scale';
 import Vote from 'lucide-icons-qwik/icons/Vote';
@@ -93,6 +94,12 @@ export default component$(() => {
         >
           <Crown size={24} /> Ranks
         </Link>
+        <Link
+          href="/docs/"
+          class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
+        >
+          <Book size={20} /> Docs
+        </Link>
         <a
           href="https://birdflop.com/resources/rgb"
           class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
@@ -159,6 +166,12 @@ export default component$(() => {
           class="lum-btn lum-btn-p-1! lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg"
         >
           <ShoppingCart size={20} /> Store
+        </Link>
+        <Link
+          href="/docs/"
+          class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
+        >
+          <Book size={20} /> Docs
         </Link>
         <a
           href="https://birdflop.com/resources/rgb"
