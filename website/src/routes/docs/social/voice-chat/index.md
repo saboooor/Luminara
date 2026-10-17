@@ -5,6 +5,9 @@ description: 'Set up your microphone and diagnose voice connection problems.'
 keywords: 'voicechat voice-bridge simple voice chat plasmo microphone push to talk audio'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Custom music discs'
+    href: '/docs/social/music-discs/'
 ---
 
 ## Set up a voice client

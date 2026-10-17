@@ -5,6 +5,9 @@ description: 'List the right stack, choose prices, and understand cancellation.'
 keywords: 'best_auction auction ah sell list cancel fee'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Auction deliveries and refunds'
+    href: '/docs/economy/auction-mail/'
 ---
 
 ## Prepare the item

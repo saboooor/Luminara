@@ -5,6 +5,13 @@ description: 'Choose work, inspect paid actions, and track job progression.'
 keywords: 'jobs browse join info stats leave income work'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Leveling your skills'
+    href: '/docs/progression/skills/'
+  - label: 'Buying and running chest shops'
+    href: '/docs/economy/chest-shops/'
+  - label: 'Selling at auction'
+    href: '/docs/economy/auction-selling/'
 ---
 
 ## Choose a job

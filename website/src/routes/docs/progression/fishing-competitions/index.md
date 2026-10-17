@@ -5,6 +5,9 @@ description: 'Read the event objective, track standings, and collect rewards.'
 keywords: 'evenmorefish emf next competition leaderboard contest'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Collecting and selling fish'
+    href: '/docs/progression/fishing/'
 ---
 
 ## Check the next event
@@ -34,4 +37,8 @@ Wait for the result announcement. Keep space for item rewards and follow the dis
 
 If the display is hidden, check `/emf toggle` for your available visibility controls. Hiding a progress display is different from changing whether your catches qualify.
 
+{/* audience:website */}
+
 Related: [collecting and selling fish](/docs/progression/fishing/).
+
+{/* /audience */}

@@ -5,6 +5,11 @@ description: 'Claim a plot and collaborate without confusing it with survival la
 keywords: 'plotsquared plot auto claim trust add remove creative'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Golden-shovel claim'
+    href: '/docs/protection/land-claims/'
+  - label: 'Portals and world travel'
+    href: '/docs/travel/portals-and-worlds/'
 ---
 
 ## Choose a plot

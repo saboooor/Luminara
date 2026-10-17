@@ -5,11 +5,32 @@ description: 'Drive cars, mine with drills, and fly planes.'
 keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Buying a vehicle'
+    href: '/docs/vehicles/buying/'
+  - label: 'Driving and handling'
+    href: '/docs/vehicles/driving/'
+  - label: 'Flying planes'
+    href: '/docs/vehicles/aircraft/'
+  - label: 'Fuel, storage, and damage'
+    href: '/docs/vehicles/maintenance/'
+  - label: 'Refueling vehicles'
+    href: '/docs/vehicles/fuel/'
+  - label: 'Mining with drills'
+    href: '/docs/vehicles/work-vehicles/'
+  - label: 'Vehicle cargo and storage'
+    href: '/docs/vehicles/storage/'
+  - label: 'Vehicle damage and repairs'
+    href: '/docs/vehicles/damage/'
+  - label: 'Vehicle wraps and opening the hood'
+    href: '/docs/vehicles/customization/'
 ---
 
 ## Choose a guide
 
 Drive cars, mine with drills, and fly planes.
+
+{/* audience:website */}
 
 - [Buying a vehicle](/docs/vehicles/buying/) — Visit `/warp dealership`, choose a car, and place your vehicle.
 
@@ -28,3 +49,5 @@ Drive cars, mine with drills, and fly planes.
 - [Vehicle damage and repairs](/docs/vehicles/damage/) — Recognize missing body parts and understand the repair process.
 
 - [Vehicle wraps and opening the hood](/docs/vehicles/customization/) — Change a body material without buying a different tier.
+
+{/* /audience */}

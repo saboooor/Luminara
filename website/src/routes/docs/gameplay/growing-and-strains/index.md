@@ -5,6 +5,9 @@ description: 'Browse varieties, manage harvests, and test automation on a small 
 keywords: 'drugs strains growing farm controller villagers workers bong cart achievements'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Status and tolerance checks'
+    href: '/docs/gameplay/tolerance-and-recovery/'
 ---
 
 ## Browse strains

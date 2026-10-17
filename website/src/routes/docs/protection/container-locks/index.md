@@ -5,6 +5,9 @@ description: 'Protect individual blocks and understand how locks interact with c
 keywords: 'bolt chest lock unlock info door protection'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Buying and running chest shops'
+    href: '/docs/economy/chest-shops/'
 ---
 
 ## Protect a block

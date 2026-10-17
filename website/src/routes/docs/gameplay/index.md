@@ -5,11 +5,34 @@ description: 'Explore survival systems, recovery, and activities.'
 keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'AngelChests'
+    href: '/docs/gameplay/angelchests/'
+  - label: 'Animated tree felling'
+    href: '/docs/gameplay/tree-felling/'
+  - label: 'Choosing PvP'
+    href: '/docs/gameplay/pvp/'
+  - label: 'Custom consumables and effects'
+    href: '/docs/gameplay/consumables/'
+  - label: 'Exploring with the world map'
+    href: '/docs/gameplay/world-map/'
+  - label: 'Growing, strains, and farm workers'
+    href: '/docs/gameplay/growing-and-strains/'
+  - label: 'Ice-boat and kart racing'
+    href: '/docs/gameplay/racing/'
+  - label: 'Joining minigames'
+    href: '/docs/gameplay/minigames/'
+  - label: 'Sleeping and keeping the night'
+    href: '/docs/gameplay/sleep/'
+  - label: 'Tolerance, withdrawal, and recovery'
+    href: '/docs/gameplay/tolerance-and-recovery/'
 ---
 
 ## Choose a guide
 
 Explore survival systems, recovery, and activities.
+
+{/* audience:website */}
 
 - [AngelChests](/docs/gameplay/angelchests/) — Find and recover the belongings stored after your death.
 
@@ -30,3 +53,5 @@ Explore survival systems, recovery, and activities.
 - [Sleeping and keeping the night](/docs/gameplay/sleep/) — Understand night skipping and opt out when you need nighttime.
 
 - [Tolerance, withdrawal, and recovery](/docs/gameplay/tolerance-and-recovery/) — Understand persistent character effects and the in-game recovery routes.
+
+{/* /audience */}

@@ -1,4 +1,14 @@
 export type DocsAudience = 'website' | 'minecraft';
+export type DocsFileAudience = DocsAudience | 'both';
+
+export function docsVisibleTo(
+  value: DocsFileAudience | undefined,
+  target: DocsAudience
+) {
+  if (value !== undefined && !['both', 'website', 'minecraft'].includes(value))
+    throw new Error(`Invalid documentation audience: ${value}`);
+  return value === undefined || value === 'both' || value === target;
+}
 
 /** Standalone MDX comments select an audience; fenced examples remain literal. */
 export function filterDocsAudience(source: string, audience: DocsAudience) {

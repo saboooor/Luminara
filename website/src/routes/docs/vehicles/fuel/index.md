@@ -5,6 +5,11 @@ description: 'Buy fuel, use the service screen, and check your gauge.'
 keywords: 'whips fuel shop gauge service refuel'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Vehicle cargo and storage'
+    href: '/docs/vehicles/storage/'
+  - label: 'Damage and repairs'
+    href: '/docs/vehicles/damage/'
 ---
 
 ## Refuel before travelling
@@ -37,4 +42,8 @@ Stop and dismount before opening the service screen. Keep the vehicle on safe gr
 
 If a fuel item is rejected, preserve it and note its source and description. Do not feed increasingly valuable items into a slot to guess what works. The shop's current offer and the service interface are the reference for supported fuel.
 
+{/* audience:website */}
+
 Related: [vehicle storage](/docs/vehicles/storage/) and [damage and repairs](/docs/vehicles/damage/).
+
+{/* /audience */}

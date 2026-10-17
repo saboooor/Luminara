@@ -5,6 +5,9 @@ description: 'Grant the access a friend needs and revoke it when plans change.'
 keywords: 'griefprevention trust accesstrust containertrust permissiontrust untrust'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Locking containers and doors'
+    href: '/docs/protection/container-locks/'
 ---
 
 ## Choose the right access

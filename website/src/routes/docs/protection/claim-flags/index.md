@@ -5,6 +5,9 @@ description: 'Inspect extra claim rules without accidentally opening your base.'
 keywords: 'gpflags flags claim settings messages rules'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Sharing a claim'
+    href: '/docs/protection/trusting-players/'
 ---
 
 ## What flags change

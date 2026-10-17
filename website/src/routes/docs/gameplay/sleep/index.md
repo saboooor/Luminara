@@ -5,6 +5,11 @@ description: 'Understand night skipping and opt out when you need nighttime.'
 keywords: 'drsleep preventsleep allowsleep togglesleep night sleeping'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'AngelChest recovery process'
+    href: '/docs/gameplay/angelchests/'
+  - label: 'Tolerance and recovery'
+    href: '/docs/gameplay/tolerance-and-recovery/'
 ---
 
 ## Skip the night

@@ -5,6 +5,9 @@ description: 'Choose visual effects and styles that suit your character.'
 keywords: 'playerparticles pp effect style color cosmetics'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Redeeming tag items'
+    href: '/docs/social/tag-items/'
 ---
 
 ## Open your cosmetics

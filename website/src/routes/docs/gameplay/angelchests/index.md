@@ -5,6 +5,11 @@ description: 'Find and recover the belongings stored after your death.'
 keywords: 'axgraves angelchest angelchests grave death recovery lost items'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Luminara SMP Rules'
+    href: '/docs/rules/'
+  - label: 'Getting help'
+    href: '/docs/getting-started/troubleshooting/'
 ---
 
 When you die, an **AngelChest** stores recoverable belongings at the death location instead of leaving you to chase a pile of scattered items. You have **10 minutes** to recover your belongings. When the chest expires, its remaining items drop into the world rather than staying safely stored.

@@ -5,6 +5,9 @@ description: 'Prepare animal transport and use leads without losing your group.'
 keywords: 'tether telentityx leash lead villager pets mounts'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Buying a vehicle'
+    href: '/docs/vehicles/buying/'
 ---
 
 ## Before teleporting

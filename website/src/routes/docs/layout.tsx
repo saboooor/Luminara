@@ -1,3 +1,7 @@
+import {
+  docsVisibleTo,
+  type DocsAudience,
+} from '~/components/docs/docs-audience';
 import { component$, Slot, useSignal } from '@qwik.dev/core';
 import { routeLoader$, useLocation } from '@qwik.dev/router';
 import { Breadcrumbs } from '~/components/docs/Breadcrumbs';
@@ -11,7 +15,7 @@ import {
 } from '~/components/docs/types';
 export type { MarkdownItems } from '~/components/docs/types';
 
-export const getMarkdownItems = async () => {
+export const getMarkdownItems = async (audience: DocsAudience = 'website') => {
   const rawData = await Promise.all(
     Object.entries(
       import.meta.glob<{ frontmatter?: GuideMetadata }>(
@@ -32,10 +36,12 @@ export const getMarkdownItems = async () => {
   rawData.forEach(([k, v]) => {
     // skip marksdown cheatsheet and extras
     if (k.includes('extras')) return;
-    if (v.frontmatter) {
+    if (v.frontmatter && docsVisibleTo(v.frontmatter.audience, audience)) {
       markdownItems[k] = {
         title: v.frontmatter.title,
+        audience: v.frontmatter.audience,
         icon: v.frontmatter.icon,
+        extra_buttons: v.frontmatter.extra_buttons,
         description: v.frontmatter.description,
         keywords: v.frontmatter.keywords,
         contributors: v.frontmatter.contributors,
@@ -47,7 +53,16 @@ export const getMarkdownItems = async () => {
   return markdownItems;
 };
 
-export const useMarkdownItems = routeLoader$(() => getMarkdownItems());
+export const useMarkdownItems = routeLoader$(async ({ url, error }) => {
+  const metadata = await getMarkdownItems();
+  const path = `${url.pathname.replace(/\/$/, '')}/`;
+  if (!metadata[path]) {
+    const gameMetadata = await getMarkdownItems('minecraft');
+    if (gameMetadata[path]?.audience === 'minecraft')
+      throw error(404, 'Guide not available on the website');
+  }
+  return metadata;
+});
 
 export default component$(() => {
   const sideMenuOpen = useSignal(false);

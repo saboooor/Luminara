@@ -5,6 +5,15 @@ description: 'Check savings, pay another player, and handle physical banknotes.'
 keywords: 'balance bal pay papermoney banknotes economy currency'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Jobs and earning money'
+    href: '/docs/economy/jobs/'
+  - label: 'Collecting and selling fish'
+    href: '/docs/progression/fishing/'
+  - label: 'Buying and running chest shops'
+    href: '/docs/economy/chest-shops/'
+  - label: 'Selling at auction'
+    href: '/docs/economy/auction-selling/'
 ---
 
 ## Your balance

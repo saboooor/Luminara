@@ -5,6 +5,11 @@ description: 'Protect a base, inspect boundaries, and expand without leaving gap
 keywords: 'griefprevention golden shovel claim blocks claimslist abandon resize'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Sharing a claim'
+    href: '/docs/protection/trusting-players/'
+  - label: 'Claim settings and flags'
+    href: '/docs/protection/claim-flags/'
 ---
 
 ## Make a claim

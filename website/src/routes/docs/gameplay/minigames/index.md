@@ -5,6 +5,9 @@ description: 'Use activity lobbies and leave through the intended exit.'
 keywords: 'minigames minigame quit lobby games arena'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Ice-boat and kart racing'
+    href: '/docs/gameplay/racing/'
 ---
 
 ## Start with the activity instructions

@@ -5,6 +5,13 @@ description: 'Save personal destinations and meet friends safely.'
 keywords: 'essentials sethome tpa tpaccept spawn warp'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Claiming land'
+    href: '/docs/protection/land-claims/'
+  - label: 'AngelChest guide'
+    href: '/docs/gameplay/angelchests/'
+  - label: 'Discovering and using waystones'
+    href: '/docs/travel/waystones/'
 ---
 
 ## Save a home

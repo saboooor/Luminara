@@ -5,6 +5,9 @@ description: 'Join an activity, follow the course, and improve your laps.'
 keywords: 'funcysiceboatracing krazykarts race kart boat ice laps checkpoints'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Driving and handling'
+    href: '/docs/vehicles/driving/'
 ---
 
 ## Join a track

@@ -5,6 +5,11 @@ description: 'Carry supplies and keep track of cargo when parking or packing a v
 keywords: 'whips cargo storage trunk service inventory shulker'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Refueling vehicles'
+    href: '/docs/vehicles/fuel/'
+  - label: 'Vehicle damage and repairs'
+    href: '/docs/vehicles/damage/'
 ---
 
 ## Vehicle storage
@@ -27,4 +32,8 @@ For a first test, use an ordinary item and check that it remains after parking, 
 
 Keep separate emergency supplies at home. Vehicle cargo is convenient transport, not a reason to ignore damage, ownership, or the area's rules.
 
+{/* audience:website */}
+
 Related: [refueling](/docs/vehicles/fuel/) and [damage](/docs/vehicles/damage/).
+
+{/* /audience */}

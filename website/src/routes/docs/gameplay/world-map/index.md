@@ -5,6 +5,11 @@ description: 'Use a browser map for orientation without confusing it with land a
 keywords: 'bluemap world map terrain exploration navigation'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Discovering and using waystones'
+    href: '/docs/travel/waystones/'
+  - label: 'Claiming land'
+    href: '/docs/protection/land-claims/'
 ---
 
 ## Read the map

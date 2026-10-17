@@ -5,6 +5,11 @@ description: 'Use poses for social spaces and understand decorative activity dis
 keywords: 'gsit interactionvisualizer sit lay crawl pose crafting displays'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Shelf displays'
+    href: '/docs/building/shelf-displays/'
+  - label: 'Wall art and image maps'
+    href: '/docs/building/images-and-maps/'
 ---
 
 ## Sit or pose

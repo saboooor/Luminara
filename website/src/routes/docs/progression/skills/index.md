@@ -5,6 +5,13 @@ description: 'Earn skill experience through everyday survival and inspect unlock
 keywords: 'auraskills skills farming mining foraging skill xp levels'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Jobs and earning money'
+    href: '/docs/economy/jobs/'
+  - label: 'Stats and passives'
+    href: '/docs/progression/stats-and-passives/'
+  - label: 'Mana and active abilities'
+    href: '/docs/progression/mana-abilities/'
 ---
 
 ## Open your progression menu

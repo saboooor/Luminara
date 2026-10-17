@@ -5,6 +5,9 @@ description: 'Recognize missing body parts and understand the repair process.'
 keywords: 'whips health damage repair missing parts'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Getting help'
+    href: '/docs/getting-started/troubleshooting/'
 ---
 
 ## Health and visible damage

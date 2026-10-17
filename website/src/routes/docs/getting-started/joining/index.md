@@ -1,10 +1,20 @@
 ---
+audience: website
 icon: 'minecraft:item/compass_16'
 title: 'Joining Luminara'
 description: 'Connect, accept the resource pack, and understand Java and Bedrock menus.'
 keywords: 'geyser floodgate java bedrock resource pack connection'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Luminara SMP Rules'
+    href: '/docs/rules/'
+  - label: 'Your first day'
+    href: '/docs/getting-started/first-day/'
+  - label: 'Proximity voice chat'
+    href: '/docs/social/voice-chat/'
+  - label: 'Custom music discs'
+    href: '/docs/social/music-discs/'
 ---
 
 ## Connect

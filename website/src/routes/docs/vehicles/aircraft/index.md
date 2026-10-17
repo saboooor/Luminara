@@ -5,6 +5,9 @@ description: 'Take off, climb, and land a plane safely.'
 keywords: 'whips plane flight takeoff runway pitch landing'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Fuel, storage, and damage'
+    href: '/docs/vehicles/maintenance/'
 ---
 
 ## Take off

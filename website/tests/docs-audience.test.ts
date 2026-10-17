@@ -2,7 +2,10 @@
 import { describe, expect, it } from 'vite-plus/test';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
-import { filterDocsAudience } from '../src/components/docs/docs-audience';
+import {
+  docsVisibleTo,
+  filterDocsAudience,
+} from '../src/components/docs/docs-audience';
 import { remarkDocsAudience } from '../src/components/docs/remark-docs-audience';
 
 const source = `Shared introduction.
@@ -16,6 +19,14 @@ Shared ending.
 `;
 
 describe('documentation audiences', () => {
+  it('defaults guides to both audiences and hides exclusive guides', () => {
+    expect(docsVisibleTo(undefined, 'minecraft')).toBe(true);
+    expect(docsVisibleTo('both', 'website')).toBe(true);
+    expect(docsVisibleTo('website', 'minecraft')).toBe(false);
+    expect(docsVisibleTo('website', 'website')).toBe(true);
+    expect(docsVisibleTo('minecraft', 'website')).toBe(false);
+    expect(docsVisibleTo('minecraft', 'minecraft')).toBe(true);
+  });
   it('has valid audience sections throughout the documentation', () => {
     const files = import.meta.glob<string>(
       '/src/routes/docs/**/index.{md,mdx}',

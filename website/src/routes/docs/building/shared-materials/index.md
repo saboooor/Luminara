@@ -5,6 +5,9 @@ description: 'Use a shared block ledger for a group build.'
 keywords: 'tome riftlink shared group storage invite members echoes'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Tome block storage'
+    href: '/docs/building/block-storage/'
 ---
 
 ## Create or join a group

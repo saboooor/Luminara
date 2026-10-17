@@ -5,6 +5,9 @@ description: 'Understand permanent progression bonuses and where to inspect them
 keywords: 'auraskills stats strength health wisdom luck passive abilities'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Mana and active abilities'
+    href: '/docs/progression/mana-abilities/'
 ---
 
 ## Stats

@@ -5,6 +5,9 @@ description: 'Wear a collectible prefix and a separate emoji suffix.'
 keywords: 'lumitags lumitag prefix suffix emoji collectible redeem tag item'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Removing and recovering tags'
+    href: '/docs/social/tag-returns/'
 ---
 
 Tag items are transferable cosmetics. You can store or trade the item before applying it; renaming an ordinary item does not create a tag reward.

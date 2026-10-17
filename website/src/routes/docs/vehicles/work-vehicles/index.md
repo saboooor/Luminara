@@ -5,6 +5,11 @@ description: 'Use a drill to mine safely and respect land protection.'
 keywords: 'whips drill mining bit work'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Vehicle wraps and opening the hood'
+    href: '/docs/vehicles/customization/'
+  - label: 'Fuel, storage, and damage'
+    href: '/docs/vehicles/maintenance/'
 ---
 
 ## Drills

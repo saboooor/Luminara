@@ -5,6 +5,9 @@ description: 'Show your skin and personalize item labels.'
 keywords: 'hiddenarmor togglearmor simplerename rename skin item names'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Redeeming tag items'
+    href: '/docs/social/tag-items/'
 ---
 
 ## Hide or show armor

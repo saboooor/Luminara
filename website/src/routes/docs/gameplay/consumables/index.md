@@ -5,6 +5,11 @@ description: 'Inspect crafted items and track their active effects in game.'
 keywords: 'flyironsdrugs drugs drugstatus status effects consumables buffs'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Tolerance and recovery'
+    href: '/docs/gameplay/tolerance-and-recovery/'
+  - label: 'Growing and strains'
+    href: '/docs/gameplay/growing-and-strains/'
 ---
 
 Luminara has a fictional consumable system with buffs, drawbacks, and longer-term character effects. All recipes and effects here refer to Minecraft gameplay.

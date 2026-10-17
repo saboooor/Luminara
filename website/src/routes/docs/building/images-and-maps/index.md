@@ -5,6 +5,9 @@ description: 'Turn an image into a map display and plan its size.'
 keywords: 'imageframe image map mural wall art item frames'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Shelves in front of a chest'
+    href: '/docs/building/shelf-displays/'
 ---
 
 ## Plan the wall

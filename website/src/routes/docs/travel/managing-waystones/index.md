@@ -5,6 +5,9 @@ description: 'Rename, recolor, move, and control access to your travel stops.'
 keywords: 'lumistones rename private global recolor owner pickup'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Discovering and using waystones'
+    href: '/docs/travel/waystones/'
 ---
 
 ## Open management

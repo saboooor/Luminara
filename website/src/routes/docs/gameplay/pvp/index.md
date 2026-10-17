@@ -5,6 +5,9 @@ description: 'Check your combat state and agree on fights before starting.'
 keywords: 'pvptoggle pvp combat toggle consent arena'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Luminara SMP Rules'
+    href: '/docs/rules/'
 ---
 
 ## Check your status

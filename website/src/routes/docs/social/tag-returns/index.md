@@ -5,6 +5,9 @@ description: 'Take off a prefix or emoji and claim returned items.'
 keywords: 'lumitags unset claim tag remove return prefix suffix'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Redeeming tag items'
+    href: '/docs/social/tag-items/'
 ---
 
 ## Remove a tag
@@ -29,4 +32,8 @@ Make space and use `/lumitags claim`. Queued returns can also be delivered when 
 
 Very old items applied before ownership tracking was available cannot necessarily be reconstructed. Changes made directly outside the tag system do not follow this return lifecycle. If a tracked return remains missing, report the item and the replacement/removal action you used.
 
+{/* audience:website */}
+
 Related: [redeeming tag items](/docs/social/tag-items/).
+
+{/* /audience */}

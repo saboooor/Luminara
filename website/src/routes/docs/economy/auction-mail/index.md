@@ -5,6 +5,13 @@ description: 'Collect won items, returned listings, and money from your mailbox.
 keywords: 'best_auction ah mailbox refund delivery collect'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Getting help'
+    href: '/docs/getting-started/troubleshooting/'
+  - label: 'Buying and bidding'
+    href: '/docs/economy/auction-buying/'
+  - label: 'Selling at auction'
+    href: '/docs/economy/auction-selling/'
 ---
 
 ## Open your mailbox
@@ -23,4 +30,8 @@ First confirm the auction's state: a live bid is not yet a won item. Check your 
 
 Avoid repeating purchases while investigating. If an entry will not collect, record its details, the listing ID, and the exact message. Include these in a [support report](/docs/getting-started/troubleshooting/) so staff can distinguish a pending auction from a delivery problem.
 
+{/* audience:website */}
+
 Related: [buying and bidding](/docs/economy/auction-buying/) and [selling](/docs/economy/auction-selling/).
+
+{/* /audience */}

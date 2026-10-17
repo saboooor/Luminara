@@ -5,6 +5,9 @@ description: 'Understand destinations, world rules, and separate inventories.'
 keywords: 'advancedportals multiverse perworldinventory worlds portal inventory'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Moving pets and passengers'
+    href: '/docs/travel/pets-and-passengers/'
 ---
 
 ## Use public portals

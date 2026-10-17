@@ -5,6 +5,13 @@ description: 'Show the contents of a chest on shelves placed in front of it.'
 keywords: 'lumiview shelf shelves chest contents display storage'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Buying and running chest shops'
+    href: '/docs/economy/chest-shops/'
+  - label: 'Claiming land'
+    href: '/docs/protection/land-claims/'
+  - label: 'Locking containers and doors'
+    href: '/docs/protection/container-locks/'
 ---
 
 Shelf displays let you see a chest's contents in the world. Place shelves **in front of the chest** to display what is stored inside.

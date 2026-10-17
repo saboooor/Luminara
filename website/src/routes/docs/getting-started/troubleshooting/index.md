@@ -5,6 +5,11 @@ description: 'Diagnose command, menu, purchase, and missing-item problems.'
 keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Auction deliveries and refunds'
+    href: '/docs/economy/auction-mail/'
+  - label: 'Removing and recovering tags'
+    href: '/docs/social/tag-returns/'
 ---
 
 ## A command does not work

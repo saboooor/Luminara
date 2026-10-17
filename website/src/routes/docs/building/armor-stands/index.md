@@ -5,6 +5,9 @@ description: 'Plan poses and equipment while keeping displays protected.'
 keywords: 'armorstandeditor pose armor stand decoration equipment'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Vehicle wraps and opening the hood'
+    href: '/docs/vehicles/customization/'
 ---
 
 ## Set up your display

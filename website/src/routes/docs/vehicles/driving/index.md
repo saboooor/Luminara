@@ -5,6 +5,9 @@ description: 'Use the movement controls and take corners at an appropriate speed
 keywords: 'whips controls wasd brake steering reverse pickup parking hud speedometer'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Fuel and maintenance'
+    href: '/docs/vehicles/maintenance/'
 ---
 
 ## Basic controls

@@ -5,6 +5,9 @@ description: 'Carry a single-use route back to a discovered destination.'
 keywords: 'lumistones scroll recipe paper exploration return'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Discovering waystones'
+    href: '/docs/travel/waystones/'
 ---
 
 ## Craft a scroll
@@ -33,4 +36,8 @@ If it will not work, close other screens, dismount, stop gliding, and check that
 
 Bring a scroll before a long expedition, but leave room at your home destination too. A completely blocked waystone cannot become safe just because you are using a scroll.
 
+{/* audience:website */}
+
 Related: [discovering waystones](/docs/travel/waystones/).
+
+{/* /audience */}

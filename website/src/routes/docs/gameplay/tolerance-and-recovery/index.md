@@ -5,6 +5,11 @@ description: 'Understand persistent character effects and the in-game recovery r
 keywords: 'drugs tolerance addiction withdrawal overdose cure recovery cbd sleep'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Custom consumables'
+    href: '/docs/gameplay/consumables/'
+  - label: 'Getting help'
+    href: '/docs/getting-started/troubleshooting/'
 ---
 
 ## Tolerance is separate from the active effect

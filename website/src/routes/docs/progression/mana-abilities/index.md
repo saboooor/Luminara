@@ -5,6 +5,9 @@ description: 'Ready an ability, trigger its effect, and manage cooldowns.'
 keywords: 'auraskills mana ability replenish speed mine terraform charged shot'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Animated tree felling'
+    href: '/docs/gameplay/tree-felling/'
 ---
 
 ## Before activating

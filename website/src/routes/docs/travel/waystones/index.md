@@ -5,6 +5,13 @@ description: 'Activate destinations, choose a route, and complete a safe telepor
 keywords: 'lumistones ls teleport discovery xp cost'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Warp scrolls'
+    href: '/docs/travel/warp-scrolls/'
+  - label: 'Craft and place a waystone'
+    href: '/docs/travel/placing-waystones/'
+  - label: 'Manage your own stone'
+    href: '/docs/travel/managing-waystones/'
 ---
 
 Waystones are physical monuments that form a travel network. Finding one is only the first step: **right-click its wall anchor to discover it for your character**.
@@ -34,4 +41,8 @@ Carry a [warp scroll](/docs/travel/warp-scrolls/). Command travel from anywhere 
 
 You may not have activated it, its owner may have made it private, or travel between its world and yours may be unavailable. A natural waystone is discovered by clicking it too; passing a structure does not activate every stone inside.
 
+{/* audience:website */}
+
 Next: [craft and place a waystone](/docs/travel/placing-waystones/) or [manage your own stone](/docs/travel/managing-waystones/).
+
+{/* /audience */}

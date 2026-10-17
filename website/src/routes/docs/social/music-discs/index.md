@@ -5,6 +5,9 @@ description: 'Find a track, burn a disc, and troubleshoot playback.'
 keywords: 'pv-addon-discs disc burn search erase jukebox custom audio music'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Getting help'
+    href: '/docs/getting-started/troubleshooting/'
 ---
 
 ## Prepare your client and disc

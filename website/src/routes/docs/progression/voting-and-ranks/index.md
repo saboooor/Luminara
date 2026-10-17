@@ -5,6 +5,9 @@ description: 'Vote using the correct name and find the current rank benefits.'
 keywords: 'votingplugin votifier tebex ranks votes rewards store'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Redemption guide'
+    href: '/docs/social/tag-items/'
 ---
 
 ## Vote for Luminara

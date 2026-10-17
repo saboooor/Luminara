@@ -5,6 +5,9 @@ description: 'Chop natural trees, manage axe durability, and stay clear of falli
 keywords: 'lumitimber timber toggle axe natural tree durability replant falling danger'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Leveling your skills'
+    href: '/docs/progression/skills/'
 ---
 
 ## Fell a tree

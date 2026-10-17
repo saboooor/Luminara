@@ -5,6 +5,9 @@ description: 'Use Pages and Echoes to carry materials beyond your ordinary inven
 keywords: 'tomeofechoes tome echoes pages rift storage blocks autodeposit placement'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Shared Riftlinks'
+    href: '/docs/building/shared-materials/'
 ---
 
 ## Open the Tome

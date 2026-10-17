@@ -5,6 +5,9 @@ description: 'Build a travel stop with room for its monument and landing area.'
 keywords: 'lumistones recipe crafting obsidian spacing'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Waystone privacy and appearance'
+    href: '/docs/travel/managing-waystones/'
 ---
 
 ## Craft the item

@@ -5,6 +5,17 @@ description: 'Visit the dealership, choose a car, and place your vehicle.'
 keywords: 'whips dealership showroom buy car drill plane models tiers'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Driving and handling'
+    href: '/docs/vehicles/driving/'
+  - label: 'Flying planes'
+    href: '/docs/vehicles/aircraft/'
+  - label: 'Fuel, storage, and damage'
+    href: '/docs/vehicles/maintenance/'
+  - label: 'Wraps and body materials'
+    href: '/docs/vehicles/customization/'
+  - label: 'Mining with drills'
+    href: '/docs/vehicles/work-vehicles/'
 ---
 
 ## Pick the right vehicle
@@ -29,8 +40,12 @@ Right-click your placed vehicle to mount. Ownership and model restrictions still
 
 ## Choose your next guide
 
+{/* audience:website */}
+
 - [Driving and handling](/docs/vehicles/driving/)
 - [Flying planes](/docs/vehicles/aircraft/)
 - [Fuel, storage, and damage](/docs/vehicles/maintenance/)
 - [Wraps and body materials](/docs/vehicles/customization/)
 - [Mining with drills](/docs/vehicles/work-vehicles/)
+
+{/* /audience */}

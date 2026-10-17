@@ -5,11 +5,30 @@ description: 'Chat, listen, pose, and personalize your character.'
 keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Armor visibility and item names'
+    href: '/docs/social/armor-and-item-names/'
+  - label: 'Chat, item previews, and Discord'
+    href: '/docs/social/chat-and-discord/'
+  - label: 'Custom music discs'
+    href: '/docs/social/music-discs/'
+  - label: 'Personal particles'
+    href: '/docs/social/particles/'
+  - label: 'Proximity voice chat'
+    href: '/docs/social/voice-chat/'
+  - label: 'Redeeming tag items'
+    href: '/docs/social/tag-items/'
+  - label: 'Removing and recovering tags'
+    href: '/docs/social/tag-returns/'
+  - label: 'Sitting, posing, and visible interactions'
+    href: '/docs/social/world-interactions/'
 ---
 
 ## Choose a guide
 
 Chat, listen, pose, and personalize your character.
+
+{/* audience:website */}
 
 - [Armor visibility and item names](/docs/social/armor-and-item-names/) — Show your skin and personalize item labels.
 
@@ -26,3 +45,5 @@ Chat, listen, pose, and personalize your character.
 - [Removing and recovering tags](/docs/social/tag-returns/) — Take off a prefix or emoji and claim returned items.
 
 - [Sitting, posing, and visible interactions](/docs/social/world-interactions/) — Use poses for social spaces and understand decorative activity displays.
+
+{/* /audience */}

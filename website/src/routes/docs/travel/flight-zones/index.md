@@ -5,6 +5,11 @@ description: 'Use area-based flight and land safely before leaving.'
 keywords: 'lumistones flight fly zone boundary'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Discovering and using waystones'
+    href: '/docs/travel/waystones/'
+  - label: 'Flying planes'
+    href: '/docs/vehicles/aircraft/'
 ---
 
 ## Enter a flight area

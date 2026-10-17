@@ -5,6 +5,9 @@ description: 'Share item information and stay connected to the community.'
 keywords: 'discordsrv interactivechat item inventory ender previews chat discord'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
+extra_buttons:
+  - label: 'Proximity voice chat'
+    href: '/docs/social/voice-chat/'
 ---
 
 ## Chat clearly
