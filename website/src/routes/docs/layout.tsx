@@ -5,25 +5,18 @@ import { DocsSidebar } from '~/components/docs/SideBar';
 import Contributors from '~/components/docs/Contributors';
 import { OnThisPage } from '~/components/docs/ThisPage';
 
-type MDX = {
-  title: string;
-  contributors?: string[];
-  created_at?: string;
-  updated_at?: string;
-};
-
-export type MarkdownItems = Record<string, MDX>;
-
-export const menuItemPriority: {
-  [key: string]: number;
-} = {
-  'hello :3': 1,
-};
+import {
+  type MarkdownItems,
+  type GuideMetadata,
+} from '~/components/docs/types';
+export type { MarkdownItems } from '~/components/docs/types';
 
 export const getMarkdownItems = async () => {
   const rawData = await Promise.all(
     Object.entries(
-      import.meta.glob<{ frontmatter?: MDX }>('/src/routes/docs/**/*.{md,mdx}')
+      import.meta.glob<{ frontmatter?: GuideMetadata }>(
+        '/src/routes/docs/**/*.{md,mdx}'
+      )
     ).map(async ([k, v]) => {
       return [
         k
@@ -42,9 +35,11 @@ export const getMarkdownItems = async () => {
     if (v.frontmatter) {
       markdownItems[k] = {
         title: v.frontmatter.title,
+        description: v.frontmatter.description,
+        keywords: v.frontmatter.keywords,
         contributors: v.frontmatter.contributors,
-        created_at: v.frontmatter.created_at,
-        updated_at: v.frontmatter.updated_at,
+        date_created: v.frontmatter.date_created,
+        last_updated: v.frontmatter.last_updated,
       };
     }
   });
@@ -57,7 +52,7 @@ export default component$(() => {
   const sideMenuOpen = useSignal(false);
   const markdownItems = useMarkdownItems();
   const { url } = useLocation();
-  const currentPath = url.pathname;
+  const currentPath = `${url.pathname.replace(/\/$/, '')}/`;
   const currentItem = Object.entries(markdownItems.value).find(([k]) => {
     return currentPath == k;
   });

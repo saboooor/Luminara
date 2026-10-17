@@ -81,3 +81,20 @@ export default [
     learnmore: '/ranks',
   },
 ];
+
+// Keep discovery links on the player handbook rather than external setup pages.
+export const featureGuides: Record<string, string> = {
+  AngelChest: '/docs/gameplay/angelchests/',
+  ChestShop: '/docs/economy/chest-shops/',
+  'Teleportable Mobs': '/docs/travel/pets-and-passengers/',
+  'Discord Server': '/docs/social/chat-and-discord/',
+  'Sit Anywhere': '/docs/social/world-interactions/',
+  Claims: '/docs/protection/land-claims/',
+  Jobs: '/docs/economy/jobs/',
+  DrSleep: '/docs/gameplay/sleep/',
+  AuraSkills: '/docs/progression/skills/',
+  'Custom World Generation': '/docs/gameplay/world-map/',
+  EvenMoreFish: '/docs/progression/fishing/',
+  'Custom Music Discs': '/docs/social/music-discs/',
+  'Voting Perks and Ranks': '/docs/progression/voting-and-ranks/',
+};

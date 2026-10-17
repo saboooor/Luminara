@@ -1,7 +1,8 @@
 import { component$ } from '@qwik.dev/core';
+import { Link } from '@qwik.dev/router';
 import { Hoverable } from '@luminescent/ui-qwik';
 
-import features from './featureslist';
+import features, { featureGuides } from './featureslist';
 
 type Feature = {
   title: string;
@@ -26,6 +27,14 @@ export default component$(() => {
               {feature.title}
             </h3>
             <p class="text-lum-text-secondary">{feature.description}</p>
+            {featureGuides[feature.title] && (
+              <Link
+                href={featureGuides[feature.title]}
+                class="lum-btn lum-bg-transparent mt-3 self-start"
+              >
+                Read the guide
+              </Link>
+            )}
           </div>
         ))}
       </div>
