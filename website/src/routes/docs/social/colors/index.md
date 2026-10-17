@@ -56,7 +56,7 @@ Hex colors use six digits in `RRGGBB` order: red, green, then blue. Each pair ra
 
 ## MiniMessage
 
-In fields supporting MiniMessage, surround text with opening and closing tags:
+You can also use MiniMessage, which is a much easier way to do colors and formatting, surround text with opening and closing tags:
 
 - Color: `<gold>Hello</gold>` or `<#55ffff>Hello</#55ffff>`.
 - Bold: `<bold>Hello</bold>`.
