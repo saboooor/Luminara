@@ -19,7 +19,7 @@ export default component$(() => {
         {features.map((feature: Feature, i) => (
           <div
             key={i}
-            class="lum-card lum-grad-bg-lum-card-bg/30 relative duration-200!"
+            class="lum-card lum-grad-bg-lum-card-bg relative duration-200!"
             onMouseMove$={(e, el) => Hoverable.onMouseMove$(e, el)}
             onMouseLeave$={(e, el) => Hoverable.onMouseLeave$(e, el)}
           >

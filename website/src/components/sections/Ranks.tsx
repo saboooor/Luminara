@@ -18,7 +18,7 @@ export default component$(() => {
         rank you can achieve, unlocking more perks and benefits along the way.
       </p>
       <div class="mb-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.bee class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.bee class="h-auto w-12" />
@@ -35,7 +35,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noenter</p>
           <p class="text-lum-text-secondary">noenterplayer</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.turtle class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.turtle class="h-auto w-12" />
@@ -50,7 +50,7 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">trappeddestination</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.panda class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.panda class="h-auto w-12" />
@@ -64,7 +64,7 @@ export default component$(() => {
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">nofluidflow</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.dolphin class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.dolphin class="h-auto w-12" />
@@ -80,7 +80,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/nick</p>
           <p class="text-lum-text-secondary">/hat</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.frog class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.frog class="h-auto w-12" />
@@ -96,7 +96,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">noitemdrop</p>
           <p class="text-lum-text-secondary">nomobspawntype PHANTOM</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.armadillo class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.armadillo class="h-auto w-12" />
@@ -114,7 +114,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">entermessage</p>
           <p class="text-lum-text-secondary">noelytra</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.axolotl class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.axolotl class="h-auto w-12" />
@@ -134,7 +134,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">playertime</p>
           <p class="text-lum-text-secondary">playerweather</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.mooshroom class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.mooshroom class="h-auto w-12" />
@@ -153,7 +153,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">keeplevel</p>
           <p class="text-lum-text-secondary">nohunger</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.glowSquid class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.glowSquid class="h-auto w-12" />
@@ -174,7 +174,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">ownerfly</p>
           <p class="text-lum-text-secondary">ownermemberfly (/fly in claims)</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.ocelot class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.ocelot class="h-auto w-12" />
@@ -189,7 +189,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/enderchest</p>
           <p class="text-lum-text-secondary">/condense</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.allay class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.allay class="h-auto w-12" />
@@ -205,7 +205,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/speed</p>
           <p class="text-lum-text-secondary">/stack</p>
         </div>
-        <div class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!">
+        <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
           <Ranks.bee class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.sniffer class="h-auto w-12" />
@@ -228,7 +228,7 @@ export default component$(() => {
             <Link
               key={rank.name}
               href="/store"
-              class="lum-card lum-grad-bg-lum-card-bg/20 relative overflow-clip duration-200!"
+              class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!"
             >
               <Icon class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
               <div class="flex items-center gap-4">

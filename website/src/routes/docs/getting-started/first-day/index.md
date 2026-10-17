@@ -8,7 +8,7 @@ last_updated: '2026-10-17'
 
 ## Make a safe starting point
 
-1. Read the [rules](/rules/) and look around the arrival area for destinations and instructions.
+1. Read the [rules](/docs/rules/) and look around the arrival area for destinations and instructions.
 2. Find somewhere you are allowed to build. Existing claims and protected public areas are not free building space.
 3. Build a shelter and save a [home](/docs/travel/homes-and-requests/).
 4. Use a golden shovel to [claim your land](/docs/protection/land-claims/). Check the outline covers your whole build.

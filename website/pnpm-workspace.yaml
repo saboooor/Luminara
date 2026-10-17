@@ -10,6 +10,7 @@ peerDependencyRules:
     vite: '*'
 minimumReleaseAgeExclude:
   - '@types/node@26.6.5'
+  - '@luminescent/ui@7.2.1'
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true

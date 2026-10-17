@@ -20,6 +20,6 @@ If downloads repeatedly fail, note the exact message and ask for help in [Discor
 
 ## Before exploring
 
-Read the [rules](/rules/), then follow [your first day](/docs/getting-started/first-day/). You can play ordinary survival without installing a voice mod. Voice and custom audio have their own client requirements, explained in [voice chat](/docs/social/voice-chat/) and [music discs](/docs/social/music-discs/).
+Read the [rules](/docs/rules/), then follow [your first day](/docs/getting-started/first-day/). You can play ordinary survival without installing a voice mod. Voice and custom audio have their own client requirements, explained in [voice chat](/docs/social/voice-chat/) and [music discs](/docs/social/music-discs/).
 
 When a form or dialog does not appear, close other menus and try again. Do not rapidly repeat a purchase: check your balance and inventory first.

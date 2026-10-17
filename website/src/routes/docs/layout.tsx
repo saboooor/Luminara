@@ -62,7 +62,7 @@ export default component$(() => {
       <DocsSidebar sideMenuOpen={sideMenuOpen} />
       <Breadcrumbs sideMenuOpen={sideMenuOpen} />
       <main class="markdown mx-auto w-full max-w-4xl min-w-0 px-4 pt-24 pb-24 sm:px-6">
-        <article class="min-w-0 wrap-break-word [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24 [&_pre]:max-w-full [&_pre]:overflow-x-auto">
+        <article class="docs-content min-w-0 wrap-break-word [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24 [&_pre]:max-w-full [&_pre]:overflow-x-auto">
           <h1 class="border-b border-gray-700 pb-4 text-center font-bold">
             {title}
           </h1>

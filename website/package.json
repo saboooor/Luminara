@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@luminescent/icons-qwik": "0.1.2",
-    "@luminescent/ui": "^7.2.0",
+    "@luminescent/ui": "^7.2.1",
     "@luminescent/ui-qwik": "7.0.0",
     "@qwik.dev/core": "2.0.0-rc.2",
     "@qwik.dev/router": "2.0.0-rc.2",

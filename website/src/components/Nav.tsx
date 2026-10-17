@@ -34,7 +34,7 @@ export default component$(() => {
         href="/"
         class="lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg px-2 py-1"
       >
-        <Logo class="h-8 w-auto" />
+        <Logo class="h-8 w-auto shrink-0 object-contain" />
         <span
           class={{
             'transition-all': true,
@@ -47,12 +47,21 @@ export default component$(() => {
 
       <Link
         q:slot="end"
-        href="/rules"
+        href="/docs/rules"
         class={{
           'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg hidden sm:flex': true,
         }}
       >
         <Scale size={24} /> Rules
+      </Link>
+      <Link
+        q:slot="end"
+        href="/docs"
+        class={{
+          'lum-btn lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg hidden sm:flex': true,
+        }}
+      >
+        <Book size={24} /> Docs
       </Link>
       <Link
         q:slot="end"
@@ -94,12 +103,6 @@ export default component$(() => {
         >
           <Crown size={24} /> Ranks
         </Link>
-        <Link
-          href="/docs/"
-          class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
-        >
-          <Book size={20} /> Docs
-        </Link>
         <a
           href="https://birdflop.com/resources/rgb"
           class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
@@ -126,10 +129,17 @@ export default component$(() => {
 
       <Link
         q:slot="mobile"
-        href="/rules"
+        href="/docs/rules"
         class="hover:lum-bg-nav-bg! flex-col gap-1! p-1! text-[0.65rem]!"
       >
         <Scale size={20} /> Rules
+      </Link>
+      <Link
+        q:slot="mobile"
+        href="/docs"
+        class="hover:lum-bg-nav-bg! flex-col gap-1! p-1! text-[0.65rem]!"
+      >
+        <Book size={20} /> Docs
       </Link>
       <Link
         q:slot="mobile"
@@ -166,12 +176,6 @@ export default component$(() => {
           class="lum-btn lum-btn-p-1! lum-bg-transparent rounded-lum-2 hover:lum-bg-nav-bg"
         >
           <ShoppingCart size={20} /> Store
-        </Link>
-        <Link
-          href="/docs/"
-          class="lum-btn lum-bg-transparent rounded-lum-1 hover:lum-bg-nav-bg"
-        >
-          <Book size={20} /> Docs
         </Link>
         <a
           href="https://birdflop.com/resources/rgb"

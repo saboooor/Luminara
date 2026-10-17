@@ -1,7 +1,7 @@
 import { component$, Slot } from '@qwik.dev/core';
 import Nav from '~/components/Nav';
 
-import Background from '~/components/backgrounds';
+import Background from '~/images/backgrounds/new.png?w=640;1280;1920;2560;3840&jsx';
 import { useLocation } from '@qwik.dev/router';
 
 export default component$(() => {

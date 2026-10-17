@@ -20,4 +20,4 @@ Agree with the other player before fighting and decide where the fight will happ
 
 Combat settings are not general invulnerability. Environmental hazards, falling, mobs, and feature-specific damage can still matter. A toggle can also have a cooldown or restrictions while you are in an activity.
 
-Read the [rules](/rules/) and follow event instructions. If an interaction damages someone unexpectedly, stop testing it on players and report the location, combat state, and exact action.
+Read the [rules](/docs/rules/) and follow event instructions. If an interaction damages someone unexpectedly, stop testing it on players and report the location, combat state, and exact action.

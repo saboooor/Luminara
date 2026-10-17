@@ -91,12 +91,12 @@ export const DocsSidebar = component$<{ sideMenuOpen: Signal<boolean> }>(
     );
 
     return (
-      <aside class="lg:lum-card lg:lum-grad-bg-gray-900/50 fixed top-40 left-4 z-40 max-w-[calc(100vw-2rem)] px-0 pt-0 pb-0 lg:inset-y-24 lg:top-24 lg:left-12 lg:w-1/6 lg:px-6 lg:pt-20 lg:backdrop-blur-lg">
+      <aside class="lg:lum-card lg:lum-grad-bg-gray-900/50 fixed top-40 left-4 z-40 max-w-[calc(100vw-2rem)] px-0 pt-0 pb-0 lg:inset-y-24 lg:top-24 lg:left-12 lg:w-1/6 lg:px-6 lg:backdrop-blur-lg">
         <div
           id="docs-sidebar"
           class="relative flex min-h-0 flex-col lg:h-full lg:gap-4 lg:overflow-y-auto"
         >
-          <div class="hidden items-center gap-3 border-b border-gray-700 px-2 py-3 lg:flex">
+          <div class="hidden items-center gap-3 border-b border-gray-700 px-2 pb-3 lg:flex">
             <Book />
             <h5 class="flex-1">Documentation</h5>
           </div>

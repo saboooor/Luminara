@@ -287,7 +287,7 @@ export default component$(() => {
         </p>
       )}
       {location.url.searchParams.get('checkout') === 'complete' && (
-        <p role="status" class="lum-card lum-grad-bg-lum-card-bg/20">
+        <p role="status" class="lum-card lum-grad-bg-lum-card-bg">
           Thanks for supporting Luminara! Check your Tebex receipt for payment
           and delivery details.
         </p>
@@ -309,7 +309,7 @@ export default component$(() => {
               <button
                 key={item.id}
                 class={{
-                  'lum-card lum-grad-bg-lum-card-bg/20 relative isolate cursor-pointer overflow-clip text-left duration-200!': true,
+                  'lum-card lum-grad-bg-lum-card-bg relative isolate cursor-pointer overflow-clip text-left duration-200!': true,
                   'ring-2 ring-pink-400': selectedCategory?.id === item.id,
                 }}
                 aria-pressed={selectedCategory?.id === item.id}
@@ -363,7 +363,7 @@ export default component$(() => {
       >
         <div class="flex min-w-0 flex-col gap-6">
           {store.value.packages.length === 0 ? (
-            <div class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col items-center gap-4 py-12 text-center">
+            <div class="lum-card lum-grad-bg-lum-card-bg flex flex-col items-center gap-4 py-12 text-center">
               <Sparkles size={40} />
               <h2 class="text-2xl font-bold">
                 {store.value.unavailable
@@ -391,7 +391,7 @@ export default component$(() => {
                 .map((pkg) => (
                   <article
                     key={pkg.id}
-                    class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col gap-4 overflow-hidden"
+                    class="lum-card lum-grad-bg-lum-card-bg flex flex-col gap-4 overflow-hidden"
                   >
                     {pkg.image && (
                       <img
@@ -454,7 +454,7 @@ export default component$(() => {
             aria-label="Store highlights"
           >
             {sidebar.value.featured && (
-              <article class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col gap-4">
+              <article class="lum-card lum-grad-bg-lum-card-bg flex flex-col gap-4">
                 <h2 class="flex items-center gap-2 text-2xl font-bold">
                   <Sparkles size={24} /> {sidebar.value.featured.header}
                 </h2>
@@ -510,7 +510,7 @@ export default component$(() => {
             )}
             {sidebar.value.recent && (
               <section
-                class="lum-card lum-grad-bg-lum-card-bg/20 flex flex-col gap-4"
+                class="lum-card lum-grad-bg-lum-card-bg flex flex-col gap-4"
                 aria-labelledby="recent-payments-title"
               >
                 <h2 id="recent-payments-title" class="text-2xl font-bold">

@@ -29,7 +29,7 @@
 
   --color-lum-accent: var(--color-red-300);
   --color-lum-border: #dfdfdfaa;
-  --color-lum-card-bg: var(--color-gray-500);
+  --color-lum-card-bg: --alpha(var(--color-gray-500) / 40%);
   --color-nav-bg: --alpha(oklch(79.66% 0.0957 10.44) / 30%);
   --color-bg: var(--color-gray-950);
   --lum-depth: 1;

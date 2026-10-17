@@ -3,38 +3,6 @@ import { ContentMenu, Link } from '@qwik.dev/router';
 import { MarkdownItems } from '~/routes/docs/layout';
 import Accordion, { openItemsContext } from './Accordion';
 
-const DAYS = 24 * 60 * 60 * 1000;
-
-const renderUpdated = (itemHref: string, markdownItems: MarkdownItems) => {
-  const updatedAt = markdownItems[itemHref]?.last_updated;
-
-  if (updatedAt) {
-    const updateDate = new Date(updatedAt);
-    const isUpdated = updateDate.getTime() + 14 * DAYS > new Date().getTime();
-
-    if (isUpdated) {
-      const formattedDate = updateDate.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-      });
-
-      return (
-        <div
-          class="group absolute top-1/2 -left-2.5 h-2 w-2 -translate-y-1/2 rounded-full bg-blue-500"
-          title={`Updated on ${formattedDate}`}
-        >
-          <span class="absolute top-0 left-4 z-50 hidden rounded bg-gray-800 px-2 py-1 text-xs whitespace-nowrap text-white group-hover:block">
-            Updated on {formattedDate}
-          </span>
-        </div>
-      );
-    }
-  }
-
-  return null;
-};
-
 export const MenuItems = component$(
   (props: {
     items?: ContentMenu[];
@@ -151,7 +119,6 @@ export const MenuItems = component$(
                   onClick$={onClick$}
                   aria-current={item.href === pathname ? 'page' : undefined}
                 >
-                  {item.href && renderUpdated(item.href, markdownItems)}
                   <span class="flex-1">{item.text}</span>
                   {item.href === pathname && (
                     <span class="bg-lum-accent m-1 h-2 w-2 rounded-full" />

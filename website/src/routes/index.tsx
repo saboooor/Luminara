@@ -40,14 +40,14 @@ export default component$(() => {
       online: boolean;
       protocol?: number;
       players: { online: number };
-      protocol_name: string;
+      version: string;
     };
     if (!srvdata.online || srvdata.protocol == 1) {
       store.online = false;
     } else {
       store.online = true;
       store.players = srvdata.players.online;
-      store.version = srvdata.protocol_name;
+      store.version = srvdata.version.replace('Cherry Blossom ', '');
     }
     const discordjson = await fetch(
       'https://discord.com/api/guilds/865519986806095902/widget.json'
@@ -178,7 +178,7 @@ export default component$(() => {
                   'animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-600': true,
                 }}
               >
-                <Logo class="h-32 w-auto" />
+                <Logo class="h-auto w-full max-w-[496px] object-contain" />
               </h1>
             </div>
             <div
@@ -206,7 +206,7 @@ export default component$(() => {
                   );
                 });
               }}
-              class="lum-btn xl:lum-btn-p-4 lum-grad-bg-green-500/20 hover:lum-bg-green-300 animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800 text-lg backdrop-blur-sm"
+              class="lum-btn xl:lum-btn-p-4 lum-grad-bg-lum-accent/20 hover:lum-bg-lum-accent animate-in fade-in motion-safe:slide-in-from-top-16 motion-safe:anim-duration-800 text-lg backdrop-blur-sm"
             >
               <Purpur size={36} />
               <span class="flex flex-col gap-1 text-left">
@@ -241,7 +241,7 @@ export default component$(() => {
           </div>
         </div>
       </section>
-      <div class="bg-gray-900/70 mask-[linear-gradient(to_bottom,transparent_0px,black_8rem,black_100%)] pt-32 backdrop-blur-lg">
+      <div class="mask-[linear-gradient(to_bottom,transparent_0px,black_8rem,black_100%)] pt-32 backdrop-blur-xl bg-bg/40">
         <Why />
         <Features />
       </div>

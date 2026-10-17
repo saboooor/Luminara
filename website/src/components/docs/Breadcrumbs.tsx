@@ -55,7 +55,7 @@ export const Breadcrumbs = component$<{ sideMenuOpen: Signal<boolean> }>(
                 class={{
                   'lum-btn rounded-lum-1 min-w-0 text-sm whitespace-normal': true,
                   'lum-bg-transparent': index < breadcrumbs.length - 1,
-                  'lum-grad-bg-blue/30': index === breadcrumbs.length - 1,
+                  'lum-grad-bg-lum-accent/30': index === breadcrumbs.length - 1,
                 }}
               >
                 {crumb.text}

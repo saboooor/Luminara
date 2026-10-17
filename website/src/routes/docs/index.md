@@ -10,7 +10,7 @@ Welcome to Luminara! These guides explain the things you can do as a player, wit
 
 ## Your first session
 
-[Join the server](/docs/getting-started/joining/), read the [rules](/rules/), then follow [your first day](/docs/getting-started/first-day/). Start by protecting your home and setting up a reliable way back before carrying valuables far from spawn.
+[Join the server](/docs/getting-started/joining/), read the [rules](/docs/rules/), then follow [your first day](/docs/getting-started/first-day/). Start by protecting your home and setting up a reliable way back before carrying valuables far from spawn.
 
 ## Find a guide
 
