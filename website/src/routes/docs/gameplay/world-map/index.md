@@ -9,7 +9,17 @@ last_updated: '2026-10-17'
 
 ## Read the map
 
+{/* audience:website */}
+
 The server's web map shows a rendered view of the world. Use the map link shared by Luminara to open it, select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+The server's web map shows a rendered view of the world. The map opens in a web browser outside Minecraft, rather than inside this handbook. Use the map link shared by Luminara to open it, select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
+
+{/* /audience */}
 
 Map visibility can depend on the world and enabled layers. A missing player icon or marker does not prove that the player or location is absent in game.
 

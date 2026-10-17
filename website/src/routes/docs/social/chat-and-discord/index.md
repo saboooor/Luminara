@@ -19,7 +19,17 @@ A preview shares information; it does not transfer the item or give another play
 
 ## Join Discord
 
+{/* audience:website */}
+
 Use the [Discord link](/discord/) for community chat, announcements, and support. Linked game/Discord chat can carry messages beyond the people currently standing near you.
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+Use the [Discord link](https://luminaramc.org/discord/) for community chat, announcements, and support. Linked game/Discord chat can carry messages beyond the people currently standing near you.
+
+{/* /audience */}
 
 If account linking is offered, follow the server's own linking prompt and enter its code only in the intended place. Never send passwords or account login codes in public chat.
 

@@ -29,4 +29,14 @@ Before spending savings, compare [auction listings](/docs/economy/auction-buying
 
 ## Find the community
 
+{/* audience:website */}
+
 Join [Discord](/discord/) for announcements. Try [fishing](/docs/progression/fishing/), a [race](/docs/gameplay/racing/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+Join [Discord](https://luminaramc.org/discord/) for announcements. Try [fishing](/docs/progression/fishing/), a [race](/docs/gameplay/racing/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
+
+{/* /audience */}

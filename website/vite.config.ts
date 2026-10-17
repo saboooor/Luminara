@@ -7,6 +7,7 @@ import { qwikVite } from "@qwik.dev/core/optimizer";
 import { qwikRouter } from "@qwik.dev/router/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { lint, fmt } from "./vite.lint";
+import { remarkDocsAudience } from "./src/components/docs/remark-docs-audience";
 
 import pkg from "./package.json" with { type: "json" };
 
@@ -61,6 +62,7 @@ export default defineConfig({
   },
   plugins: [
     qwikRouter({
+      mdx: { remarkPlugins: [remarkDocsAudience] },
       platform,
     }),
     qwikVite(),

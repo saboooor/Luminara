@@ -9,7 +9,11 @@ last_updated: '2026-10-17'
 
 Welcome to Luminara! These guides explain the things you can do as a player, with practical steps, command examples, and answers for when something does not work.
 
+{/* audience:website */}
+
 <img src="/images/docs/luminara.jpg" alt="Luminara’s pink logo over a lantern-lit Minecraft cavern" width="1200" height="675" decoding="async" />
+
+{/* /audience */}
 
 ## Your first session
 
@@ -33,7 +37,17 @@ Welcome to Luminara! These guides explain the things you can do as a player, wit
 | Talk or play music                 | [Voice chat](/docs/social/voice-chat/) and [music discs](/docs/social/music-discs/)               |
 | Take a break from survival         | [Racing](/docs/gameplay/racing/) and [minigames](/docs/gameplay/minigames/)                       |
 
+{/* audience:website */}
+
 The sidebar groups related guides. Its search matches guide titles, descriptions, and keywords; try “scroll”, “trust”, “fuel”, or “prefix”.
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+Use the search field in the handbook dialog and select Search to find guides by title, description, or keywords. Use Back to return to the previous menu. To follow a guide link mentioned in an article, open Related guides and select its title.
+
+{/* /audience */}
 
 ## Reading commands and menus
 

@@ -1,6 +1,7 @@
 import type { RequestHandler } from '@qwik.dev/router';
 import { getMarkdownItems } from '../../docs/layout';
 import { buildMenu } from '~/components/docs';
+import { filterDocsAudience } from '~/components/docs/docs-audience';
 
 /** Versioned public handbook feed. Markdown is bundled at build time, never read from user paths. */
 export const onGet: RequestHandler = async ({ json, cacheControl }) => {
@@ -21,7 +22,10 @@ export const onGet: RequestHandler = async ({ json, cacheControl }) => {
       {
         path,
         ...entry,
-        markdown: source.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, ''),
+        markdown: filterDocsAudience(
+          source.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, ''),
+          'minecraft'
+        ),
       },
     ];
   });

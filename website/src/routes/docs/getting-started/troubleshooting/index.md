@@ -21,7 +21,17 @@ After a purchase, check your inventory and balance before clicking again. Auctio
 
 ## Report a problem clearly
 
+{/* audience:website */}
+
 Use `/modreq <message>` to submit an in-game help request when available, or use [Discord](/discord/). Stand at the relevant location when filing a location-specific request. Follow `/modreq` and its help output to view your requests and replies. Include:
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+Use `/modreq <message>` to submit an in-game help request when available, or use [Discord](https://luminaramc.org/discord/). Stand at the relevant location when filing a location-specific request. Follow `/modreq` and its help output to view your requests and replies. Include:
+
+{/* /audience */}
 
 - What you tried, the command or item, and the exact message.
 - Your Java/Bedrock edition and Minecraft version.

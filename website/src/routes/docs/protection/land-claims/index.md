@@ -11,7 +11,11 @@ last_updated: '2026-10-17'
 
 Hold a **golden shovel** and right-click two opposite corners of the area you want to protect. Read the result in chat and inspect the outline. Claim blocks limit the area you can reserve; `/claimslist` shows your claims and available allowance.
 
+{/* audience:website */}
+
 <img src="/images/docs/claim-corners.svg" alt="Top-down claim diagram: select opposite corners around both your home and farm with a golden shovel" width="800" height="460" loading="lazy" decoding="async" />
+
+{/* /audience */}
 
 Use a stick to inspect land ownership. Do this before building near someone else's base. A claim cannot overlap an existing claim or an area where claiming is prohibited.
 

@@ -26,6 +26,14 @@ describe('in-game docs API', () => {
     const [status, feed] = json.mock.calls[0];
     expect(status).toBe(200);
     expect(feed.version).toBe(1);
+    const introduction = feed.pages.find(
+      (page: { path: string }) => page.path === '/docs/'
+    ).markdown;
+    expect(introduction).not.toContain('The sidebar');
+    expect(introduction).not.toContain('{/* audience:');
+    expect(introduction).toContain(
+      'Use the search field in the handbook dialog'
+    );
     expect(feed.pages.length).toBeGreaterThan(50);
     expect(feed.menu.length).toBeGreaterThan(5);
     expect(cacheControl).toHaveBeenCalledWith({ public: true, maxAge: 300 });

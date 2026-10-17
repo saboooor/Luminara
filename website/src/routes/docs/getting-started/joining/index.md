@@ -9,7 +9,17 @@ last_updated: '2026-10-17'
 
 ## Connect
 
+{/* audience:website */}
+
 Use the server address **luminaramc.org** shown on the [homepage](/). If your client reports an incompatible version, check the server's current join information rather than assuming every Minecraft version is supported.
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+Use the server address **luminaramc.org** listed on the [website homepage](https://luminaramc.org/). If your client reports an incompatible version, check the server's current join information rather than assuming every Minecraft version is supported.
+
+{/* /audience */}
 
 Java and Bedrock players can play together. Bedrock clients may show forms where Java clients show dialogs or inventory menus. For example, waystone destinations and the auction entrance can look different while offering the same core actions.
 
@@ -17,7 +27,17 @@ Java and Bedrock players can play together. Bedrock clients may show forms where
 
 If the server offers a resource pack, accept it to see the intended custom item textures. On Java, edit the server entry in your multiplayer list and enable server resource packs if you previously declined. Rejoin to retry the download. A missing texture does not automatically mean the item has stopped working.
 
+{/* audience:website */}
+
 If downloads repeatedly fail, note the exact message and ask for help in [Discord](/discord/). Include your edition and version.
+
+{/* /audience */}
+
+{/* audience:minecraft */}
+
+If downloads repeatedly fail, note the exact message and ask for help in [Discord](https://luminaramc.org/discord/). Include your edition and version.
+
+{/* /audience */}
 
 ## Before exploring
 
