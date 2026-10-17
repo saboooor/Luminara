@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-labelledby="title desc"><title id="title">Craft a Vehicle Wrap</title><desc id="desc">Three slimeballs across the top row and six identical full cube blocks filling the remaining rows.</desc>
+<rect width="800" height="460" rx="20" fill="#211b21"/>
+<g font-family="system-ui, sans-serif" fill="#faf4f7" text-anchor="middle">
+<text x="400" y="48" font-size="25" font-weight="700">Craft a Vehicle Wrap</text>
+<rect x="244" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD////J/s6M14J2vm1xrGNXkU9QgElHekI0Uy9iH+u5AAAAAXRSTlMAQObYZgAAAFVJREFUeNpjwAo6OqB0iGsniOYIMXYOnwBiOCobu4IYrUYqxi6VIIaxi4lrJojhbOzqDmK0hYS4pIMYHKkuYeUgxZxl6eVlIAbDzLS0mRCjZ87EajMAwtYVZJQJk8IAAAAASUVORK5CYII=" x="268" y="86" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="294" y="165" font-size="13">Slimeball</text>
+<rect x="350" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD////J/s6M14J2vm1xrGNXkU9QgElHekI0Uy9iH+u5AAAAAXRSTlMAQObYZgAAAFVJREFUeNpjwAo6OqB0iGsniOYIMXYOnwBiOCobu4IYrUYqxi6VIIaxi4lrJojhbOzqDmK0hYS4pIMYHKkuYeUgxZxl6eVlIAbDzLS0mRCjZ87EajMAwtYVZJQJk8IAAAAASUVORK5CYII=" x="374" y="86" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="165" font-size="13">Slimeball</text>
+<rect x="456" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD////J/s6M14J2vm1xrGNXkU9QgElHekI0Uy9iH+u5AAAAAXRSTlMAQObYZgAAAFVJREFUeNpjwAo6OqB0iGsniOYIMXYOnwBiOCobu4IYrUYqxi6VIIaxi4lrJojhbOzqDmK0hYS4pIMYHKkuYeUgxZxl6eVlIAbDzLS0mRCjZ87EajMAwtYVZJQJk8IAAAAASUVORK5CYII=" x="480" y="86" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="506" y="165" font-size="13">Slimeball</text>
+<rect x="244" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="268" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="294" y="271" font-size="13">Chosen block</text>
+<rect x="350" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="374" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="271" font-size="13">Chosen block</text>
+<rect x="456" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="480" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="506" y="271" font-size="13">Chosen block</text>
+<rect x="244" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="268" y="298" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="294" y="377" font-size="13">Chosen block</text>
+<rect x="350" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="374" y="298" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="377" font-size="13">Chosen block</text>
+<rect x="456" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAXklEQVR42gXBMQEAMAwEocqNgNuR8JYLb9uUruCRgLv0dFddBR6bsaF6Ucm2xTNAXddebGur4NVdV1R424xtoMewjW3zTuouUT2wgc2eyhR3XW9TVFR7CsC2PaBsxAdyLn2NNWHIVAAAAABJRU5ErkJggg==" x="480" y="298" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="506" y="377" font-size="13">Chosen block</text>
+<text x="400" y="427" font-size="16" fill="#d0bbc7">Stone illustrates your choice of six identical full cube blocks</text>
+</g></svg>

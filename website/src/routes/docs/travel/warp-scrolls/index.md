@@ -14,11 +14,21 @@ extra_buttons:
 
 The standard recipe is four pieces of paper around one ender pearl:
 
+{/* audience:minecraft */}
+
 ![Empty](minecraft:item/barrier 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')  
 ![Paper](minecraft:item/paper 'sprite-only') | ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only')  
 ![Empty](minecraft:item/barrier 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')
 
 Barrier icons mark empty crafting slots.
+
+{/* /audience */}
+
+{/* audience:website */}
+
+![Warp scroll crafting grid: four paper around a central ender pearl, with empty corners](/images/docs/warp-scroll-recipe.svg)
+
+{/* /audience */}
 
 Check the recipe book if the server recipe changes.
 

@@ -14,15 +14,19 @@ extra_buttons:
 
 The standard recipe uses stone bricks, an ender pearl, and obsidian:
 
+{/* audience:minecraft */}
+
 ![Empty](minecraft:item/barrier 'sprite-only') | ![Stone bricks](minecraft:block/stone_bricks 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')  
 ![Stone bricks](minecraft:block/stone_bricks 'sprite-only') | ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') | ![Stone bricks](minecraft:block/stone_bricks 'sprite-only')  
 ![Obsidian](minecraft:block/obsidian 'sprite-only') | ![Obsidian](minecraft:block/obsidian 'sprite-only') | ![Obsidian](minecraft:block/obsidian 'sprite-only')
 
 Barrier icons mark empty crafting slots.
 
+{/* /audience */}
+
 {/* audience:website */}
 
-<img src="/images/docs/waystone-recipe.svg" alt="Waystone recipe: stone bricks at top middle and either side of an ender pearl, with three obsidian across the bottom; top corners stay empty" width="800" height="460" loading="lazy" decoding="async" />
+![Waystone crafting grid: stone bricks at top middle and either side of the central ender pearl, obsidian across the bottom, and empty top corners](/images/docs/waystone-recipe.svg)
 
 {/* /audience */}
 

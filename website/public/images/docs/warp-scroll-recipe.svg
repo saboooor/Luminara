@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-labelledby="title desc"><title id="title">Craft a warp scroll</title><desc id="desc">Paper at top middle, middle left, middle right, and bottom middle; an ender pearl in the center. Corners are empty.</desc>
+<rect width="800" height="460" rx="20" fill="#211b21"/>
+<g font-family="system-ui, sans-serif" fill="#faf4f7" text-anchor="middle">
+<text x="400" y="48" font-size="25" font-weight="700">Craft a warp scroll</text>
+<rect x="244" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<text x="294" y="135" font-size="13">Empty</text>
+<rect x="350" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAFVBMVEUAAACurq7W1tbp6uv8/PLBwcGHh4cmBvGHAAAAAXRSTlMAQObYZgAAAEZJREFUeNqVjzkSgDAMA3U4+v+TGQJMHCrYTrtujB+Qr21xy6oyW64TZeULZm65bsRsuzwv8hgrQDNOgGU8gkU0EnSS7z8eqkoBXX1zFmAAAAAASUVORK5CYII=" x="374" y="86" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="165" font-size="13">Paper</text>
+<rect x="456" y="78" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<text x="506" y="135" font-size="13">Empty</text>
+<rect x="244" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAFVBMVEUAAACurq7W1tbp6uv8/PLBwcGHh4cmBvGHAAAAAXRSTlMAQObYZgAAAEZJREFUeNqVjzkSgDAMA3U4+v+TGQJMHCrYTrtujB+Qr21xy6oyW64TZeULZm65bsRsuzwv8hgrQDNOgGU8gkU0EnSS7z8eqkoBXX1zFmAAAAAASUVORK5CYII=" x="268" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="294" y="271" font-size="13">Paper</text>
+<rect x="350" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAACM9OIszbE0mYglhHQbe2sQXlELTUIMNzAGOTEDJiC5a2thAAAAAXRSTlMAQObYZgAAAFtJREFUeNpjwAo4OqB0swmE1WyS5rIAJGAiVJ7mBWIYas4szwLJOM1aNb0MKLc4HchwAzKWgBhmQAaXe+XMIisGIMOtvFwRpJhhabozUAYktCxtFZACsVYh2wwA2BYa2KT1S0MAAAAASUVORK5CYII=" x="374" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="271" font-size="13">Ender pearl</text>
+<rect x="456" y="184" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAFVBMVEUAAACurq7W1tbp6uv8/PLBwcGHh4cmBvGHAAAAAXRSTlMAQObYZgAAAEZJREFUeNqVjzkSgDAMA3U4+v+TGQJMHCrYTrtujB+Qr21xy6oyW64TZeULZm65bsRsuzwv8hgrQDNOgGU8gkU0EnSS7z8eqkoBXX1zFmAAAAAASUVORK5CYII=" x="480" y="192" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="506" y="271" font-size="13">Paper</text>
+<rect x="244" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<text x="294" y="347" font-size="13">Empty</text>
+<rect x="350" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAFVBMVEUAAACurq7W1tbp6uv8/PLBwcGHh4cmBvGHAAAAAXRSTlMAQObYZgAAAEZJREFUeNqVjzkSgDAMA3U4+v+TGQJMHCrYTrtujB+Qr21xy6oyW64TZeULZm65bsRsuzwv8hgrQDNOgGU8gkU0EnSS7z8eqkoBXX1zFmAAAAAASUVORK5CYII=" x="374" y="298" width="52" height="52" style="image-rendering:pixelated"/>
+<text x="400" y="377" font-size="13">Paper</text>
+<rect x="456" y="290" width="100" height="100" rx="8" fill="#302830" stroke="#8c7183"/>
+<text x="506" y="347" font-size="13">Empty</text>
+<text x="400" y="427" font-size="16" fill="#d0bbc7">4 paper + 1 ender pearl; leave the corners empty</text>
+</g></svg>
