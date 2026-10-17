@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vite-plus/test';
 import { globSync, readFileSync } from 'node:fs';
 
 vi.mock('../src/routes/docs/layout', () => ({
-  getMarkdownItems: async () =>
+  getMarkdownItems: () =>
     Object.fromEntries(
       globSync('src/routes/docs/**/index.md').map((file) => {
         const source = readFileSync(file, 'utf8');
