@@ -6,6 +6,7 @@ type Node = {
   value?: string;
   url?: string;
   alt?: string;
+  title?: string;
   children?: Node[];
   name?: string;
   attributes?: { type: string; name: string; value: string }[];
@@ -17,6 +18,7 @@ function preserveInlineMarkup(node: Node) {
     node.type === 'image' &&
     /^minecraft:(item|block)\/[a-z0-9_]+$/.test(node.url || '')
   ) {
+    const iconOnly = node.title === 'sprite-only';
     const texture = node.url!.slice('minecraft:'.length);
     const label =
       node.alt?.trim() || texture.split('/')[1].replaceAll('_', ' ');
@@ -33,7 +35,12 @@ function preserveInlineMarkup(node: Node) {
             name: 'src',
             value: `https://assets.mcasset.cloud/1.21.10/assets/minecraft/textures/${texture}.png`,
           },
-          { type: 'mdxJsxAttribute', name: 'alt', value: '' },
+          {
+            type: 'mdxJsxAttribute',
+            name: 'alt',
+            value: iconOnly ? label : '',
+          },
+          { type: 'mdxJsxAttribute', name: 'title', value: label },
           { type: 'mdxJsxAttribute', name: 'width', value: '16' },
           { type: 'mdxJsxAttribute', name: 'height', value: '16' },
           { type: 'mdxJsxAttribute', name: 'loading', value: 'lazy' },
@@ -47,6 +54,8 @@ function preserveInlineMarkup(node: Node) {
       },
       { type: 'text', value: ` ${label}` },
     ];
+    if (iconOnly) node.children.pop();
+    delete node.title;
     delete node.url;
     delete node.alt;
   }

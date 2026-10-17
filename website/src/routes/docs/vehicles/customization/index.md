@@ -14,11 +14,11 @@ extra_buttons:
 
 Use three slimeballs in the top row and six **identical full cube blocks** in the remaining two rows:
 
-| Left                                    | Middle                                  | Right                                   |
-| --------------------------------------- | --------------------------------------- | --------------------------------------- |
-| ![Slimeball](minecraft:item/slime_ball) | ![Slimeball](minecraft:item/slime_ball) | ![Slimeball](minecraft:item/slime_ball) |
-| Chosen block                            | Chosen block                            | Chosen block                            |
-| Chosen block                            | Chosen block                            | Chosen block                            |
+![Slimeball](minecraft:item/slime_ball 'sprite-only') | ![Slimeball](minecraft:item/slime_ball 'sprite-only') | ![Slimeball](minecraft:item/slime_ball 'sprite-only')  
+![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only')  
+![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only')
+
+Stone icons represent your chosen full cube block; use six identical blocks.
 
 Right-click your parked vehicle with the wrap to apply its material. In survival, applying consumes one wrap. Only vehicles with a customizable body accept wraps; fixed details keep their own materials.
 
