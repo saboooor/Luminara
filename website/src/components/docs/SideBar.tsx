@@ -1,14 +1,15 @@
 import {
   component$,
   useStore,
+  useSignal,
   $,
   useVisibleTask$,
   useOnDocument,
   type Signal,
 } from '@qwik.dev/core';
-import { type ContentMenu, useLocation } from '@qwik.dev/router';
+import { type ContentMenu, Link, useLocation } from '@qwik.dev/router';
 import { useMarkdownItems } from '~/routes/docs/layout';
-import { buildMenu } from '.';
+import { buildMenu, searchGuides } from '.';
 import { MenuItems } from './Menuitems';
 import Book from 'lucide-icons-qwik/icons/Book';
 import Search from 'lucide-icons-qwik/icons/Search';
@@ -22,6 +23,12 @@ export const DocsSidebar = component$<{ sideMenuOpen: Signal<boolean> }>(
     const { url } = useLocation();
     const markdownItems = useMarkdownItems();
     const menuItems = buildMenu(markdownItems.value);
+    const query = useSignal('');
+    const pathname = `${url.pathname.replace(/\/$/, '')}/`;
+    const searching = query.value.trim().length > 0;
+    const results = searching
+      ? searchGuides(markdownItems.value, query.value)
+      : [];
 
     const saveScrollPosition = $(() => {
       sideMenuOpen.value = false;
@@ -103,16 +110,42 @@ export const DocsSidebar = component$<{ sideMenuOpen: Signal<boolean> }>(
             <div class="flex items-center gap-3">
               <Search size={24} />
               <input
-                type="text"
-                placeholder="Search docs..."
+                type="search"
+                aria-label="Search player guides"
+                placeholder="Search guides..."
+                bind:value={query}
+                aria-controls="docs-search-results"
                 class="lum-input lum-btn-p-1 w-full"
               />
             </div>
 
-            {menuItems.length > 0 ? (
+            {searching ? (
+              <div id="docs-search-results" class="flex flex-col gap-2">
+                <p role="status" class="text-sm text-gray-400">
+                  {results.length
+                    ? `${results.length} guides found`
+                    : 'No guides found. Try travel, claims, fishing, or tags.'}
+                </p>
+                {results.map(([href, item]) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    onClick$={saveScrollPosition}
+                    class="lum-btn lum-bg-transparent flex-col items-start text-left"
+                    aria-current={href === pathname ? 'page' : undefined}
+                  >
+                    <span>{item.title}</span>
+                    <span class="text-xs text-gray-400">
+                      {item.description}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            ) : menuItems.length > 0 ? (
               <MenuItems
+                key={pathname}
                 items={menuItems}
-                pathname={url.pathname}
+                pathname={pathname}
                 markdownItems={markdownItems.value}
                 onClick$={saveScrollPosition}
               />

@@ -6,7 +6,7 @@ import Accordion, { openItemsContext } from './Accordion';
 const DAYS = 24 * 60 * 60 * 1000;
 
 const renderUpdated = (itemHref: string, markdownItems: MarkdownItems) => {
-  const updatedAt = markdownItems[itemHref]?.updated_at;
+  const updatedAt = markdownItems[itemHref]?.last_updated;
 
   if (updatedAt) {
     const updateDate = new Date(updatedAt);
@@ -46,15 +46,17 @@ export const MenuItems = component$(
     const { items, pathname, markdownItems, onClick$ } = props;
     const level = props.level || 0;
 
-    const openItems = useSignal<string[]>([]);
-    useContextProvider(openItemsContext, openItems);
-
     const isActiveOrParent = (item: ContentMenu): boolean => {
       if (item.href === pathname) return true;
       if (item.items)
         return item.items.some((subItem) => isActiveOrParent(subItem));
       return false;
     };
+
+    const openItems = useSignal<string[]>(
+      (items || []).filter(isActiveOrParent).map((item) => item.text || '')
+    );
+    useContextProvider(openItemsContext, openItems);
 
     return (
       <div
@@ -90,6 +92,21 @@ export const MenuItems = component$(
                       'pl-1': level > 0,
                     }}
                   >
+                    {item.href && markdownItems[item.href] && (
+                      <Link
+                        href={item.href}
+                        onClick$={onClick$}
+                        class={{
+                          'lum-btn lum-bg-transparent text-sm': true,
+                          'text-lum-accent!': item.href === pathname,
+                        }}
+                        aria-current={
+                          item.href === pathname ? 'page' : undefined
+                        }
+                      >
+                        Overview
+                      </Link>
+                    )}
                     {item.items && item.items.length > 0 && (
                       <MenuItems
                         items={item.items}
@@ -132,6 +149,7 @@ export const MenuItems = component$(
                     target.__prefetchLink = now;
                   }}
                   onClick$={onClick$}
+                  aria-current={item.href === pathname ? 'page' : undefined}
                 >
                   {item.href && renderUpdated(item.href, markdownItems)}
                   <span class="flex-1">{item.text}</span>
