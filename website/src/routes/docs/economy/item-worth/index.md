@@ -37,7 +37,6 @@ Worth values are separate from prices chosen by players for shops and auctions. 
 | Diorite           | 0.4        |
 | Andesite          | 0.4        |
 | Tuff              | 0.6        |
-| Marble            | 0.6        |
 | Polished granite  | 0.5        |
 | Polished diorite  | 0.5        |
 | Polished andesite | 0.5        |
@@ -68,8 +67,6 @@ Worth values are separate from prices chosen by players for shops and auctions. 
 | Arrow             | 0.0001     |
 | Copper ingot      | 0.15       |
 | Raw copper        | 0.05       |
-
-Marble is preserved from the supplied worth list; it is not a vanilla Minecraft material. Check which custom item, if any, the server associates with that entry.
 
 ## Comparing farm output
 

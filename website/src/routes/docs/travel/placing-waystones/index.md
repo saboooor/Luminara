@@ -14,11 +14,11 @@ extra_buttons:
 
 The standard recipe uses stone bricks, an ender pearl, and obsidian:
 
-| Left         | Middle       | Right        |
-| ------------ | ------------ | ------------ |
-| Empty        | Stone bricks | Empty        |
-| Stone bricks | Ender pearl  | Stone bricks |
-| Obsidian     | Obsidian     | Obsidian     |
+| Left                                          | Middle                                        | Right                                         |
+| --------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| Empty                                         | ![Stone bricks](minecraft:block/stone_bricks) | Empty                                         |
+| ![Stone bricks](minecraft:block/stone_bricks) | ![Ender pearl](minecraft:item/ender_pearl)    | ![Stone bricks](minecraft:block/stone_bricks) |
+| ![Obsidian](minecraft:block/obsidian)         | ![Obsidian](minecraft:block/obsidian)         | ![Obsidian](minecraft:block/obsidian)         |
 
 {/* audience:website */}
 

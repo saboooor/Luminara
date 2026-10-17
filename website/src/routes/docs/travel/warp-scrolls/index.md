@@ -14,11 +14,11 @@ extra_buttons:
 
 The standard recipe is four pieces of paper around one ender pearl:
 
-| Left  | Middle      | Right |
-| ----- | ----------- | ----- |
-| Empty | Paper       | Empty |
-| Paper | Ender pearl | Paper |
-| Empty | Paper       | Empty |
+| Left                           | Middle                                     | Right                          |
+| ------------------------------ | ------------------------------------------ | ------------------------------ |
+| Empty                          | ![Paper](minecraft:item/paper)             | Empty                          |
+| ![Paper](minecraft:item/paper) | ![Ender pearl](minecraft:item/ender_pearl) | ![Paper](minecraft:item/paper) |
+| Empty                          | ![Paper](minecraft:item/paper)             | Empty                          |
 
 Check the recipe book if the server recipe changes.
 

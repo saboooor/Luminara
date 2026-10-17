@@ -4,13 +4,52 @@ import { filterDocsAudience } from './docs-audience';
 type Node = {
   type: string;
   value?: string;
+  url?: string;
+  alt?: string;
   children?: Node[];
   name?: string;
   attributes?: { type: string; name: string; value: string }[];
 };
 
-/** Preserve explicitly styled inline spans when Markdown is reparsed for MDX. */
-function preserveSpans(node: Node) {
+/** Preserve styled spans and resolve Minecraft sprite images for the website. */
+function preserveInlineMarkup(node: Node) {
+  if (
+    node.type === 'image' &&
+    /^minecraft:(item|block)\/[a-z0-9_]+$/.test(node.url || '')
+  ) {
+    const texture = node.url!.slice('minecraft:'.length);
+    const label =
+      node.alt?.trim() || texture.split('/')[1].replaceAll('_', ' ');
+    node.type = 'mdxJsxTextElement';
+    node.name = 'span';
+    node.attributes = [];
+    node.children = [
+      {
+        type: 'mdxJsxTextElement',
+        name: 'img',
+        attributes: [
+          {
+            type: 'mdxJsxAttribute',
+            name: 'src',
+            value: `https://assets.mcasset.cloud/1.21.10/assets/minecraft/textures/${texture}.png`,
+          },
+          { type: 'mdxJsxAttribute', name: 'alt', value: '' },
+          { type: 'mdxJsxAttribute', name: 'width', value: '16' },
+          { type: 'mdxJsxAttribute', name: 'height', value: '16' },
+          { type: 'mdxJsxAttribute', name: 'loading', value: 'lazy' },
+          {
+            type: 'mdxJsxAttribute',
+            name: 'style',
+            value:
+              'display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: -0.125em; image-rendering: pixelated',
+          },
+        ],
+      },
+      { type: 'text', value: ` ${label}` },
+    ];
+    delete node.url;
+    delete node.alt;
+  }
   if (!node.children) return;
   const children: Node[] = [];
   const stack = [children];
@@ -37,7 +76,7 @@ function preserveSpans(node: Node) {
     ) {
       stack.pop();
     } else {
-      preserveSpans(child);
+      preserveInlineMarkup(child);
       stack[stack.length - 1].push(child);
     }
   }
@@ -48,7 +87,7 @@ function preserveSpans(node: Node) {
 export function remarkDocsAudience(this: Processor) {
   return (_tree: unknown, file: { value: unknown }) => {
     const tree = this.parse(filterDocsAudience(String(file.value), 'website'));
-    preserveSpans(tree);
+    preserveInlineMarkup(tree);
     return tree;
   };
 }
