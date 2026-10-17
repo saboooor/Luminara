@@ -16,9 +16,9 @@ The standard recipe is four pieces of paper around one ender pearl:
 
 {/* audience:minecraft */}
 
-![Empty](minecraft:item/barrier 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')  
-![Paper](minecraft:item/paper 'sprite-only') | ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only')  
-![Empty](minecraft:item/barrier 'sprite-only') | ![Paper](minecraft:item/paper 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')
+![Empty](minecraft:item/barrier 'sprite-only') ![Paper](minecraft:item/paper 'sprite-only') ![Empty](minecraft:item/barrier 'sprite-only')  
+![Paper](minecraft:item/paper 'sprite-only') ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') ![Paper](minecraft:item/paper 'sprite-only')  
+![Empty](minecraft:item/barrier 'sprite-only') ![Paper](minecraft:item/paper 'sprite-only') ![Empty](minecraft:item/barrier 'sprite-only')
 
 Barrier icons mark empty crafting slots.
 

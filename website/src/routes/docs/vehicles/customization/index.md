@@ -16,9 +16,9 @@ Use three slimeballs in the top row and six **identical full cube blocks** in th
 
 {/* audience:minecraft */}
 
-![Slimeball](minecraft:item/slime_ball 'sprite-only') | ![Slimeball](minecraft:item/slime_ball 'sprite-only') | ![Slimeball](minecraft:item/slime_ball 'sprite-only')  
-![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only')  
-![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only') | ![Chosen block](minecraft:block/stone 'sprite-only')
+![Slimeball](minecraft:item/slime_ball 'sprite-only') ![Slimeball](minecraft:item/slime_ball 'sprite-only') ![Slimeball](minecraft:item/slime_ball 'sprite-only')  
+![Chosen block](minecraft:block/stone 'sprite-only') ![Chosen block](minecraft:block/stone 'sprite-only') ![Chosen block](minecraft:block/stone 'sprite-only')  
+![Chosen block](minecraft:block/stone 'sprite-only') ![Chosen block](minecraft:block/stone 'sprite-only') ![Chosen block](minecraft:block/stone 'sprite-only')
 
 Stone icons represent your chosen full cube block; use six identical blocks.
 

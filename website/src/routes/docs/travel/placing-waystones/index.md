@@ -16,9 +16,9 @@ The standard recipe uses stone bricks, an ender pearl, and obsidian:
 
 {/* audience:minecraft */}
 
-![Empty](minecraft:item/barrier 'sprite-only') | ![Stone bricks](minecraft:block/stone_bricks 'sprite-only') | ![Empty](minecraft:item/barrier 'sprite-only')  
-![Stone bricks](minecraft:block/stone_bricks 'sprite-only') | ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') | ![Stone bricks](minecraft:block/stone_bricks 'sprite-only')  
-![Obsidian](minecraft:block/obsidian 'sprite-only') | ![Obsidian](minecraft:block/obsidian 'sprite-only') | ![Obsidian](minecraft:block/obsidian 'sprite-only')
+![Empty](minecraft:item/barrier 'sprite-only') ![Stone bricks](minecraft:block/stone_bricks 'sprite-only') ![Empty](minecraft:item/barrier 'sprite-only')  
+![Stone bricks](minecraft:block/stone_bricks 'sprite-only') ![Ender pearl](minecraft:item/ender_pearl 'sprite-only') ![Stone bricks](minecraft:block/stone_bricks 'sprite-only')  
+![Obsidian](minecraft:block/obsidian 'sprite-only') ![Obsidian](minecraft:block/obsidian 'sprite-only') ![Obsidian](minecraft:block/obsidian 'sprite-only')
 
 Barrier icons mark empty crafting slots.
 
