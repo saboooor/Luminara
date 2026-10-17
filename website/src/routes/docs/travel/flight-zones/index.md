@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/feather'
 title: 'Public flight zones'
 description: 'Use area-based flight and land safely before leaving.'
 keywords: 'lumistones flight fly zone boundary'

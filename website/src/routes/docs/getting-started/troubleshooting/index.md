@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/barrier'
 title: 'Getting help'
 description: 'Diagnose command, menu, purchase, and missing-item problems.'
 keywords: ''

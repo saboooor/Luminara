@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/diamond_sword'
 title: 'Choosing PvP'
 description: 'Check your combat state and agree on fights before starting.'
 keywords: 'pvptoggle pvp combat toggle consent arena'

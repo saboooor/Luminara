@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/gold_ingot'
 title: 'Balances and payments'
 description: 'Check savings, pay another player, and handle physical banknotes.'
 keywords: 'balance bal pay papermoney banknotes economy currency'

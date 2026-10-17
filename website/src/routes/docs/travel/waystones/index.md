@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/ender_pearl'
 title: 'Discovering and using waystones'
 description: 'Activate destinations, choose a route, and complete a safe teleport.'
 keywords: 'lumistones ls teleport discovery xp cost'

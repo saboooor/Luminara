@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/name_tag'
 title: 'Armor visibility and item names'
 description: 'Show your skin and personalize item labels.'
 keywords: 'hiddenarmor togglearmor simplerename rename skin item names'

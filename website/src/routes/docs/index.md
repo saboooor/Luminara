@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/book'
 title: 'Player handbook'
 description: 'Learn how to travel, build, trade, progress, and play on Luminara.'
 keywords: ''

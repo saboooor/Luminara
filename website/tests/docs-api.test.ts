@@ -7,9 +7,10 @@ vi.mock('../src/routes/docs/layout', () => ({
       globSync('src/routes/docs/**/index.md').map((file) => {
         const source = readFileSync(file, 'utf8');
         const title = source.match(/^title: ['"]?(.*?)['"]?$/m)?.[1] || 'Guide';
+        const icon = source.match(/^icon: ['"]?(.*?)['"]?$/m)?.[1];
         return [
           file.replace('src/routes', '').replace('index.md', ''),
-          { title },
+          { title, icon },
         ];
       })
     ),
@@ -29,10 +30,16 @@ describe('in-game docs API', () => {
     expect(feed.menu.length).toBeGreaterThan(5);
     expect(cacheControl).toHaveBeenCalledWith({ public: true, maxAge: 300 });
     for (const page of feed.pages) {
+      expect(page.icon).toMatch(/^minecraft:item\/[a-z0-9_]+$/);
       expect(page.path).toMatch(/^\/docs\/(?:[a-z0-9-]+\/)*$/);
       expect(page.markdown).not.toMatch(/^---/);
       expect(page.markdown.trim()).not.toBe('');
     }
+    expect(
+      feed.pages.find(
+        (page: { path: string }) => page.path === '/docs/travel/waystones/'
+      ).icon
+    ).toBe('minecraft:item/ender_pearl');
     expect(
       feed.pages.find(
         (page: { path: string }) => page.path === '/docs/travel/waystones/'

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/coal'
 title: 'Refueling vehicles'
 description: 'Buy fuel, use the service screen, and check your gauge.'
 keywords: 'whips fuel shop gauge service refuel'

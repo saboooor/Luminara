@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/name_tag'
 title: 'Redeeming tag items'
 description: 'Wear a collectible prefix and a separate emoji suffix.'
 keywords: 'lumitags lumitag prefix suffix emoji collectible redeem tag item'

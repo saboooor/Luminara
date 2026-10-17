@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/diamond_pickaxe'
 title: 'Leveling your skills'
 description: 'Earn skill experience through everyday survival and inspect unlocks.'
 keywords: 'auraskills skills farming mining foraging skill xp levels'

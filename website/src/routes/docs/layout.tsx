@@ -35,6 +35,7 @@ export const getMarkdownItems = async () => {
     if (v.frontmatter) {
       markdownItems[k] = {
         title: v.frontmatter.title,
+        icon: v.frontmatter.icon,
         description: v.frontmatter.description,
         keywords: v.frontmatter.keywords,
         contributors: v.frontmatter.contributors,

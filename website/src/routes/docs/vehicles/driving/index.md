@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/carrot_on_a_stick'
 title: 'Driving and handling'
 description: 'Use the movement controls and take corners at an appropriate speed.'
 keywords: 'whips controls wasd brake steering reverse pickup parking hud speedometer'

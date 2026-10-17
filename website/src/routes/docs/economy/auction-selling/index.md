@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/gold_ingot'
 title: 'Selling at auction'
 description: 'List the right stack, choose prices, and understand cancellation.'
 keywords: 'best_auction auction ah sell list cancel fee'

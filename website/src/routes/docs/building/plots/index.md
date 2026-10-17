@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/map'
 title: 'Building plots'
 description: 'Claim a plot and collaborate without confusing it with survival land.'
 keywords: 'plotsquared plot auto claim trust add remove creative'

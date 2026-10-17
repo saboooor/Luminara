@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/iron_pickaxe'
 title: 'Mining with drills'
 description: 'Use a drill to mine safely and respect land protection.'
 keywords: 'whips drill mining bit work'

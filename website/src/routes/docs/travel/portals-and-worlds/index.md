@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/ender_eye'
 title: 'Portals and world travel'
 description: 'Understand destinations, world rules, and separate inventories.'
 keywords: 'advancedportals multiverse perworldinventory worlds portal inventory'

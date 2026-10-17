@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/experience_bottle'
 title: 'Progression'
 description: 'Grow your skills, collect catches, and earn rewards.'
 keywords: ''

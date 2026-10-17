@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/minecart'
 title: 'Vehicles'
 description: 'Drive cars, mine with drills, and fly planes.'
 keywords: ''

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/diamond_sword'
 title: 'Gameplay'
 description: 'Explore survival systems, recovery, and activities.'
 keywords: ''

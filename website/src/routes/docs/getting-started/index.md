@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/wooden_pickaxe'
 title: 'Getting Started'
 description: 'Connect, make your first home, and find help.'
 keywords: ''

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/writable_book'
 title: Luminara SMP Rules
 last_updated: '2025-08-18'
 description: Please note that the staff may have full discretion over all rules and their enforcement. Voice/Private chat is typically unmoderated, if a user is being obnoxious in a voice/private chat, they may be muted.
@@ -7,7 +8,6 @@ description: Please note that the staff may have full discretion over all rules 
 #### Please note that the staff may have full discretion over all rules and their enforcement.
 
 #### Voice/Private chat is typically unmoderated, if a user is being obnoxious in a voice/private chat, they may be muted.
-
 
 ## 1. Grief
 

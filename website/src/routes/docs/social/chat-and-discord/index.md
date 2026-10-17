@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/writable_book'
 title: 'Chat, item previews, and Discord'
 description: 'Share item information and stay connected to the community.'
 keywords: 'discordsrv interactivechat item inventory ender previews chat discord'

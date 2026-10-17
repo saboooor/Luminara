@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/goat_horn'
 title: 'Proximity voice chat'
 description: 'Set up your microphone and diagnose voice connection problems.'
 keywords: 'voicechat voice-bridge simple voice chat plasmo microphone push to talk audio'

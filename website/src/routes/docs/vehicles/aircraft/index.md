@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/elytra'
 title: 'Flying planes'
 description: 'Take off, climb, and land a plane safely.'
 keywords: 'whips plane flight takeoff runway pitch landing'

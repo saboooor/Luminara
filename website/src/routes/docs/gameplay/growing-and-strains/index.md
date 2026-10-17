@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/wheat_seeds'
 title: 'Growing, strains, and farm workers'
 description: 'Browse varieties, manage harvests, and test automation on a small farm.'
 keywords: 'drugs strains growing farm controller villagers workers bong cart achievements'

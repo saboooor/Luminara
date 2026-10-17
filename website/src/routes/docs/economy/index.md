@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/emerald'
 title: 'Economy'
 description: 'Earn money and trade with other players.'
 keywords: ''

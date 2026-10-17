@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/milk_bucket'
 title: 'Tolerance, withdrawal, and recovery'
 description: 'Understand persistent character effects and the in-game recovery routes.'
 keywords: 'drugs tolerance addiction withdrawal overdose cure recovery cbd sleep'

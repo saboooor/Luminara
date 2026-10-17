@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/fishing_rod'
 title: 'Collecting and selling fish'
 description: 'Recognize special catches, use bait, and avoid selling a collection by mistake.'
 keywords: 'evenmorefish emf fishing rarity bait sell shop'

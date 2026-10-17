@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/tripwire_hook'
 title: 'Locking containers and doors'
 description: 'Protect individual blocks and understand how locks interact with claims.'
 keywords: 'bolt chest lock unlock info door protection'

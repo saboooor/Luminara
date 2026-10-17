@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/paper'
 title: 'Warp scrolls'
 description: 'Carry a single-use route back to a discovered destination.'
 keywords: 'lumistones scroll recipe paper exploration return'

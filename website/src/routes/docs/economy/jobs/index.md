@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/iron_pickaxe'
 title: 'Jobs and earning money'
 description: 'Choose work, inspect paid actions, and track job progression.'
 keywords: 'jobs browse join info stats leave income work'

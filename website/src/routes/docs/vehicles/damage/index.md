@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/iron_ingot'
 title: 'Vehicle damage and repairs'
 description: 'Recognize missing body parts and understand the repair process.'
 keywords: 'whips health damage repair missing parts'

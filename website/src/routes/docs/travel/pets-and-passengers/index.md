@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/lead'
 title: 'Moving pets and passengers'
 description: 'Prepare animal transport and use leads without losing your group.'
 keywords: 'tether telentityx leash lead villager pets mounts'

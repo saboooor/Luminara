@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/music_disc_cat'
 title: 'Custom music discs'
 description: 'Find a track, burn a disc, and troubleshoot playback.'
 keywords: 'pv-addon-discs disc burn search erase jukebox custom audio music'

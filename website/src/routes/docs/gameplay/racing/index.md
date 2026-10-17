@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/saddle'
 title: 'Ice-boat and kart racing'
 description: 'Join an activity, follow the course, and improve your laps.'
 keywords: 'funcysiceboatracing krazykarts race kart boat ice laps checkpoints'

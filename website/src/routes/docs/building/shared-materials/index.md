@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/bundle'
 title: 'Sharing materials with Riftlinks'
 description: 'Use a shared block ledger for a group build.'
 keywords: 'tome riftlink shared group storage invite members echoes'

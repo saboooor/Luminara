@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/tropical_fish'
 title: 'Fishing competitions'
 description: 'Read the event objective, track standings, and collect rewards.'
 keywords: 'evenmorefish emf next competition leaderboard contest'

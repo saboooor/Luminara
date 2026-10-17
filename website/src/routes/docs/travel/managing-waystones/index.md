@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/name_tag'
 title: 'Waystone privacy and appearance'
 description: 'Rename, recolor, move, and control access to your travel stops.'
 keywords: 'lumistones rename private global recolor owner pickup'

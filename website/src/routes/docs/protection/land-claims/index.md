@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/golden_shovel'
 title: 'Claiming land'
 description: 'Protect a base, inspect boundaries, and expand without leaving gaps.'
 keywords: 'griefprevention golden shovel claim blocks claimslist abandon resize'

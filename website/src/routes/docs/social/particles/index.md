@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/blaze_powder'
 title: 'Personal particles'
 description: 'Choose visual effects and styles that suit your character.'
 keywords: 'playerparticles pp effect style color cosmetics'

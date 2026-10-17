@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/brick'
 title: 'Storing building blocks in a Tome'
 description: 'Use Pages and Echoes to carry materials beyond your ordinary inventory.'
 keywords: 'tomeofechoes tome echoes pages rift storage blocks autodeposit placement'

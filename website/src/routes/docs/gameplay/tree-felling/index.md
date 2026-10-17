@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/diamond_axe'
 title: 'Animated tree felling'
 description: 'Chop natural trees, manage axe durability, and stay clear of falling trunks.'
 keywords: 'lumitimber timber toggle axe natural tree durability replant falling danger'

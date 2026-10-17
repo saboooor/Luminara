@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/emerald'
 title: 'Sharing a claim'
 description: 'Grant the access a friend needs and revoke it when plans change.'
 keywords: 'griefprevention trust accesstrust containertrust permissiontrust untrust'

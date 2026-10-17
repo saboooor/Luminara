@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/diamond'
 title: 'Buying and bidding at auction'
 description: 'Find listings, compare buyouts, and place a deliberate bid.'
 keywords: 'best_auction auction ah bid buyout search buy'

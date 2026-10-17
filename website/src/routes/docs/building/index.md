@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/brick'
 title: 'Building'
 description: 'Organize materials and bring your builds to life.'
 keywords: ''

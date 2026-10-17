@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/wooden_pickaxe'
 title: 'Your first day'
 description: 'A practical route from your first login to a protected home and steady income.'
 keywords: ''

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/redstone'
 title: 'Claim settings and flags'
 description: 'Inspect extra claim rules without accidentally opening your base.'
 keywords: 'gpflags flags claim settings messages rules'

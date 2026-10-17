@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/amethyst_shard'
 title: 'Mana and active abilities'
 description: 'Ready an ability, trigger its effect, and manage cooldowns.'
 keywords: 'auraskills mana ability replenish speed mine terraform charged shot'

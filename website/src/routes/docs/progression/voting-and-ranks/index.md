@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/nether_star'
 title: 'Voting, ranks, and rewards'
 description: 'Vote using the correct name and find the current rank benefits.'
 keywords: 'votingplugin votifier tebex ranks votes rewards store'

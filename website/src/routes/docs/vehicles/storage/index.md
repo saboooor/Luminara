@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/chest_minecart'
 title: 'Vehicle cargo and storage'
 description: 'Carry supplies and keep track of cargo when parking or packing a vehicle.'
 keywords: 'whips cargo storage trunk service inventory shulker'

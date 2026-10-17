@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/armor_stand'
 title: 'Decorating with armor stands'
 description: 'Plan poses and equipment while keeping displays protected.'
 keywords: 'armorstandeditor pose armor stand decoration equipment'

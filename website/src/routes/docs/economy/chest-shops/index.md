@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/emerald'
 title: 'Buying and running chest shops'
 description: 'Read shop signs, set up stock, and price bundles correctly.'
 keywords: 'chestshop notifier sign buying selling stock B S'

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/book'
 title: 'Stats and passive abilities'
 description: 'Understand permanent progression bonuses and where to inspect them.'
 keywords: 'auraskills stats strength health wisdom luck passive abilities'

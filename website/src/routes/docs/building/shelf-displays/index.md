@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/book'
 title: 'Shelf displays'
 description: 'Show the contents of a chest on shelves placed in front of it.'
 keywords: 'lumiview shelf shelves chest contents display storage'

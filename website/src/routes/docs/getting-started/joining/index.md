@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/compass_16'
 title: 'Joining Luminara'
 description: 'Connect, accept the resource pack, and understand Java and Bedrock menus.'
 keywords: 'geyser floodgate java bedrock resource pack connection'

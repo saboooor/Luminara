@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/painting'
 title: 'Wall art and image maps'
 description: 'Turn an image into a map display and plan its size.'
 keywords: 'imageframe image map mural wall art item frames'

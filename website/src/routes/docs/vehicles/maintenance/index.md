@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/iron_ingot'
 title: 'Fuel, storage, and damage'
 description: 'Keep vehicles supplied, carry cargo, and recognize visual breakage.'
 keywords: 'whips fuel shop gas storage cargo repair health damage inventory'

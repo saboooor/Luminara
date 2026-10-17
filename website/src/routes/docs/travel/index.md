@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/compass_16'
 title: 'Travel'
 description: 'Discover destinations and move around Luminara.'
 keywords: ''

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/name_tag'
 title: 'Social'
 description: 'Chat, listen, pose, and personalize your character.'
 keywords: ''

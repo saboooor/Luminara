@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/emerald'
 title: 'Buying a vehicle'
 description: 'Visit the dealership, choose a car, and place your vehicle.'
 keywords: 'whips dealership showroom buy car drill plane models tiers'

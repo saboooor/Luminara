@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/stick'
 title: 'Sitting, posing, and visible interactions'
 description: 'Use poses for social spaces and understand decorative activity displays.'
 keywords: 'gsit interactionvisualizer sit lay crawl pose crafting displays'

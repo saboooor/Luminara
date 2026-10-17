@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/red_bed'
 title: 'Homes and teleport requests'
 description: 'Save personal destinations and meet friends safely.'
 keywords: 'essentials sethome tpa tpaccept spawn warp'

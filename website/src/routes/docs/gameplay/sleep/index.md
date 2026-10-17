@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/red_bed'
 title: 'Sleeping and keeping the night'
 description: 'Understand night skipping and opt out when you need nighttime.'
 keywords: 'drsleep preventsleep allowsleep togglesleep night sleeping'

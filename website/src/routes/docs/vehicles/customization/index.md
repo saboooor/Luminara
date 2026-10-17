@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/orange_dye'
 title: 'Vehicle wraps and opening the hood'
 description: 'Change a body material without buying a different tier.'
 keywords: 'whips wrap recipe material color hood customization slimeball'

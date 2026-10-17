@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/honey_bottle'
 title: 'Custom consumables and effects'
 description: 'Inspect crafted items and track their active effects in game.'
 keywords: 'flyironsdrugs drugs drugstatus status effects consumables buffs'

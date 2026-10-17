@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/ender_pearl'
 title: 'Removing and recovering tags'
 description: 'Take off a prefix or emoji and claim returned items.'
 keywords: 'lumitags unset claim tag remove return prefix suffix'

@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/paper'
 title: 'Auction deliveries and refunds'
 description: 'Collect won items, returned listings, and money from your mailbox.'
 keywords: 'best_auction ah mailbox refund delivery collect'

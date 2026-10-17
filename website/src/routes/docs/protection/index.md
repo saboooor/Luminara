@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/iron_door'
 title: 'Protection'
 description: 'Protect land, containers, and collaborative builds.'
 keywords: ''

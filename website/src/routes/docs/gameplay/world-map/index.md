@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/map'
 title: 'Exploring with the world map'
 description: 'Use a browser map for orientation without confusing it with land access.'
 keywords: 'bluemap world map terrain exploration navigation'

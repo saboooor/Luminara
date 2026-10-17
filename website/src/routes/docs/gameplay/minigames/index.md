@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/slime_ball'
 title: 'Joining minigames'
 description: 'Use activity lobbies and leave through the intended exit.'
 keywords: 'minigames minigame quit lobby games arena'

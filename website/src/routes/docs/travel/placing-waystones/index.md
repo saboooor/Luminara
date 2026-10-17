@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/ender_eye'
 title: 'Crafting and placing waystones'
 description: 'Build a travel stop with room for its monument and landing area.'
 keywords: 'lumistones recipe crafting obsidian spacing'

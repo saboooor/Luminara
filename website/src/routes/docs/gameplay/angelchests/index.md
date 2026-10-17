@@ -1,4 +1,5 @@
 ---
+icon: 'minecraft:item/totem_of_undying'
 title: 'AngelChests'
 description: 'Find and recover the belongings stored after your death.'
 keywords: 'axgraves angelchest angelchests grave death recovery lost items'
