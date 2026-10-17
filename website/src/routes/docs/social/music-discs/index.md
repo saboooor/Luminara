@@ -22,6 +22,8 @@ Hold a music disc in your hand before using the burn controls. Command access an
 
 Use a track and volume appropriate for a shared area. Insert the finished disc into a jukebox for nearby listeners with compatible clients.
 
+Jukebox audio has a range of **65 blocks**. Beacon-style range amplification is disabled. Goat-horn audio is enabled with a **15-block** range and a maximum duration of **1,000 seconds**. A special burnable tag is not required, and the default burnable-disc crafting recipe is disabled.
+
 ## If it is silent
 
 Check your audio client, volume, and distance first. A search result or remote URL can stop working even when the physical disc remains. Test a known-working disc before assuming the jukebox is broken.

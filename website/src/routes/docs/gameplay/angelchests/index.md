@@ -6,7 +6,7 @@ date_created: '2026-10-17'
 last_updated: '2026-10-17'
 ---
 
-When you die, an **AngelChest** stores recoverable belongings at the death location instead of leaving you to chase a pile of scattered items. Read the death message before rushing back: location, protection, expiry, and recovery options depend on the current server settings.
+When you die, an **AngelChest** stores recoverable belongings at the death location instead of leaving you to chase a pile of scattered items. You have **10 minutes** to recover your belongings. When the chest expires, its remaining items drop into the world rather than staying safely stored.
 
 ## Find your belongings
 
@@ -16,6 +16,14 @@ When you die, an **AngelChest** stores recoverable belongings at the death locat
 4. Return to the location and interact with your AngelChest to recover its contents.
 
 If your account has access to a recovery teleport, inspect its instructions and any cost before using it. A command or old screenshot from a different death-storage system is not a guarantee of free teleportation.
+
+## What is stored and who can collect it
+
+AngelChests store items and XP, and retain **100%** of your XP. Armor is automatically equipped during recovery when possible. The chest disappears when emptied, and there is no limit on the number of AngelChests you can have.
+
+**Recovery is not restricted to the owner.** Other players can interact with a chest and use instant pickup where area protections permit. Return promptly and keep the [rules](/docs/rules/) in mind.
+
+AngelChests are disabled in `spawn`, `plot`, `minigames`, `zenspawn`, and `vehicleshop`. Do not expect one to appear in those worlds.
 
 ## Recover safely
 

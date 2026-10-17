@@ -16,7 +16,7 @@ After travelling, count your animals and passengers immediately. World restricti
 
 Leads can work with more entity types than vanilla Minecraft. To link mobs together, use the supported sneak-right-click interaction with your lead. Allowed entity types and protected areas still apply.
 
-Player leashing, where enabled, requires the appropriate access. Agree with the other player before moving them, and release them when asked. A lead is not permission to take animals from someone else's base.
+Player leashing is enabled; a leashed player can **crouch to escape**. Players riding an entity cannot be leashed. Agree with the other player before moving them, and release them when asked. A lead is not permission to take animals from someone else's base.
 
 ## Safer transport
 

@@ -16,11 +16,11 @@ last_updated: '2026-10-17'
 
 These states are tracked by consumable type. Continued use can cause addiction; stopping after addiction can trigger withdrawal penalties. Different families have different penalties, and repeatedly consuming items to suppress a penalty can worsen the longer-term state.
 
-Overdose behavior can add severe effects or cause character death. Exact thresholds and consequences are server settings, so a previous dose is not a safe universal limit.
+Overdose behavior can add severe effects or cause character death. Do not rely on a previous dose to predict the effects of another consumable.
 
 ## In-game recovery
 
-The system includes configured recovery items such as Suboxone and CBD, sleep-based recovery for some stimulant states, and an enchanted golden apple reset route. These do not all target the same consumables. Inspect the current item/menu description and choose the recovery route for the affected state.
+The system includes recovery items such as Suboxone and CBD, sleep-based recovery for some stimulant states, and an enchanted golden apple reset route. These do not all target the same consumables. Inspect the current item/menu description and choose the recovery route for the affected state.
 
 Check your tolerance and status afterward. Do not assume clearing an active visual effect also clears every persistent condition.
 

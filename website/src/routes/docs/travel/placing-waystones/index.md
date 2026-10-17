@@ -16,6 +16,8 @@ The standard recipe uses stone bricks, an ender pearl, and obsidian:
 | Stone bricks | Ender pearl  | Stone bricks |
 | Obsidian     | Obsidian     | Obsidian     |
 
+<img src="/images/docs/waystone-recipe.svg" alt="Waystone recipe: stone bricks at top middle and either side of an ender pearl, with three obsidian across the bottom; top corners stay empty" width="800" height="460" loading="lazy" decoding="async" />
+
 Use the recipe book to check the current recipe if it differs. Custom recipes and crafting availability can change.
 
 ## Pick a location

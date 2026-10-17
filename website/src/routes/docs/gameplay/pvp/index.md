@@ -8,9 +8,11 @@ last_updated: '2026-10-17'
 
 ## Check your status
 
-Use `/pvp` and read the response to see or change your available PvP state. Command details can vary, so follow its current usage message if it asks for an explicit state.
+Use `/pvp` to check your state and `/pvp on` or `/pvp off` to choose it. PvP defaults to **on**, and joining does not automatically turn it off. You can change your toggle without a cooldown.
 
 A personal combat preference works alongside world and region rules. An arena can have its own rules, and an area can prohibit combat regardless of your toggle.
+
+The personal toggle is disabled in `minigames`. Regions can force PvP on or off; read the notification when entering an area. A land claim does not itself grant player-combat immunity.
 
 ## Arrange a fight
 

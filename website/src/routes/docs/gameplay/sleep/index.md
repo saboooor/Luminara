@@ -8,13 +8,13 @@ last_updated: '2026-10-17'
 
 ## Skip the night
 
-The server can skip night without requiring every online player to sleep. Enter a bed and read the sleep announcement. The current threshold and any countdown determine when morning arrives.
+One player can sleep to skip the night, unless another player has opted out. Enter a bed and read the announcement. Sleeping does not accelerate random block ticks, so it does not speed up crop growth.
 
 ## Keep the night for an activity
 
 Use `/preventsleep` when you need nighttime, for example for a planned night build or hunt. Use `/allowsleep` when you are finished. `/togglesleep` switches your opt-out state.
 
-Do not leave night skipping blocked after your activity ends. Coordinate with other players rather than repeatedly interrupting their sleep.
+Your night-skipping opt-out resets daily. Do not leave night skipping blocked after your activity ends. Coordinate with other players rather than repeatedly interrupting their sleep.
 
 ## If morning does not arrive
 

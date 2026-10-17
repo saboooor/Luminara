@@ -16,7 +16,7 @@ Use `/ah sell <price> [buyout]`. The first value is the starting price. The opti
 
 For example, `/ah sell 100 300` starts bidding at 100 and offers an immediate buyout at 300. Omitting the second value creates a listing without that explicit buyout.
 
-Listing fees, durations, and limits are server settings. Read the menu and messages before confirming, then check that the correct item left your inventory and appears in your listing.
+Check the listing fee, duration, and limit in the menu before confirming, then check that the correct item left your inventory and appears in your listing.
 
 ## Manage your sale
 

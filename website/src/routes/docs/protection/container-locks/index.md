@@ -10,7 +10,7 @@ last_updated: '2026-10-17'
 
 Use `/bolt lock`, then interact with the chest, door, or other supported target as instructed in chat. `/bolt info` lets you inspect a protection. Use the full command prefix so claim commands with similar names are not confused with lock commands.
 
-Automatic locking depends on the target and server settings. Check a newly placed container instead of assuming it is private.
+**Automatic Bolt locking is disabled** for chests, barrels, furnaces, doors, item frames, and armor stands. Lock them manually and inspect the result. Claim protection is separate from a Bolt lock.
 
 ## Share deliberately
 

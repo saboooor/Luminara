@@ -18,6 +18,12 @@ Choose a skill related to your next project. For a mining trip, inspect Mining's
 
 Higher levels require more XP. Rewards can include stat increases and passive or active abilities, depending on the skill.
 
+## Where progression applies
+
+Skills are disabled in `plot`, `spawn`, `zenspawn`, `vehicleshop`, and `minigames`, and in creative mode. Death does **not** reset your skill levels or skill XP.
+
+AuraSkills’ own jobs feature is disabled. Use the separate [Jobs system](/docs/economy/jobs/) for paid work.
+
 ## When XP does not increase
 
 Check the source requirements and whether the action was allowed. A cancelled block break in protected land should not be treated as a successful gather. Mob origin, world restrictions, and server balancing can also matter.

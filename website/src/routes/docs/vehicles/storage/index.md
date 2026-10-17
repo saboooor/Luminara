@@ -8,13 +8,15 @@ last_updated: '2026-10-17'
 
 ## Vehicle storage
 
-Some types have cargo storage. Treat it as the vehicle's own inventory and use the service screen rather than dropping items onto the model. Storage availability varies by type, and nested shulker storage can be restricted.
+Cars, drills, and planes have cargo storage. Treat it as the vehicle's own inventory and use the service screen rather than dropping items onto the model. **Shulker boxes are not allowed in vehicle storage.**
 
 Check cargo before selling, lending, or putting away a vehicle. Do not rely on a showroom model for personal storage.
 
 ## Open the storage screen
 
-Stop, dismount, and use the supported sneak-left-click service interaction. Identify the storage area separately from fuel slots. Only supported vehicle types have cargo space, and the available screen can depend on the vehicle's settings.
+Stop, dismount, and use the supported sneak-left-click service interaction. Identify the storage area separately from fuel slots. Only supported vehicle types have cargo space, and the service screen varies by vehicle.
+
+You can use Whips vehicles only in the main survival world (`world`). Dismounting or rider death does not automatically remove them; keep track of where you park.
 
 ## Before packing or handing over a vehicle
 

@@ -8,7 +8,7 @@ last_updated: '2026-10-17'
 
 ## Health and visible damage
 
-When vehicle health is enabled, collisions and combat can damage a vehicle. As damage rises, cosmetic parts can disappear. Missing body parts do not turn the remaining model into a narrower vehicle; seats and driving geometry still matter.
+Vehicle health is enabled, and damage transfer to the rider is enabled with a **0.8 multiplier**. Collisions and combat can damage a vehicle and hurt its rider. As damage rises, cosmetic parts can disappear. Missing body parts do not turn the remaining model into a narrower vehicle; seats and driving geometry still matter.
 
 Showroom models are exempt from normal damage. A custom model built as one indivisible piece can remain visually complete until destruction, so appearance alone is not a health meter.
 

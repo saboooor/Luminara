@@ -10,7 +10,7 @@ last_updated: '2026-10-17'
 
 Stand at a safe spot and use `/sethome base`. Return with `/home base`; remove an unwanted entry with `/delhome base`. A home is a saved destination, not land protection. [Claim the area](/docs/protection/land-claims/) separately.
 
-Home limits and command access can depend on rank. Do not overwrite your only safe destination while exploring unless you have another way back.
+Players with access to multiple homes can save **three homes** by default; your rank may allow more. Overwriting an existing home requires confirmation. Do not overwrite your only safe destination while exploring unless you have another way back.
 
 ## Meet a friend
 
@@ -19,6 +19,8 @@ Use `/tpa <player>` to request travel to someone. They accept with `/tpaccept` o
 ## Public destinations
 
 `/spawn` returns to the arrival point when available. `/warp` lists available warps; `/warp <name>` selects one. Portals and waystones offer other travel routes.
+
+Essentials teleports have a **five-second cooldown**, no warmup, and **five seconds of player-combat protection** after arrival. Safety checks are enabled. Essentials dismounts passengers before teleporting, so check companions separately.
 
 ## If travel fails
 

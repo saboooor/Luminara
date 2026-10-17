@@ -10,7 +10,7 @@ last_updated: '2026-10-17'
 
 Use `/hiddenarmor hide`, `/hiddenarmor show`, or `/hiddenarmor toggle` to change your own armor's visible presentation. `/hiddenarmor help` lists your available actions; `/togglearmor` is also supported by the armor-visibility system.
 
-Hiding armor changes its appearance without unequipping the actual items. Some armor materials or pieces can be excluded by server settings. Check your inventory if you need to know what you are wearing; a visible skin alone does not mean the armor slots are empty.
+Hiding armor changes its appearance without unequipping the actual items. Some armor materials or pieces may remain visible. Check your inventory if you need to know what you are wearing; a visible skin alone does not mean the armor slots are empty.
 
 ## Rename an item
 

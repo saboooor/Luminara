@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-labelledby="title desc">
+<title id="title">Read a chest-shop sign</title><desc id="desc">Example sign: YourName, quantity 16, B 100:50 S, Stone. Customers buy 16 stone for 100 or sell 16 stone for 50.</desc>
+<rect width="800" height="460" rx="20" fill="#211b21"/>
+<g font-family="system-ui, sans-serif" fill="#faf4f7" text-anchor="middle">
+<text x="400" y="48" font-size="25" font-weight="700">Read a chest-shop sign</text>
+<rect x="240" y="82" width="320" height="236" rx="10" fill="#b68c64" stroke="#e6bc91" stroke-width="3"/>
+<g fill="#241c18" font-family="monospace" font-size="27" font-weight="700"><text x="400" y="130">YourName</text><text x="400" y="183">16</text><text x="400" y="236">B 100:50 S</text><text x="400" y="289">Stone</text></g>
+<text x="400" y="360" font-size="21">B: buy 16 stone for 100</text><text x="400" y="393" font-size="21">S: sell 16 stone for 50</text><text x="400" y="432" font-size="16" fill="#d0bbc7">Prices are per bundle · shown from the customer’s perspective</text>
+</g></svg>

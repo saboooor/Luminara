@@ -8,6 +8,8 @@ last_updated: '2026-10-17'
 
 Welcome to Luminara! These guides explain the things you can do as a player, with practical steps, command examples, and answers for when something does not work.
 
+<img src="/images/docs/luminara.jpg" alt="Luminara’s pink logo over a lantern-lit Minecraft cavern" width="1200" height="675" decoding="async" />
+
 ## Your first session
 
 [Join the server](/docs/getting-started/joining/), read the [rules](/docs/rules/), then follow [your first day](/docs/getting-started/first-day/). Start by protecting your home and setting up a reliable way back before carrying valuables far from spawn.
@@ -36,4 +38,4 @@ The sidebar groups related guides. Its search matches guide titles, descriptions
 
 In examples, replace `<player>` or `<name>` with your own value; do not type the brackets. An optional argument appears in `[square brackets]`. Tab completion can help you find available names.
 
-Menus and in-game messages show the current prices, limits, rewards, and availability. These can vary by world or rank. Where a feature has optional settings, its guide explains the condition instead of promising a fixed price or entitlement. If a command is unavailable, check [troubleshooting](/docs/getting-started/troubleshooting/).
+Menus and in-game messages show the current prices, limits, rewards, and availability. These can vary by world or rank. If a command is unavailable, check [troubleshooting](/docs/getting-started/troubleshooting/).

@@ -8,13 +8,13 @@ last_updated: '2026-10-17'
 
 ## Your balance
 
-Use `/balance` to check your money. Before paying someone, agree on the total and confirm their exact in-game name. `/pay <player> <amount>` sends money when your account has access to payments.
+New accounts have a starting balance of **$0**. Use `/balance` to check your money. Before paying someone, agree on the total and confirm their exact in-game name. `/pay <player> <amount>` sends money when your account has access to payments.
 
 For example, `/pay Alex 100` pays 100 to Alex. Read any confirmation prompt. Check your balance afterward instead of repeating a payment because chat scrolled past.
 
 ## Physical money
 
-Banknotes are items representing money withdrawn from a balance. Their appearance and redemption controls depend on the note system's current setup; use the item's instructions and server help before withdrawing a large amount.
+Banknotes are items representing money withdrawn from a balance. Paper banknotes have a minimum value of **$1** and at most **two decimal places**. Right-click redemption and note splitting are enabled. Use the item’s instructions and check that redemption works before withdrawing a large amount.
 
 An anvil-renamed piece of paper is not proof of value. Do not treat a note as payment until you have redeemed it successfully and checked your balance. Physical money can be stored, dropped, or lost like other items.
 

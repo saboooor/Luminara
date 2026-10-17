@@ -19,7 +19,7 @@ Open `/drugs` for the main menu and `/drugs help` for available actions. Check t
 | Cannabis items                  | Effects and timing vary by strain and item form  |
 | Hallucinogens                   | Client-side visual or disguise effects           |
 
-Exact strengths, durations, and recipes follow the server's setup. A renamed item is not equivalent to a crafted custom consumable.
+Check the item description and recipe before using it. A renamed item is not equivalent to a crafted custom consumable.
 
 ## Track what is active
 

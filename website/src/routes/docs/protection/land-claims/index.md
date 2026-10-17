@@ -10,7 +10,19 @@ last_updated: '2026-10-17'
 
 Hold a **golden shovel** and right-click two opposite corners of the area you want to protect. Read the result in chat and inspect the outline. Claim blocks limit the area you can reserve; `/claimslist` shows your claims and available allowance.
 
+<img src="/images/docs/claim-corners.svg" alt="Top-down claim diagram: select opposite corners around both your home and farm with a golden shovel" width="800" height="460" loading="lazy" decoding="async" />
+
 Use a stick to inspect land ownership. Do this before building near someone else's base. A claim cannot overlap an existing claim or an area where claiming is prohibited.
+
+## Claim allowance and worlds
+
+You start with **100 claim blocks** and accrue **100 per hour of active play**, up to 1,000,000 accrued blocks. Idle time does not earn blocks. Buying claim blocks costs **$0.50 per block** and selling them returns **$0.40 per block**; command access still depends on your permissions.
+
+Claiming is enabled in `world`, `world_nether`, `world_the_end`, and `resworld`. It is disabled in `spawn`, `plot`, `minigames`, `resworld_nether`, and `resworld_the_end`. Other area protections can still prevent a claim.
+
+A new player's chest can create a small automatic claim with a radius of four blocks when space and allowance permit. Inspect its boundary and expand it before relying on it for your whole base.
+
+Unused claims can expire after **14 days**. The general inactivity cleanup is set to **60 days**, with exemptions for owners with at least 10,000 total claim blocks or 5,000 bonus blocks. Do not use a claim as a promise of permanent storage.
 
 ## Resize carefully
 

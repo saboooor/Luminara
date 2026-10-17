@@ -12,9 +12,17 @@ A shop sign shows the owner, bundle quantity, price, and item. **B** is the pric
 
 The price applies to the displayed quantity. If the quantity is 16, buying once purchases a bundle of 16 rather than one item.
 
+<img src="/images/docs/chest-shop-sign.svg" alt="Example sign: YourName, 16, B 100:50 S, Stone. Customers buy 16 stone for 100 or sell 16 stone for 50" width="800" height="460" loading="lazy" decoding="async" />
+
 ## Buy or sell
 
-By standard controls, right-click buys and left-click sells. Read the sign and transaction message. A transaction can fail if stock, balance, or inventory space is insufficient.
+By standard controls, right-click buys and left-click sells. Read the sign and transaction message. A transaction can be reduced or fail if stock, balance, or inventory space is insufficient.
+
+## Containers, prices, and fees
+
+Shops support chests, trapped chests, and barrels. Creation is free and shop transaction tax is **0%**. Prices support two decimal places. A shop cannot offer a selling price higher than its buying price.
+
+Partial transactions are enabled, so a trade may complete for less than the displayed bundle when stock, funds, or space limit the transaction. Read the completed quantity in chat. Empty shops are not automatically removed.
 
 ## Create a shop
 

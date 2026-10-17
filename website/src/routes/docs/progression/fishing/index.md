@@ -12,9 +12,15 @@ Fish normally with a rod in an allowed location. Custom catches can have names, 
 
 Keep a special fish's item details intact. An ordinary renamed fish does not gain a custom catch's identity or value.
 
+Custom catches are enabled outside competitions, and a special rod is not required. Vanilla fishing loot remains enabled. Catches are not sent directly into your inventory, so watch where they land.
+
+Lava and void fishing are disabled. Custom fish are protected against consumption, cooking, crafting, and placement; keep collection specimens separate from ordinary food.
+
 ## Manage your collection
 
 Inspect a catch before eating, trading, or selling it. Store favorite specimens separately. Bait, where available, can affect fishing; read its instructions and the fish requirements rather than assuming it guarantees a particular catch.
+
+A rod supports up to **seven baits**, and bait bonuses are disabled during competitions. Read each bait’s requirements before applying it.
 
 ## Sell intentionally
 

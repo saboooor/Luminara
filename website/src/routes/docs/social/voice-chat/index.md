@@ -8,11 +8,11 @@ last_updated: '2026-10-17'
 
 ## Set up a voice client
 
-Install the voice client recommended by Luminara's current instructions, matching your Minecraft version and mod loader. The server's voice systems include support components for different clients; their presence alone is not a promise that every client or audio feature is interchangeable.
+Use **Plasmo Voice**, matching your Minecraft version and mod loader. You can join and play without the voice mod.
 
-For **Simple Voice Chat**, press **V** by default and complete setup: choose microphone and speakers, select push-to-talk or voice activation, and set your talk key. Check Minecraft's keybind list if another mod uses V.
+Press **V** by default to open the Plasmo Voice menu. Choose your microphone and speakers, configure push-to-talk or voice activation, and check Minecraft’s keybind list if another mod uses V.
 
-For **Plasmo Voice**, V also normally opens its menu. Use the client currently supported for the feature you want; [custom music discs](/docs/social/music-discs/) have an additional audio requirement.
+Choose a voice range of **8, 16, or 32 blocks**, with **16 blocks** as the default. [Custom music discs](/docs/social/music-discs/) also require compatible Plasmo Voice playback.
 
 ## Test with a friend
 

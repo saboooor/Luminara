@@ -14,7 +14,7 @@ Read any entry requirements or activity instructions. A portal may be disabled w
 
 ## Inventories can change between worlds
 
-Some world groups can have separate inventories. An empty or different inventory after travelling does not by itself mean your survival items were deleted. Return through the intended route and check the original world before reporting a loss.
+Survival worlds (`world`, `world_nether`, `world_aether`, `world_the_end`, `resworld`, `resworld_nether`, and `resworld_the_end`) share the same inventory. `plot` and `minigames` each use a separate group. Inventories are also separated by game mode. Ender chests and XP are included in the separation; money balances are not. An empty or different inventory after travelling does not by itself mean your survival items were deleted. Return through the intended route and check the original world before reporting a loss.
 
 Do not use world changes to try to transfer items between survival and creative areas. Store valuables safely before entering an unfamiliar game or world.
 

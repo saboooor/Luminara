@@ -14,7 +14,7 @@ Use `/imageframe` to inspect the available commands. A standard creation example
 
 ## Place the result
 
-Follow the creation message and place the resulting map tiles in the intended order. The display may require empty maps or other resources depending on the server's setup. Start with a small image before making a large wall.
+Follow the creation message and place the resulting map tiles in the intended order. **Empty maps are not required**. The default creation limit is **10 image maps per player**; permissions can grant a different limit. Image files must be at most **50 MiB**, and each map supports up to **20 markers**. Start with a small image before making a large wall.
 
 ## If loading fails
 
