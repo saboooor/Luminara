@@ -22,6 +22,8 @@ Hold the item you intend to edit and follow the server's available rename contro
 
 A cosmetic name does not change an item's identity. Renaming paper cannot make it a valid banknote, and renaming an ordinary item cannot make it a [redeemable tag](/docs/social/tag-items/).
 
+For legacy codes, hex colors, and MiniMessage examples, see [colors and text formatting](/docs/social/colors/). Use the syntax supported by the rename feature.
+
 ## Trading custom items
 
 Inspect the actual item details and use trusted transaction screens. A familiar name is not proof of enchantments, stored value, ownership, or custom behavior.

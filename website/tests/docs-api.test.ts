@@ -18,7 +18,7 @@ vi.mock('../src/routes/docs/layout', () => ({
             icon,
             extra_buttons: [
               ...source.matchAll(
-                /^  - label: '((?:[^']|'')+)'\r?\n    href: '([^']+)'/gm
+                /^ {2}- label: '((?:[^']|'')+)'\r?\n {4}href: '([^']+)'/gm
               ),
             ].map((match) => ({
               label: match[1].replaceAll("''", "'"),

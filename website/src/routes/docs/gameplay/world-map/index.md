@@ -16,13 +16,13 @@ extra_buttons:
 
 {/* audience:website */}
 
-The server's web map shows a rendered view of the world. Use the map link shared by Luminara to open it, select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
+The server's web map shows a rendered view of the world. Open the [Luminara world map](http://map.luminaramc.org:40189/), select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
 
 {/* /audience */}
 
 {/* audience:minecraft */}
 
-The server's web map shows a rendered view of the world. The map opens in a web browser outside Minecraft, rather than inside this handbook. Use the map link shared by Luminara to open it, select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
+The server's web map shows a rendered view of the world. The map opens in a web browser outside Minecraft, rather than inside this handbook. Open the [Luminara world map](http://map.luminaramc.org:40189/), select a world if offered, and navigate toward the place you want to inspect. A top-down view helps with routes; a 3D view helps explain terrain and large builds.
 
 {/* /audience */}
 

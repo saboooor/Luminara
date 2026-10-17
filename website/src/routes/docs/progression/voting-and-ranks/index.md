@@ -26,6 +26,14 @@ Open the [voting page in a browser](https://luminaramc.org/vote/) and follow a v
 
 The voting page distinguishes reward-bearing buttons from blue buttons that only support the server. Voting on a support-only listing does not promise a reward.
 
+## Rank progression and purchased ranks
+
+Voting ranks reward participation. The website lists Bee as the starter rank with 2 homes, 1 creative plot, and 1 auction house slot. Turtle starts at 6 votes, Panda at 18, Dolphin at 36, and Frog at 66. Later tiers add further perks; use the full rank comparison to plan your next milestone.
+
+Examples include nickname and hat commands at Dolphin, a crafting command at Frog, and personal time and weather commands at Axolotl. Claim flags and limits also vary by tier. Follow the linked gameplay guides for using a feature after it becomes available to you.
+
+Purchased packages are listed separately as Ender Dragon (VIP), Wither (MVP), and Moobloom (G.O.A.T). Compare package contents and billing duration in the store before checkout. Voting progression and a paid package are different ways the website presents ranks; check the selected package rather than assuming it includes every voting perk.
+
 ## Understand rank benefits
 
 {/* audience:website */}

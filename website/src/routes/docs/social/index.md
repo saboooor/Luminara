@@ -6,6 +6,8 @@ keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
 extra_buttons:
+  - label: 'Colors and text formatting'
+    href: '/docs/social/colors/'
   - label: 'Armor visibility and item names'
     href: '/docs/social/armor-and-item-names/'
   - label: 'Chat, item previews, and Discord'
@@ -25,6 +27,8 @@ extra_buttons:
 ---
 
 ## Choose a guide
+
+See [colors and text formatting](/docs/social/colors/) for legacy codes, hex colors, and MiniMessage examples.
 
 Chat, listen, pose, and personalize your character.
 

@@ -28,6 +28,10 @@ Banknotes are items representing money withdrawn from a balance. Paper banknotes
 
 An anvil-renamed piece of paper is not proof of value. Do not treat a note as payment until you have redeemed it successfully and checked your balance. Physical money can be stored, dropped, or lost like other items.
 
+## Item values
+
+The [item worth reference](/docs/economy/item-worth/) lists supplied unit values and explains stack totals. Shop and auction prices are chosen separately by players.
+
 ## Ways to earn and trade
 
 Start with [jobs](/docs/economy/jobs/), [fishing](/docs/progression/fishing/), [shops](/docs/economy/chest-shops/), or [auctions](/docs/economy/auction-selling/). Money and vanilla XP are different resources; a waystone can charge XP levels, money, or both as shown in its menu.

@@ -6,6 +6,8 @@ keywords: ''
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
 extra_buttons:
+  - label: 'Item worth reference'
+    href: '/docs/economy/item-worth/'
   - label: 'Auction deliveries and refunds'
     href: '/docs/economy/auction-mail/'
   - label: 'Balances and payments'
@@ -21,6 +23,8 @@ extra_buttons:
 ---
 
 ## Choose a guide
+
+See [item worth reference](/docs/economy/item-worth/) for compare unit values for materials, ores, and farm drops.
 
 Earn money and trade with other players.
 
