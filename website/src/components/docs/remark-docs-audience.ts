@@ -95,7 +95,20 @@ function preserveInlineMarkup(node: Node) {
 /** Reparse the website variant before heading IDs, menus, and rendered HTML are generated. */
 export function remarkDocsAudience(this: Processor) {
   return (_tree: unknown, file: { value: unknown }) => {
-    const tree = this.parse(filterDocsAudience(String(file.value), 'website'));
+    const tree = this.parse(
+      filterDocsAudience(String(file.value), 'website')
+    ) as Node;
+    // Keep handbook page boundaries out of the website, but preserve code examples.
+    tree.children = tree.children?.filter((node) => {
+      if (node.type === 'html')
+        return node.value?.trim() !== '<!-- pagebreak -->';
+      return !(
+        node.type === 'paragraph' &&
+        node.children?.length === 1 &&
+        node.children[0].type === 'text' &&
+        node.children[0].value?.trim() === '{/* pagebreak */}'
+      );
+    });
     preserveInlineMarkup(tree);
     return tree;
   };
