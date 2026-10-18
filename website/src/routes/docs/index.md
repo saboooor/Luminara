@@ -4,6 +4,8 @@ title: 'Player handbook'
 description: 'Learn how to travel, build, trade, progress, and play on Luminara.'
 keywords: ''
 extra_buttons:
+  - label: 'Server changelog'
+    href: '/docs/changelog/'
   - label: 'Get home or meet a friend'
     href: '/docs/travel/homes-and-requests/'
   - label: 'Discover teleport destinations'
@@ -51,10 +53,12 @@ extra_buttons:
   - label: 'Getting help'
     href: '/docs/getting-started/troubleshooting/'
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-18'
 ---
 
 Welcome to Luminara! These guides explain the things you can do as a player, with practical steps, command examples, and answers for when something does not work.
+
+Read the [changelog](/docs/changelog/) for server updates, feature releases, and balance changes.
 
 {/* audience:website */}
 
