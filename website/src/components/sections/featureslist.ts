@@ -72,7 +72,7 @@ export default [
   {
     title: 'Custom Music Discs',
     description:
-      'Add your own music discs to the game with custom songs! Do /disc search <name> to find your song while holding a music disc! The PlasmoVoice mod needs to be installed.',
+      'Burn custom music with /disc burn <url>, find songs with /disc search <query>, and build jukebox queues, video screens, and visualizers. Listen with Plasmo Voice or Simple Voice Chat.',
     learnmore: 'https://modrinth.com/plugin/plasmo-voice',
   },
   {

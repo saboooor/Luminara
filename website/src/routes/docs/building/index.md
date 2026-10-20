@@ -4,8 +4,10 @@ title: 'Building'
 description: 'Organize materials and bring your builds to life.'
 keywords: ''
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-20'
 extra_buttons:
+  - label: 'Decorative heads with HeadDB'
+    href: '/docs/building/headdb/'
   - label: 'Building plots'
     href: '/docs/building/plots/'
   - label: 'Decorating with armor stands'
@@ -37,5 +39,7 @@ Organize materials and bring your builds to life.
 - [Storing building blocks in a Tome](/docs/building/block-storage/) — Use Pages and Echoes to carry materials beyond your ordinary inventory.
 
 - [Wall art and image maps](/docs/building/images-and-maps/) — Turn an image into a map display and plan its size.
+
+- [Decorative heads with HeadDB](/docs/building/headdb/) — Browse and favorite decorations for your builds.
 
 {/* /audience */}
