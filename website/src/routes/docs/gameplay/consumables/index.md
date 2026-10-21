@@ -1,38 +1,60 @@
 ---
 icon: 'minecraft:item/honey_bottle'
 title: 'Custom consumables and effects'
-description: 'Inspect crafted items and track their active effects in game.'
-keywords: 'flyironsdrugs drugs drugstatus status effects consumables buffs'
+description: 'Inspect recipes, use finished drugs, and understand active effects and delayed visuals.'
+keywords: 'drugs consumables crafting effects farming'
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-21'
 extra_buttons:
   - label: 'Tolerance and recovery'
     href: '/docs/gameplay/tolerance-and-recovery/'
-  - label: 'Growing and strains'
-    href: '/docs/gameplay/growing-and-strains/'
+  - label: 'Growing ingredients'
+    href: '/docs/gameplay/drug-crops/'
+  - label: 'Bongs and carts'
+    href: '/docs/gameplay/bongs-and-carts/'
 ---
 
-Luminara has a fictional consumable system with buffs, drawbacks, and longer-term character effects. All recipes and effects here refer to Minecraft gameplay.
+Luminara has a fictional Minecraft drug system with temporary buffs, drawbacks, tolerance, addiction, withdrawal, and overdose effects. These guides describe gameplay mechanics.
 
-## Inspect before using
+## Make and use a finished item
 
-Open `/drugs` for the main menu and `/drugs help` for available actions. Check the item description and current recipe rather than assuming an ordinary material with the same name has the custom effect.
+1. Open `/drugs` to browse drugs, recovery items, and equipment.
+2. Click an item to inspect its current recipe. Use the page arrows for more items.
+3. Grow any required [custom ingredients](/docs/gameplay/drug-crops/). Ordinary starter materials and planting stock cannot replace harvests.
+4. Craft the finished item, inspect its description, hold it in your **main hand**, and **right-click** to use it.
+5. Check `/drugstatus` for active effects and `/tolerance` for persistent tolerance.
 
-| Family                          | General gameplay tradeoff                        |
-| ------------------------------- | ------------------------------------------------ |
-| Speed-oriented consumables      | Mobility or Haste with other drawbacks           |
-| Durability-oriented consumables | Resistance or absorption with mobility penalties |
-| Cannabis items                  | Effects and timing vary by strain and item form  |
-| Hallucinogens                   | Client-side visual or disguise effects           |
+Most finished drugs consume one item per use. Carts instead lose one remaining use. A renamed vanilla item is not equivalent to the crafted custom item.
 
-Check the item description and recipe before using it. A renamed item is not equivalent to a crafted custom consumable.
+## Drug families
 
-## Track what is active
+The table describes bundled base profiles. Strains, tolerance, and server configuration can change the result; inspect live items and recipes.
 
-Use `/drugstatus` or `/drugs status` to see current effects, remaining durations, and supported onset delays. Being affected now is different from having tolerance or addiction from earlier use.
+| Drug or form               | Base gameplay behavior                                     |
+| -------------------------- | ---------------------------------------------------------- |
+| Heroin                     | Strength and Resistance with Slowness.                     |
+| Fent                       | Strength, Absorption, and Resistance with strong Slowness. |
+| Meth                       | Speed and Haste with Weakness.                             |
+| Cocaine                    | Saturation, Speed, and Strength.                           |
+| Molly                      | Regeneration and Absorption with Glowing.                  |
+| Glue                       | Poison and Mining Fatigue.                                 |
+| Shrooms                    | Jump Boost and Luck with Nausea.                           |
+| Joint, blunt, edible, cart | Cannabis effects depend on the supplied strain.            |
+| LSD                        | Delayed client-side portal visuals and nausea.             |
+| Salvia                     | Delayed dirt-block disguise effect.                        |
 
-Some visual effects take time to begin. Do not consume another item simply because nothing happened immediately. Delayed effects can overlap with other active effects.
+A beneficial effect does not cancel the drug's drawback, addiction tracking, or overdose behavior. See [tolerance and recovery](/docs/gameplay/tolerance-and-recovery/) before repeatedly using the same item.
 
-## Longer-term systems
+## Delayed hallucinogen effects
 
-Repeated use can change effectiveness and cause character penalties. Read [tolerance and recovery](/docs/gameplay/tolerance-and-recovery/) before relying on consumables, and [growing and strains](/docs/gameplay/growing-and-strains/) for the separate cultivation system.
+LSD defaults to a **5-second onset** and **180-second duration**. Salvia defaults to a **3-second onset** and **45-second duration**. These are configurable. Use `/drugstatus` to check pending onset instead of assuming a delayed item failed.
+
+The LSD portal trip is a visual effect rather than an instruction to build or enter a portal. Salvia's disguise is an effect on the character; it does not give you a dirt block to place.
+
+## Understand what is active
+
+`/drugstatus` and `/drugs status` list tracked drugs, withdrawal, other potion effects, remaining durations, strengths, and supported onset delays. Effects without a recorded source are labeled source unknown.
+
+A sober message describes current effects. Tolerance and addiction can remain after the active effect ends. Recovery items target particular persistent conditions, so do not assume an expired visual effect has reset your character.
+
+For reusable cannabis equipment, read [bongs and cartridges](/docs/gameplay/bongs-and-carts/). For selling finished items, read [cartel trading](/docs/gameplay/cartel-trading/).

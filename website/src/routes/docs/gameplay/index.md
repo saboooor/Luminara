@@ -4,7 +4,7 @@ title: 'Gameplay'
 description: 'Explore survival systems, recovery, and activities.'
 keywords: ''
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-21'
 extra_buttons:
   - label: 'AngelChests'
     href: '/docs/gameplay/angelchests/'
@@ -26,6 +26,18 @@ extra_buttons:
     href: '/docs/gameplay/sleep/'
   - label: 'Tolerance, withdrawal, and recovery'
     href: '/docs/gameplay/tolerance-and-recovery/'
+  - label: 'Growing drug ingredients'
+    href: '/docs/gameplay/drug-crops/'
+  - label: 'Farm controllers and worker villagers'
+    href: '/docs/gameplay/drug-farms/'
+  - label: 'Cannabis strains and mutations'
+    href: '/docs/gameplay/cannabis-strains/'
+  - label: 'Using bongs and cartridges'
+    href: '/docs/gameplay/bongs-and-carts/'
+  - label: 'Cartel buyers and enforcer demands'
+    href: '/docs/gameplay/cartel-trading/'
+  - label: 'Drug commands and achievements'
+    href: '/docs/gameplay/drug-progression/'
 ---
 
 ## Choose a guide
@@ -53,5 +65,17 @@ Explore survival systems, recovery, and activities.
 - [Sleeping and keeping the night](/docs/gameplay/sleep/) — Understand night skipping and opt out when you need nighttime.
 
 - [Tolerance, withdrawal, and recovery](/docs/gameplay/tolerance-and-recovery/) — Understand persistent character effects and the in-game recovery routes.
+
+- [Growing drug ingredients](/docs/gameplay/drug-crops/) — Craft seeds, maintain growing conditions, and harvest recipe ingredients.
+
+- [Farm controllers and worker villagers](/docs/gameplay/drug-farms/) — Assign workers, store harvests, choose overflow behavior, and move farms.
+
+- [Cannabis strains and mutations](/docs/gameplay/cannabis-strains/) — Harvest buds, preserve strains, and collect mutations.
+
+- [Using bongs and cartridges](/docs/gameplay/bongs-and-carts/) — Place equipment and track remaining uses.
+
+- [Cartel buyers and enforcer demands](/docs/gameplay/cartel-trading/) — Sell finished drugs and handle timed delivery encounters.
+
+- [Drug commands and achievements](/docs/gameplay/drug-progression/) — Find player commands and native advancement milestones.
 
 {/* /audience */}
