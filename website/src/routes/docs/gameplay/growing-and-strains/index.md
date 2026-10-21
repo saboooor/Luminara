@@ -19,7 +19,7 @@ Drug crafting starts with growing custom ingredients. Planting stock, harvested 
 ## Your first harvest
 
 1. Open `/drugs` and click the item you want to make to inspect its recipe.
-2. Use `/drugs growing` for planting instructions. For ingredient crops, craft wheat seeds with the appropriate starter; cannabis starts with a fern.
+2. Use `/drugs growing` to open the crop guide dialog, or click a harvested ingredient in a recipe to open its growing guide. For ingredient crops, craft wheat seeds with the appropriate starter; cannabis starts with a fern.
 3. Prepare hydrated farmland, lighting of at least level 9, and enough space above the crop.
 4. Plant and right-click the crop empty-handed to inspect its progress and any paused conditions.
 5. Harvest when mature. Cannabis needs shears for buds.

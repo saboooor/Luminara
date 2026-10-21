@@ -19,7 +19,7 @@ Luminara has a fictional Minecraft drug system with temporary buffs, drawbacks, 
 ## Make and use a finished item
 
 1. Open `/drugs` to browse drugs, recovery items, and equipment.
-2. Click an item to inspect its current recipe. Use the page arrows for more items.
+2. Click an item to inspect its current recipe. Click a harvested ingredient in its crafting grid to open a growing dialog; use **Back to recipe** to return. Use the page arrows for more items.
 3. Grow any required [custom ingredients](/docs/gameplay/drug-crops/). Ordinary starter materials and planting stock cannot replace harvests.
 4. Craft the finished item, inspect its description, hold it in your **main hand**, and **right-click** to use it.
 5. Check `/drugstatus` for active effects and `/tolerance` for persistent tolerance.

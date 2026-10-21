@@ -12,6 +12,12 @@ extra_buttons:
     href: '/docs/gameplay/drug-farms/'
 ---
 
+## Open the growing guide
+
+Use `/drugs growing` to open a dialog with a crop picker, or `/drugs growing <crop>` for one crop, such as `/drugs growing coca`. Each guide shows its current configured growing time, seed starter, required conditions, harvest yield, and replanting instructions.
+
+You can also open `/drugs`, select a finished item to view its recipe, and **click a harvested ingredient** in the crafting grid. Its growing dialog opens with a **Back to recipe** button. Ordinary crafting materials do not open a growing guide. The same ingredient shortcut works in cartel enforcer recipe previews.
+
 ## Choose a crop
 
 Combine **one wheat seed with the starter item** in a shapeless crafting recipe to make a crop seed. These are fictional Minecraft crafting systems.

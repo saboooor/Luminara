@@ -18,7 +18,7 @@ extra_buttons:
 | -------------------------------- | -------------------------------------------------------------------------------------- |
 | `/drugs`                         | Opens the item menu; click an item to inspect its recipe.                              |
 | `/drugs help`                    | Shows actions available to your permissions.                                           |
-| `/drugs growing`                 | Explains custom crop planting and harvesting.                                          |
+| `/drugs growing`                 | Opens a crop picker dialog with planting and harvesting guides.                        |
 | `/strains`                       | Opens the cannabis strain index.                                                       |
 | `/tolerance`                     | Lists tolerance, maximums, and current potency for registered drugs.                   |
 | `/drugstatus` or `/drugs status` | Lists current drug, withdrawal, and other potion effects with durations and strengths. |
@@ -26,6 +26,8 @@ extra_buttons:
 | `/cartel reject`                 | Rejects your current enforcer demand.                                                  |
 
 Farm actions are available through the nearby controller's menu, including area selection, contracts, output chests, and overflow. Use that menu rather than trying to operate a distant farm through its internal button commands.
+
+Use `/drugs growing <crop>` to open a specific growing dialog. In recipe previews, click a harvested ingredient to see the guide and return with **Back to recipe**.
 
 ## Read status correctly
 
