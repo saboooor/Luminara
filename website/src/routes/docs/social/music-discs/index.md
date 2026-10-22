@@ -1,10 +1,10 @@
 ---
 icon: 'minecraft:item/music_disc_cat'
 title: 'Custom music discs'
-description: 'Burn playlists, mix songs with AutoMix, and control audio effects, screens, speakers, lights, and holograms.'
-keywords: 'vc-addon-discs disc burn playlist Spotify Apple Music AutoMix mixing filters jukebox Jellyfin subtitles screens visualizer speakers lights holograms horns'
+description: 'Burn playlists, use handheld jukeboxes, mix songs with AutoMix, and control audio effects, screens, speakers, lights, and holograms.'
+keywords: 'vc-addon-discs disc burn playlist Spotify Apple Music AutoMix mixing filters jukebox handheld portable Jellyfin subtitles screens visualizer speakers lights holograms horns'
 date_created: '2026-10-17'
-last_updated: '2026-10-21'
+last_updated: '2026-10-22'
 extra_buttons:
   - label: 'Getting help'
     href: '/docs/getting-started/troubleshooting/'
@@ -97,7 +97,23 @@ The hologram and playback controls show analysis status. **✨** means a beat-ma
 
 Uncertain or mismatched beats use a short smooth fade without automatic tempo/filter sweeps. A missing sparkle does not mean transitions are disabled. This is beat-based mixing; it does not detect harmonic keys or musical phrases.
 
-Skipping or selecting a queue track keeps the current song playing while its replacement loads, then blends using the available mix plan or crossfade setting. With Loop off, skipping the last song fades to silence. Pause/buffering freeze the transmitted-audio fade clock; Stop cancels playback and preparation. If a next song fails to load or decode, its disc is unburned and the queue tries the following song while current playback continues. An uncertain beat alone never erases a disc. Jellyfin connection failures are handled separately, as described below.
+Skipping or selecting a queue track keeps the current song playing while its replacement loads, then blends using the available mix plan or crossfade setting. With Loop off, skipping the last song fades to silence. Pause/buffering freeze the transmitted-audio fade clock; Stop cancels playback and preparation. If a next song fails to load or decode, its disc is unburned and the queue tries the following song while current playback continues. An uncertain beat alone never erases a disc. Provider sign-in, OAuth, CAPTCHA/bot-verification, and rate-limit errors also preserve the disc's burn metadata and stop the queue so you can retry after the connection recovers. Jellyfin connection failures are handled the same way, as described below.
+
+## Handheld jukeboxes
+
+Craft a **Handheld Jukebox** to carry a personal 18-slot disc queue that plays around you as you move:
+
+```text
+Copper Nugget | Jukebox        | Copper Nugget
+Copper Nugget | Amethyst Shard | Copper Nugget
+Copper Nugget | Copper Nugget  | Copper Nugget
+```
+
+Right-click the crafted amethyst shard (**Handheld Jukebox**) to open its playback controls:
+
+- Choose **Open Queue** to open an **18-slot chest inventory** that holds real burned music discs. Move discs in and out just like a normal chest; playback follows slot order, and taking a disc back returns the original item and metadata.
+- Use the same **play/pause**, **skip**, **stop**, **seek**, **loop/shuffle**, **volume**, **audio effects**, and **equalizer** controls as a placed jukebox. Volume, queue modes, and effects are saved directly on the item.
+- Keep the device **anywhere in your player inventory** (including your offhand) while listening—nearby players hear the music follow you using the horn listening distance. Closing the dialog leaves music playing; dropping the item, putting it into a container, dying, or disconnecting stops playback.
 
 ## Audio effects and filters
 
@@ -132,19 +148,45 @@ Use the **Stereo** button to toggle this mode or turn it off, and the separate u
 
 ### Linked lights
 
-Open **Lights**, choose a response, and right-click a placed light within **32 blocks** and **two minutes**. Each light has one jukebox source; several lights can share the same source. Selecting a new response and clicking an already linked light changes its band. Use **Unlink light** to release it.
+Open **Lights** in the jukebox controls and choose **Configure lights** to temporarily equip a set of named frequency-band dyes in your hotbar (slots 1–8) plus an **Unlink Light / Finish** dye in slot 9:
 
-Responses are **Bass**, **Mids**, **Highs**, **Deep bass**, **Low mids**, **Vocal range**, **Sparkle**, and **Full spectrum**. Vocal range is a frequency range, not isolated vocals; Sparkle follows bright high frequencies.
+| Hotbar slot & dye | Frequency band | Response |
+| --- | --- | --- |
+| 1 · Red Dye | **Deep bass** | Sub-bass and heavy low thumps |
+| 2 · Orange Dye | **Bass** | Kick drums and basslines |
+| 3 · Yellow Dye | **Low mids** | Warmth and lower rhythm instruments |
+| 4 · Lime Dye | **Mid** | Main midrange instruments |
+| 5 · Cyan Dye | **Vocal range** | Upper-mid vocal frequency range (not isolated vocals) |
+| 6 · Light Blue Dye | **Highs** | Treble, hi-hats, and snares |
+| 7 · Magenta Dye | **Sparkle** | Airy, bright high frequencies |
+| 8 · White Dye | **Full spectrum** | Responds across all frequency bands |
+| 9 · Black Dye | **Unlink Light / Finish** | Releases a linked light block |
 
-Supported blocks include redstone lamps, copper bulbs, glowstone, sea lanterns, shroomlights, froglights, jack o'lanterns, magma blocks, crying obsidian, redstone blocks, and beacons. Blocks with a native lit state use it; always-lit blocks temporarily become black concrete while off. Redstone blocks provide power while on. Beacons stay in place and need an empty space immediately above them for a temporary black-concrete beam shutter, plus their usual valid base and clear beam path.
+Select any dye and right-click supported light blocks within **32 blocks** to assign them to that frequency band. You can keep clicking multiple blocks and switch between dyes in your hotbar without reopening the menu. Linked lights glow in their band color with a floating hologram label while you configure them. **Sneak-right-click** or **right-click the jukebox** when finished to restore your original hotbar items.
 
-Lights reset on pause/stop, chunk unload, and plugin shutdown. Original block data is restored when released; ordinary redstone power still applies to native lit blocks. Breaking a light or its jukebox clears the link. Lights operate independently of visualizers.
+Supported blocks:
+
+- **Native lit blocks:** Redstone lamps and copper bulbs toggle their lit state (and respect external redstone power when idle).
+- **Solid emitters:** Glowstone, sea lanterns, shroomlights, froglights, jack o'lanterns, magma blocks, crying obsidian, and redstone blocks (which emit redstone power while lit and become black concrete while off).
+- **Color-changing wool:** Any **wool** block cycles through vibrant wool colors with the frequency band and beat when lit, turns into black wool when off during playback, and restores its original wool color when stopped or unlinked.
+- **Color-changing beacons:** Beacons stay in place and use the empty block directly above them as a beam shutter—cycling through colored stained glass on beats to shift the beacon beam's color, placing black concrete while off, and restoring air when playback stops.
+
+Envelope response and lighting modes in **Lights**:
+
+- **Automatic gain & sustain:** Quiet songs automatically normalize to trigger flashes cleanly. Normal beats flash and decay; prominent sustained bass or highs hold the light solidly on; **very loud** sustained sections flicker/buzz until the intense passage ends. All chunks update in sync from a shared per-band envelope.
+- **Falloff settings:** Open **Falloff settings** to adjust how long flashes stay lit (**0–100%**) or toggle **Auto falloff (tempo)**. Auto falloff is **enabled by default** and adapts light decay automatically to the song's detected BPM (and playback speed/tempo).
+- **Wave ripple mode:** Delays each light's response by its distance from the jukebox so beats ripple outward across the room.
+- **Beat chase mode:** When two or more lights share the same band, paired lights alternate on consecutive beats and strobe in opposite phase during intense sustained buzzes.
+- **Show / Hide lights:** Toggles a 30-second colored glow outline and floating band/block-type hologram on every light linked to the jukebox.
+- **Unset all lights:** Releases and restores all lights linked to the jukebox at once.
+
+Lights reset on pause/stop, chunk unload, and plugin shutdown. Breaking a light or its jukebox clears the link. Lights operate independently of visualizers.
 
 ## Set up visualizers and holograms
 
 Open **Visualizer settings** to add up to **eight** visualizers per jukebox. Choose frequency bars or a speaker driver that pulses with bass. Each can have its own facing, size, offset, and enabled state. These displays require Minecraft 1.19.4 or newer.
 
-Hold a **stick**, look at the jukebox or its chest within **six blocks**, then run `/disc visualizer edit` or `/disc hologram`. Visualizer settings offer **Move / resize in world**. **Manage holograms** offers **Move main hologram** and **Move queue hologram**, with separate reset buttons.
+Hold a **stick** (or let the menu equip one automatically when a free slot is available), look at the jukebox or its chest within **six blocks**, then run `/disc visualizer edit` or `/disc hologram`. Visualizer settings offer **Move / resize in world**. **Manage holograms** offers **Move main hologram** and **Move queue hologram**, with separate reset buttons.
 
 | Input                         | Action                                                        |
 | ----------------------------- | ------------------------------------------------------------- |
@@ -187,7 +229,7 @@ Videos from that jukebox's tracks play across the frames with black letterboxing
 | `/disc screen delete <name>`     | Delete its configuration                 |
 | `/disc screen cancel`            | Cancel an unfinished selection           |
 
-Screens are enabled on Luminara at **30 FPS**, with video updates sent to viewers within **48 blocks**. Standard map rendering uses ordered dithering at strength **12** for smoother gradients. Full-color delivery to compatible Fabric screen-companion clients is enabled at JPEG quality **85**. The screen viewing range is separate from the jukebox audio range.
+Screens are enabled on Luminara at up to **30 FPS** (adjustable per screen from **1 FPS to the server maximum** in the jukebox's **Screen** menu), with video updates sent to viewers within **48 blocks**. Standard map rendering uses ordered dithering at strength **12** for smoother gradients. Compatible Fabric **screen-companion** clients receive high-resolution (up to **1080p** by default) low-latency **H.264** (or JPEG fallback) full-color video streams using a bundled pure-Java decoder. The screen viewing range is separate from the jukebox audio range.
 
 Screen management requires permission, and rendering uses server-side `ffmpeg`. Automatic portable FFmpeg installation is enabled if it is missing; staff can also use `/disc screen install-ffmpeg`. The configured YouTube video resolver is `yt-dlp`, when available. Network loading can delay video after a seek.
 
@@ -201,7 +243,7 @@ Run `/disc jellyfin` or `/disc jellyfin connect [server-url]`, including any rev
 
 Hold a burnable disc and choose media from the browser. Use `/disc jellyfin browse` to reopen it, `/disc jellyfin search <text>` to filter, `/disc jellyfin cancel` to cancel input, or `/disc jellyfin disconnect` to remove the saved connection.
 
-The library supports music, audiobooks, movies, episodes, music videos, and home videos. Video audio requires Jellyfin audio-transcoding permission; linked screens also need permission to play the original video. Video audio transcodes cannot seek, while supported original audio files can. The Minecraft server must be able to reach your Jellyfin server; use its final URL and HTTPS for remote connections.
+The library supports music, audiobooks, movies, TV shows (grouped by series with ordered season/episode navigation and scoped search), music videos, and home videos. Video audio requires Jellyfin audio-transcoding permission; linked screens also need permission to play the original video. Video audio transcodes cannot seek, while supported original audio files can. The Minecraft server must be able to reach your Jellyfin server; use its final URL and HTTPS for remote connections.
 
 Discs can be shared and use the owner's saved connection even while the owner is offline. Passwords are not saved; server-side access tokens are. The disc contains a random reference rather than credentials. Disconnecting or revoking the token breaks access until the same server/account reconnects. A different account does not unlock existing discs.
 
@@ -211,7 +253,7 @@ Playback and controls are available by default in the plugin. Burning, searching
 
 If silent, check your voice connection, output device, voice/source volume, jukebox volume, distance, and pause state. Compare a known-working disc and another nearby listener. Protection plugins can block chest or jukebox interactions.
 
-An ordinary remote track that fails lookup or stalls can lose its custom audio and be skipped. Jellyfin connection failures preserve the disc reference and stop the queue; check the owner's connection before retrying. Remote audio lookup/startup times out after 30 seconds; Jellyfin transcoding startup can take up to 60 seconds.
+An ordinary remote track that fails lookup or stalls can lose its custom audio and be skipped. Provider sign-in, OAuth, CAPTCHA/bot-verification, rate-limit, and Jellyfin connection failures preserve the disc reference and stop the queue rather than erasing discs; check the provider or owner's connection before retrying. Remote audio lookup/startup times out after 30 seconds; Jellyfin transcoding startup can take up to 60 seconds.
 
 YouTube OAuth2 and a remote cipher service are enabled in this configuration. For YouTube login or player-script errors, report the exact message to staff. Staff can inspect `/disc oauth status`, authorize using `/disc oauth` (the pairing code appears in the server console), or force reauthorization with `/disc oauth force`. `/disc reload` reloads runtime settings without interrupting music; source, proxy, YouTube, and recipe settings require a restart. Never include pairing codes, tokens, or passwords in support reports.
 

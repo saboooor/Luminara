@@ -4,7 +4,7 @@ title: 'Social'
 description: 'Chat, listen, pose, and personalize your character.'
 keywords: ''
 date_created: '2026-10-17'
-last_updated: '2026-10-20'
+last_updated: '2026-10-22'
 extra_buttons:
   - label: 'Colors and text formatting'
     href: '/docs/social/colors/'
@@ -38,7 +38,7 @@ Chat, listen, pose, and personalize your character.
 
 - [Chat, item previews, and Discord](/docs/social/chat-and-discord/) — Share item information and stay connected to the community.
 
-- [Custom music discs](/docs/social/music-discs/) — Burn music, build queues, and set up screens, speakers, visualizers, and Jellyfin.
+- [Custom music discs](/docs/social/music-discs/) — Burn music, craft handheld jukeboxes, build queues, and set up screens, speakers, lights, visualizers, and Jellyfin.
 
 - [Personal particles](/docs/social/particles/) — Choose visual effects and styles that suit your character.
 
