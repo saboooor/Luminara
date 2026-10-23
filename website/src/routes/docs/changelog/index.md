@@ -2,12 +2,42 @@
 icon: 'minecraft:item/writable_book'
 title: 'Changelog'
 description: 'Server updates, feature releases, and balance changes on Luminara.'
-keywords: 'changelog updates announcements reset nether end world border homes jobs lumistones vehicles crates auction tree chopping shelves'
+keywords: 'changelog updates announcements reset nether end world border homes jobs lumistones vehicles crates auction tree chopping shelves music discs headdb birdmoji handbook'
 date_created: '2026-10-18'
-last_updated: '2026-10-18'
+last_updated: '2026-10-23'
 ---
 
 Server announcements and changes, with the newest updates first. Plans and availability below reflect what was announced on each date. All scheduled times are in Eastern Time (America/Toronto).
+
+## Oct 23 2026
+
+# Weekly Feature Update
+
+### Lumistones
+
+- The management menu now groups Private, Public, and Global access under **Visibility**. Global access lets everyone travel to a stone without discovering it first.
+- Moving a stone keeps its settings alongside its name and discoveries. Existing global stones keep their global access without paying again.
+- Warp scrolls let you travel to lumistones without having to place one down. Craft one with four pieces of paper around an ender pearl; they are one-time use.
+
+### Custom music discs
+
+Custom discs have a lot more to play with! Use `/disc burn <url>` while holding a disc, and put it in a jukebox. Both Plasmo and Simple Voice Chat can receive the audio.
+
+- Burn music from YouTube, SoundCloud, Bandcamp, or your own Jellyfin library. Goat horns can hold custom audio too.
+- Put a chest or shulker box on a jukebox to build a disc queue. `/disc playlist <playlisturl>` can burn a playlist into a chest of discs
+- Optional AutoMix matches beats and tempos for smoother transitions between songs.
+- Craft a **Handheld Jukebox** for an 18-disc queue that plays around you as you move.
+- Link lights to different frequency bands so they react to the music. Add visualizers, and move or hide the playback and queue holograms.
+- Item-frame screens can play linked video, with Jellyfin subtitles and an optional Fabric screen companion for full-color video.
+- Mining and replacing a jukebox preserves its playback settings, effects, displays, and valid links. Queues can also resume after their chunk unloads during the same server session.
+
+[custom music disc guide](/docs/social/music-discs/)
+
+### Other
+Use `/hdb` to browse decorative heads for your builds! Search with `/hdb search <query>`
+
+The website now has a [player handbook](/docs/) with guides for everything you need to know. The guides are also available through the in-game handbook, you can also search with /guide <search>
+{/* pagebreak */}
 
 ## Oct 16 2026
 
