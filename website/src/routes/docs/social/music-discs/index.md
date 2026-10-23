@@ -2,9 +2,9 @@
 icon: 'minecraft:item/music_disc_cat'
 title: 'Custom music discs'
 description: 'Burn playlists, use handheld jukeboxes, mix songs with AutoMix, and control audio effects, screens, speakers, lights, and holograms.'
-keywords: 'vc-addon-discs disc burn playlist Spotify Apple Music AutoMix mixing filters jukebox handheld portable Jellyfin subtitles screens visualizer speakers lights holograms horns'
+keywords: 'vc-addon-discs disc burn playlist shulker Spotify Apple Music AutoMix mixing filters jukebox handheld portable Jellyfin subtitles screens visualizer speakers lights holograms horns'
 date_created: '2026-10-17'
-last_updated: '2026-10-22'
+last_updated: '2026-10-23'
 extra_buttons:
   - label: 'Getting help'
     href: '/docs/getting-started/troubleshooting/'
@@ -23,7 +23,7 @@ Hold a music disc in your main hand. Command permissions still apply. Luminara d
 | `/disc search <query>`                                        | Search YouTube for a song                                                  |
 | `/disc burn <url> [name]`                                     | Burn supported audio onto the held disc, optionally naming it              |
 | `/disc erase`                                                 | Remove custom audio and restore an ordinary disc or horn                   |
-| `/disc playlist <playlisturl> [shuffle\|reverse] [overwrite]` | Prepare a playlist for burning into a chest of discs                       |
+| `/disc playlist <playlisturl> [shuffle\|reverse] [overwrite]` | Prepare a playlist for burning into a chest or shulker box of discs        |
 | `/disc cancel [player]`                                       | Stop goat-horn playback; stopping another player requires extra permission |
 
 Insert a burned disc into a jukebox. Audio sources include your connected Jellyfin library, YouTube videos/live streams, SoundCloud, Bandcamp, Vimeo, Twitch streams, and direct HTTP audio URLs. Direct files can use MP3, FLAC, WAV, AAC, OGG, supported MP4/M4A or WebM/Matroska audio, and M3U/PLS stream playlists. Availability depends on the remote service.
@@ -46,23 +46,25 @@ The Plasmo Voice source line defaults to **50% volume**, adjustable in the clien
 
 Goat horns have a **15-block** range and **no configured duration limit**. Hold a horn to burn it, then use it to play its audio; `/disc cancel` stops it. On Minecraft 26.3, burned horns lack the vanilla use animation; erasing restores the original instrument.
 
-## Build a chest queue
+## Build a chest or shulker box queue
 
-1. Place a single or double chest directly above a jukebox.
-2. Put burned discs in the chest in the order you want to hear them. Ordinary discs remain stored but are skipped.
-3. Right-click the jukebox and choose **Play chest** to start the queue. Opening, closing, clicking, or dragging items in the chest does not start playback. Playlist burning, hopper additions, and inserting a disc through the jukebox can still start an idle queue.
+1. Place a single chest, double chest, or shulker box directly above a jukebox. All shulker box colors are supported.
+2. Put burned discs in the container in the order you want to hear them. Ordinary discs remain stored but are skipped.
+3. Right-click the jukebox and choose **Play container** to start the queue. Opening, closing, clicking, or dragging items in the container does not start playback. Playlist burning, hopper additions, and inserting a disc through the jukebox can still start an idle queue.
 
-Discs stay in the chest while playing. Adding, removing, or moving them updates the queue in slot order. Removing the current disc lets its song finish. Right-clicking the jukebox with a disc stores one in the chest; a full chest leaves it in your hand.
+Sneak-right-click the chest or shulker box to open it while a playlist is selected.
 
-To burn an entire playlist, put individual, unstacked music discs in the chest, run `/disc playlist <playlisturl>`, and right-click that chest within **two minutes** while the jukebox is empty. Existing burned discs are preserved by default; add `overwrite` to replace their songs, for example `/disc playlist <playlisturl> shuffle overwrite`. Non-disc items and stacks are skipped; available discs determine how many tracks are burned. Add `shuffle` to choose random playlist entries without repeats, or `reverse` to start at the last entry.
+Discs stay in the container while playing. Adding, removing, or moving them updates the queue in slot order. Removing the current disc lets its song finish. Right-clicking the jukebox with a disc stores one in the container; a full container leaves it in your hand.
 
-Queues play once by default. Enable **Loop** to repeat or **Shuffle** to visit every disc in random order each pass. Loop also repeats a standalone burned disc. Breaking the chest or jukebox stops playback. When a jukebox chunk unloads, the plugin remembers the current disc, song position, and pause state. Loading that chunk again resumes standalone discs and chest queues even with Loop off. A moved queue disc is located again; a removed or replaced disc is not resumed. These playback snapshots last only for the current server session and are lost on restart or plugin reload. Non-seekable streams reconnect without seeking.
+To burn an entire playlist, put individual, unstacked music discs in the chest or shulker box, run `/disc playlist <playlisturl>`, and right-click that container within **two minutes** while the jukebox is empty. Existing burned discs are preserved by default; add `overwrite` to replace their songs, for example `/disc playlist <playlisturl> shuffle overwrite`. Non-disc items and stacks are skipped; available discs determine how many tracks are burned. Add `shuffle` to choose random playlist entries without repeats, or `reverse` to start at the last entry.
+
+Queues play once by default. Enable **Loop** to repeat or **Shuffle** to visit every disc in random order each pass. Loop also repeats a standalone burned disc. Breaking the container or jukebox stops playback. When a jukebox chunk unloads, the plugin remembers the current disc, song position, and pause state. Loading that chunk again resumes standalone discs and container queues even with Loop off. A moved queue disc is located again; a removed or replaced disc is not resumed. These playback snapshots last only for the current server session and are lost on restart or plugin reload. Non-seekable streams reconnect without seeking.
 
 ### Spotify and Apple Music playlists
 
 Public Spotify and Apple Music playlist links work with `/disc playlist`, including Spotify regional share links, `spotify:playlist:ID`, and short Apple Music links such as `https://music.apple.com/ca/playlist/pl.u-ID`.
 
-The command first reads song names and artists. **Matching happens only when you right-click the chest**, and only enough songs are matched for its eligible discs. Shuffle/reverse is applied before choosing those songs. Existing custom discs are excluded unless you explicitly use `overwrite`. If the selected chest slots change while songs are being matched, retry the chest click. Repeated clicks do not start duplicate matching jobs.
+The command first reads song names and artists. **Matching happens only when you right-click the container**, and only enough songs are matched for its eligible discs. Shuffle/reverse is applied before choosing those songs. Existing custom discs are excluded unless you explicitly use `overwrite`. If the selected container slots change while songs are being matched, retry the container click. Repeated clicks do not start duplicate matching jobs.
 
 Songs are matched to YouTube results for playback; matches can be a different recording. The plugin does not stream subscription audio from Spotify or Apple Music. Public imports need no player login or API token, but private or region-blocked playlists may not work. Spotify's public embed supplies at most **100 entries**; the command warns if a longer playlist may be incomplete. Apple Music imports the entries exposed by its page and warns when its advertised count is larger. Public-page formats can change. Staff can optionally configure API credentials for paginated imports up to 1,000 songs; Spotify access-token renewal is manual.
 
@@ -71,7 +73,7 @@ Songs are matched to YouTube results for playback; matches can be a different re
 Right-click a jukebox containing a custom disc or running a queue to open its playback dialog. Sneak-right-click opens controls only when both hands are empty, so you can still place blocks while holding items.
 
 - Pause/resume, stop, replay, or explicitly eject a standalone disc.
-- Select a numbered queue track to jump to it; selecting the current track restarts it. **Refresh** updates queue buttons after chest changes.
+- Select a numbered queue track to jump to it; selecting the current track restarts it. **Refresh** updates queue buttons after container changes.
 - Adjust volume from **0–100%**. Use **Seek** for steps of 15/30 seconds, one minute, or five minutes on seekable tracks. Linked video follows the new position; live streams cannot seek.
 - Open **Mixing** to enable/disable transitions or set **0–30 seconds** with the -1s/+1s buttons. New jukeboxes default to three seconds. Changes affect upcoming transitions; live streams transition normally.
 
@@ -150,17 +152,17 @@ Use the **Stereo** button to toggle this mode or turn it off, and the separate u
 
 Open **Lights** in the jukebox controls and choose **Configure lights** to temporarily equip a set of named frequency-band dyes in your hotbar (slots 1–8) plus an **Unlink Light / Finish** dye in slot 9:
 
-| Hotbar slot & dye | Frequency band | Response |
-| --- | --- | --- |
-| 1 · Red Dye | **Deep bass** | Sub-bass and heavy low thumps |
-| 2 · Orange Dye | **Bass** | Kick drums and basslines |
-| 3 · Yellow Dye | **Low mids** | Warmth and lower rhythm instruments |
-| 4 · Lime Dye | **Mid** | Main midrange instruments |
-| 5 · Cyan Dye | **Vocal range** | Upper-mid vocal frequency range (not isolated vocals) |
-| 6 · Light Blue Dye | **Highs** | Treble, hi-hats, and snares |
-| 7 · Magenta Dye | **Sparkle** | Airy, bright high frequencies |
-| 8 · White Dye | **Full spectrum** | Responds across all frequency bands |
-| 9 · Black Dye | **Unlink Light / Finish** | Releases a linked light block |
+| Hotbar slot & dye  | Frequency band            | Response                                              |
+| ------------------ | ------------------------- | ----------------------------------------------------- |
+| 1 · Red Dye        | **Deep bass**             | Sub-bass and heavy low thumps                         |
+| 2 · Orange Dye     | **Bass**                  | Kick drums and basslines                              |
+| 3 · Yellow Dye     | **Low mids**              | Warmth and lower rhythm instruments                   |
+| 4 · Lime Dye       | **Mid**                   | Main midrange instruments                             |
+| 5 · Cyan Dye       | **Vocal range**           | Upper-mid vocal frequency range (not isolated vocals) |
+| 6 · Light Blue Dye | **Highs**                 | Treble, hi-hats, and snares                           |
+| 7 · Magenta Dye    | **Sparkle**               | Airy, bright high frequencies                         |
+| 8 · White Dye      | **Full spectrum**         | Responds across all frequency bands                   |
+| 9 · Black Dye      | **Unlink Light / Finish** | Releases a linked light block                         |
 
 Select any dye and right-click supported light blocks within **32 blocks** to assign them to that frequency band. You can keep clicking multiple blocks and switch between dyes in your hotbar without reopening the menu. Linked lights glow in their band color with a floating hologram label while you configure them. **Sneak-right-click** or **right-click the jukebox** when finished to restore your original hotbar items.
 
@@ -186,7 +188,7 @@ Lights reset on pause/stop, chunk unload, and plugin shutdown. Breaking a light 
 
 Open **Visualizer settings** to add up to **eight** visualizers per jukebox. Choose frequency bars or a speaker driver that pulses with bass. Each can have its own facing, size, offset, and enabled state. These displays require Minecraft 1.19.4 or newer.
 
-Hold a **stick** (or let the menu equip one automatically when a free slot is available), look at the jukebox or its chest within **six blocks**, then run `/disc visualizer edit` or `/disc hologram`. Visualizer settings offer **Move / resize in world**. **Manage holograms** offers **Move main hologram** and **Move queue hologram**, with separate reset buttons.
+Hold a **stick** (or let the menu equip one automatically when a free slot is available), look at the jukebox or its chest or shulker box within **six blocks**, then run `/disc visualizer edit` or `/disc hologram`. Visualizer settings offer **Move / resize in world**. **Manage holograms** offers **Move main hologram** and **Move queue hologram**, with separate reset buttons.
 
 | Input                         | Action                                                        |
 | ----------------------------- | ------------------------------------------------------------- |
@@ -202,11 +204,13 @@ Hold a **stick** (or let the menu equip one automatically when a free slot is av
 
 Only one person can edit a jukebox at a time. Switching items, leaving, disconnecting, or five minutes of inactivity ends editing. Disabled visualizers can appear as editing previews without becoming enabled for playback.
 
-Mining a jukebox preserves volume, loop/shuffle, stereo, crossfade, AutoMix, audio effects and filter cutoffs, both hologram positions/visibility, visualizer settings, and physical links on its dropped item, marked **Saved jukebox settings**. Replacing it restores that setup, including creative-mode drops. Music and chest contents do not travel with it. Lamps and frames remain in place; links restore only when the original targets are still available and satisfy their range/link restrictions.
+Mining a jukebox preserves volume, loop/shuffle, stereo, crossfade, AutoMix, audio effects and filter cutoffs, both hologram positions/visibility, visualizer settings, and physical links on its dropped item, marked **Saved jukebox settings**. Replacing it restores that setup, including creative-mode drops. Discs and other items in the chest or shulker box do not travel with the jukebox. Lamps and frames remain in place; links restore only when the original targets are still available and satisfy their range/link restrictions.
 
 ### Main and queue holograms
 
-Open **Manage holograms** to enable/disable the **main playback hologram** and **queue hologram** independently. The queue display shows up to five tracks in chest order, marks the current song, and counts further entries. Shuffle can play them in a different order. The queue hologram appears while a chest queue is playing.
+Open **Manage holograms** to enable/disable the **main playback hologram** and **queue hologram** independently. The queue display shows up to five tracks in container slot order, marks the current song, and counts further entries. Shuffle can play them in a different order. The queue hologram appears while a chest or shulker box queue is playing.
+
+Holograms and visualizers sit above the chest or shulker box by default.
 
 Each hologram has its own saved position, move action, and reset button. Moving one leaves the other in place. Disabled displays can appear temporarily as editing previews. Visibility and position choices persist across restarts and travel with saved jukebox items.
 
@@ -251,7 +255,7 @@ Discs can be shared and use the owner's saved connection even while the owner is
 
 Playback and controls are available by default in the plugin. Burning, searching, erasing, playlists, Jellyfin, screen management, and horn cancellation default to operators unless granted by the server. Permissions use `pv.addon.discs.*`, with matching `vc.addon.discs.*` aliases. Playlists require both `playlist` and `burn`; Jellyfin burning also requires `jellyfin` and `burn`. Controls and display editing require `control` and `play`.
 
-If silent, check your voice connection, output device, voice/source volume, jukebox volume, distance, and pause state. Compare a known-working disc and another nearby listener. Protection plugins can block chest or jukebox interactions.
+If silent, check your voice connection, output device, voice/source volume, jukebox volume, distance, and pause state. Compare a known-working disc and another nearby listener. Protection plugins can block chest, shulker box, or jukebox interactions.
 
 An ordinary remote track that fails lookup or stalls can lose its custom audio and be skipped. Provider sign-in, OAuth, CAPTCHA/bot-verification, rate-limit, and Jellyfin connection failures preserve the disc reference and stop the queue rather than erasing discs; check the provider or owner's connection before retrying. Remote audio lookup/startup times out after 30 seconds; Jellyfin transcoding startup can take up to 60 seconds.
 
