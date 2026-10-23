@@ -4,7 +4,7 @@ title: 'Warp scrolls'
 description: 'Carry a single-use route back to a discovered destination.'
 keywords: 'lumistones scroll recipe paper exploration return'
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-22'
 extra_buttons:
   - label: 'Discovering waystones'
     href: '/docs/travel/waystones/'
@@ -36,7 +36,7 @@ Check the recipe book if the server recipe changes.
 
 Hold the scroll in your **main hand** and right-click the air. Choose an available destination, read any displayed cost, and remain still through the travel warmup.
 
-A scroll uses your existing waystone discoveries. It does not unlock an unvisited local stone or let you enter someone else's private one. Click a stone directly and you use normal stone travel instead.
+A scroll offers your discovered Public stones and any available Global stones without requiring a visit to those Global stones. It does not unlock an unvisited public stone or let you enter someone else's private one. Click a stone directly and you use normal stone travel instead.
 
 ## Consumption and failed trips
 

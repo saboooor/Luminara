@@ -4,7 +4,7 @@ title: 'Crafting and placing waystones'
 description: 'Build a travel stop with room for its monument and landing area.'
 keywords: 'lumistones recipe crafting obsidian spacing'
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-22'
 extra_buttons:
   - label: 'Waystone privacy and appearance'
     href: '/docs/travel/managing-waystones/'
@@ -40,12 +40,16 @@ Stones have a minimum spacing requirement within the same world. The bundled def
 
 ## Name your stop
 
-Placement discovers the destination for you and opens management. Give it a recognizable name such as “Birch Harbor” or “North Quarry”. Press **Close** to save a typed name; Escape dismisses the draft without saving.
+New stones receive a random fantasy name. Placement discovers the destination for you and opens management. Give it a recognizable name such as “Birch Harbor” or “North Quarry”. Press **Close** to save a typed name; Escape dismisses the draft without saving.
 
-Other players must visit and activate a local stone before travelling to it. A stone inside your base is not automatically private: use [private access](/docs/travel/managing-waystones/) if only you should use it.
+Name labels fit onto all four sides of the rim, with runes on the pillar. These text overlays stay hidden from each player until they discover the stone; the monument itself remains visible.
+
+Other players must visit and activate a public stone before travelling to it. New stones are Public by default, though the server can make new placements Private. Check **Visibility** in management: use [private access](/docs/travel/managing-waystones/) if only you should use it.
 
 ## Move it later
 
-Mine a polished tuff wall anchor to retrieve your stone. Survival retrieval drops one waystone item; pick it up before leaving. Replacing it preserves its identity, discoveries, name, access settings, and appearance. Keep the new landing area clear.
+The default anchor is two stacked polished tuff walls. Either can be clicked or mined; breaking either retrieves one item and clears the stack.
+
+Mine a polished tuff wall anchor to retrieve your stone. Survival retrieval drops one waystone item; pick it up before leaving. Replacing it preserves its identity, owner, discoveries, name, access settings, body material, anchor height, owner head, and menu icon, including after a restart. Global access is retained without paying again. Keep the new landing area clear.
 
 For recoloring and privacy, see [managing waystones](/docs/travel/managing-waystones/).
