@@ -4,8 +4,10 @@ title: 'Progression'
 description: 'Grow your skills, collect catches, and earn rewards.'
 keywords: ''
 date_created: '2026-10-17'
-last_updated: '2026-10-17'
+last_updated: '2026-10-23'
 extra_buttons:
+  - label: 'Bottling XP'
+    href: '/docs/progression/bottling-xp/'
   - label: 'Collecting and selling fish'
     href: '/docs/progression/fishing/'
   - label: 'Fishing competitions'
@@ -25,6 +27,8 @@ extra_buttons:
 Grow your skills, collect catches, and earn rewards.
 
 {/* audience:website */}
+
+- [Bottling XP](/docs/progression/bottling-xp/) — Store vanilla experience in bottles for later use or trading.
 
 - [Collecting and selling fish](/docs/progression/fishing/) — Recognize special catches, use bait, and avoid selling a collection by mistake.
 

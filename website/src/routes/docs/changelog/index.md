@@ -2,7 +2,7 @@
 icon: 'minecraft:item/writable_book'
 title: 'Changelog'
 description: 'Server updates, feature releases, and balance changes on Luminara.'
-keywords: 'changelog updates announcements reset nether end world border homes jobs lumistones vehicles crates auction tree chopping shelves music discs headdb birdmoji handbook'
+keywords: 'changelog updates announcements reset nether end world border homes jobs lumistones vehicles crates auction tree chopping shelves music discs headdb birdmoji handbook bottledexp bottle xp'
 date_created: '2026-10-18'
 last_updated: '2026-10-23'
 ---
@@ -34,6 +34,9 @@ Custom discs have a lot more to play with! Use `/disc burn <url>` while holding 
 [custom music disc guide](/docs/social/music-discs/)
 
 ### Other
+
+BottledExp is now available! Store your vanilla XP in experience bottles for later use or trading with `/bottle get <amount>`. See the [bottling XP guide](/docs/progression/bottling-xp/) for commands and details.
+
 Use `/hdb` to browse decorative heads for your builds! Search with `/hdb search <query>`
 
 The website now has a [player handbook](/docs/) with guides for everything you need to know. The guides are also available through the in-game handbook, you can also search with /guide <search>
