@@ -129,7 +129,6 @@ export default component$(() => {
               'https://www.curseforge.com/servers/minecraft/game/luminara'
             );
             window.open('https://minecraftservers.org/vote/667461');
-            window.open('https://minecraft-server.net/vote/ssaabboooorr');
             window.open('https://minecraft-mp.com/server/337205/vote');
             window.open(
               'https://minecraftpocket-servers.com/server/129088/vote'
