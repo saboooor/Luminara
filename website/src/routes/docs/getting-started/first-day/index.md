@@ -30,8 +30,6 @@ extra_buttons:
     href: '/docs/economy/chest-shops/'
   - label: 'Collecting and selling fish'
     href: '/docs/progression/fishing/'
-  - label: 'Ice-boat and kart racing'
-    href: '/docs/gameplay/racing/'
   - label: 'AngelChest recovery guide'
     href: '/docs/gameplay/angelchests/'
 ---
@@ -60,12 +58,12 @@ Before spending savings, compare [auction listings](/docs/economy/auction-buying
 
 {/* audience:website */}
 
-Join [Discord](/discord/) for announcements. Try [fishing](/docs/progression/fishing/), a [race](/docs/gameplay/racing/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
+Join [Discord](/discord/) for announcements. Try [fishing](/docs/progression/fishing/), [minigames](/docs/gameplay/minigames/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
 
 {/* /audience */}
 
 {/* audience:minecraft */}
 
-Join [Discord](https://luminaramc.org/discord/) for announcements. Try [fishing](/docs/progression/fishing/), a [race](/docs/gameplay/racing/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
+Join [Discord](https://luminaramc.org/discord/) for announcements. Try [fishing](/docs/progression/fishing/), [minigames](/docs/gameplay/minigames/), or a shared build once you have a dependable home. If you die, follow the [AngelChest recovery guide](/docs/gameplay/angelchests/).
 
 {/* /audience */}

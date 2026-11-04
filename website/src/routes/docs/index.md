@@ -40,8 +40,6 @@ extra_buttons:
     href: '/docs/social/voice-chat/'
   - label: 'Talk or play music — music discs'
     href: '/docs/social/music-discs/'
-  - label: 'Take a break from survival — Racing'
-    href: '/docs/gameplay/racing/'
   - label: 'Take a break from survival — minigames'
     href: '/docs/gameplay/minigames/'
   - label: 'Joining Luminara'
@@ -98,7 +96,7 @@ Read the [rules](/docs/rules/), then follow [your first day](/docs/getting-start
 | Build with less inventory juggling | [Block storage](/docs/building/block-storage/)                                                    |
 | Customize your appearance          | [Tags](/docs/social/tag-items/) and [particles](/docs/social/particles/)                          |
 | Talk or play music                 | [Voice chat](/docs/social/voice-chat/) and [music discs](/docs/social/music-discs/)               |
-| Take a break from survival         | [Racing](/docs/gameplay/racing/) and [minigames](/docs/gameplay/minigames/)                       |
+| Take a break from survival         | [Minigames](/docs/gameplay/minigames/)                       |
 
 {/* /audience */}
 

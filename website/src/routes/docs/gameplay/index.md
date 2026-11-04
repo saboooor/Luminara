@@ -18,8 +18,6 @@ extra_buttons:
     href: '/docs/gameplay/world-map/'
   - label: 'Growing, strains, and farm workers'
     href: '/docs/gameplay/growing-and-strains/'
-  - label: 'Ice-boat and kart racing'
-    href: '/docs/gameplay/racing/'
   - label: 'Joining minigames'
     href: '/docs/gameplay/minigames/'
   - label: 'Sleeping and keeping the night'
@@ -61,8 +59,6 @@ Explore survival systems, recovery, and activities.
 - [Exploring with the world map](/docs/gameplay/world-map/) — Use a browser map for orientation without confusing it with land access.
 
 - [Growing, strains, and farm workers](/docs/gameplay/growing-and-strains/) — Browse varieties, manage harvests, and test automation on a small farm.
-
-- [Ice-boat and kart racing](/docs/gameplay/racing/) — Join an activity, follow the course, and improve your laps.
 
 - [Joining minigames](/docs/gameplay/minigames/) — Use activity lobbies and leave through the intended exit.
 

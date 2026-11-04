@@ -5,9 +5,6 @@ description: 'Use activity lobbies and leave through the intended exit.'
 keywords: 'minigames minigame quit lobby games arena'
 date_created: '2026-10-17'
 last_updated: '2026-10-17'
-extra_buttons:
-  - label: 'Ice-boat and kart racing'
-    href: '/docs/gameplay/racing/'
 ---
 
 ## Start with the activity instructions
@@ -25,5 +22,3 @@ Follow the objective and checkpoint sequence. If a game supplies its own loadout
 Use the activity's leave control. Where the minigame command is exposed, `/minigame quit` is the standard self-exit. Return through the proper exit before checking your normal inventory.
 
 If your equipment looks wrong after leaving, check the original world and report the activity name, join/leave steps, and time. Avoid repeatedly joining different games while investigating.
-
-For vehicle-based competition, see [racing](/docs/gameplay/racing/).
