@@ -4,7 +4,7 @@ title: 'Tolerance, withdrawal, and recovery'
 description: 'Distinguish active effects from persistent tolerance and choose a matching recovery route.'
 keywords: 'drugs tolerance and recovery crafting effects farming'
 date_created: '2026-10-17'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -61,3 +61,7 @@ Some drug profiles have nausea-style overdose outcomes; the fallback can kill th
 ## Check recovery
 
 After treatment, use `/drugstatus` to inspect remaining effects and `/tolerance` to inspect potency. If withdrawal returns, check whether the treatment matched the drug and whether it only reduced points or temporarily blocked withdrawal. Report unexpected behavior with the item name, time, and command output through [support](/docs/getting-started/troubleshooting/).
+
+## New products and cosmetic flavors
+
+Tobacco, nicotine, cigarettes, cigars, chewing tobacco, nicotine vapes, caffeine, and energy drinks have their own configured tolerance, addiction, and overdose behavior. Reusing the same vape still counts as repeated drug use. [Flavor infusion](/docs/gameplay/flavor-infusion/) retains the original drug ID and effects; adding a flavor does not reset tolerance, addiction, withdrawal, or remaining puffs.

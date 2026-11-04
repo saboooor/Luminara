@@ -4,7 +4,7 @@ title: 'Growing, strains, and farm workers'
 description: 'Start growing ingredients and find detailed guides to strains and automated farms.'
 keywords: 'drugs growing and strains crafting effects farming'
 date_created: '2026-10-17'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'Ingredient crops'
     href: '/docs/gameplay/drug-crops/'
@@ -18,7 +18,7 @@ Drug crafting starts with growing custom ingredients. Planting stock, harvested 
 
 ## Your first harvest
 
-1. Open `/drugs` and click the item you want to make to inspect its recipe.
+1. Open `/drugs` and select the item you want to make. If it opens a flavor category, choose the unflavored item to inspect its base recipe.
 2. Use `/drugs growing` to open the crop guide dialog, or click a harvested ingredient in a recipe to open its growing guide. For ingredient crops, craft wheat seeds with the appropriate starter; cannabis starts with a fern.
 3. Prepare hydrated farmland, lighting of at least level 9, and enough space above the crop.
 4. Plant and right-click the crop empty-handed to inspect its progress and any paused conditions.
@@ -39,3 +39,7 @@ Bone meal does not skip the growing timer. Growth pauses when the chunk is unloa
 - [Drug commands and achievements](/docs/gameplay/drug-progression/) — Find commands and native advancement milestones.
 
 Keep farms on land where you have building permission. Automation does not grant ownership of another player's crops or villagers.
+
+## Continue into production
+
+Grow Tobacco Leaves for tobacco and nicotine products, or Coffee Beans for caffeine and energy drinks. Follow [production and brewing](/docs/gameplay/drug-production/) for processing stations and intermediates, then [infuse eligible products with flavors](/docs/gameplay/flavor-infusion/).

@@ -4,7 +4,7 @@ title: 'Drug commands and achievements'
 description: 'Find player commands, check active effects, and track native advancement progress.'
 keywords: 'drugs drug progression crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -14,16 +14,16 @@ extra_buttons:
 
 ## Player command reference
 
-| Command                          | What it does                                                                           |
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| `/drugs`                         | Opens the item menu; click an item to inspect its recipe.                              |
-| `/drugs help`                    | Shows actions available to your permissions.                                           |
-| `/drugs growing`                 | Opens a crop picker dialog with planting and harvesting guides.                        |
-| `/strains`                       | Opens the cannabis strain index.                                                       |
-| `/tolerance`                     | Lists tolerance, maximums, and current potency for registered drugs.                   |
-| `/drugstatus` or `/drugs status` | Lists current drug, withdrawal, and other potion effects with durations and strengths. |
-| `/drugs achievements`            | Explains how to open the Drugs advancement tab.                                        |
-| `/cartel reject`                 | Rejects your current enforcer demand.                                                  |
+| Command                          | What it does                                                                                  |
+| -------------------------------- | --------------------------------------------------------------------------------------------- |
+| `/drugs`                         | Opens the item menu; products with flavors open a category with variants and the base recipe. |
+| `/drugs help`                    | Shows actions available to your permissions.                                                  |
+| `/drugs growing`                 | Opens a crop picker dialog with planting and harvesting guides.                               |
+| `/strains`                       | Opens the cannabis strain index.                                                              |
+| `/tolerance`                     | Lists tolerance, maximums, and current potency for registered drugs.                          |
+| `/drugstatus` or `/drugs status` | Lists current drug, withdrawal, and other potion effects with durations and strengths.        |
+| `/drugs achievements`            | Explains how to open the Drugs advancement tab.                                               |
+| `/cartel reject`                 | Rejects your current enforcer demand.                                                         |
 
 Farm actions are available through the nearby controller's menu, including area selection, contracts, output chests, and overflow. Use that menu rather than trying to operate a distant farm through its internal button commands.
 

@@ -4,7 +4,7 @@ title: 'Gameplay'
 description: 'Explore survival systems, recovery, and activities.'
 keywords: ''
 date_created: '2026-10-17'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'AngelChests'
     href: '/docs/gameplay/angelchests/'
@@ -36,6 +36,10 @@ extra_buttons:
     href: '/docs/gameplay/bongs-and-carts/'
   - label: 'Cartel buyers and enforcer demands'
     href: '/docs/gameplay/cartel-trading/'
+  - label: 'Drug production and brewing'
+    href: '/docs/gameplay/drug-production/'
+  - label: 'Flavor infusion'
+    href: '/docs/gameplay/flavor-infusion/'
   - label: 'Drug commands and achievements'
     href: '/docs/gameplay/drug-progression/'
 ---
@@ -77,5 +81,9 @@ Explore survival systems, recovery, and activities.
 - [Cartel buyers and enforcer demands](/docs/gameplay/cartel-trading/) — Sell finished drugs and handle timed delivery encounters.
 
 - [Drug commands and achievements](/docs/gameplay/drug-progression/) — Find player commands and native advancement milestones.
+
+- [Drug production and brewing](/docs/gameplay/drug-production/) — Process tobacco, refine caffeine, and assemble cannabis products and vapes.
+
+- [Flavor infusion](/docs/gameplay/flavor-infusion/) — Browse thirteen flavors by product and infuse them at a cauldron.
 
 {/* /audience */}

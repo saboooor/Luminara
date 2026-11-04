@@ -4,7 +4,7 @@ title: 'Cannabis strains and mutations'
 description: 'Grow planting ferns, harvest buds, and preserve strain identity through crafting.'
 keywords: 'drugs cannabis strains crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'Bongs and carts'
     href: '/docs/gameplay/bongs-and-carts/'
@@ -46,3 +46,7 @@ Mutation chances and available outcomes vary by strain. Replant returned stock a
 Buds pass their strain identity into supported cannabis products. Keep all strain-tagged ingredients in a recipe consistent. Mixing different strain identities clears the crafting result rather than creating a blended product.
 
 If a cannabis recipe produces no result, first check the live recipe through `/drugs`, then check that you used buds and that their strain names match. Bongs also use the supplied bud's strain; see [bongs and cartridges](/docs/gameplay/bongs-and-carts/).
+
+## Production and flavor preservation
+
+[Production chains](/docs/gameplay/drug-production/) turn buds into Infused Dough and Edibles, Cannabis Extract and Carts, or brewed CBD. These products retain their input strain. [Flavor infusion](/docs/gameplay/flavor-infusion/) copies a finished product’s strain and remaining uses while adding cosmetic flavor. A flavor does not replace the strain or grant different strain effects.

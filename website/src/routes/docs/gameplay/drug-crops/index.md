@@ -4,7 +4,7 @@ title: 'Growing drug ingredients'
 description: 'Craft seeds, maintain growing conditions, and harvest custom recipe ingredients.'
 keywords: 'drugs drug crops crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-10-21'
+last_updated: '2026-11-03'
 extra_buttons:
   - label: 'Cannabis strains'
     href: '/docs/gameplay/cannabis-strains/'
@@ -22,16 +22,18 @@ You can also open `/drugs`, select a finished item to view its recipe, and **cli
 
 Combine **one wheat seed with the starter item** in a shapeless crafting recipe to make a crop seed. These are fictional Minecraft crafting systems.
 
-| Crop      | Starter item  | Harvest used for | Default active growth time |
-| --------- | ------------- | ---------------- | -------------------------- |
-| Poppy     | Poppy         | Heroin and fent  | 10 minutes                 |
-| Mushroom  | Red mushroom  | Shrooms          | 8 minutes                  |
-| Ephedra   | Quartz        | Meth             | 15 minutes                 |
-| Coca      | Vine          | Cocaine          | 15 minutes                 |
-| Sassafras | Magenta dye   | Molly            | 15 minutes                 |
-| Ergot     | Spore blossom | LSD              | 20 minutes                 |
-| Salvia    | Lilac         | Salvia           | 10 minutes                 |
-| Resin     | Bone meal     | Glue             | 10 minutes                 |
+| Crop      | Starter item  | Harvest used for                         | Default active growth time |
+| --------- | ------------- | ---------------------------------------- | -------------------------- |
+| Poppy     | Poppy         | Heroin and fent                          | 10 minutes                 |
+| Mushroom  | Red mushroom  | Shrooms                                  | 8 minutes                  |
+| Ephedra   | Quartz        | Meth                                     | 15 minutes                 |
+| Coca      | Vine          | Cocaine                                  | 15 minutes                 |
+| Sassafras | Magenta dye   | Molly                                    | 15 minutes                 |
+| Ergot     | Spore blossom | LSD                                      | 20 minutes                 |
+| Salvia    | Lilac         | Salvia                                   | 10 minutes                 |
+| Resin     | Bone meal     | Glue                                     | 10 minutes                 |
+| Tobacco   | Dried kelp    | Tobacco and nicotine products            | 10 minutes                 |
+| Coffee    | Cocoa beans   | Caffeine, energy drinks, Coffee infusion | 8 minutes                  |
 
 These times are plugin defaults; server settings can change them. Cannabis uses planting ferns instead of this seed recipe; see [cannabis strains](/docs/gameplay/cannabis-strains/).
 
@@ -62,3 +64,7 @@ For example, the quartz used to create an ephedra seed is planting input. Grow t
 - If crafting fails after harvesting, check that the item is the custom harvest and inspect the live recipe again.
 
 If conditions look correct but progress remains stuck, report the crop type, location, progress readout, and time observed to [support](/docs/getting-started/troubleshooting/).
+
+## Process tobacco and coffee harvests
+
+Custom Tobacco Leaves and Coffee Beans are separate from their vanilla starter items. Refine them using the [production guide](/docs/gameplay/drug-production/). Harvested Coffee Beans also supply Coffee flavor in [cauldron infusion](/docs/gameplay/flavor-infusion/); ordinary cocoa beans are used for Chocolate instead.
