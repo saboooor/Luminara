@@ -4,7 +4,7 @@ title: 'Tolerance, withdrawal, and recovery'
 description: 'Distinguish active effects from persistent tolerance and choose a matching recovery route.'
 keywords: 'drugs tolerance and recovery crafting effects farming'
 date_created: '2026-10-17'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -33,6 +33,14 @@ Tolerance can decay after a period without using the drug. Caps, scaling, and de
 Each configured addictive drug adds points when used. Once its threshold is reached, withdrawal can begin after the drug-specific delay since use. Some drugs naturally lose addiction points over time; others do not under the bundled defaults.
 
 Default withdrawal families include Poison for heroin, fent, glue, cocaine, and meth; Weakness for blunt, joint, edible, and cart; and Hunger for molly. Fent and glue have thresholds low enough for a single use to reach addiction under the default settings. Do not assume every drug needs prolonged repeated use before withdrawal becomes possible.
+
+Withdrawal symptoms and `/drugstatus` use the recovery countdown instead of an indefinitely refreshed potion timer. Symptoms can be temporarily absent while withdrawal is still active. Inspect the remaining withdrawal state as well as individual potion effects.
+
+## Private risk warnings
+
+Private chat warnings appear near or at a drug's tolerance limit and while withdrawal is active. Warnings combine withdrawal and tolerance risk when both apply. By default, reminders repeat every **60 seconds** while the condition remains, with earlier notices when risk increases or a dangerous dose is taken.
+
+These warnings do not identify hidden added drugs. Relieving withdrawal with another dose does not remove overdose risk, and the absence of a warning does not guarantee a harmless outcome. Staff can change the reminder interval or disable warnings.
 
 ## Choose a recovery route
 
@@ -65,3 +73,5 @@ After treatment, use `/drugstatus` to inspect remaining effects and `/tolerance`
 ## New products and cosmetic flavors
 
 Tobacco, nicotine, cigarettes, cigars, chewing tobacco, nicotine vapes, caffeine, and energy drinks have their own configured tolerance, addiction, and overdose behavior. Reusing the same vape still counts as repeated drug use. [Flavor infusion](/docs/gameplay/flavor-infusion/) retains the original drug ID and effects; adding a flavor does not reset tolerance, addiction, withdrawal, or remaining puffs.
+
+[Purity](/docs/gameplay/drug-production/#purity-and-refining) scales drug durations but does not reset tolerance or addiction. A [hidden added dose](/docs/gameplay/drug-production/#combining-an-additional-drug-dose) separately tracks the added drug's tolerance, addiction, and overdose behavior, including on the next puff of a laced vape or cart.

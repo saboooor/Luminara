@@ -4,7 +4,7 @@ title: 'Drug commands and achievements'
 description: 'Find player commands, check active effects, and track native advancement progress.'
 keywords: 'drugs drug progression crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -14,24 +14,24 @@ extra_buttons:
 
 ## Player command reference
 
-| Command                          | What it does                                                                                  |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
-| `/drugs`                         | Opens the item menu; products with flavors open a category with variants and the base recipe. |
-| `/drugs help`                    | Shows actions available to your permissions.                                                  |
-| `/drugs growing`                 | Opens a crop picker dialog with planting and harvesting guides.                               |
-| `/strains`                       | Opens the cannabis strain index.                                                              |
-| `/tolerance`                     | Lists tolerance, maximums, and current potency for registered drugs.                          |
-| `/drugstatus` or `/drugs status` | Lists current drug, withdrawal, and other potion effects with durations and strengths.        |
-| `/drugs achievements`            | Explains how to open the Drugs advancement tab.                                               |
-| `/cartel reject`                 | Rejects your current enforcer demand.                                                         |
+| Command                          | What it does                                                                            |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| `/drugs`                         | Opens the category menu; choose a family, then a product and any flavor or base recipe. |
+| `/drugs help`                    | Shows actions available to your permissions.                                            |
+| `/drugs growing`                 | Opens a crop picker dialog with planting and harvesting guides.                         |
+| `/strains`                       | Opens the cannabis strain index.                                                        |
+| `/tolerance`                     | Lists tolerance, maximums, and current potency for registered drugs.                    |
+| `/drugstatus` or `/drugs status` | Lists current drug, withdrawal, and other potion effects with durations and strengths.  |
+| `/drugs achievements`            | Explains how to open the Drugs advancement tab.                                         |
+| `/cartel reject`                 | Rejects your current enforcer demand.                                                   |
 
 Farm actions are available through the nearby controller's menu, including area selection, contracts, output chests, and overflow. Use that menu rather than trying to operate a distant farm through its internal button commands.
 
-Use `/drugs growing <crop>` to open a specific growing dialog. In recipe previews, click a harvested ingredient to see the guide and return with **Back to recipe**.
+Use `/drugs growing <crop>` to open a specific growing dialog. Growing guides have numbered, colored steps and item sprites on Java Edition. In recipe previews, click a harvested ingredient to see the guide and return with **Back to recipe**. Click a custom ingredient or a custom item in your own inventory while a recipe is open to inspect its recipe directly.
 
 ## Read status correctly
 
-`/drugstatus` includes active effects and supported LSD/salvia onset delays. An effect with no recorded origin is shown as **source unknown**. This can include potion effects that the drug tracker did not attribute to an item.
+`/drugstatus` includes active effects and supported LSD, salvia, and edible onset delays. An effect with no recorded origin is shown as **source unknown**. This can include potion effects that the drug tracker did not attribute to an item. Withdrawal duration follows the underlying recovery countdown, including when a symptom potion is briefly absent; refreshing symptoms does not restart that countdown.
 
 The sober message means no active drug or potion effects remain. It does not promise zero tolerance or no addiction. Check `/tolerance` separately; see [recovery](/docs/gameplay/tolerance-and-recovery/) for persistent conditions.
 

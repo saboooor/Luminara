@@ -4,7 +4,7 @@ title: 'Farm controllers and worker villagers'
 description: 'Set up automated harvesting, manage output, and move farms with their settings.'
 keywords: 'drugs drug farms crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-10-21'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Growing ingredients'
     href: '/docs/gameplay/drug-crops/'
@@ -29,9 +29,9 @@ Place the controller barrel and right-click it to open the management menu. Exis
 1. Choose **Define Farm Area** to receive an arrow selection wand.
 2. Use the wand to select two corners as instructed in game.
 3. Keep the horizontal area within **16 × 16 blocks**. Include the crop positions; a selection on farmland also works for the crops directly above it.
-4. Plant the initial crops yourself. Workers replant from the planting stock they harvest.
+4. Plant the initial crops yourself. Workers replant from the planting stock they harvest. For cannabis, craft a cannabis plant from one wheat seed and one fern; ordinary ferns cannot be used directly by players or workers.
 
-The controller manages drug crops, including cannabis, poppy, mushroom, ephedra, coca, sassafras, ergot, salvia, and resin. Ordinary wheat is left alone. Growing conditions still apply: automation does not replace water, lighting, or active growth time.
+The controller manages drug crops, including cannabis, poppy, mushroom, ephedra, coca, sassafras, ergot, salvia, resin, tobacco, and coffee. Ordinary wheat is left alone. Growing conditions still apply: automation does not replace water, lighting, or active growth time.
 
 ## Hire and position workers
 

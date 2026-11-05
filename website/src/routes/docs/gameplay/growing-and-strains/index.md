@@ -4,7 +4,7 @@ title: 'Growing, strains, and farm workers'
 description: 'Start growing ingredients and find detailed guides to strains and automated farms.'
 keywords: 'drugs growing and strains crafting effects farming'
 date_created: '2026-10-17'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Ingredient crops'
     href: '/docs/gameplay/drug-crops/'
@@ -19,11 +19,11 @@ Drug crafting starts with growing custom ingredients. Planting stock, harvested 
 ## Your first harvest
 
 1. Open `/drugs` and select the item you want to make. If it opens a flavor category, choose the unflavored item to inspect its base recipe.
-2. Use `/drugs growing` to open the crop guide dialog, or click a harvested ingredient in a recipe to open its growing guide. For ingredient crops, craft wheat seeds with the appropriate starter; cannabis starts with a fern.
+2. Use `/drugs growing` to open the crop guide dialog, or click a harvested ingredient in a recipe to open its growing guide. Craft wheat seeds with the appropriate starter. For cannabis, combine one wheat seed and one fern in any arrangement to make a Reggie cannabis plant; ordinary ferns cannot be planted directly as cannabis.
 3. Prepare hydrated farmland, lighting of at least level 9, and enough space above the crop.
 4. Plant and right-click the crop empty-handed to inspect its progress and any paused conditions.
 5. Harvest when mature. Cannabis needs shears for buds.
-6. Keep the returned seed or planting fern, and use the harvested ingredients in the recipe.
+6. Keep the returned seed or cannabis plant, and use the harvested ingredients in the recipe.
 
 Bone meal does not skip the growing timer. Growth pauses when the chunk is unloaded or growing conditions fail, so time away from an unloaded farm does not count as active growth.
 

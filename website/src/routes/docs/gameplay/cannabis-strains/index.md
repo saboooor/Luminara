@@ -1,10 +1,10 @@
 ---
 icon: 'minecraft:item/fern'
 title: 'Cannabis strains and mutations'
-description: 'Grow planting ferns, harvest buds, and preserve strain identity through crafting.'
+description: 'Craft cannabis plants, harvest buds, and preserve strain identity through crafting.'
 keywords: 'drugs cannabis strains crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Bongs and carts'
     href: '/docs/gameplay/bongs-and-carts/'
@@ -12,22 +12,24 @@ extra_buttons:
     href: '/docs/gameplay/drug-crops/'
 ---
 
-## Ferns, buds, and finished items
+## Plants, buds, and finished items
 
-| Item                          | Purpose                                                  |
-| ----------------------------- | -------------------------------------------------------- |
-| Planting fern                 | Starts a cannabis plant and carries its strain identity. |
-| Cannabis Buds                 | Harvested recipe ingredient and bong input.              |
-| Joint, blunt, edible, or cart | Finished consumable made from buds.                      |
-| CBD                           | Cannabis recovery item made using buds.                  |
+| Item                          | Purpose                                                 |
+| ----------------------------- | ------------------------------------------------------- |
+| Cannabis plant                | Starts a cannabis crop and carries its strain identity. |
+| Cannabis Buds                 | Harvested recipe ingredient and bong input.             |
+| Joint, blunt, edible, or cart | Finished consumable made from buds.                     |
+| CBD                           | Cannabis recovery item made using buds.                 |
 
-An ordinary fern can start the cannabis growing system, but it does not substitute for harvested buds in recipes. Separate planting stock from harvests in your storage.
+Craft **one wheat seed + one fern** in any arrangement to make a **Reggie cannabis plant**. An ordinary fern cannot be planted directly as cannabis and cannot replace harvested buds in recipes. Separate planting stock from harvests in your storage.
 
 ## Grow cannabis
 
-Right-click hydrated farmland with a fern. Keep the light level at least **9**, and leave space for it to become a two-block large fern. Default active growing time is **10 minutes**. Empty-hand right-click shows progress and paused conditions. Dry soil, darkness, and unloaded chunks pause growth; bone meal does not skip the timer.
+Use `/drugs growing cannabis` for numbered, colored steps with item sprites on Java Edition, including the plant crafting recipe.
 
-Harvest the mature large fern **with shears** to obtain **two Cannabis Buds and a planting fern**. Mature plants have a 10% chance of an extra planting fern. Breaking an immature plant with shears returns planting stock without buds. Breaking cannabis without shears returns neither buds nor planting stock.
+Right-click the top of hydrated farmland with the cannabis plant. Keep the light level at least **9**, and leave space for it to become a two-block large fern. Default active growing time is **10 minutes**. Empty-hand right-click shows progress and paused conditions. Dry soil, darkness, and unloaded chunks pause growth; bone meal does not skip the timer.
+
+Harvest the mature large fern **with shears** to obtain **two Cannabis Buds and a cannabis plant**. Mature plants have a 10% chance of an extra cannabis plant. Breaking an immature plant with shears returns planting stock without buds. Breaking cannabis without shears returns neither buds nor planting stock.
 
 ## Browse strain effects
 
@@ -37,9 +39,9 @@ Strains affect the cannabis product's effects. Reggie has an unknown/random debu
 
 ## Inheritance and mutation
 
-Planting ferns carry strain identity. When harvesting, the returned planting stock can inherit or mutate according to the parent strain's configured mutation rules. The harvested buds retain the harvested plant's strain, while the returned fern can carry a different child strain. Check both before putting them away.
+Cannabis plants carry strain identity. When harvesting, the returned planting stock can inherit or mutate according to the parent strain's configured mutation rules. The harvested buds retain the harvested plant's strain, while the returned cannabis plant can carry a different child strain. Check both before putting them away.
 
-Mutation chances and available outcomes vary by strain. Replant returned stock and inspect its identity to build a collection. The extra-seed chance and the mutation rules are separate mechanics; an extra fern does not guarantee a new strain.
+Mutation chances and available outcomes vary by strain. Replant returned stock and inspect its identity to build a collection. The extra-seed chance and the mutation rules are separate mechanics; an extra cannabis plant does not guarantee a new strain.
 
 ## Craft one strain at a time
 

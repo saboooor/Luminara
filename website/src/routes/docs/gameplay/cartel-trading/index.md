@@ -4,7 +4,7 @@ title: 'Cartel buyers and enforcer demands'
 description: 'Sell finished drug items and understand timed cartel delivery encounters.'
 keywords: 'drugs cartel trading crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-10-21'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -20,9 +20,19 @@ Only genuine player-dropped registered drug items are accepted. Planting stock, 
 
 If a sale does not happen, check the item type, drop distance, and your proximity to the buyer. An unsuccessful economy deposit leaves the items on the ground. Retrieve unaccepted items instead of assuming they were sold. Check [money commands](/docs/economy/money/) to confirm your balance.
 
+## Buyer preferences and purity
+
+Right-click a stationary buyer to check its current preferred drug, any preferred cannabis strain, its bonus, and when the preference changes. Buyers can prefer different products. The default rotation is every **24 hours**, and a matching sale pays **1.5×** the usual value. Other eligible products still sell at their normal prices.
+
+Purity also affects sale value: **90% is neutral**, with value scaling by **purity ÷ 90**. Configured strain prices are applied before purity and the buyer preference bonus. Preferences persist consistently across restarts; staff can change or disable them. See [refining](/docs/gameplay/drug-production/#purity-and-refining) to improve a finished product's grade.
+
+Preference bonuses apply to stationary buyers, not enforcer delivery contracts. Enforcer deliveries still use their configured drug/strain prices and purity scaling.
+
 ## An enforcer approaches
 
 Roaming enforcers can approach Survival or Adventure players with a demand for a particular drug and quantity. The demand and deadline appear when the NPC gets close enough to speak. Defaults are **8–32 items** and **90 seconds**, with warnings during the countdown; server settings can change these values.
+
+The enforcer dialogue includes crafting and growing guides. Growing instructions use numbered steps, colors, and item sprites on Java Edition; the delivery timer keeps running while you browse.
 
 Read the exact drug and remaining amount. Throw that drug within **two blocks of your enforcer** to deliver. Smaller deliveries accumulate and are paid as accepted. Other drugs and other players' drops do not count, and selling to a stationary buyer does not satisfy an enforcer demand. Extra items beyond the demand remain on the ground.
 

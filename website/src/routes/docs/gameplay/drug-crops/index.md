@@ -4,7 +4,7 @@ title: 'Growing drug ingredients'
 description: 'Craft seeds, maintain growing conditions, and harvest custom recipe ingredients.'
 keywords: 'drugs drug crops crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Cannabis strains'
     href: '/docs/gameplay/cannabis-strains/'
@@ -14,7 +14,7 @@ extra_buttons:
 
 ## Open the growing guide
 
-Use `/drugs growing` to open a dialog with a crop picker, or `/drugs growing <crop>` for one crop, such as `/drugs growing coca`. Each guide shows its current configured growing time, seed starter, required conditions, harvest yield, and replanting instructions.
+Use `/drugs growing` to open a dialog with a crop picker, or `/drugs growing <crop>` for one crop, such as `/drugs growing coca`. Guides use numbered steps, colored headings, and item sprites on Java Edition, with readable text on Bedrock. Each guide shows its current configured growing time, seed starter, required conditions, harvest yield, and replanting instructions.
 
 You can also open `/drugs`, select a finished item to view its recipe, and **click a harvested ingredient** in the crafting grid. Its growing dialog opens with a **Back to recipe** button. Ordinary crafting materials do not open a growing guide. The same ingredient shortcut works in cartel enforcer recipe previews.
 
@@ -24,6 +24,7 @@ Combine **one wheat seed with the starter item** in a shapeless crafting recipe 
 
 | Crop      | Starter item  | Harvest used for                         | Default active growth time |
 | --------- | ------------- | ---------------------------------------- | -------------------------- |
+| Cannabis  | Fern          | Cannabis Buds for cannabis products      | 10 minutes                 |
 | Poppy     | Poppy         | Heroin and fent                          | 10 minutes                 |
 | Mushroom  | Red mushroom  | Shrooms                                  | 8 minutes                  |
 | Ephedra   | Quartz        | Meth                                     | 15 minutes                 |
@@ -35,7 +36,7 @@ Combine **one wheat seed with the starter item** in a shapeless crafting recipe 
 | Tobacco   | Dried kelp    | Tobacco and nicotine products            | 10 minutes                 |
 | Coffee    | Cocoa beans   | Caffeine, energy drinks, Coffee infusion | 8 minutes                  |
 
-These times are plugin defaults; server settings can change them. Cannabis uses planting ferns instead of this seed recipe; see [cannabis strains](/docs/gameplay/cannabis-strains/).
+These times are plugin defaults; server settings can change them. For cannabis, **one wheat seed + one fern** makes a **Reggie cannabis plant** instead of a seed. Plant that item; ordinary ferns cannot be planted directly as cannabis. See [cannabis strains](/docs/gameplay/cannabis-strains/) for shears, buds, and mutations.
 
 ## Plant and monitor
 

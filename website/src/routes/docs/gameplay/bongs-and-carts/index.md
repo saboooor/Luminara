@@ -4,7 +4,7 @@ title: 'Using bongs, cartridges, and vapes'
 description: 'Place a bong, supply Cannabis Buds, and track equipment durability.'
 keywords: 'drugs bongs and carts crafting effects farming'
 date_created: '2026-10-21'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Cannabis strains'
     href: '/docs/gameplay/cannabis-strains/'
@@ -40,7 +40,7 @@ A new bong has **24 uses by default**. The action bar shows remaining durability
 
 Make Cannabis Extract by brewing an awkward potion with harvested Cannabis Buds, then assemble a cart using the extract, glass, redstone, a stone button, and copper ingot. Check [production](/docs/gameplay/drug-production/) for the layout.
 
-A cart is a handheld finished cannabis item. Hold it in your main hand and right-click to use it. Each use reduces its remaining durability; the default is **16 uses per cartridge**. Its lore and the action bar show remaining uses. The cartridge is consumed when depleted.
+A cart is a handheld finished cannabis item. Hold it in either hand and right-click to use it. Each use reduces its remaining durability; the default is **16 uses per cartridge**. Its lore and the action bar show remaining uses. The cartridge is consumed when depleted.
 
 Each hit applies the normal cart tolerance/addiction handling. Repeated hits are repeated uses even though you are holding the same item. Partially used cartridges are rejected by cartel buyers; carts also have no sale price by default.
 
@@ -48,8 +48,10 @@ Durability and cooldown numbers are plugin defaults and can be changed by the se
 
 ## Nicotine vapes
 
-A nicotine vape is a handheld nicotine product, distinct from a cannabis cart. Brew Nicotine Vape Liquid from a water bottle and custom Nicotine, then assemble the vape; see [production](/docs/gameplay/drug-production/). Hold it in your main hand and right-click to use it.
+A nicotine vape is a handheld nicotine product, distinct from a cannabis cart. Brew Nicotine Vape Liquid from a water bottle and custom Nicotine, then assemble the vape; see [production](/docs/gameplay/drug-production/). Hold it in either hand and right-click to use it.
 
 New vapes have **32 puffs by default**. Every hit reduces remaining uses and runs the base drug’s effects, tolerance, addiction, and overdose handling. The item is consumed after its last puff.
 
 Vapes and carts support [flavor infusion](/docs/gameplay/flavor-infusion/). Infusing a partly used item preserves its remaining puffs, so it does not refill equipment. Bongs themselves are not flavorable.
+
+Carts and nicotine vapes can carry a [hidden added dose](/docs/gameplay/drug-production/#combining-an-additional-drug-dose). That added drug is applied on the next puff only, while the base product keeps its remaining uses. Refining purity and adding a flavor do not refill the item or remove its added dose.

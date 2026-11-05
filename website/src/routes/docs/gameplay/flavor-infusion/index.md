@@ -4,7 +4,7 @@ title: 'Flavor infusion'
 description: 'Infuse products at a cauldron and browse all thirteen flavors.'
 keywords: 'drugs flavors infusion production nicotine caffeine cannabis'
 date_created: '2026-11-03'
-last_updated: '2026-11-03'
+last_updated: '2026-11-05'
 extra_buttons:
   - label: 'Consumables'
     href: '/docs/gameplay/consumables/'
@@ -18,7 +18,7 @@ Flavor is a cosmetic variant of an existing product. It changes the name, flavor
 
 ## Find flavors in the menu
 
-Open `/drugs` and select a base product such as a vape, edible, or cart. Products with enabled flavors open a category containing their available variants. Select a flavor to see its ingredient and infusion instructions. The category also has an unflavored item button for the base recipe and **Back to Drugs**. Page arrows appear when needed.
+Open `/drugs` and select a base product such as a vape, edible, or cart. Products with enabled flavors open a category containing their available variants. Select a flavor to see its ingredient and infusion instructions. While viewing those instructions, click the base custom product to open its production recipe. The category also has an unflavored item button for the base recipe and a back button for the product category. Page arrows appear when needed.
 
 Flavors are grouped under their base products rather than listed as separate drugs in the main menu. Products without flavors still open their recipe directly. Closing a flavor instruction view returns to its product category.
 
@@ -62,3 +62,7 @@ The resource pack includes all thirteen flavor palettes for vapes, carts, edible
 If infusion fails, check the selected product’s flavor instructions, hold only one unflavored product, use the correct hands, and sneak-right-click an empty or water cauldron. Use ordinary unrenamed ingredients unless the instructions require a custom harvest. For Coffee, grow and harvest the coffee crop first.
 
 Enable the current server resource pack to see the models. Older flavored items can retain their previous appearance; infuse a new unflavored item to obtain current model metadata. Missing textures do not turn vanilla lookalikes into genuine plugin items.
+
+## Purity and lacing at the same station
+
+Cauldrons also support [refining and lacing](/docs/gameplay/drug-production/#purity-and-refining). Quartz in the offhand refines purity by default; a different finished drug adds one hidden dose. Use the flavor ingredient shown in the menu when you intend to add a flavor. These are separate operations. Flavor infusion preserves purity and any hidden added dose as well as strain and remaining uses.
