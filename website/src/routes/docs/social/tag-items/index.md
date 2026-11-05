@@ -20,6 +20,8 @@ Avoid repeated clicks while the change saves. Check the result before using a se
 
 ## Prefixes and suffixes
 
+Configured text presets include **coffee, maple, cherry-blossom, ice, evil, sugartooth, milky, toxic, amethyst, void-star, wither, glorp, and lapeace**. Symbol presets include **wave, skull, star, heart, fire, music, infinity, sun, cloud, trademark, comet, snowman, and smile**. Preset availability does not itself grant the item; obtain a genuine reward before redeeming it.
+
 Text rewards generally occupy the **prefix** slot. Emoji or symbol rewards occupy the **suffix** slot. These slots are independent, so you can wear a text prefix and an emoji together.
 
 For example, applying a coffee text reward and then a wave emoji keeps both. Applying a different emoji replaces the suffix rather than removing your text prefix. The item's type determines which slot it changes.

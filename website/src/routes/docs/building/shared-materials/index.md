@@ -18,6 +18,8 @@ Check `/tome riftlink info` and `/tome riftlink members` before depositing valua
 
 ## Build together
 
+The configured default realm allows Tome use, placement, auto-deposit, and upgrades. Player-selected Pages start at one and reach at most 18; netherite smithing adds one Page, while diamond-block crafting is disabled. Agree on Page materials before filling the group ledger.
+
 Members can work from shared Echoes when they have access to the relevant deposit and placement features. Agree on which supplies are communal and check the active ledger before using them.
 
 ## Manage membership

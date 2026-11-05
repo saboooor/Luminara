@@ -66,6 +66,8 @@ Read the [changelog](/docs/changelog/) for server updates, feature releases, and
 
 ## Your first session
 
+New players receive **$500**, a tools kit with a golden claim shovel, and a base allowance of **two homes**. Claiming costs land allowance: you start with **100 claim blocks** and earn **100 per active hour**. Resource worlds are for gathering; make a protected base in the main survival worlds.
+
 {/* audience:website */}
 
 [Join the server](/docs/getting-started/joining/), read the [rules](/docs/rules/), then follow [your first day](/docs/getting-started/first-day/). Start by protecting your home and setting up a reliable way back before carrying valuables far from spawn.
@@ -96,7 +98,7 @@ Read the [rules](/docs/rules/), then follow [your first day](/docs/getting-start
 | Build with less inventory juggling | [Block storage](/docs/building/block-storage/)                                                    |
 | Customize your appearance          | [Tags](/docs/social/tag-items/) and [particles](/docs/social/particles/)                          |
 | Talk or play music                 | [Voice chat](/docs/social/voice-chat/) and [music discs](/docs/social/music-discs/)               |
-| Take a break from survival         | [Minigames](/docs/gameplay/minigames/)                       |
+| Take a break from survival         | [Minigames](/docs/gameplay/minigames/)                                                            |
 
 {/* /audience */}
 
@@ -116,4 +118,4 @@ Use the search field in the handbook dialog and select Search to find guides by 
 
 In examples, replace `<player>` or `<name>` with your own value; do not type the brackets. An optional argument appears in `[square brackets]`. Tab completion can help you find available names.
 
-Menus and in-game messages show the current prices, limits, rewards, and availability. These can vary by world or rank. If a command is unavailable, check [troubleshooting](/docs/getting-started/troubleshooting/).
+These guides describe Luminara’s configured prices, enabled worlds, and limits. Per-player permissions and individual items can still differ; read the in-game confirmation before a purchase. If a command is unavailable, check [troubleshooting](/docs/getting-started/troubleshooting/).

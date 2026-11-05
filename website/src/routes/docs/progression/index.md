@@ -24,6 +24,8 @@ extra_buttons:
 
 ## Choose a guide
 
+All **15 skills** are enabled up to **level 100**, with mana abilities unlocking at **level 7**. Bottling costs **10 XP** per bottle that returns **8 XP**.
+
 Grow your skills, collect catches, and earn rewards.
 
 {/* audience:website */}

@@ -18,16 +18,16 @@ When you die, an **AngelChest** stores recoverable belongings at the death locat
 
 1. Note the world and coordinates shown after death.
 2. Prepare food, basic equipment, and a route home.
-3. Use the server's AngelChest information or the available `/graves list` command to inspect your recovery locations.
+3. Use `/aclist` (or `/acinfo`) to list your AngelChests. `/ac` opens the recovery menu; `/actp` is the advertised teleport to your last death when you have access.
 4. Return to the location and interact with your AngelChest to recover its contents.
 
-If your account has access to a recovery teleport, inspect its instructions and any cost before using it. A command or old screenshot from a different death-storage system is not a guarantee of free teleportation.
+Creation, opening, teleport, and fetch prices are **$0**. Teleport and fetch are **same-world only**, with no configured teleport wait. Travel to the correct world first; command access and a safe landing still matter. Recovery teleport gives **five seconds of invulnerability**.
 
 ## What is stored and who can collect it
 
-AngelChests store items and XP, and retain **100%** of your XP. Armor is automatically equipped during recovery when possible. The chest disappears when emptied, and there is no limit on the number of AngelChests you can have.
+AngelChests store items and XP, and retain **95%** of your XP. Armor is automatically equipped during recovery when possible. The chest disappears when emptied, and you can have at most **five AngelChests**. Creating more uses the drop behavior for the oldest chest.
 
-**Recovery is not restricted to the owner.** Other players can interact with a chest and use instant pickup where area protections permit. Return promptly and keep the [rules](/docs/rules/) in mind.
+**Your chest is protected for the first five minutes**, then unlocks for other players. Its total lifetime is **ten minutes**, and the countdown continues while you are offline. Fast looting is enabled; return promptly and keep the [rules](/docs/rules/) in mind.
 
 AngelChests are disabled in `spawn`, `plot`, `minigames`, `zenspawn`, and `vehicleshop`. Do not expect one to appear in those worlds.
 

@@ -14,7 +14,7 @@ extra_buttons:
 
 ## Build and place a controller
 
-Open `/drugs` and select the Farm Controller to inspect its recipe. The default crafting layout is:
+Open `/drugs` and select the Farm Controller to inspect its recipe. The configured crafting layout is:
 
 ```text
 Iron    Redstone  Iron
@@ -35,11 +35,13 @@ The controller manages drug crops, including cannabis, poppy, mushroom, ephedra,
 
 ## Hire and position workers
 
+Workers run every **30 ticks** (about **1.5 seconds** at normal speed). Each worker can perform up to **one harvest and two planting actions per cycle**; the farm’s total budget scales with its valid workers, up to five. Walking time and loaded, mature crops still limit real output.
+
 Choose **Get Work Contract (1 emerald)**. Hold the contract in your main hand and right-click a villager. The contract is already linked to its farm; you do not need to look at the controller while assigning the villager.
 
 Each farm supports up to **five villagers**. Assigned villagers become Farmers. Workers must be alive, loaded, and able to reach the crop. Provide walkable paths and standing space near plants; fencing a villager far from the plot does not make it contribute remotely.
 
-Workers walk toward crops and harvest when close enough. More reachable workers increase the farm's per-cycle capacity, up to the five-worker limit. Exact throughput depends on server settings and travel time. **Start Farm / Stop Farm** controls whether the farm works.
+Workers walk toward crops and harvest when close enough. More reachable workers increase the farm's per-cycle capacity, up to the five-worker limit. Exact throughput depends on worker travel time and loaded crops. **Start Farm / Stop Farm** controls whether the farm works.
 
 ## Store harvests in a chest
 

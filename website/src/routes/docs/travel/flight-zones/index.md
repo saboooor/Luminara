@@ -20,6 +20,8 @@ A flight zone has both horizontal and vertical limits. Flying high above its mar
 
 ## Leaving the boundary
 
+Flight checks run every **10 ticks** (about half a second at normal server speed). Leaving a zone grants **five seconds of fall-damage grace**; use that time to land. The configured zone item is a **sea lantern**, with a default **32-block width and 32-block height**. An area’s actual dimensions can be set separately.
+
 Flight granted by the area ends when you leave it. Land before crossing the edge, especially over water, cliffs, or the void. Any fall-damage grace period is temporary and should not be treated as permanent protection.
 
 Overlapping eligible zones keep area flight active until you leave all of them. Flight you already had from your game mode or another entitlement is handled separately.

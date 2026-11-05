@@ -14,6 +14,8 @@ extra_buttons:
 
 ## Vehicle storage
 
+Storage is enabled for each of the three active types. Vehicle fuel is handled separately; do not place a fuel item in cargo and assume the tank has been filled.
+
 Cars, drills, and planes have cargo storage. Treat it as the vehicle's own inventory and use the service screen rather than dropping items onto the model. **Shulker boxes are not allowed in vehicle storage.**
 
 Check cargo before selling, lending, or putting away a vehicle. Do not rely on a showroom model for personal storage.

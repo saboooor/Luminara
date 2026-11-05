@@ -12,9 +12,11 @@ extra_buttons:
 
 ## Set up your display
 
+The editor tool is **ordinary flint**. It needs no special name, lore, or model data, and editing does not require sneaking. Hold flint and use the editor’s interaction prompts on the stand; per-world filtering is disabled.
+
 Place an armor stand on land where you can build. Equip it with the armor or items you want to showcase. Leave space to interact without accidentally hitting a nearby stand or container.
 
-Armor-stand editing tools let you adjust poses and presentation when you have access. Use the server's editor instructions or tool prompt for the available controls; different editors use different interaction tools, so an arbitrary command copied from another server may not apply.
+Coarse rotation takes **12 clicks per full circle (30° each)**; fine rotation takes **120 (3° each)**. Use the tool prompt to choose the body part and adjustment direction, then inspect the change before repeating it.
 
 ## Work in small changes
 

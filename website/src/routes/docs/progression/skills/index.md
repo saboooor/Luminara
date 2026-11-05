@@ -18,7 +18,7 @@ extra_buttons:
 
 Use `/skills` to see your available skills. Select one to inspect its XP sources, level progress, and rewards. Skill XP comes from the actions listed for that skill, not from collecting vanilla XP orbs.
 
-The standard skill families cover gathering, combat, movement, enchanting, and alchemy. The actual menu is the reference for which are enabled here.
+All **15 configured skills** are enabled and cap at **level 100**: Farming, Foraging, Mining, Fishing, Excavation, Archery, Defense, Fighting, Agility, Alchemy, Enchanting, Endurance, Sorcery, Healing, and Forging. They start at **level 1**. Sorcery has no passive ability entry configured; inspect its menu before choosing it for a particular unlock.
 
 ## Pick a useful goal
 

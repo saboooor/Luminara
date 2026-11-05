@@ -28,7 +28,9 @@ The voting page distinguishes reward-bearing buttons from blue buttons that only
 
 ## Rank progression and purchased ranks
 
-Voting ranks reward participation. The website lists Bee as the starter rank with 2 homes, 1 creative plot, and 1 auction house slot. Turtle starts at 6 votes, Panda at 18, Dolphin at 36, and Frog at 66. Later tiers add further perks; use the full rank comparison to plan your next milestone.
+Configured vote milestones are **6 Turtle, 18 Panda, 36 Dolphin, 66 Frog, 100 Armadillo, 200 Axolotl, 350 Mooshroom, 550 Glow Squid, 800 Ocelot, 1,500 Allay, and 2,000 Sniffer**. Milestone progress does **not** reset monthly.
+
+Voting ranks reward participation. The website lists Bee as the starter rank with 2 homes, 1 creative plot, 1 job, and 7 auction house slots. Turtle starts at 6 votes, Panda at 18, Dolphin at 36, and Frog at 66. Mooshroom (350 votes) unlocks a second job slot, and Sniffer (2,000 votes) unlocks a third. Use the full rank comparison to plan your next milestone.
 
 Examples include nickname and hat commands at Dolphin, a crafting command at Frog, and personal time and weather commands at Axolotl. Claim flags and limits also vary by tier. Follow the linked gameplay guides for using a feature after it becomes available to you.
 
@@ -61,6 +63,8 @@ For purchased packages, use the [store](https://luminaramc.org/store/) and read 
 {/* /audience */}
 
 ## If a reward does not arrive
+
+The six enabled reward sites each grant **one Common crate key** per accepted vote. The cumulative six-vote reward adds **one key and 12 hours of mob-riding permission**. The vote party threshold is **50 votes**, resets daily, and does not reward every online player automatically. Keep your exact account name on the vote form, including the configured `_` prefix for Bedrock accounts.
 
 Check the name you entered, whether that site offers rewards, and whether its voting cooldown had expired. Record the site and approximate vote time before asking for help. Avoid repeatedly voting or purchasing the same package to diagnose a delay.
 

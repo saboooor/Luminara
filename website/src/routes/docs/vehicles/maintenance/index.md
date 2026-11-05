@@ -30,6 +30,6 @@ Vehicle upkeep has three separate parts. Choose the guide for what you need:
 
 ## Before a long trip
 
-Inspect fuel, check your cargo, and stop using a badly damaged vehicle. Pick a safe place to park before opening its service screen. Fuel, storage, and repair access can vary by vehicle type and world.
+Inspect fuel, check your cargo, and stop using a badly damaged vehicle. Pick a safe place to park before opening its service screen. Cars, planes, and drills are enabled in `world` only, with fuel and storage enabled. The fuel shop sells a **200-unit Fuel item for $100**; shulker boxes cannot go in vehicle cargo.
 
 For movement controls, return to [driving](/docs/vehicles/driving/) or [aircraft](/docs/vehicles/aircraft/).

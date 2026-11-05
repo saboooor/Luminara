@@ -16,6 +16,8 @@ extra_buttons:
 
 ## Open your mailbox
 
+The mailbox limit is **50 entries per player**, and automatic deletion is configured after **30 days**. Collect deliveries promptly rather than using auction mail as long-term storage.
+
 Use `/ah mail`. Auction mail holds deliveries associated with the market, including items and refunds. It is separate from private chat messages and any ordinary server mail command.
 
 Read each entry and collect it through the mailbox screen. Clear enough inventory space for item deliveries before collecting large stacks. Money entries and item entries are different kinds of delivery.

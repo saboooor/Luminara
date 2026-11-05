@@ -18,7 +18,7 @@ BottledExp lets you turn vanilla XP into experience bottles. Keep them in storag
 
 Use `/bottle` to see the available commands. To create experience bottles, use `/bottle get <amount>`; for example, `/bottle get 10` requests ten bottles. Use `/bottle get max` to bottle as much as you can with your available XP and resources.
 
-Check the in-game messages for any required items or money before converting a large amount. Leave room in your inventory for the bottles.
+Each bottle costs **10 XP points** and awards **8 XP** when used: this is a **20% conversion loss**, not lossless storage. Glass-bottle consumption and money charges are disabled. Leave room in your inventory; the configured storage conversion maximum is **2,304 bottles** and the minimum XP amount setting is **7**. Enchanting-table interaction and craftable XP containers are disabled, so use the commands.
 
 ## Check your XP
 

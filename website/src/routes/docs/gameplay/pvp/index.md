@@ -16,7 +16,7 @@ Use `/pvp` to check your state and `/pvp on` or `/pvp off` to choose it. PvP def
 
 A personal combat preference works alongside world and region rules. An arena can have its own rules, and an area can prohibit combat regardless of your toggle.
 
-The personal toggle is disabled in `minigames`. Regions can force PvP on or off; read the notification when entering an area. A land claim does not itself grant player-combat immunity.
+The personal toggle is disabled in `minigames` and `world_void`. Regions can force PvP on or off; read the notification when entering an area. A land claim does not itself grant player-combat immunity.
 
 ## Arrange a fight
 
@@ -24,6 +24,8 @@ Agree with the other player before fighting and decide where the fight will happ
 
 ## Limits of a toggle
 
-Combat settings are not general invulnerability. Environmental hazards, falling, mobs, and feature-specific damage can still matter. A toggle can also have a cooldown or restrictions while you are in an activity.
+GriefPrevention’s combat timeout is **three seconds**, with combat logout punishment enabled. During combat it blocks `/home`, `/vanish`, `/spawn`, `/tpa`, and `/rtp`; toggling PvP is not an escape route from an active encounter.
+
+Combat settings are not general invulnerability. Environmental hazards, falling, mobs, and feature-specific damage can still matter. There is no personal toggle cooldown configured, but activity and forced-region restrictions still apply.
 
 Read the [rules](/docs/rules/) and follow event instructions. If an interaction damages someone unexpectedly, stop testing it on players and report the location, combat state, and exact action.

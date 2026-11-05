@@ -12,6 +12,8 @@ extra_buttons:
 
 ## Health and visible damage
 
+Standard, Sport, and Performance cars and all three planes have **40 maximum health**. Copper drills have **40**, while Iron and Diamond drills have **50**. Whips retains vehicles after dismount and rider death; note their location before leaving.
+
 Vehicle health is enabled, and damage transfer to the rider is enabled with a **0.8 multiplier**. Collisions and combat can damage a vehicle and hurt its rider. As damage rises, cosmetic parts can disappear. Missing body parts do not turn the remaining model into a narrower vehicle; seats and driving geometry still matter.
 
 Showroom models are exempt from normal damage. A custom model built as one indivisible piece can remain visually complete until destruction, so appearance alone is not a health meter.

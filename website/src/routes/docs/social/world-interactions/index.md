@@ -14,7 +14,9 @@ extra_buttons:
 
 ## Sit or pose
 
-Use `/sit` to sit where allowed. `/lay` and `/crawl` provide other poses when available. Empty-hand right-clicking a suitable stair or slab can also create a seat.
+GSit is disabled in **`minigames`**. Sneaking stands you up or ejects a player passenger; taking damage does not automatically stand you up. Lying down does **not** count toward night skipping, and double-sneak crawling is disabled.
+
+Use `/sit` to sit where allowed. `/lay` and `/crawl` provide other poses when available. Block right-click seating is **off by default**; enable your interaction toggle before trying it with an empty hand. Player seating is enabled by default, also requires an empty hand, and has no configured stack cap.
 
 Use your normal dismount or the pose's exit control to stand again. Leave enough space to exit safely, particularly beside a wall or drop.
 

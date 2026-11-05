@@ -18,9 +18,11 @@ extra_buttons:
 
 Stand at a safe spot and use `/sethome base`. Return with `/home base`; remove an unwanted entry with `/delhome base`. A home is a saved destination, not land protection. [Claim the area](/docs/protection/land-claims/) separately.
 
-Players with access to multiple homes can save **three homes** by default; your rank may allow more. Overwriting an existing home requires confirmation. Do not overwrite your only safe destination while exploring unless you have another way back.
+Players with access to multiple homes can save **two homes** by default; your rank may allow more. Overwriting an existing home requires confirmation. Do not overwrite your only safe destination while exploring unless you have another way back.
 
 ## Meet a friend
+
+Requests expire after **120 seconds**. `/tpahere <player>` asks the other player to come to you; check the direction before accepting.
 
 Use `/tpa <player>` to request travel to someone. They accept with `/tpaccept` or decline with `/tpdeny`. Verify the destination with them before accepting or sending a request into an unsafe situation.
 

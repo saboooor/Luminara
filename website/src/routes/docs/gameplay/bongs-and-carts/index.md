@@ -14,7 +14,7 @@ extra_buttons:
 
 ## Craft a bong
 
-Open `/drugs` and select the bong for its current recipe. The default layout uses glass, a blaze rod, flint and steel, and a water bucket:
+Open `/drugs` and select the bong for its current recipe. The configured layout uses glass, a blaze rod, flint and steel, and a water bucket:
 
 ```text
 Empty      Glass  Empty
@@ -28,29 +28,29 @@ Hold the crafted bong and right-click the **top of a solid block**. The space ab
 
 Hold **harvested Cannabis Buds** in your main hand or offhand, then right-click the placed bong. A planting fern is not bong input. Each use consumes one bud outside Creative mode and applies cannabis effects using that bud's strain.
 
-The default bong uses the blunt effect profile, so its effects also interact with that profile's tolerance and addiction. It is not a separate route around those systems. Use `/tolerance` and `/drugstatus` to inspect the result.
+Luminara’s bong uses the blunt effect profile, so its effects also interact with that profile's tolerance and addiction. It is not a separate route around those systems. Use `/tolerance` and `/drugstatus` to inspect the result.
 
-The default cooldown is **1.5 seconds** per player. A warm-bong message means you need to wait before another use.
+The configured cooldown is **1.5 seconds** per player. A warm-bong message means you need to wait before another use.
 
 ## Durability and moving
 
-A new bong has **24 uses by default**. The action bar shows remaining durability after use; the bong breaks after its last hit. Punch a placed bong to pick it up in Survival. Its remaining durability is preserved, so replacing it does not refill it. Removing its supporting block also causes it to drop.
+A new bong has **24 uses**. The action bar shows remaining durability after use; the bong breaks after its last hit. Punch a placed bong to pick it up in Survival. Its remaining durability is preserved, so replacing it does not refill it. Removing its supporting block also causes it to drop.
 
 ## Cartridges
 
 Make Cannabis Extract by brewing an awkward potion with harvested Cannabis Buds, then assemble a cart using the extract, glass, redstone, a stone button, and copper ingot. Check [production](/docs/gameplay/drug-production/) for the layout.
 
-A cart is a handheld finished cannabis item. Hold it in either hand and right-click to use it. Each use reduces its remaining durability; the default is **16 uses per cartridge**. Its lore and the action bar show remaining uses. The cartridge is consumed when depleted.
+A cart is a handheld finished cannabis item. Hold it in either hand and right-click to use it. Each use reduces its remaining durability; the configured capacity is **16 uses per cartridge**. Its lore and the action bar show remaining uses. The cartridge is consumed when depleted.
 
-Each hit applies the normal cart tolerance/addiction handling. Repeated hits are repeated uses even though you are holding the same item. Partially used cartridges are rejected by cartel buyers; carts also have no sale price by default.
+Each hit applies the normal cart tolerance/addiction handling. Repeated hits are repeated uses even though you are holding the same item. Partially used cartridges are rejected by cartel buyers; carts also have no configured sale price.
 
-Durability and cooldown numbers are plugin defaults and can be changed by the server. Inspect the item and in-game messages for current behavior.
+Bongs are enabled with the **blunt** effect profile, a **1.5-second cooldown**, and **24-use capacity**; carts have **16 uses**. Inspect the action bar to track the remaining amount on your particular item.
 
 ## Nicotine vapes
 
 A nicotine vape is a handheld nicotine product, distinct from a cannabis cart. Brew Nicotine Vape Liquid from a water bottle and custom Nicotine, then assemble the vape; see [production](/docs/gameplay/drug-production/). Hold it in either hand and right-click to use it.
 
-New vapes have **32 puffs by default**. Every hit reduces remaining uses and runs the base drug’s effects, tolerance, addiction, and overdose handling. The item is consumed after its last puff.
+New vapes have **32 puffs**. Every hit reduces remaining uses and runs the base drug’s effects, tolerance, addiction, and overdose handling. The item is consumed after its last puff.
 
 Vapes and carts support [flavor infusion](/docs/gameplay/flavor-infusion/). Infusing a partly used item preserves its remaining puffs, so it does not refill equipment. Bongs themselves are not flavorable.
 

@@ -16,6 +16,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Start with **$500**, the supplied tools kit, **two home slots**, and **100 claim blocks**. Claim the base yourself: the first chest has no automatic land claim.
+
 Connect, make your first home, and find help.
 
 {/* audience:website */}

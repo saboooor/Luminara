@@ -27,6 +27,8 @@ Building trust is a large grant. Give access or container trust when that is all
 
 ## Check both protection layers
 
+Wooden doors, trapdoors, and fence gates are not locked by the claim itself. Buttons and switches are protected. Access trust is required for ender-pearl entry, reading lecterns, and using `/sethome` inside another player’s claim. Villager trading is protected too; have the owner grant the appropriate trust rather than moving the villager.
+
 A trusted builder may still be unable to open an individually locked chest. [Container locks](/docs/protection/container-locks/) and claim trust are separate controls.
 
 ## After a shared project

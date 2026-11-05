@@ -14,15 +14,17 @@ extra_buttons:
 
 ## Sell to a buyer
 
+Configured base unit prices are **Heroin $20, Fent $10, Shrooms $7, Meth $15, Blunt $7, Cocaine $20, Joint $3, Edible $5, Glue $1, Molly $10, LSD $15, and Salvia $6**. No strain-specific price overrides are set. Carts, tobacco/nicotine products, and caffeine products have no sale-price entry, so do not make them expecting a cartel sale.
+
 Find a stationary cartel buyer and right-click for delivery instructions. There is no selling inventory menu. Stand nearby and **throw finished drug items within two blocks of the buyer**. Accepted items are removed from the dropped stack and the sale is deposited into your balance.
 
-Only genuine player-dropped registered drug items are accepted. Planting stock, harvested ingredients, renamed vanilla items, and partially used cartridges are not eligible. A drug also needs an enabled sale price; carts have no default sale price. Prices can differ by drug and strain.
+Only genuine player-dropped registered drug items are accepted. Planting stock, harvested ingredients, renamed vanilla items, and partially used cartridges are not eligible. A drug also needs an enabled sale price; carts have no configured sale price. Prices can differ by drug and strain.
 
 If a sale does not happen, check the item type, drop distance, and your proximity to the buyer. An unsuccessful economy deposit leaves the items on the ground. Retrieve unaccepted items instead of assuming they were sold. Check [money commands](/docs/economy/money/) to confirm your balance.
 
 ## Buyer preferences and purity
 
-Right-click a stationary buyer to check its current preferred drug, any preferred cannabis strain, its bonus, and when the preference changes. Buyers can prefer different products. The default rotation is every **24 hours**, and a matching sale pays **1.5×** the usual value. Other eligible products still sell at their normal prices.
+Right-click a stationary buyer to check its current preferred drug, any preferred cannabis strain, its bonus, and when the preference changes. Buyers can prefer different products. With no preference override set, rotation is every **24 hours**, and a matching sale pays **1.5×** the usual value. Other eligible products still sell at their normal prices.
 
 Purity also affects sale value: **90% is neutral**, with value scaling by **purity ÷ 90**. Configured strain prices are applied before purity and the buyer preference bonus. Preferences persist consistently across restarts; staff can change or disable them. See [refining](/docs/gameplay/drug-production/#purity-and-refining) to improve a finished product's grade.
 
@@ -30,7 +32,7 @@ Preference bonuses apply to stationary buyers, not enforcer delivery contracts. 
 
 ## An enforcer approaches
 
-Roaming enforcers can approach Survival or Adventure players with a demand for a particular drug and quantity. The demand and deadline appear when the NPC gets close enough to speak. Defaults are **8–32 items** and **90 seconds**, with warnings during the countdown; server settings can change these values.
+Roaming enforcers can approach Survival or Adventure players with a demand for a particular drug and quantity. The demand and deadline appear when the NPC gets close enough to speak. Demands are configured for **8–32 items** and **90 seconds**, with warnings during the countdown.
 
 The enforcer dialogue includes crafting and growing guides. Growing instructions use numbered steps, colors, and item sprites on Java Edition; the delivery timer keeps running while you browse.
 
@@ -40,12 +42,12 @@ Read the exact drug and remaining amount. Throw that drug within **two blocks of
 
 Deliver the full quantity before the deadline to complete the encounter. Partial deliveries already accepted remain paid even if you later fail or reject it.
 
-Choose **Reject demand** in the dialogue or use `/cartel reject` to refuse your own encounter immediately. Closing the dialogue does not reject it. Rejection counts like expiry: it adds a refusal and applies the encounter's configured failure consequences. The default failure is dialogue; servers can configure damage.
+Choose **Reject demand** in the dialogue or use `/cartel reject` to refuse your own encounter immediately. Closing the dialogue does not reject it. Rejection counts like expiry: it adds a refusal and applies the encounter's configured failure consequences. **Failure damage is configured to 1 health point (half a heart)** when the encounter can apply it; refusal is not dialogue-only here.
 
-Consecutive refusals make later encounters more demanding. By default, **15 refusals** cap the deadline at **45 seconds**, and **20 refusals** cap it at **30 seconds**, with angrier dialogue. Full completion resets the streak; partial delivery does not. The streak survives reconnects and restarts.
+Consecutive refusals make later encounters more demanding. **15 refusals** cap the deadline at **45 seconds**, and **20 refusals** cap it at **30 seconds**, with angrier dialogue. Full completion resets the streak; partial delivery does not. The streak survives reconnects and restarts.
 
 ## Called-off encounters
 
 An encounter can be called off when the enforcer cannot reach you, you die or disconnect, you change world or travel far away, or the economy becomes unavailable. Called-off encounters neither add to nor reset the refusal streak. Reloading cartel settings also calls off active demands.
 
-Automatic appearance rates, cooldowns, prices, quantities, and consequences depend on server settings. NPC creation and price management are staff actions; players only need the delivery interaction and `/cartel reject`.
+Automatic checks run every **40 minutes**, with a **25% chance per eligible player**, an **80-minute per-player cooldown** after an encounter, and at most **eight active enforcers** server-wide. The approach timeout is **60 seconds** and delivery warnings repeat every **15 seconds**. NPC creation and price management are staff actions; players only need the delivery interaction and `/cartel reject`.

@@ -23,7 +23,7 @@ Use `/emf next` to see upcoming competition information when available. `/emf he
 | First Sunday competition         | Largest fish  | 30 minutes | 5               |
 | Second Sunday competition        | Most fish     | 45 minutes | 5               |
 
-Use `/emf next` for the next event time in game. Events need their minimum player count, and bait bonuses are disabled during competitions. Read the announced eligible catches rather than assuming every rarity scores.
+Configured start times are **00:00, 06:00, 12:00, and 18:00 Monday–Saturday** for the main competition; **03:00 and 15:00 Saturday/Sunday** for the weekend event; and **13:00/20:00 Sunday** for the two Sunday events. These are server schedule times; use `/emf next` for the live countdown rather than assuming your local timezone. **Only Epic and Legendary fish qualify** for these events, and bait bonuses are disabled.
 
 ## Read the objective
 
@@ -32,6 +32,8 @@ Competitions can score different things: the largest fish, most fish, total size
 At the start, read the announcement and progress display. Fish in an eligible area during the active window, and use the event's standings display or available leaderboard command to check progress.
 
 ## After the timer
+
+Main and Sunday events pay **$5,000 / $2,500 / $1,000** for the top three, with additional configured item/effect rewards. The weekend specific-fish event pays **$5,000 / $2,000** for the top two. The participation message does not award money to everyone.
 
 Wait for the result announcement. Keep space for item rewards and follow the displayed reward instructions. Catches outside the event window or its requirements may not count.
 

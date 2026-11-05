@@ -12,6 +12,8 @@ extra_buttons:
 
 ## What flags change
 
+Claims do not automatically disable PvP here, and entering or leaving a PvP-enabled claim has no automatic GPFlags warning. The NoMonsterSpawn and NoMobSpawn flags ignore spawner- and spawn-egg mobs in the configured worlds. Transferring a claim preserves its flags, so inspect them when taking ownership.
+
 Flags add local behavior to a claim: for example, an entry message or a rule controlling a particular interaction. They are separate from ownership and [trust](/docs/protection/trusting-players/).
 
 Only the options allowed to your account are available. Some flags are reserved for public areas or staff, so a list of every possible flag would not be a list of things you can set.

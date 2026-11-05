@@ -18,7 +18,9 @@ extra_buttons:
 
 ## Your balance
 
-New accounts have a starting balance of **$0**. Use `/balance` to check your money. Before paying someone, agree on the total and confirm their exact in-game name. `/pay <player> <amount>` sends money when your account has access to payments.
+The minimum `/pay` amount is **$0.0001**. Item banknotes have a separate $1 minimum and two-decimal limit.
+
+New accounts have a starting balance of **$500**. Use `/balance` to check your money. Before paying someone, agree on the total and confirm their exact in-game name. `/pay <player> <amount>` sends money when your account has access to payments.
 
 For example, `/pay Alex 100` pays 100 to Alex. Read any confirmation prompt. Check your balance afterward instead of repeating a payment because chat scrolled past.
 

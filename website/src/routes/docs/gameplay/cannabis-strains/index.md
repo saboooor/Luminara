@@ -27,7 +27,7 @@ Craft **one wheat seed + one fern** in any arrangement to make a **Reggie cannab
 
 Use `/drugs growing cannabis` for numbered, colored steps with item sprites on Java Edition, including the plant crafting recipe.
 
-Right-click the top of hydrated farmland with the cannabis plant. Keep the light level at least **9**, and leave space for it to become a two-block large fern. Default active growing time is **10 minutes**. Empty-hand right-click shows progress and paused conditions. Dry soil, darkness, and unloaded chunks pause growth; bone meal does not skip the timer.
+Right-click the top of hydrated farmland with the cannabis plant. Keep the light level at least **9**, and leave space for it to become a two-block large fern. The configured active growing time is **10 minutes**. Empty-hand right-click shows progress and paused conditions. Dry soil, darkness, and unloaded chunks pause growth; bone meal does not skip the timer.
 
 Harvest the mature large fern **with shears** to obtain **two Cannabis Buds and a cannabis plant**. Mature plants have a 10% chance of an extra cannabis plant. Breaking an immature plant with shears returns planting stock without buds. Breaking cannabis without shears returns neither buds nor planting stock.
 
@@ -38,6 +38,8 @@ Use `/strains` for the paginated strain index. Entries are grouped into **Common
 Strains affect the cannabis product's effects. Reggie has an unknown/random debuff behavior rather than one guaranteed fixed effect. Rarity is a collection tier; inspect the actual effects when choosing a strain.
 
 ## Inheritance and mutation
+
+Reggie’s configured mutation chance is **0.0005 (0.05%)**, and its mutation weights include Reggie itself. A mutation roll therefore does not guarantee a different strain. Blue Dream, GG4, and Runtz currently weight only themselves as outcomes; choose a parent with other listed outcomes when trying to branch your collection.
 
 Cannabis plants carry strain identity. When harvesting, the returned planting stock can inherit or mutate according to the parent strain's configured mutation rules. The harvested buds retain the harvested plant's strain, while the returned cannabis plant can carry a different child strain. Check both before putting them away.
 

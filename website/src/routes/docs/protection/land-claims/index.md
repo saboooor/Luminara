@@ -26,11 +26,11 @@ Use a stick to inspect land ownership. Do this before building near someone else
 
 ## Claim allowance and worlds
 
-You start with **100 claim blocks** and accrue **100 per hour of active play**, up to 1,000,000 accrued blocks. Idle time does not earn blocks. Buying claim blocks costs **$0.50 per block** and selling them returns **$0.40 per block**; command access still depends on your permissions.
+You start with **100 claim blocks** and accrue **100 per hour of active play**, up to 1,000,000 accrued blocks. Idle time does not earn blocks. Buying claim blocks costs **$1.50 per block** and selling them returns **$1.00 per block**; command access still depends on your permissions.
 
-Claiming is enabled in `world`, `world_nether`, `world_the_end`, and `resworld`. It is disabled in `spawn`, `plot`, `minigames`, `resworld_nether`, and `resworld_the_end`. Other area protections can still prevent a claim.
+Claiming is enabled in `world`, `world_nether`, and `world_the_end`. It is disabled in `spawn`, `plot`, `minigames`, `world_void`, `resworld`, `resworld_nether`, and `resworld_the_end`. Other area protections can still prevent a claim.
 
-A new player's chest can create a small automatic claim with a radius of four blocks when space and allowance permit. Inspect its boundary and expand it before relying on it for your whole base.
+**Automatic chest claims are disabled.** Placing your first chest does not claim land; use the golden shovel yourself.
 
 Unused claims can expire after **14 days**. The general inactivity cleanup is set to **60 days**, with exemptions for owners with at least 10,000 total claim blocks or 5,000 bonus blocks. Do not use a claim as a promise of permanent storage.
 

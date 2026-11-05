@@ -30,7 +30,8 @@ export default component$(() => {
           <h4>Perks</h4>
           <p class="text-lum-text-secondary">2 Homes</p>
           <p class="text-lum-text-secondary">1 Creative Plot</p>
-          <p class="text-lum-text-secondary">1 Auction House Slot</p>
+          <p class="text-lum-text-secondary">1 Job</p>
+          <p class="text-lum-text-secondary">7 Auction House Slots</p>
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">noenter</p>
           <p class="text-lum-text-secondary">noenterplayer</p>
@@ -147,6 +148,7 @@ export default component$(() => {
           </div>
           <h4>Perks</h4>
           <p class="text-lum-text-secondary">8 Creative Plots</p>
+          <p class="text-lum-text-secondary">2 Jobs</p>
           <p class="text-lum-text-secondary">/rest</p>
           <h4>Claim Flags</h4>
           <p class="text-lum-text-secondary">keepinventory</p>
@@ -206,7 +208,7 @@ export default component$(() => {
           <p class="text-lum-text-secondary">/stack</p>
         </div>
         <div class="lum-card lum-grad-bg-lum-card-bg relative overflow-clip duration-200!">
-          <Ranks.bee class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
+          <Ranks.sniffer class="absolute inset-0 -z-1 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-200" />
           <div class="flex items-center gap-4">
             <Ranks.sniffer class="h-auto w-12" />
             <div>
@@ -218,6 +220,7 @@ export default component$(() => {
           </div>
           <h4>Perks</h4>
           <p class="text-lum-text-secondary">14 Creative Plots</p>
+          <p class="text-lum-text-secondary">3 Jobs</p>
           <p class="text-lum-text-secondary">/ranknick (Custom Rank)</p>
         </div>
       </div>
@@ -238,7 +241,9 @@ export default component$(() => {
                     {rank.name}
                   </h3>
                   <p class="text-lum-text-secondary">{rank.pricing}</p>
-                  <p class="text-lum-text-secondary">Click to learn more, there are too many perks to list here!</p>
+                  <p class="text-lum-text-secondary">
+                    Click to learn more, there are too many perks to list here!
+                  </p>
                 </div>
               </div>
             </Link>

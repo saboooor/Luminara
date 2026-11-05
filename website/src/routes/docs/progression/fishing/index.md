@@ -22,6 +22,8 @@ Lava and void fishing are disabled. Custom fish are protected against consumptio
 
 ## Manage your collection
 
+Use `/emf journal` to inspect your collection and `/emf applybaits` to manage bait. Fishing permission is required. EvenMoreFish disables AuraSkills’ fishing loot rolls here, so special fish come from this fishing system rather than an additional skill-loot roll.
+
 Inspect a catch before eating, trading, or selling it. Store favorite specimens separately. Bait, where available, can affect fishing; read its instructions and the fish requirements rather than assuming it guarantees a particular catch.
 
 A rod supports up to **seven baits**, and bait bonuses are disabled during competitions. Read each bait’s requirements before applying it.

@@ -241,7 +241,7 @@ export default component$(() => {
           </div>
         </div>
       </section>
-      <div class="mask-[linear-gradient(to_bottom,transparent_0px,black_8rem,black_100%)] pt-32 backdrop-blur-xl bg-bg/40">
+      <div class="bg-bg/40 mask-[linear-gradient(to_bottom,transparent_0px,black_8rem,black_100%)] pt-32 backdrop-blur-xl">
         <Why />
         <Features />
       </div>

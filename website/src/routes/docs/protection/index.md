@@ -18,6 +18,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Claims work in **Overworld, Nether, and End**, with **100 initial claim blocks** and **100 per active hour**. Resource worlds are unclaimable, and Bolt locks must be applied manually.
+
 Protect land, containers, and collaborative builds.
 
 {/* audience:website */}

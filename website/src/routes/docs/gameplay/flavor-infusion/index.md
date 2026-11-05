@@ -33,9 +33,9 @@ One ingredient is consumed and the held product becomes flavored. The cauldron a
 
 Partly used vapes and carts can be infused, but their remaining puff count stays the same. Infusion cannot refill them. Already-flavored products cannot be flavored again or have their flavors mixed.
 
-## All default combinations
+## Available flavor combinations
 
-The table lists plugin defaults. Server settings can disable flavors or change their names, ingredients, and supported products; the live `/drugs` menu is the reference for what is enabled.
+Luminara has no flavor overrides, so all **13 built-in flavors** below are available for their listed products. For example, carts support Berry, Apple, Melon, Cherry, Citrus, Grape, and Peach; Honey and Coffee are not cart flavors. The `/drugs` category lists the combinations for the product you selected.
 
 | Flavor    | Ingredient             | Supported products                                                     |
 | --------- | ---------------------- | ---------------------------------------------------------------------- |
@@ -65,4 +65,4 @@ Enable the current server resource pack to see the models. Older flavored items 
 
 ## Purity and lacing at the same station
 
-Cauldrons also support [refining and lacing](/docs/gameplay/drug-production/#purity-and-refining). Quartz in the offhand refines purity by default; a different finished drug adds one hidden dose. Use the flavor ingredient shown in the menu when you intend to add a flavor. These are separate operations. Flavor infusion preserves purity and any hidden added dose as well as strain and remaining uses.
+Cauldrons also support [refining and lacing](/docs/gameplay/drug-production/#purity-and-refining). **Quartz** in the offhand refines purity by **five points**, up to **100%**; a different finished drug adds one hidden dose. Use the flavor ingredient shown in the menu when you intend to add a flavor. These are separate operations. Flavor infusion preserves purity and any hidden added dose as well as strain and remaining uses.

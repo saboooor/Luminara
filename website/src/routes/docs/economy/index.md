@@ -24,7 +24,9 @@ extra_buttons:
 
 ## Choose a guide
 
-See [item worth reference](/docs/economy/item-worth/) for compare unit values for materials, ores, and farm drops.
+New accounts start with **$500**. Choose up to **two base jobs**, budget **15% job tax**, and compare that income with **zero-tax chest shops** and the auction’s fees.
+
+See [item worth reference](/docs/economy/item-worth/) to compare configured unit values for materials, ores, and farm drops.
 
 Earn money and trade with other players.
 

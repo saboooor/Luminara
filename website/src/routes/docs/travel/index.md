@@ -26,6 +26,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Waystones connect **Overworld, Nether, and End** with **no XP charge, warmup, or cooldown**. Visit each world before using its destinations; take a scroll for travel away from a stone.
+
 Discover destinations and move around Luminara.
 
 {/* audience:website */}

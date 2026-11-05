@@ -24,7 +24,7 @@ Brake before the bend, then steer smoothly. Holding full steering at high speed 
 
 ## Read the driving display
 
-When enabled, the action bar shows speed, fuel, and lighting indicators. Check the displayed speed unit before comparing numbers. Brake, reverse, and turn indicators reflect driving inputs; they do not change your right of way around other players.
+The action-bar HUD is **enabled** and shows speed in **km/h**, fuel, and lighting indicators. Brake, reverse, and turn indicators reflect driving inputs; they do not change your right of way around other players.
 
 Cars can show body roll as they turn. This is part of their appearance, not a promise that a tight turn is safe at any speed.
 

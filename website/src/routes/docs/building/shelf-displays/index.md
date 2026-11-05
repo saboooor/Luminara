@@ -18,6 +18,8 @@ Shelf displays let you see a chest's contents in the world. Place shelves **in f
 
 ## Set up a display
 
+The shelf must have the chest **directly behind it**. Start with one chest and a shelf against its front, then add chest contents. No special display item or purchase is needed for this arrangement.
+
 1. Choose the chest you want to display.
 2. Place shelves in front of it.
 3. Add items to the chest and check the shelf display.

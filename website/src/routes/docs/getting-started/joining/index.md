@@ -35,6 +35,8 @@ Java and Bedrock players can play together. Bedrock clients may show forms where
 
 ## Resource pack
 
+Automatic Java-to-Bedrock pack conversion and Geyser deployment are enabled. Bedrock visuals can still differ from Java. Bedrock account names use an **underscore prefix**, such as `_Alex`, when identifying the account for rewards or help.
+
 If the server offers a resource pack, accept it to see the intended custom item textures. On Java, edit the server entry in your multiplayer list and enable server resource packs if you previously declined. Rejoin to retry the download. A missing texture does not automatically mean the item has stopped working.
 
 {/* audience:website */}

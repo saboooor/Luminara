@@ -30,6 +30,8 @@ Map visibility can depend on the world and enabled layers. A missing player icon
 
 ## Plan an expedition
 
+The configured BlueMap map is **`world (overworld)`**. There are no separate Nether or End map configurations in this server snapshot. Cave removal is configured below **Y=55**, so the browser view does not show every underground room.
+
 Compare the map with your in-game coordinates. Identify roads, water crossings, and a return route before taking a vehicle or animal group far from home. A rendered view can lag behind recent building changes.
 
 The map is an orientation tool. It does not activate [waystones](/docs/travel/waystones/), reserve land, or authorize access to someone's build. Inspect [claims](/docs/protection/land-claims/) in game before settling nearby.

@@ -22,13 +22,13 @@ Choose **Travel** to open destinations from management. **Discovered by** lists 
 
 Open **Visibility** in management to choose one of three options. The menu marks the current selection.
 
-| Access  | Who can discover and use it?                                         |
-| ------- | -------------------------------------------------------------------- |
-| Private | Only its owner                                                       |
-| Public  | Players who visit and activate it                                    |
-| Global  | Everyone, without first activating it, when global travel is enabled |
+| Access  | Who can discover and use it?                                      |
+| ------- | ----------------------------------------------------------------- |
+| Private | Only its owner                                                    |
+| Public  | Players who visit and activate it                                 |
+| Global  | Everyone who has visited its world, without activating this stone |
 
-Choosing the current option leaves it unchanged and does not charge again. Global is marked disabled when the server does not allow it. When enabled, the menu shows the conversion price, which can use XP levels, money, or both. Each conversion to Global charges that price; moving an existing global stone does not charge it again.
+Global access is enabled and costs **$5,000 per conversion**, with no configured XP charge. Choosing the current option leaves it unchanged and does not charge again. Moving an existing Global stone preserves the purchase; switching away and converting back charges again.
 
 Switching from Global to Public or Private opens a confirmation: the money and XP paid for global access will not be refunded. Private and Global cannot be active together. Returning to Public restores access for players who discovered it earlier.
 

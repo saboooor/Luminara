@@ -20,11 +20,15 @@ extra_buttons:
 
 ## Pick the right vehicle
 
+All three types are enabled only in the **main survival world (`world`)**. Bikes, helicopters, tanks, boats, trains, tractors, and the other stored vehicle types are disabled in Whips, even though old configuration files for them remain on the server.
+
 You can use **cars, drills, and planes** on Luminara. Choose a car for road travel, a drill for mining, or a plane for flight.
 
 To buy a car, use **`/warp dealership`** and browse the cars on display.
 
 ## Buy a car at the dealership
+
+Configured car shop prices are **Standard $800**, **Sport $1,600**, and **Performance $3,200**. A showroom offer may specify a material as well as a tier; read its displayed price before purchasing.
 
 Look directly at a displayed vehicle from nearby. A targeted display shows **Right-click to buy** below its tier and price. Right-click to buy that exact tier and material.
 

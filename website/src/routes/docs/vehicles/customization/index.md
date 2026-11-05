@@ -34,6 +34,8 @@ Right-click your parked vehicle with the wrap to apply its material. In survival
 
 ## What stays with the vehicle
 
+The configured car tiers are **Standard, Sport, and Performance**, with fuel capacities of **1,000, 1,200, and 1,300**. Applying a wrap preserves these values; a different-looking Standard car still has Standard statistics.
+
 A wrap changes the body appearance while retaining tier, statistics, fuel, health, and storage. The choice persists through pickup and restart. It is a way to recolor or restyle a vehicle, not an upgrade from a standard tier to a sport or performance tier.
 
 ## Pop a car's hood

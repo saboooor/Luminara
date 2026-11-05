@@ -30,19 +30,19 @@ Barrier icons mark empty crafting slots.
 
 {/* /audience */}
 
-Check the recipe book if the server recipe changes.
+Scrolls are enabled. They let you open travel away from a waystone while command travel from anywhere is disabled.
 
 ## Use it while exploring
 
-Hold the scroll in your **main hand** and right-click the air. Choose an available destination, read any displayed cost, and remain still through the travel warmup.
+Hold the scroll in your **main hand** and right-click the air. Choose an available destination, select the destination, and travel with **no warmup or cooldown**.
 
 A scroll offers your discovered Public stones and any available Global stones without requiring a visit to those Global stones. It does not unlock an unvisited public stone or let you enter someone else's private one. Click a stone directly and you use normal stone travel instead.
 
 ## Consumption and failed trips
 
-One scroll is consumed after a successful survival trip. A failed destination check does not consume it. Creative players retain their scrolls. Scrolls can have different travel-cost rules from ordinary stone travel; use the menu's quote rather than assuming every trip is free.
+One scroll is consumed after a successful survival trip. A failed destination check does not consume it. Creative players retain their scrolls. **Scroll travel does not charge XP**; the scroll itself is the consumable cost. Cross-world trips are enabled between the Overworld, Nether, and End after you have visited the destination world.
 
-If it will not work, close other screens, dismount, stop gliding, and check that you are using your main hand. Movement or damage can interrupt warmup, and your destination needs a safe landing spot.
+If it will not work, close other screens, dismount, stop gliding, and check that you are using your main hand. Your destination needs a safe landing spot.
 
 Bring a scroll before a long expedition, but leave room at your home destination too. A completely blocked waystone cannot become safe just because you are using a scroll.
 

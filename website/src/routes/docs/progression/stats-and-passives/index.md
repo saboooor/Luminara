@@ -12,6 +12,8 @@ extra_buttons:
 
 ## Stats
 
+Enabled stats are **Strength, Health, Regeneration, Luck, Wisdom, Toughness, Crit Chance, Crit Damage, and Speed**. The base mana pool is **20**; each Wisdom point adds **2 maximum mana**, and Regeneration contributes **0.1 mana regeneration** per stat point. Toughness uses a diminishing-return reduction formula, so its trait value is not a flat damage-reduction percentage.
+
 Open `/stats` to inspect your stat values and their effects. Skills can award stat levels as you progress. A stat's description explains what it changes; do not assume that a displayed number is a flat percentage bonus.
 
 Skill progression can improve more than your tool output. Depending on the enabled stats, benefits can affect combat, health, toughness, luck, or mana-related play. Read the current menu before choosing a leveling goal.

@@ -12,13 +12,15 @@ extra_buttons:
 
 ## Use public portals
 
+Use `/warp resource-worlds` for the resource-world hub and `/warp dealership` for vehicle shopping. Claiming is disabled in all three resource worlds. The creative plot area uses `plot`; Whips vehicles work only in the main `world`, and waystones only in `world`, `world_nether`, and `world_the_end`.
+
 Look for signs and destination labels before stepping through a portal. Server portals can lead to public areas, activities, or other worlds; their appearance does not guarantee a vanilla Nether destination.
 
 Read any entry requirements or activity instructions. A portal may be disabled while an area is unavailable, or restricted to players with access. If nothing happens, leave its trigger area and approach again after checking chat.
 
 ## Inventories can change between worlds
 
-Survival worlds (`world`, `world_nether`, `world_aether`, `world_the_end`, `resworld`, `resworld_nether`, and `resworld_the_end`) share the same inventory. `plot` and `minigames` each use a separate group. Inventories are also separated by game mode. Ender chests and XP are included in the separation; money balances are not. An empty or different inventory after travelling does not by itself mean your survival items were deleted. Return through the intended route and check the original world before reporting a loss.
+Survival worlds (`world`, `world_nether`, `world_void`, `world_the_end`, `resworld`, `resworld_nether`, and `resworld_the_end`) share the same inventory. `plot` and `minigames` each use a separate group. Inventories are also separated by game mode. Ender chests and XP are included in the separation; money balances are not. An empty or different inventory after travelling does not by itself mean your survival items were deleted. Return through the intended route and check the original world before reporting a loss.
 
 Do not use world changes to try to transfer items between survival and creative areas. Store valuables safely before entering an unfamiliar game or world.
 

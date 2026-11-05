@@ -16,9 +16,11 @@ extra_buttons:
 
 ## Choose a job
 
+The configured careers are **Brewer, Builder, Crafter, Digger, Enchanter, Explorer, Farmer, Fisherman, Hunter, Miner, Weaponsmith, and Woodcutter**. For example, inspect `/jobs info Miner` before building a mining income plan.
+
 Open `/jobs browse` to see the available jobs. Pick one that matches how you play, then inspect `/jobs info <job>` for its paid actions. Join with `/jobs join <job>` when you have an available job slot.
 
-The default limit is **two jobs** and jobs are not joined automatically. Inspect each job’s paid actions; not every mining, farming, or combat action earns money.
+The configured base limit is **two jobs** and jobs are not joined automatically. Inspect each job’s paid actions; not every mining, farming, or combat action earns money.
 
 ## Understand progression
 
@@ -28,7 +30,7 @@ The default limit is **two jobs** and jobs are not joined automatically. Inspect
 
 Job income has a **15% tax deducted from the payment**. Payments are batched with a five-second delay, so your balance may not update on every action.
 
-Your job income limit is `2000 + 2000 × (total job level / 100)` over a **120-minute** period. Points and job XP have separate limits and reset periods. Check the limit message before assuming a job stopped working.
+Your job income limit is `2000 + 2000 × (total job level / 100)` over a **120-minute** period. Points use `2000 + 2000 × (total job level / 100)` per **60 minutes**; job XP uses `5000 + 5000 × (total job level / 100)` per **30 minutes**. Check the limit message before assuming a job stopped working.
 
 Payments are allowed in the survival and resource worlds: `world`, `world_nether`, `world_aether`, `world_the_end`, `resworld`, `resworld_nether`, `resworld_aether`, and `resworld_the_end`. Creative play does not pay; exploration while flying or gliding does not pay either.
 
@@ -40,6 +42,6 @@ Check that you joined the job, used an eligible material or action, and are in a
 
 ## Change careers
 
-Use `/jobs leave <job>` to leave. Read the warning before confirming: progression loss or other penalties can apply. Inspect your current stats first so you understand what is changing.
+Use `/jobs leave <job>` to leave. **Leave confirmation is disabled**, so inspect your stats before typing it. The old-job level-loss setting is **30%**; changing careers can cost progression.
 
 Next, sell surplus goods through [shop signs](/docs/economy/chest-shops/) or the [auction house](/docs/economy/auction-selling/).

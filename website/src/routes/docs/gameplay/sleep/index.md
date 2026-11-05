@@ -14,7 +14,7 @@ extra_buttons:
 
 ## Skip the night
 
-One player can sleep to skip the night, unless another player has opted out. Enter a bed and read the announcement. Sleeping does not accelerate random block ticks, so it does not speed up crop growth.
+One player can sleep to skip the night, unless another player has opted out. Enter a bed and read the announcement. During sleep, random tick speed is raised to **30**, with a **50-tick smooth transition**. This can accelerate vanilla random-tick growth; custom drug crops still use their own active-time timers.
 
 ## Keep the night for an activity
 

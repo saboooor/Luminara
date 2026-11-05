@@ -16,9 +16,9 @@ A Tome stores eligible building blocks as **Echoes**. Open its menu and follow t
 
 ## Plan your Pages
 
-Bind the materials you use most often, then check their stored counts. Capacity and progression determine what fits. In player-managed setups, upgrades unlock more storage; read the upgrade cost before spending resources.
+Bind the materials you use most often, then check their stored counts. Luminara uses **player-selected Pages**, starting with **one Page** and capped at **18**. The per-material item limit is **unlimited** (`item-max: -1`). Netherite smithing upgrades are enabled and add **one Page**; diamond-block crafting upgrades are disabled.
 
-Auto-deposit, when available, sends tracked pickups into storage. Check the count before assuming a pickup disappeared. World groups can have separate storage realms, so changing worlds can show a different ledger.
+Auto-deposit and placement are allowed in the default storage realm. No separate world realms are assigned, so the configured setup uses that default ledger. **Player heads and totems of undying are blacklisted** from Tome storage. Check counts before assuming an ordinary pickup disappeared.
 
 ## Withdraw or place
 

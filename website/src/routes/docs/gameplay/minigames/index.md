@@ -7,18 +7,20 @@ date_created: '2026-10-17'
 last_updated: '2026-10-17'
 ---
 
-## Start with the activity instructions
+## Join the enabled course
 
-Use the lobby's join sign or menu, then read its objective, team rules, and any entry cost. The installed game framework does not mean every possible game mode is available: the actual lobby shows what you can play.
+**Parkour** is the enabled Lumigames arena. Use `/lumigames join parkour` (aliases `/lg` and `/minigame`) or its lobby entrance. It is a **solo** course with a configured capacity of **100 players** and **no time limit**.
 
-Some activities temporarily change equipment, game mode, or allowed commands. Store valuables before trying an unfamiliar game, and use its intended entrance rather than teleporting onto the course.
+The imported elytra runs, knockout, maze, sandbattle, spleef, spooki, and springspleef arenas are disabled. Their saved loadouts and locations do not make them joinable games.
 
-## During the game
+## Checkpoints and commands
 
-Follow the objective and checkpoint sequence. If a game supplies its own loadout, use that equipment rather than trying to bring survival items through another route. Home, warp, and other travel commands can be restricted during play.
+**Light weighted pressure plates** mark checkpoints and **heavy weighted pressure plates** mark the finish. Follow the course’s checkpoint sequence instead of teleporting onto it.
+
+During play, the ordinary command allowlist is `/msg`, `/tell`, `/w`, `/reply`, `/r`, and `/help`. Use the game’s own leave action for exit rather than `/home` or a warp.
 
 ## Leave properly
 
-Use the activity's leave control. Where the minigame command is exposed, `/minigame quit` is the standard self-exit. Return through the proper exit before checking your normal inventory.
+Use **`/lumigames leave`** or **`/lg leave`**. `quit` is not the documented leave action for the active Lumigames command. Return through the intended exit before checking your survival inventory; `minigames` has its own inventory group.
 
-If your equipment looks wrong after leaving, check the original world and report the activity name, join/leave steps, and time. Avoid repeatedly joining different games while investigating.
+If your equipment looks wrong after leaving, report the course, world, join/leave steps, and time. Avoid joining other activities while investigating.

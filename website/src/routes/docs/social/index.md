@@ -28,6 +28,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Share a held item with **`[item]`**; inventory and ender-chest previews are disabled. Choose Plasmo ranges of **8/16/32 blocks**, or Simple Voice Chat’s **48-block normal range**.
+
 See [colors and text formatting](/docs/social/colors/) for legacy codes, hex colors, and MiniMessage examples.
 
 Chat, listen, pose, and personalize your character.

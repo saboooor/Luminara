@@ -18,6 +18,8 @@ An **effect** determines what particles look like. A **style** determines how th
 
 ## Build a look
 
+Configured limits are **20 active particles**, **10 saved groups**, and **five fixed effects**. Fixed effects must be created within **32 blocks**. Player effects render within **48 blocks** and fixed effects within **192 blocks**. Particles are hidden while invisible; automatic combat hiding is disabled.
+
 Start with one subtle effect and preview it while moving. Check it in the places you actually use, including interiors. Multiple large effects can make it harder to see a shared build or activity.
 
 Use the menu's active-particle controls to remove or change an effect. If a combination does not appear, check access to both its effect and style and whether the current area allows it.

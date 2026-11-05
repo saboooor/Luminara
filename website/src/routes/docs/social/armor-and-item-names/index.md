@@ -14,11 +14,11 @@ extra_buttons:
 
 Use `/hiddenarmor hide`, `/hiddenarmor show`, or `/hiddenarmor toggle` to change your own armor's visible presentation. `/hiddenarmor help` lists your available actions; `/togglearmor` is also supported by the armor-visibility system.
 
-Hiding armor changes its appearance without unequipping the actual items. Some armor materials or pieces may remain visible. Check your inventory if you need to know what you are wearing; a visible skin alone does not mean the armor slots are empty.
+Hiding armor changes its appearance without unequipping the actual items. **Leather armor, turtle helmets, and elytra are excluded from hiding**. An invisibility potion does not automatically force gear hiding. Check your inventory if you need to know what you are wearing; a visible skin alone does not mean the armor slots are empty.
 
 ## Rename an item
 
-Hold the item you intend to edit and follow the server's available rename controls. Formatting, length, and command access can depend on your account. Test a short name before trying elaborate formatting.
+Hold the item you intend to edit and follow the server's available rename controls. Anvil formatting features are enabled, and SimpleRename has **no configured character limit** (`0`). Command access still depends on permissions; test a short name before elaborate formatting.
 
 A cosmetic name does not change an item's identity. Renaming paper cannot make it a valid banknote, and renaming an ordinary item cannot make it a [redeemable tag](/docs/social/tag-items/).
 

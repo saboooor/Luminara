@@ -18,6 +18,8 @@ Drug crafting starts with growing custom ingredients. Planting stock, harvested 
 
 ## Your first harvest
 
+Configured active grow times range from **eight minutes** for mushroom and coffee to **20 minutes** for ergot. Cannabis, poppy, salvia, resin, and tobacco take **ten minutes**; ephedra, coca, and sassafras take **15 minutes**. These timers require loaded chunks and suitable growing conditions.
+
 1. Open `/drugs` and select the item you want to make. If it opens a flavor category, choose the unflavored item to inspect its base recipe.
 2. Use `/drugs growing` to open the crop guide dialog, or click a harvested ingredient in a recipe to open its growing guide. Craft wheat seeds with the appropriate starter. For cannabis, combine one wheat seed and one fern in any arrangement to make a Reggie cannabis plant; ordinary ferns cannot be planted directly as cannabis.
 3. Prepare hydrated farmland, lighting of at least level 9, and enough space above the crop.

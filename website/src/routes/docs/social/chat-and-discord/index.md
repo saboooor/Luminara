@@ -12,13 +12,15 @@ extra_buttons:
 
 ## Chat clearly
 
+Text chat has **no proximity radius**, so moving away does not make a public message private. Use `/msg <player> <message>` and `/r <message>` for direct replies, checking the account name rather than only its displayed tag.
+
 Use the normal chat screen for public conversation. For private messages, use the server's available messaging commands and check the recipient's actual account name. A nickname or tag can change how a name looks without changing the account behind it.
 
 ## Share an item preview
 
-Chat can include interactive previews of held items, inventories, and ender chests. The standard placeholders include `[item]`, `[inv]`, and `[ender]` when enabled for you. Hold the intended item before sending an item preview.
+**`[item]` previews are enabled**, including hover/click details and map previews, with no configured placeholder cooldown. Hold the intended item in your main hand before sending it. **`[inv]` and `[ender]` sharing are disabled** on Luminara.
 
-A preview shares information; it does not transfer the item or give another player permission to take it. Inspect what you are about to reveal before sharing an inventory or ender chest publicly.
+A preview shares information; it does not transfer the item or give another player permission to take it. Inspect the held item’s name and lore before sharing it publicly.
 
 ## Join Discord
 

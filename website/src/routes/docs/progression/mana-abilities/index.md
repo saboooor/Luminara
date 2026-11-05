@@ -16,19 +16,21 @@ Some skills unlock an active ability that spends mana. Open `/skills` and inspec
 
 ## Common activation patterns
 
-| Ability         | Standard interaction                          |
-| --------------- | --------------------------------------------- |
-| Replenish       | Right-click a hoe, then break a crop          |
-| Speed Mine      | Right-click a pickaxe, then mine stone or ore |
-| Terraform       | Right-click a shovel, then dig                |
-| Lightning Blade | Right-click a sword, then attack              |
-| Charged Shot    | Left-click a bow to toggle the mode           |
-| Absorption      | Left-click a shield, then take damage         |
+| Ability         | Standard interaction                           |
+| --------------- | ---------------------------------------------- |
+| Treecapitator   | Right-click an axe, then chop a tree           |
+| Sharp Hook      | Use the fishing-rod ability on a hooked target |
+| Replenish       | Right-click a hoe, then break a crop           |
+| Speed Mine      | Right-click a pickaxe, then mine stone or ore  |
+| Terraform       | Right-click a shovel, then dig                 |
+| Lightning Blade | Right-click a sword, then attack               |
+| Charged Shot    | Left-click a bow to toggle the mode            |
+| Absorption      | Left-click a shield, then take damage          |
 
-Follow the current ability description if it asks you to sneak or use a different interaction. Not every skill has an active ability.
+All eight configured mana abilities unlock at **skill level 7** and improve every **seven skill levels**. Mana is enabled. Hoe, axe, pickaxe, shovel, and sword readying does **not require sneaking**; offhand checks are enabled, with sneaking allowed to bypass the offhand check. Not every skill has an active ability.
 
 ## Failed activation
 
 Check the unlock, mana, cooldown, tool, and eligible action. Blocks in your offhand can affect whether a right-click readies an ability. Cooldowns and mana are separate: enough mana does not bypass a cooldown.
 
-[Animated tree felling](/docs/gameplay/tree-felling/) also has its own toggle and durability rules; chopping a whole tree does not by itself mean you activated a mana ability.
+[Animated tree felling](/docs/gameplay/tree-felling/) has its own toggle and durability rules; chopping a whole tree does not by itself mean you activated a mana ability.

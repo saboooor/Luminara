@@ -18,6 +18,8 @@ Use `/bolt lock`, then interact with the chest, door, or other supported target 
 
 ## Share deliberately
 
+Configured protection types are **private**, **redstone**, **display**, **deposit**, **withdrawal**, and **public**. Display allows opening/interacting; deposit adds item insertion, withdrawal adds item removal, and public allows both plus mounting. Normal player access grants ordinary use; admin access also grants editing. Select the mode deliberately instead of treating every shared lock as the same permission.
+
 Use `/bolt help` to inspect the available access-management syntax before sharing. Decide whether you want to grant access to one protection or trust someone more broadly. A global trust entry can affect more than the chest you are currently looking at.
 
 Claim trust does not automatically remove a separate lock. If your friend can build but cannot open storage, inspect that storage's lock as well as the claim's trust list.

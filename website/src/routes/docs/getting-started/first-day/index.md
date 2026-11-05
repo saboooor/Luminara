@@ -36,6 +36,8 @@ extra_buttons:
 
 ## Make a safe starting point
 
+New players start with **$500** and the tools kit: **32 bread, a stone sword, axe, pickaxe and shovel, a golden claim shovel, and a fishing rod**. Save up to **two homes** with the base home allowance. Your first chest does not auto-claim land, so use the supplied golden shovel.
+
 1. Read the [rules](/docs/rules/) and look around the arrival area for destinations and instructions.
 2. Find somewhere you are allowed to build. Existing claims and protected public areas are not free building space.
 3. Build a shelter and save a [home](/docs/travel/homes-and-requests/).

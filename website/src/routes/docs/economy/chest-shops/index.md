@@ -21,7 +21,7 @@ The price applies to the displayed quantity. If the quantity is 16, buying once 
 
 ## Buy or sell
 
-By standard controls, right-click buys and left-click sells. Read the sign and transaction message. A transaction can be reduced or fail if stock, balance, or inventory space is insufficient.
+With Luminara’s configured controls, right-click buys and left-click sells. Read the sign and transaction message. A transaction can be reduced or fail if stock, balance, or inventory space is insufficient.
 
 ## Containers, prices, and fees
 

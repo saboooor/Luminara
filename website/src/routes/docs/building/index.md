@@ -24,6 +24,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Build in **50 × 50 Creative plots**, edit armor stands with **flint**, or start a Tome with **one Page** and upgrade it toward **18** using netherite smithing.
+
 Organize materials and bring your builds to life.
 
 {/* audience:website */}

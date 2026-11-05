@@ -36,7 +36,7 @@ Combine **one wheat seed with the starter item** in a shapeless crafting recipe 
 | Tobacco   | Dried kelp    | Tobacco and nicotine products            | 10 minutes                 |
 | Coffee    | Cocoa beans   | Caffeine, energy drinks, Coffee infusion | 8 minutes                  |
 
-These times are plugin defaults; server settings can change them. For cannabis, **one wheat seed + one fern** makes a **Reggie cannabis plant** instead of a seed. Plant that item; ordinary ferns cannot be planted directly as cannabis. See [cannabis strains](/docs/gameplay/cannabis-strains/) for shears, buds, and mutations.
+These are the active growth times configured on Luminara. For cannabis, **one wheat seed + one fern** makes a **Reggie cannabis plant** instead of a seed. Plant that item; ordinary ferns cannot be planted directly as cannabis. See [cannabis strains](/docs/gameplay/cannabis-strains/) for shears, buds, and mutations.
 
 ## Plant and monitor
 

@@ -12,6 +12,8 @@ extra_buttons:
 
 ## Remove a tag
 
+Taking a tag off and applying a replacement are separate actions. Applying a tag runs a public tag-change broadcast; the configured removal hook has no broadcast command. Check the prefix and suffix separately before replacing an item just to hide the other slot.
+
 | Command                  | What it removes                |
 | ------------------------ | ------------------------------ |
 | `/lumitags unset`        | Your current prefix            |

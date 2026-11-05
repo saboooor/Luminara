@@ -28,6 +28,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Whips enables **cars, planes, and drills in `world` only**. Cars start at **$800**; the fuel shop sells **200 fuel units for $100**, and cargo rejects shulker boxes.
+
 Drive cars, mine with drills, and fly planes.
 
 {/* audience:website */}

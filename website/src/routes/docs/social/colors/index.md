@@ -12,6 +12,8 @@ extra_buttons:
 
 ## Choose the right format
 
+Luminara’s tag presets use **MiniMessage gradients**, and custom tag transformations are **bold** and **smallcaps**. For example, the coffee and maple tags have different gradient styles. Essentials nicknames have a **16-character limit with color codes ignored in that count**; SimpleRename’s separate item-name limit is disabled. Use the format for the feature you are changing.
+
 Formatting support depends on the command, text field, and your permissions. Legacy codes use an ampersand, such as `&aHello`. MiniMessage uses tags, such as `<green>Hello</green>`. Use the format accepted by the feature you are editing; these are two different syntaxes. If codes appear literally, check the format and your access before trying a longer message.
 
 ## Legacy colors

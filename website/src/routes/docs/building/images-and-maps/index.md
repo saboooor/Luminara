@@ -22,6 +22,8 @@ Follow the creation message and place the resulting map tiles in the intended or
 
 ## If loading fails
 
+The image-source whitelist is **disabled**, so an external URL is not rejected merely for being outside the example host list. Files still have the **50 MiB** limit and a **60-second** processing timeout. Only one processing job runs at once; wait for it to finish before submitting another.
+
 Check the URL, image type, size, and any allowed-source restrictions. A webpage containing an image is not always a direct image URL. Keep the error message when asking for help.
 
 For shop stock displays rather than artwork, use [shelves in front of a chest](/docs/building/shelf-displays/).

@@ -12,6 +12,8 @@ extra_buttons:
 
 ## Take off
 
+Configured planes are **Ki-61 (P1), $8,000**; **YAK-3 (P2), $20,000**; and **P-61 (P3), $40,000**. All have **40 health**. Their fuel capacities are **1,000**, **1,200**, and **1,200** units respectively. Flight is limited to `world`.
+
 Find a clear runway. Accelerate to takeoff speed, then look upward to climb. Looking downward produces descent. Pulling up before you have enough speed will not create lift. Leave room for wings, turns, and landing; avoid trying your first flight between buildings.
 
 ## Landing

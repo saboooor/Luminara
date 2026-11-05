@@ -23,7 +23,7 @@ Check Minecraft’s keybind list if V conflicts with another mod. See the [Simpl
 
 Luminara's Voice Bridge lets nearby players using different voice mods hear one another. It bridges proximity conversation; private groups/channels are not bridged.
 
-In Plasmo Voice, choose a voice range of **8, 16, or 32 blocks**, with **16 blocks** as the default. Simple Voice Chat and bridged audio follow their server distance settings. [Custom music discs](/docs/social/music-discs/) play through both Plasmo Voice and Simple Voice Chat, including jukebox controls, queues, and physical stereo speakers.
+In Plasmo Voice, choose a voice range of **8, 16, or 32 blocks**, with **16 blocks** as the default. Simple Voice Chat is configured for **48-block normal voice** and **24-block whispering**. Voice Bridge uses a **48-block default**, **0.33 whisper multiplier**, and **128-block maximum**, so cross-mod hearing need not match Plasmo’s selected range exactly. [Custom music discs](/docs/social/music-discs/) play through both Plasmo Voice and Simple Voice Chat, including jukebox controls, queues, and physical stereo speakers.
 
 ## Test with a friend
 

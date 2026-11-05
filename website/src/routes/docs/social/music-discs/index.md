@@ -40,7 +40,7 @@ Luminara enables **beacon-style pyramid amplification** beneath jukeboxes. Build
 | 3 (add 7×7 below)       | **192 blocks**      |
 | 4 (add 9×9 below)       | **256 blocks**      |
 
-The configured fixed range of 65 blocks applies only when pyramid amplification is disabled. Range is calculated when a song starts, so restart playback after changing the pyramid.
+Pyramid amplification is enabled here, so use the range table above. Range is calculated when a song starts; restart playback after changing the pyramid.
 
 The Plasmo Voice source line defaults to **50% volume**, adjustable in the client mod settings. Jukebox volume is a separate playback control. Mono conversion is disabled, preserving stereo playback. Distance visualization is enabled for jukeboxes and horns; players see it only with **Visualize Voice Distance** enabled in their client.
 
@@ -233,7 +233,7 @@ Videos from that jukebox's tracks play across the frames with black letterboxing
 | `/disc screen delete <name>`     | Delete its configuration                 |
 | `/disc screen cancel`            | Cancel an unfinished selection           |
 
-Screens are enabled on Luminara at up to **30 FPS** (adjustable per screen from **1 FPS to the server maximum** in the jukebox's **Screen** menu), with video updates sent to viewers within **48 blocks**. Standard map rendering uses ordered dithering at strength **12** for smoother gradients. Compatible Fabric **screen-companion** clients receive high-resolution (up to **1080p** by default) low-latency **H.264** (or JPEG fallback) full-color video streams using a bundled pure-Java decoder. The screen viewing range is separate from the jukebox audio range.
+Screens are enabled on Luminara at up to **30 FPS** (adjustable per screen from **1 FPS to the server maximum** in the jukebox's **Screen** menu), with video updates sent to viewers within **48 blocks**. Standard map rendering uses ordered dithering at strength **12** for smoother gradients. Compatible Fabric **screen-companion** clients receive high-resolution (configured for **1080p**) low-latency **H.264** (or JPEG fallback) full-color video streams using a bundled pure-Java decoder. The screen viewing range is separate from the jukebox audio range.
 
 Screen management requires permission, and rendering uses server-side `ffmpeg`. Automatic portable FFmpeg installation is enabled if it is missing; staff can also use `/disc screen install-ffmpeg`. The configured YouTube video resolver is `yt-dlp`, when available. Network loading can delay video after a seek.
 

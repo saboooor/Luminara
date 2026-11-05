@@ -14,6 +14,8 @@ extra_buttons:
 
 ## Choose a plot
 
+The plot world is **`plot`**, in **Creative** mode. Plots are **50 × 50 blocks**, separated by **12-block roads**. Plot economy charges are disabled, so the stored $100 claim/merge prices are not active fees. Each plot supports at most **128 members**; your personal plot count still depends on permissions.
+
 In an available plot world, `/plot auto` finds and claims an eligible plot; `/plot claim` claims the plot you are standing in when available. Limits depend on your access. Use `/plot info` to inspect ownership and `/plot home` to return to your plot.
 
 These commands apply to designated plot areas. They do not reserve arbitrary survival land; use a [golden-shovel claim](/docs/protection/land-claims/) there.

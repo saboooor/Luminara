@@ -14,6 +14,8 @@ extra_buttons:
 
 ## A command does not work
 
+Check the feature’s enabled worlds: **Whips: `world` only**; **waystones: `world`, `world_nether`, `world_the_end`**; **claims: those same three survival worlds**. Resource worlds do not allow player claims. In an active Lumigames course use `/lg leave`; for death recovery use `/aclist` and `/actp`.
+
 Check the spelling and use tab completion. Type placeholders without brackets: `/home base`, not `/home <base>`. A command may be restricted by your rank, the current world, an activity you joined, or a cooldown. Read the full chat response before retrying.
 
 For custom systems, the feature's own help is useful: `/whips help`, `/drugs help`, and `/ah help`. Help may only show actions you can access.

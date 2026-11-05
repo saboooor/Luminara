@@ -41,7 +41,7 @@ Open Minecraft's **Advancements** screen, normally **L** on Java Edition, and se
 
 ## Types of milestones
 
-Default progression includes first use, trying every registered drug, using an item at maximum tolerance, reaching maximum tolerance on three drugs, and letting a maxed drug decay back to zero. Overdose outcome milestones also exist. Additional crafting and use-count milestones can be configured by the server.
+The enabled named milestones are **First Dose** (first use), **Chem Connoisseur** (try every drug), **Risky Business** (use at maximum tolerance), **I Can Stop Anytime** (max tolerance on three drugs), and **Clean Slate** (let a maxed tolerance decay to zero). Chat announcements and unlock sounds are enabled. The legacy fireworks switch does not produce advancement fireworks. Overdose outcome milestones also exist. Additional crafting and use-count milestones can be configured by the server.
 
 Read the in-game advancement description for its actual requirement. Some milestones involve harmful character effects or death; unlocking an advancement does not remove those consequences. Ordinary item crafting and collection can be managed independently of chasing every milestone.
 

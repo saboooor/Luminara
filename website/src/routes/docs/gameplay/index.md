@@ -44,6 +44,8 @@ extra_buttons:
 
 ## Choose a guide
 
+Recover AngelChests within **ten minutes** (private for five), use `/pvp off` if you do not want personal PvP, and join the enabled **Parkour** course with `/lg join parkour`.
+
 Explore survival systems, recovery, and activities.
 
 {/* audience:website */}

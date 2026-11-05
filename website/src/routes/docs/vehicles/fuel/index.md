@@ -16,11 +16,13 @@ extra_buttons:
 
 Fuel consumption and the fuel gauge are enabled. Read the gauge while driving and top up before a long journey. No fuel means no normal powered acceleration or lift.
 
-`/whips fuel` opens the fuel shop when available. Inspect the displayed item and price before purchasing. The fuel item needs to match a supported fuel entry; an anvil-renamed imitation is not equivalent.
+`/whips fuel` opens the enabled fuel shop. The configured offer is **$100 for one custom Fuel item**, worth **200 fuel units**. The fuel item needs to match a supported fuel entry; an anvil-renamed imitation is not equivalent.
 
 Sneak-left-click your vehicle to open its service inventory when supported. Use the fuel and storage slots shown there. The allowed fuels and their values can differ; do not assume any item that burns in a furnace works here. Start with a small amount and check that the gauge changes.
 
 ## Accepted fuels
+
+The custom shop fuel uses a **honey block** with the configured name and lore. An ordinary honey block or a renamed player head does not match that entry.
 
 The Whips fuel list includes the following values, measured in fuel units rather than seconds of travel:
 
@@ -29,7 +31,7 @@ The Whips fuel list includes the following values, measured in fuel units rather
 | Coal or charcoal                                                                            | 2              |
 | Coal block                                                                                  | 18             |
 | Lava bucket                                                                                 | 5              |
-| Matching custom Fuel Can                                                                    | 20             |
+| Matching custom Fuel (honey-block item)                                                     | 200            |
 | Oak, spruce, birch, jungle, acacia, or dark oak logs                                        | 4              |
 | Planks or buttons of those six woods                                                        | 1              |
 | Wooden tools, doors, pressure plates, stairs, slabs, or fence gates listed in the fuel menu | 2              |

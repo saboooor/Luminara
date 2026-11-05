@@ -16,13 +16,13 @@ extra_buttons:
 
 Production uses custom harvested ingredients, processing stations, and assembly recipes. Open `/drugs`, choose a category and base product, then choose its unflavored recipe when a flavor category opens. Recipe previews show crafting layouts, cooking times, or the base bottle and brewing ingredient. Click custom ingredients to open their recipes, or harvested ingredients to open their growing guides. While a recipe is open, custom items in your own inventory also open their recipes. These clicks browse instructions without consuming or moving items.
 
-Times and layouts below describe plugin defaults. Inspect the live menu for server settings.
+Luminara’s configured processing times are **10 seconds for smoked Tobacco, 20 seconds for furnace Nicotine, 10 seconds for furnace Caffeine, and 30 seconds for campfire Salvia**. Use custom harvests in those stations; the recipe menu covers the assembly and brewing steps.
 
 ## Tobacco and nicotine
 
 Grow [Tobacco Leaves](/docs/gameplay/drug-crops/) before processing them. Ordinary dried kelp cannot replace the custom leaves.
 
-| Product              | Default process                                                                                                  |
+| Product              | Process                                                                                                          |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Tobacco              | Smoke harvested Tobacco Leaves in a smoker for 10 seconds.                                                       |
 | Nicotine             | Process harvested Tobacco Leaves in a furnace for 20 seconds.                                                    |
@@ -40,7 +40,7 @@ Redstone  Vape Liquid Stone Button
 Empty     Copper      Empty
 ```
 
-A vape needs the brewed custom liquid; ordinary water bottles and loose nicotine cannot replace it. A new vape has **32 puffs by default**. See [bongs, cartridges, and vapes](/docs/gameplay/bongs-and-carts/) for use and durability.
+A vape needs the brewed custom liquid; ordinary water bottles and loose nicotine cannot replace it. A new vape has **32 puffs**. See [bongs, cartridges, and vapes](/docs/gameplay/bongs-and-carts/) for use and durability.
 
 ## Coffee and energy drinks
 
@@ -54,7 +54,7 @@ Caffeine and energy drinks have their own tolerance, addiction, and overdose set
 
 Use harvested **Cannabis Buds**, not cannabis plants. Keep strain identities consistent throughout production.
 
-| Product          | Default process                                                               |
+| Product          | Process                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |
 | Infused Dough    | Shapeless crafting: wheat + sugar + harvested Cannabis Buds.                  |
 | Edible           | Smoke Infused Dough in a smoker for 10 seconds.                               |
@@ -72,13 +72,13 @@ Nicotine must be the custom drug item, and cannabis brewing requires the matchin
 
 ## Other processing
 
-Salvia uses a **campfire** with its custom harvested input and takes **30 seconds** by default. Its delayed visual effects are described in [consumables](/docs/gameplay/consumables/).
+Salvia uses a **campfire** with its custom harvested input and takes **30 seconds**. Its delayed visual effects are described in [consumables](/docs/gameplay/consumables/).
 
 After making an eligible finished product, add a cosmetic variant through [cauldron flavor infusion](/docs/gameplay/flavor-infusion/). Flavor infusion is separate from these production and brewing chains.
 
 ## Purity and refining
 
-Purity is an item quality grade shown in its lore. Ordinary production and older items without a recorded grade use **90%**, the neutral baseline. When enabled, drug effect durations and cartel sale values scale by **purity ÷ 90**. A 100% item has about 11.1% more duration and sale value than the baseline; purity does not increase potion amplifier levels or reset tolerance.
+Purity is an item quality grade shown in its lore. Ordinary production and older items without a recorded grade use **90%**, the neutral baseline. Drug effect durations and cartel sale values scale by **purity ÷ 90**. A 100% item has about 11.1% more duration and sale value than the baseline; purity does not increase potion amplifier levels or reset tolerance.
 
 To refine a finished drug:
 
@@ -86,7 +86,7 @@ To refine a finished drug:
 2. Hold **ordinary quartz in your offhand**.
 3. **Sneak-right-click an empty or water-filled cauldron**.
 
-Each refinement consumes one quartz and adds **5 purity points**, up to **100%**, by default. Staff can disable refining or change its ingredient and increment. Inspect the resulting purity line before refining again.
+Refining is enabled. Each refinement consumes **one quartz** and adds **five purity points**, up to **100%**. Inspect the resulting purity line before refining again.
 
 Crafting, cooking, brewing, and automatic crafting carry purity into supported products from the average grade of the consumed drug, harvest, or intermediate input slots. Ordinary materials do not dilute that average, and larger stacks in a slot do not add extra weight. Flavoring preserves the grade, strain, and remaining uses.
 

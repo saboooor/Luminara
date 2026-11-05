@@ -14,6 +14,8 @@ extra_buttons:
 
 ## Browse listings
 
+The browse screen displays **45 items per page**, and searches return at most **100 results**. Use a more specific keyword if a broad search does not show the item you expect.
+
 Open `/ah` or `/auction`. Java uses a dialog at the entrance; Bedrock can use a native form. Categories and individual listings can still open inventory screens. Search with `/ah search <keyword>` or the menu's search field.
 
 Inspect the item itself, not only its display name. Check quantity, enchantments, condition, seller, listing ID, and time remaining. Prices belong to the listing's offered stack.

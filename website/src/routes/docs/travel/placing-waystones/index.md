@@ -30,13 +30,15 @@ Barrier icons mark empty crafting slots.
 
 {/* /audience */}
 
-Use the recipe book to check the current recipe if it differs. Custom recipes and crafting availability can change.
+Crafting is enabled on Luminara. The recipe above creates the waystone item; its body is a **lodestone**, with **two polished tuff wall anchors**.
 
 ## Pick a location
 
+Place waystones in the **Overworld (`world`), Nether (`world_nether`), or End (`world_the_end`)**. Resource worlds, the plot world, and minigames are outside the enabled waystone network.
+
 Place the item on solid ground with open space above and beside it. The standard monument needs at least three empty blocks above its support, and taller anchors can need more. Leave a nearby two-block-high landing space over safe ground. Do not surround the anchor with hazards or build a ceiling through the monument.
 
-Stones have a minimum spacing requirement within the same world. The bundled default is 64 blocks; use the placement message for the current server requirement. Your claim and the area's building rules still apply.
+Stones must be at least **64 blocks apart** within the same world. Your claim and the area's building rules still apply.
 
 ## Name your stop
 
@@ -44,7 +46,7 @@ New stones receive a random fantasy name. Placement discovers the destination fo
 
 Name labels fit onto all four sides of the rim, with runes on the pillar. These text overlays stay hidden from each player until they discover the stone; the monument itself remains visible.
 
-Other players must visit and activate a public stone before travelling to it. New stones are Public by default, though the server can make new placements Private. Check **Visibility** in management: use [private access](/docs/travel/managing-waystones/) if only you should use it.
+Other players must visit and activate a public stone before travelling to it. New stones are **Public**, so visitors can discover them. Check **Visibility** in management: use [private access](/docs/travel/managing-waystones/) if only you should use it.
 
 ## Move it later
 
